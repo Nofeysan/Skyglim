@@ -34,8 +34,8 @@ data modify storage damageapi: damage.value set from storage km_solver: outputs[
 ###! ここに防具効果とかのやつ
 
 #! debug
-#-tellraw @a [{"text":"\ue010 与ダメージ(軽減前) : ","color": "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
-#-tellraw @a [{"text":"\ue010 vars : ","color": "#44ddf4"},{"storage": "km_solver:","nbt": "vars"}]
+#-tellraw @a [{text:"\ue010 与ダメージ(軽減前) : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
+#-tellraw @a [{text:"\ue010 vars : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "vars"}]
 
 
 
@@ -80,8 +80,8 @@ execute at @p run function km_solver:solve
 execute if score exist Temp matches 0 store result storage km_solver: outputs[0] float 0.0005 run scoreboard players get @s MaxHealth
 
 #! debug
-#-tellraw @a [{"text":"\ue010 与ダメージ(軽減後) float: "},{"storage": "km_solver:","nbt": "outputs[0]"}]
-#-tellraw @a [{"text":"\ue010 vars : "},{"storage": "km_solver:","nbt": "vars"}]
+#-tellraw @a [{text:"\ue010 与ダメージ(軽減後) float: "},{"storage": "km_solver:","nbt": "outputs[0]"}]
+#-tellraw @a [{text:"\ue010 vars : "},{"storage": "km_solver:","nbt": "vars"}]
 
 # DealtDamage Temp に入れる
 execute store result score DealtDamage Temp run data get storage km_solver: outputs[0] 100
@@ -112,7 +112,7 @@ scoreboard players operation @s DamageScore = DealtDamage Temp
 ###* 防具効果
 function damageapi:calc_damage/player/armor/root
 
-#tellraw @s [{"text": "","color": "#ec1d2f"},{"text":"\uE010 ","color": "gray"},{"score":{"name":"@s", "objective":"Damage.int"}},{"text":"."},{"score":{"name":"@s", "objective":"Damage.float"}},{"text":" ダメージ！"}]
+#tellraw @s [{text: "",color: "#ec1d2f"},{text:"\uE010 ",color: "gray"},{"score":{"name":"@s", "objective":"Damage.int"}},{text:"."},{"score":{"name":"@s", "objective":"Damage.float"}},{text:" ダメージ！"}]
 
 
 

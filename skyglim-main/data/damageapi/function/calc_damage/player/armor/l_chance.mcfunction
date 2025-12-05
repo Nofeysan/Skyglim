@@ -8,4 +8,4 @@ scoreboard players operation @s CurrentHealth += _ Temp
 execute at @s run particle minecraft:happy_villager ~ ~ ~ 0.3 1 0.3 0.3 20
 
 #! debug
-#tellraw @s [{"text": "\ue010 回復したぞ！"}]
+#tellraw @s [{text: "\ue010 回復したぞ！"}]

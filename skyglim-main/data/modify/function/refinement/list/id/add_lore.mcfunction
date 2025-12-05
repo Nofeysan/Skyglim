@@ -36,7 +36,7 @@ data modify storage modify: lore.id set from block ~ ~-1 ~ Items[{Slot:13b}].com
 function modify:refinement/list/macro/set_name with storage modify: lore
 
 # どっちも存在するなら分割の線を増やす
-execute unless score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "------------------------", "color": "dark_gray", "italic": false}'
+execute unless score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "------------------------", color: "dark_gray", italic: false}'
 
 
 #? enchantment

@@ -10,7 +10,7 @@ scoreboard players add @s CurrentLv 1
 scoreboard players add @s token 2
 
 # 通知しましょうね～
-tellraw @a [{"text": "\uE010 ","color": "#7fd6e2"},{"selector": "@s"},{"text": " がレベル ","color": "#7fd6e2"},{"score": {"name": "@s","objective": "CurrentLv"},"color": "#ffd728"},{"text": " になりました！","color": "#7fd6e2"}]
+tellraw @a [{text: "\uE010 ",color: "#7fd6e2"},{"selector": "@s"},{text: " がレベル ",color: "#7fd6e2"},{"score": {"name": "@s","objective": "CurrentLv"},color: "#ffd728"},{text: " になりました！",color: "#7fd6e2"}]
 execute at @a run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 1 2
 
 # 次の経験値計算

@@ -28,4 +28,4 @@ execute if predicate damageapi:has_status_item run function damageapi:status/pla
 function modify:enchantment/calc/root
 
 #! debug
-#-tellraw @s {"text": "\uE010 Status Checked!"}
+#-tellraw @s {text: "\uE010 Status Checked!"}

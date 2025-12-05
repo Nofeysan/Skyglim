@@ -9,7 +9,7 @@
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" set value []
 
 # 一行目を追加
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "************************************", "color": "dark_gray", "italic": false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "************************************", color: "dark_gray", italic: false}'
 
 ###? ステータス計算
 ###? 順番は、[DMG > HP > STR > CC > CD > DEF > SPD > MP > LUCK] の順番
@@ -56,19 +56,19 @@ data modify storage modify: appraise.name set value 'item name'
 function modify:appraise/list/macro/set_name with storage modify: appraise
 
 ###? 残りの Lore 付与
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "------------------------", "color": "dark_gray", "italic": false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "Lore1", "color": "#ffffff", "italic": false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "Lore2", "color": "#ffffff", "italic": false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": ""}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "Rarity", "color": "#ffffff", "italic": false, "bold": true}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "------------------------", "color": "dark_gray", "italic": false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "------------------------", color: "dark_gray", italic: false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "Lore1", color: "#ffffff", italic: false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "Lore2", color: "#ffffff", italic: false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: ""}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "Rarity", color: "#ffffff", italic: false, bold: true}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "------------------------", color: "dark_gray", italic: false}'
 
 ###* その他
 # 鑑定済みにする
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.appraise set value 2
 
 # 演出とか
-tellraw @s [{"text": "\uE010 ","color": "gray"},{"text": "鑑定完了！","color": "#44ddf4"}]
+tellraw @s [{text: "\uE010 ",color: "gray"},{text: "鑑定完了！",color: "#44ddf4"}]
 execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~-1 ~ 1 1.5
 execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~-1 ~ 0.5 0.5
 
