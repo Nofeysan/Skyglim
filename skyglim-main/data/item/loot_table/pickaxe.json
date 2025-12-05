@@ -1,0 +1,119 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_pickaxe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "スポナーブレイカー",
+                                "color": "#92f3a4",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "スポナーとそれを保護するブロックを破壊できる。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": "スポナーを壊すか、敵を倒すか。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 0,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 1,
+                                    "refinement": {
+                                        "ref": -255, 
+                                        "type": 8, 
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "appraise": -255,
+                                    "enchantment": -1, 
+                                    "buy": 10
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.all.def",
+                                            "type": "minecraft:armor",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "any"
+                                        }
+                                    ]
+                                },
+                                "minecraft:repair_cost": 100009,
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:enchantment_glint_override": false,
+                                "minecraft:unbreakable": {
+                                    "show_in_tooltip": false
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

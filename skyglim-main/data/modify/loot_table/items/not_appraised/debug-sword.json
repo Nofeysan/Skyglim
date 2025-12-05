@@ -1,0 +1,217 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "<未鑑定> 騎士の剣",
+                                "color": "gray",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    [
+                        {
+                            "text": "\uf102\uE008 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "ダメージ",
+                            "color": "#ff4141"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+20...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE001 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "攻撃力",
+                            "color": "#d94262"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+10...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE002 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "会心率",
+                            "color": "#94d3e6"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+5...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE003 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "会心ダメージ",
+                            "color": "#66a5b8"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+40...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "遺跡から出土した剣。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": "鋭さは衰えない。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": ""
+                    },
+                    {
+                        "text": "Legendary",
+                        "color": "#ffd728",
+                        "italic": false,
+                        "bold": true
+                    },
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 0,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 4,
+                                    "refinement": {
+                                        "ref": -1,
+                                        "type": 1,
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "appraise": -1,
+                                    "buy": 5,
+                                    "enchantment": -1,
+                                    "mainhand": 1
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.all.def",
+                                            "type": "minecraft:armor",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "any"
+                                        },
+                                        {
+                                            "id": "item.type.1",
+                                            "type": "minecraft:attack_speed",
+                                            "amount": -2.4,
+                                            "operation": "add_value",
+                                            "slot": "mainhand"
+                                        }
+                                    ]
+                                },
+                                "minecraft:unbreakable": {
+                                    "show_in_tooltip": false
+                                },
+                                "minecraft:repair_cost": 3980,
+                                "minecraft:item_model": "minecraft:iron_sword",
+                                "minecraft:max_stack_size": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

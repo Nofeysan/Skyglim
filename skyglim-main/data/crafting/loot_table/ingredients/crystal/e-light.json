@@ -1,0 +1,70 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:yellow_stained_glass",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "純粋な光のクリスタル",
+                                "color": "#fab80d",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102純化した光の力を封じ込めたクリスタル。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102宇宙の真理を映し出す輝きを放ち、",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102高次の意識へと覚醒させる。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:repair_cost": 70713
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "data": {
+                                    "buy": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

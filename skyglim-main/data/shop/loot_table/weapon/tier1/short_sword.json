@@ -1,0 +1,206 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:feather",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "普通の木の短剣",
+                                "color": "#ffffff",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102\uE008 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "ダメージ",
+                                        "color": "#ff4141"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    { 
+                                        "text": "+1",
+                                        "color": "#55ff55"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE001 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "攻撃力",
+                                        "color": "#d94262"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "+5",
+                                        "color": "#55ff55"
+                                    }
+                                ],
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "初心者向けの剣。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "この剣でみんな経験を積む。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Normal",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "bold": true
+                                },
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102ℰ 価格",
+                                        "color": "#bfe493",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "12L",
+                                        "color": "#3755bd"
+                                    }
+                                ],
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 1,
+                                    "hp": 0,
+                                    "str": 5,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 1,
+                                    "refinement": {
+                                        "ref": -1,
+                                        "type": 1,
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "appraise": -255,
+                                    "buy": 3,
+                                    "enchantment": -1,
+                                    "mainhand": 1
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.all.def",
+                                            "type": "minecraft:armor",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "any"
+                                        },
+                                        {
+                                            "id": "item.weapon",
+                                            "type": "minecraft:attack_speed",
+                                            "amount": -0.5,
+                                            "operation": "add_value",
+                                            "slot": "mainhand"
+                                        }
+                                    ]
+                                },
+                                "minecraft:unbreakable": {
+                                    "show_in_tooltip": false
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:custom_model_data": {
+                                    "strings": ["short_sword_1"]
+                                },
+                                "minecraft:repair_cost": 30002,
+                                "minecraft:lock": {
+                                    "components": {
+                                        "minecraft:repair_cost": 255
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

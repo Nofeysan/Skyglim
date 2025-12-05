@@ -1,0 +1,89 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "識別の書",
+                                    "color": "#94d3e6",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102目線の先にいる敵の情報を得ることができる。",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "text": "\uf102\uE010 範囲 : ",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "30m",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {"analyze": 1}
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:knowledge_book",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.anarise",
+                                            "type": "minecraft:attack_damage",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "mainhand"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

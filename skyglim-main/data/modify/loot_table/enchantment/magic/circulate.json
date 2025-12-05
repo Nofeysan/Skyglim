@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:brush",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "魔力循環",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        [
+                            {
+                            "text": "魔法使用時、使用した魔力の一部を回収します。",
+                            "color": "#ffffff",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "魔法の扱いに長けているものは、",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "効率的な魔力の使い方を自ずと習得する。",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        {
+                            "text": ""
+                        },
+                        [
+                            {
+                                "text": "★ ",
+                                "color": "#e1c1cf",
+                                "italic": false
+                            },
+                            {
+                                "text": "付加費用",
+                                "color": "#94d3e6"
+                            },
+                            {
+                                "text": " \uE010 ",
+                                "color": "gray"
+                            },
+                            {
+                                "text": "12 Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 42005,
+                    "minecraft:enchantment_glint_override": true,
+                    "minecraft:map_id": 12
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

@@ -1,0 +1,11 @@
+###* ステータス一覧
+tellraw @s [{"text": "\n------- ","color": "#746aac"},{"text": "現在のステータス"},{"text": " -------","color": "#746aac"}]
+tellraw @s [{"text": "\uE000 ","color": "#ffffff"},{"text": "最大体力 (HP)","color": "#e094d7"},{"text": " : "},{"score": {"name": "@s","objective": "ShowMaxHealth"}}]
+tellraw @s [{"text": "\uE001 ","color": "#ffffff"},{"text": "攻撃力 (STR)","color": "#d94262"},{"text": " : "},{"score": {"name": "@s","objective": "act_Strength"}}]
+tellraw @s [{"text": "\uE002 ","color": "#ffffff"},{"text": "会心率 (CC)","color": "#94d3e6"},{"text": " : "},{"score": {"name": "@s","objective": "act_CritChance"}},{"text": " [%]","color": "#ffffff"}]
+tellraw @s [{"text": "\uE003 ","color": "#ffffff"},{"text": "会心ダメージ (CD)","color": "#66a5b8"},{"text": " : "},{"score": {"name": "@s","objective": "act_CritDamage"}},{"text": " [%]","color": "#ffffff"}]
+tellraw @s [{"text": "\uE004 ","color": "#ffffff"},{"text": "防御力 (DEF)","color": "#5dccab"},{"text": " : "},{"score": {"name": "@s","objective": "act_Defence"}}]
+tellraw @s [{"text": "\uE005 ","color": "#ffffff"},{"text": "移動速度 (SPD)","color": "#44ddf4"},{"text": " : "},{"score": {"name": "@s","objective": "act_Speed"}}]
+tellraw @s [{"text": "\uE006 ","color": "#ffffff"},{"text": "魔力 (MP)","color": "#9279d3"},{"text": " : "},{"score": {"name": "@s","objective": "act_MagicPoint"}}]
+tellraw @s [{"text": "\uE007 ","color": "#ffffff"},{"text": "運 (LUCK)","color": "#bfe493"},{"text": " : "},{"score": {"name": "@s","objective": "act_Luck"}}]
+tellraw @s [{"text": "\uE008 ","color": "#ffffff"},{"text": "ダメージ (DMG)","color": "#ff4141"},{"text": " : "},{"score": {"name": "@s","objective": "act_Damage"}}]

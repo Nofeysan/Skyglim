@@ -1,0 +1,99 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:tipped_arrow",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "MOTTAINAI",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        [
+                            {
+                            "text": "確率で矢を消費しません。",
+                            "color": "#ffffff",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "どういう原理で働いているのかは謎だが、",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "この世界がそうというならそうなのだろう。",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        {
+                            "text": ""
+                        },
+                        [
+                            {
+                                "text": "★ ",
+                                "color": "#e1c1cf",
+                                "italic": false
+                            },
+                            {
+                                "text": "付加費用",
+                                "color": "#94d3e6"
+                            },
+                            {
+                                "text": " \uE010 ",
+                                "color": "gray"
+                            },
+                            {
+                                "text": "10 Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 41005,
+                    "minecraft:enchantment_glint_override": true,
+                    "minecraft:potion_contents": {
+                        "custom_color": 15990551
+                    },
+                    "minecraft:hide_additional_tooltip": {},
+                    "minecraft:map_id": 10
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

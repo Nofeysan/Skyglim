@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:redstone_torch",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "ピンチはチャンス",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        [
+                            {
+                            "text": "ダメージを受けたとき、確率で体力を回復する。",
+                            "color": "#ffffff",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "ダメージを受けると体力が減るって",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "誰が決めたの?",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        {
+                            "text": ""
+                        },
+                        [
+                            {
+                                "text": "★ ",
+                                "color": "#e1c1cf",
+                                "italic": false
+                            },
+                            {
+                                "text": "付加費用",
+                                "color": "#94d3e6"
+                            },
+                            {
+                                "text": " \uE010 ",
+                                "color": "gray"
+                            },
+                            {
+                                "text": "10 Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 45002,
+                    "minecraft:enchantment_glint_override": true,
+                    "minecraft:map_id": 10
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

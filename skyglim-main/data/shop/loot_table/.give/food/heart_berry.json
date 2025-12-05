@@ -1,0 +1,132 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sweet_berries",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "ハートベリー",
+                                    "color": "#94d3e6",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "食べると元気が出ます。",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "体力の回復量はおまけ程度。",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "(バニラに比べて回復量が増加しています)",
+                                        "color": "#aaaaaa",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE010 効果 : ",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "HP +12%",
+                                        "color": "#e094d7"
+                                    }
+                                ],
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": false,
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.anarise",
+                                            "type": "minecraft:attack_damage",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "mainhand"
+                                        }
+                                    ]
+                                },
+                                "minecraft:food": {
+                                    "nutrition": 6,
+                                    "saturation": 8.5,
+                                    "can_always_eat": false
+                                },
+                                "minecraft:consumable": {
+                                    "on_consume_effects": [
+                                        {
+                                            "type": "minecraft:apply_effects",
+                                            "effects": [
+                                                {
+                                                    "id": "minecraft:luck",
+                                                    "amplifier": 50,
+                                                    "duration": 4,
+                                                    "hidden_effect": {
+                                                        "id": "minecraft:luck",
+                                                        "show_icon": false,
+                                                        "show_particles": false
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                "minecraft:hide_additional_tooltip": {},
+                                "minecraft:max_stack_size": 64
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 2
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

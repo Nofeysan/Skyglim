@@ -1,0 +1,56 @@
+{
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                        "text": "【特殊】鑑定",
+                        "color": "#e9b530",
+                        "italic": false,
+                        "bold": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "text": "~ ~-1 ~ の樽の内容を変更します。",
+                        "color": "#ffffff",
+                        "italic": false,
+                        "bold": false
+                    }
+                ],
+                "mode": "replace_all"
+            },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "entity_data": {
+                    "id": "armor_stand",
+                    "Tags": ["shop", "appraise"]
+                }
+                }
+            },
+            {
+                "function": "minecraft:set_count",
+                "count": 1
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

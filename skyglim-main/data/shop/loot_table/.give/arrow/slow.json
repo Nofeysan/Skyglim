@@ -1,0 +1,111 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "text": "鈍足の矢",
+                                    "color": "#94d3e6",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "効果付きのちょっといい矢。",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "たまには使ってあげてね。",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE010 効果 : ",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "相手を少しの間鈍足にする",
+                                        "color": "#6c6c93"
+                                    }
+                                ],
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": false,
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.anarise",
+                                            "type": "minecraft:attack_damage",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "mainhand"
+                                        }
+                                    ]
+                                },
+                                "minecraft:hide_additional_tooltip": {},
+                                "minecraft:max_stack_size": 64,
+                                "minecraft:potion_contents": {
+                                    "custom_color": 7105683,
+                                    "custom_effects": [
+                                        {
+                                            "id": "minecraft:slowness",
+                                            "duration": 60,
+                                            "amplifier": 0
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_count",
+                            "count": 4
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

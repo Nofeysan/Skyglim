@@ -1,0 +1,88 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glass",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                {
+                                    "text": "##",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "obfuscated": true
+                                },
+                                {
+                                    "text": "のクリスタル",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "obfuscated": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "##",
+                                        "obfuscated": true
+                                    },
+                                    {
+                                        "text": "の力を封じ込めたクリスタル。"
+                                    }
+                                ],
+                                {
+                                    "text": "\uf102触れるものすべての運命を掌握し、",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102無限の可能性を秘める。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": false,
+                                "minecraft:repair_cost": 70705
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "data": {
+                                    "buy": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

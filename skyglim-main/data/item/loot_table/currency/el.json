@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_lazuli",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "エンチャントされたラピスラズリ",
+                                "color": "#94d3e6",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "\uf102この世界の貴重な通貨。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    [
+                        {
+                            "text": "\uf102EL ",
+                            "color": "#3755bd",
+                            "italic": false
+                        },
+                        {
+                            "text": "と省略される。",
+                            "color": "#ffffff"
+                        }
+                    ],
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:repair_cost": 1003,
+                                "minecraft:enchantment_glint_override": true
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:echo_shard",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "マナスティール",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        [
+                            {
+                            "text": "敵を倒したとき、",
+                            "color": "#ffffff",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "最大魔力の",
+                            "color": "#ffffff",
+                            "italic": false
+                            },
+                            {
+                                "text": "1%",
+                                "color": "#e9b530"
+                            },
+                            {
+                                "text": "分を回復します。"
+                            }
+                        ],
+                        [
+                            {
+                            "text": "魔力は再回収が可能なのか?",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        {
+                            "text": ""
+                        },
+                        [
+                            {
+                                "text": "★ ",
+                                "color": "#e1c1cf",
+                                "italic": false
+                            },
+                            {
+                                "text": "付加費用",
+                                "color": "#94d3e6"
+                            },
+                            {
+                                "text": " \uE010 ",
+                                "color": "gray"
+                            },
+                            {
+                                "text": "7 Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 40002,
+                    "minecraft:enchantment_glint_override": true,
+                    "minecraft:map_id": 7
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

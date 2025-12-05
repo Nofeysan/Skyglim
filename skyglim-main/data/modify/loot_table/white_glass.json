@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:white_stained_glass_pane",
+            "functions": [
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                "minecraft:hide_tooltip": {},
+                "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 10000
+                }
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

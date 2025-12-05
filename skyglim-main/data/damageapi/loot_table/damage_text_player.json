@@ -1,0 +1,57 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:stick",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": [
+                  {
+                    "text": "",
+                    "italic": false,
+                    "bold": false,
+                    "font": "minecraft:player_damage"
+                  },
+                  {
+                  "score": {
+                    "name": "@s",
+                    "objective": "Damage.int"
+                  }
+                  },
+                  {
+                    "text": "."
+                  },
+                  {
+                  "score": {
+                    "name": "@s",
+                    "objective": "Damage.float"
+                  }
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": {"show_damage": 1}
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:repair_cost": 1,
+                  "minecraft:custom_model_data": {
+                    "strings": ["damage"]
+                  }
+                }
+              }
+            ],
+            "conditions": []
+          }
+        ]
+      }
+    ]
+  }

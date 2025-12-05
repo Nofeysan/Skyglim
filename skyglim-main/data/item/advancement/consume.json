@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "weapon": {
+            "trigger": "consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "minecraft:enchantments": [
+                            {
+                                "enchantments": "minecraft:unbreaking",
+                                "levels": 1
+                            }
+                        ]
+                }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "magic:act"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+    "nbt": "{Item:{components:{\"minecraft:lock\": {components:{\"minecraft:repair_cost\": 255}}}}}"
+    }
+}

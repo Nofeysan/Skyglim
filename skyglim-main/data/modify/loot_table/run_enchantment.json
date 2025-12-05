@@ -1,0 +1,131 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanting_table",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "特殊効果を付与する！",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        {
+                            "text": "          ◆  付加費用  ◆",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        [
+                            {
+                            "text": "Normal",
+                            "color": "#ffffff",
+                            "italic": false
+                            },
+                            {
+                                "text": " : ",
+                                "color": "#ffffff"
+                            },
+                            {
+                                "text": "2Lv.",
+                                "color": "#5dccab"
+                            }
+                        ],
+                        [
+                            {
+                            "text": "Rare",
+                            "color": "#2F7BEA",
+                            "italic": false
+                            },
+                            {
+                                "text": " : ",
+                                "color": "#ffffff"
+                            },
+                            {
+                                "text": "10Lv.",
+                                "color": "#5dccab"
+                            }
+                        ],
+                        [
+                            {
+                            "text": "Epic",
+                            "color": "#92f3a4",
+                            "italic": false
+                            },
+                            {
+                                "text": " : ",
+                                "color": "#ffffff"
+                            },
+                            {
+                                "text": "20Lv.",
+                                "color": "#5dccab"
+                            }
+                        ],
+                        [
+                            {
+                            "text": "Legendary",
+                            "color": "#ffd728",
+                            "italic": false
+                            },
+                            {
+                                "text": " : ",
+                                "color": "#ffffff"
+                            },
+                            {
+                                "text": "30Lv.",
+                                "color": "#5dccab"
+                            }
+                        ],
+                        [
+                            {
+                            "text": "Mythic",
+                            "color": "#bf69f4",
+                            "italic": false
+                            },
+                            {
+                                "text": " : ",
+                                "color": "#ffffff"
+                            },
+                            {
+                                "text": "45Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 30000,
+                    "minecraft:enchantment_glint_override": true
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

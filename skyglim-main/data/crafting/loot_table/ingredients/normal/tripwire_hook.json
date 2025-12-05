@@ -1,0 +1,64 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tripwire_hook",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "棒",
+                                "color": "#94d3e6",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102絡繰り銃を作るのに必要な素材。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102特殊な形状をしている。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:repair_cost": 70001
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "data": {
+                                    "buy": 3
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

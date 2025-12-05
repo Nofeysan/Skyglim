@@ -1,0 +1,7 @@
+{
+    "values": [
+        "damageapi:minecraft/load",
+        "entity:load",
+        "item:system/load"
+    ]
+}

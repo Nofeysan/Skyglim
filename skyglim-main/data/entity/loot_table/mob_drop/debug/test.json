@@ -1,0 +1,41 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/l",
+                    "weight": 94
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/el",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/rotten_flesh",
+                    "weight": 100
+                }
+            ]
+        }
+    ]
+}

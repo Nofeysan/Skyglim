@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+    "type": [
+        "minecraft:zombie",
+        "minecraft:skeleton",
+        "minecraft:spider",
+        "minecraft:silverfish",
+        "minecraft:endermite",
+        "minecraft:husk",
+        "minecraft:stray",
+        "minecraft:creeper",
+        "minecraft:cave_spider",
+        "minecraft:wither_skeleton",
+        "minecraft:piglin_brute",
+        "minecraft:drowned",
+        "minecraft:blaze",
+        "minecraft:bogged"
+    ]
+    }
+}

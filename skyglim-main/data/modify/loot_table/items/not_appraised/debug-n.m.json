@@ -1,0 +1,222 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "<未鑑定> 騎士の鎧",
+                                "color": "gray",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    [
+                        {
+                            "text": "\uf102\uE000 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "最大体力",
+                            "color": "#e094d7"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+100...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE001 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "攻撃力",
+                            "color": "#d94262"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+70...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE004 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "防御力",
+                            "color": "#5dccab"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+50...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    [
+                        {
+                            "text": "\uf102\uE006 ",
+                            "color": "#ffffff",
+                            "italic": false
+                        },
+                        {
+                            "text": "魔力",
+                            "color": "#9279d3"
+                        },
+                        {
+                            "text": " \uE010 ",
+                            "color": "gray"
+                        },
+                        {
+                            "text": "+75...?",
+                            "color": "dark_gray"
+                        }
+                    ],
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "遺跡から出土した鎧。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": "現役の鎧としてまだまだ使えそう。",
+                        "color": "#ffffff",
+                        "italic": false
+                    },
+                    {
+                        "text": ""
+                    },
+                    [
+                        {
+                            "text": "a",
+                            "obfuscated": true,
+                            "italic": false,
+                            "color": "#bf69f4",
+                            "bold": true
+                        },
+                        {
+                            "text": " Mythic ",
+                            "obfuscated": false,
+                            "italic": false,
+                            "color": "#bf69f4"
+                        },
+                        {
+                            "text": "a",
+                            "obfuscated": true,
+                            "italic": false,
+                            "color": "#bf69f4"
+                        }
+                    ],
+                    {
+                        "text": "------------------------",
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 0,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 5,
+                                    "refinement": {
+                                        "ref": -1,
+                                        "type": 5,
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "appraise": -1,
+                                    "buy": 5,
+                                    "enchantment": -1
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": {
+                                    "show_in_tooltip": false,
+                                    "modifiers": [
+                                        {
+                                            "id": "item.all.def",
+                                            "type": "minecraft:armor",
+                                            "amount": -1024,
+                                            "operation": "add_value",
+                                            "slot": "any"
+                                        }
+                                    ]
+                                },
+                                "minecraft:unbreakable": {
+                                    "show_in_tooltip": false
+                                },
+                                "minecraft:repair_cost": 3998
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

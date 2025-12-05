@@ -1,0 +1,95 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:pink_dye",
+            "functions": [
+                {
+                    "function": "minecraft:set_name",
+                    "name": {
+                        "text": "防御力なんて飾り",
+                        "italic": false,
+                        "color": "#92f3a4"
+                    }
+                },
+                {
+                    "function": "minecraft:set_lore",
+                    "lore": [
+                        {
+                        "text": "************************************",
+                        "color": "dark_gray",
+                        "italic": false
+                        },
+                        [
+                            {
+                            "text": "防御力を犠牲に、体力を大きく上昇させます。",
+                            "color": "#ffffff",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "防御力と体力を考えて伸ばす時代は終わり！",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        [
+                            {
+                            "text": "体力さえ伸びていればいいんですよ！そうでしょう?",
+                            "color": "gray",
+                            "italic": false
+                            }
+                        ],
+                        {
+                            "text": ""
+                        },
+                        [
+                            {
+                                "text": "★ ",
+                                "color": "#e1c1cf",
+                                "italic": false
+                            },
+                            {
+                                "text": "付加費用",
+                                "color": "#94d3e6"
+                            },
+                            {
+                                "text": " \uE010 ",
+                                "color": "gray"
+                            },
+                            {
+                                "text": "20 Lv.",
+                                "color": "#5dccab"
+                            }
+                        ]
+                    ],
+                    "mode": "replace_all"
+                },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:lock": {
+                        "components": {
+                            "minecraft:repair_cost": 255
+                        }
+                    },
+                    "minecraft:repair_cost": 43005,
+                    "minecraft:enchantment_glint_override": true,
+                    "minecraft:map_id": 20
+                }
+            },
+            {
+                "function": "set_custom_data",
+                "tag": "{\"not_item\": 1}"
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}

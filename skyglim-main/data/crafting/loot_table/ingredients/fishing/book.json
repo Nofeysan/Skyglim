@@ -1,0 +1,74 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "text": "秘伝の書 -釣り-",
+                                "color": "#94d3e6",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "************************************",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102レシピが書かれた本。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "\uf102先人の知恵が詰まっている。",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "------------------------",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:written_book_content": {
+                                    "title": {
+                                        "raw": "秘伝の書 -釣り-"
+                                    },
+                                    "author": "§k@@@@@",
+                                    "pages": [
+                                        {
+                                            "raw": "[{\"text\": \"◆ 釣り竿 Tier-II\", \"color\": \"#746aac\"},{\"text\": \"\\n\\n\\uf105\uf103\\uf103\\uf103§3\\ue012\\n\\uf105\uf103\\uf103§3\\ue012§4\\ue012\\n\\uf105\uf103§3\\ue012\\uf103§1\\ue012\"},{\"text\": \"\\n\\n§3\\ue012§7\\uf101\\ue010\\uf101§0棒 x1  \\n§4\\ue012§7\\uf101\\ue010\\uf101§0E-糸 x1  \\n§1\\ue012§7\\uf101\\ue010\\uf101§0鱈 x32\"}]"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "data": {
+                                    "buy": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
