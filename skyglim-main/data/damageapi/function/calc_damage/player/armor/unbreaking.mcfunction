@@ -12,5 +12,5 @@ scoreboard players set @s UnbreakingCoolDown 200
 execute at @s run particle minecraft:enchanted_hit ~ ~ ~ 0.5 1 0.5 0.2 100
 
 #! debug
-#tellraw @s [{"text": "\ue010 衝撃吸収量 : "},{"score": {"name": "_", "objective": "Temp"}}]
+#tellraw @s [{text: "\ue010 衝撃吸収量 : "},{"score": {"name": "_", "objective": "Temp"}}]
 

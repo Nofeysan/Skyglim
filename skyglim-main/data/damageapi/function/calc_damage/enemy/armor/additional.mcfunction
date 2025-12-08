@@ -8,4 +8,4 @@ execute at @n[tag=damage_taken] run playsound minecraft:item.trident.throw voice
 execute at @n[tag=damage_taken] run particle minecraft:sweep_attack ~ ~ ~ 1.5 1 1.5 0 120
 
 #! debug
-#tellraw @s [{"text": "\ue010 追撃発生！","color": "#aaaaaa"}]
+#tellraw @s [{text: "\ue010 追撃発生！",color: "#aaaaaa"}]

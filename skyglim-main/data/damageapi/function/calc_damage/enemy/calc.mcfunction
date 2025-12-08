@@ -62,8 +62,8 @@ execute at @p run function km_solver:solve
 data modify storage damageapi: damage.value set from storage km_solver: outputs[0]
 
 #! debug
-#-tellraw @a [{"text":"\ue010 与ダメージ(軽減前) : ","color": "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
-#-tellraw @a [{"text":"\ue010 vars : ","color": "#44ddf4"},{"storage": "km_solver:","nbt": "vars"}]
+#-tellraw @a [{text:"\ue010 与ダメージ(軽減前) : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
+#-tellraw @a [{text:"\ue010 vars : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "vars"}]
 
 
 
@@ -96,8 +96,8 @@ execute store result storage km_solver: vars.E float 0.001 run random value 900.
 execute at @p run function km_solver:solve
 
 #! debug
-#-tellraw @a [{"text":"\ue010 与ダメージ(軽減後) float: ","color": "#92f3a4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
-#-tellraw @a [{"text":"\ue010 vars : ","color": "#92f3a4"},{"storage": "km_solver:","nbt": "vars"}]
+#-tellraw @a [{text:"\ue010 与ダメージ(軽減後) float: ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
+#-tellraw @a [{text:"\ue010 vars : ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "vars"}]
 
 # DealtDamage Temp に入れる
 execute store result score DealtDamage Temp run data get storage km_solver: outputs[0] 100

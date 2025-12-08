@@ -8,4 +8,4 @@ clear @s *[repair_cost=1002] 4
 loot give @s loot shop:.give/potion/maiotome
 execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 1 2
 
-tellraw @s [{"text": "\uE010 ","color": "#44ddf4"},{"text": "\"舞\"乙女","color": "#eccbd9"},{"text": " を購入しました！"}]
+tellraw @s [{text: "\uE010 ",color: "#44ddf4"},{text: "\"舞\"乙女",color: "#eccbd9"},{text: " を購入しました！"}]

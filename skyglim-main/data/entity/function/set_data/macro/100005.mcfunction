@@ -31,5 +31,5 @@ tag @s add enemy
 tag @s add debug
 
 # 名前を設定
-data modify entity @s CustomName set value '{"text": "スケルトン","color": "#ffffff"}'
+data modify entity @s CustomName set value '{text: "スケルトン",color: "#ffffff"}'
 data modify entity @s CustomNameVisible set value true

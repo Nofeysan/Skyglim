@@ -31,4 +31,4 @@ function damageapi:status/player/check
 
 
 
-tellraw @s [{"text":"\uE010 ステータスの初期設定が完了しました。","color":"#9279d3"}]
+tellraw @s [{text:"\uE010 ステータスの初期設定が完了しました。",color:"#9279d3"}]

@@ -8,7 +8,7 @@
 execute store result score random Temp run random value 0..9999
 
 #! debug
-#-tellraw @s [{"text": "\ue010 乱数(0..9999) → ","color": "#aaaaaa"},{"score": {"name": "random","objective": "Temp"}}]
+#-tellraw @s [{text: "\ue010 乱数(0..9999) → ",color: "#aaaaaa"},{"score": {"name": "random","objective": "Temp"}}]
 
 ###* as (攻撃者)
 # 祝砲
@@ -27,7 +27,7 @@ execute if predicate modify:enchantment/armor.h/sound run playsound minecraft:en
 execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run scoreboard players operation @s CurrentHealth = @s MaxHealth
 execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run scoreboard players operation @s CurrentMP = @s MaxMP
 execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 at @s run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 0.7 0.5
-execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run tellraw @s [{"text": "\uE010 Enchant 発動！体力と魔力が全回復した！","color": "#746aac"}]
+execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run tellraw @s [{text: "\uE010 Enchant 発動！体力と魔力が全回復した！",color: "#746aac"}]
 
 # ライフスティール
 execute if predicate modify:enchantment/weapon/lifesteal run function damageapi:calc_damage/enemy/armor/lifesteal

@@ -19,4 +19,4 @@ scoreboard players operation _ Temp /= #100 num
 # 通知と音
 execute at @s run playsound minecraft:block.brewing_stand.brew voice @s ~ ~ ~ 1 1
 
-tellraw @s [{"text": "* MP +","color": "gray"},{"score": {"name": "_","objective": "Temp"}}]
+tellraw @s [{text: "* MP +",color: "gray"},{"score": {"name": "_","objective": "Temp"}}]
