@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/enemy/armor/miracle
+# 
+# 
+# 
+# 
+
 # 鈍足に
 execute at @n[tag=damage_taken] run effect give @e[distance=..2.5, predicate=entity:entity_enemy] minecraft:slowness 2 1
 

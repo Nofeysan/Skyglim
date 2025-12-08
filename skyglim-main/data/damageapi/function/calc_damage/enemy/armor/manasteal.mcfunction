@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/enemy/armor/manasteal
+# 
+# 
+# 
+# 
+
 # 計算
 scoreboard players operation _ Temp = @s MaxMP
 scoreboard players operation _ Temp /= #100 num
