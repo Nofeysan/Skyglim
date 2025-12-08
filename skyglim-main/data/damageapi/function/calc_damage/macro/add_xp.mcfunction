@@ -6,5 +6,5 @@ execute as @a[distance=..15] run scoreboard players operation @s ShowXp += xp Te
 execute as @a[distance=..15] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.8 2
 
 #! debug
-#execute on attacker run tellraw @s [{"text": "+","color": "#92f3a4"},{"score": {"name": "xp", "objective": "Temp"}},{"text": "XP"}]
+#execute on attacker run tellraw @s [{text: "+",color: "#92f3a4"},{"score": {"name": "xp", "objective": "Temp"}},{text: "XP"}]
 #particle minecraft:cloud ~ ~ ~ 1 1 1 0 120

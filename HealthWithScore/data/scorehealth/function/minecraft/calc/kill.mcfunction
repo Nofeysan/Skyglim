@@ -5,7 +5,7 @@ scoreboard players operation @s CurrentHealth = @s MaxHealth
 kill @s
 
 #? いろんな処理
-tellraw @a [{"text": "\ue010 ","color": "gray"},{"selector": "@s"},{"text": " は死んでしまった。"}]
+tellraw @a [{text: "\ue010 ",color: "gray"},{"selector": "@s"},{text: " は死んでしまった。"}]
 scoreboard players set @s DeathCount 1
 
 

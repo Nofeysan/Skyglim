@@ -105,15 +105,15 @@ team modify tank color dark_green
 team modify mage color dark_purple
 team modify auspice color aqua
 
-team modify archer prefix {"text": "¤ ","color": "dark_aqua"}
-team modify berserker prefix {"text": "⚔ ","color": "red"}
-team modify tank prefix {"text": "∅ ","color": "dark_green"}
-team modify mage prefix {"text": "‽ ","color": "dark_purple"}
-team modify auspice prefix {"text": "☆ ","color": "aqua"}
+team modify archer prefix {text: "¤ ",color: "dark_aqua"}
+team modify berserker prefix {text: "⚔ ",color: "red"}
+team modify tank prefix {text: "∅ ",color: "dark_green"}
+team modify mage prefix {text: "‽ ",color: "dark_purple"}
+team modify auspice prefix {text: "☆ ",color: "aqua"}
 
 
 # いずれグラデーションしたい
-#scoreboard objectives modify Level displayname [{"text": "◆ Level ◆","color": "#c5edff"}]
+#scoreboard objectives modify Level displayname [{text: "◆ Level ◆",color: "#c5edff"}]
 #scoreboard players add $none Level 65535
 #scoreboard players display name $none Level ""
 #scoreboard players display numberformat $none Level blank
@@ -128,7 +128,7 @@ gamerule showDeathMessages false
 #! スポナー壊した数とか、受けたダメージとか......
 
 # 一応通知
-tellraw @a [{"text":"\uE010 ","color":"gray"},{"text":"Reload Completed!","color":"#44ddf4"}]
+tellraw @a [{text:"\uE010 ",color:"gray"},{text:"Reload Completed!",color:"#44ddf4"}]
 
 
 

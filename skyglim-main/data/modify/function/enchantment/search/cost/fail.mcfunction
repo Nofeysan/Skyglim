@@ -1,5 +1,5 @@
 # 通知
-tellraw @s [{"text": "\uE010 ","color": "gray"},{"text": "レベルが足りません！ (必要レベル : ","color": "#d94262"},{"score": {"name": "e.req","objective": "Temp"},"color": "#92f3a4"},{"text": ")","color": "#d94262"}]
+tellraw @s [{text: "\uE010 ",color: "gray"},{text: "レベルが足りません！ (必要レベル : ",color: "#d94262"},{"score": {"name": "e.req","objective": "Temp"},color: "#92f3a4"},{text: ")",color: "#d94262"}]
 execute at @s run playsound minecraft:block.dispenser.dispense voice @s ~ ~ ~ 0.8 2
 
 # アイテム消す

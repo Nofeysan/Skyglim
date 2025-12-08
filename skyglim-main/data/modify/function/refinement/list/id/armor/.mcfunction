@@ -11,10 +11,10 @@ execute store result score ref Temp run data get block ~ ~-1 ~ Items[{Slot:13b}]
 execute store result score enc Temp run data get block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment
 
 # もし -1 (未設定) なら末尾に lore を調整する
-execute if score ref Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "a"}'
+execute if score ref Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
 
 # もし既に enchantment が付与されてたら(not -1)分割線分も増やす
-execute if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{"text": "a"}'
+execute if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
 
 ###* データを設定する
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 

@@ -4,7 +4,7 @@
 execute store result score random Temp run random value 0..9999
 
 #! debug
-#tellraw @s [{"text": "\ue010 乱数(player) > "},{"score": {"name": "random","objective": "Temp"}}]
+#tellraw @s [{text: "\ue010 乱数(player) > "},{"score": {"name": "random","objective": "Temp"}}]
 
 
 # ピンチはチャンス
