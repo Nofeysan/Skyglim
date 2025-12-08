@@ -164,27 +164,28 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:attribute_modifiers": {
-                                    "show_in_tooltip": false,
-                                    "modifiers": [
-                                        {
-                                            "id": "item.all.def",
-                                            "type": "minecraft:armor",
-                                            "amount": -1024,
-                                            "operation": "add_value",
-                                            "slot": "any"
-                                        },
-                                        {
-                                            "id": "item.weapon",
-                                            "type": "minecraft:attack_speed",
-                                            "amount": -2,
-                                            "operation": "add_value",
-                                            "slot": "mainhand"
-                                        }
+                                "minecraft:unbreakable": {},
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    },
+                                    {
+                                        "id": "item.weapon",
+                                        "type": "minecraft:attack_speed",
+                                        "amount": -2.4,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:unbreakable"
                                     ]
-                                },
-                                "minecraft:unbreakable": {
-                                    "show_in_tooltip": false
                                 },
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_model_data": {
