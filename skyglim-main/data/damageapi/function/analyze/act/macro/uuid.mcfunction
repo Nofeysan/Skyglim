@@ -1,4 +1,10 @@
-###* $(uuid) でデータを取得する
+#> damageapi:analyze/act/macro/uuid
+# 
+# 対象から data を取得して storage に保存
+# 
+# 
+
+# データを取得する
 execute store result storage analyze: data.maxhp int 0.01 run data get entity @n[tag=analyzed] data.status.max_hp
 execute store result storage analyze: data.curhp int 0.01 run data get entity @n[tag=analyzed] data.status.current_hp
 

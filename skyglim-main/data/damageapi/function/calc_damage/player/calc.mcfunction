@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/player/calc
+# 
+# プレイヤーのダメージ処理
+# 
+# 
+
 # とりあえずタグを付けましょう
 tag @s add damage_taken
 

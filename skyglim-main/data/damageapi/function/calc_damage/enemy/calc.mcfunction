@@ -1,8 +1,14 @@
+#> damageapi:calc_damage/enemy/calc
+# 
+# mob のダメージ処理
+# 
+# 
+
 # とりあえずタグを付けましょう
 tag @s add damage_taken
 execute on attacker run tag @s add damage_dealt
 
-####* 攻撃力計算
+###* 攻撃力計算
 #- damage = (1 + dmg) * (100 + str) * CD * multiplier * ChargeRate * ChargeRate * 0.01
 #- D = dmg
 #- S = str
@@ -67,7 +73,7 @@ data modify storage damageapi: damage.value set from storage km_solver: outputs[
 
 
 
-####* 被ダメージ計算
+###* 被ダメージ計算
 #- dealt = damage * (1 - def/(def + 100)) * Error
 #- G = GetDamage
 #- D = def

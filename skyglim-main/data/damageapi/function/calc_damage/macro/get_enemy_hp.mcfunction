@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/macro/get_enemy_hp
+# 
+# 
+# 
+# 
+
 # enemy: temp.uuid から macro で実施
 execute store result score current Temp run data get entity @s data.status.current_hp 1
 scoreboard players operation current Temp -= DealtDamage Temp

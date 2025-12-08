@@ -1,8 +1,8 @@
-##> damageapi:calc_damage/enemy/calc
-##* 
-##* HP が 0 になった時の処理
-##* 
-##* 
+#> damageapi:calc_damage/enemy/calc
+# 
+# HP が 0 になった時の処理
+# 
+# 
 
 ##* 経験値
 # score に保存
