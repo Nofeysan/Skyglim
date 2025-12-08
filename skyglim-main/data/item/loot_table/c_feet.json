@@ -233,15 +233,19 @@
                             "components": {
                                 "minecraft:attribute_modifiers": [
                                     {
-                                        "id": "armor.boots",
+                                        "id": "item.all.def",
                                         "type": "minecraft:armor",
                                         "amount": -1024,
                                         "operation": "add_value",
-                                        "slot": "feet"
+                                        "slot": "any"
                                     }
                                 ],
-                                "minecraft:unbreakable": {
-                                    "show_in_tooltip": false
+                                "minecraft:unbreakable": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:unbreakable"
+                                    ]
                                 }
                             }
                         }

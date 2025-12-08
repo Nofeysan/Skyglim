@@ -144,41 +144,40 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:attribute_modifiers": {
-                                    "show_in_tooltip": false,
-                                    "modifiers": [
-                                        {
-                                            "id": "item.all.def",
-                                            "type": "minecraft:armor",
-                                            "amount": -1024,
-                                            "operation": "add_value",
-                                            "slot": "any"
-                                        },
-                                        {
-                                            "id": "item.weapon",
-                                            "type": "minecraft:attack_speed",
-                                            "amount": 0,
-                                            "operation": "add_value",
-                                            "slot": "mainhand"
-                                        },
-                                        {
-                                            "id": "item.weapon.notweapon",
-                                            "type": "minecraft:attack_damage",
-                                            "amount": -1024,
-                                            "operation": "add_value",
-                                            "slot": "mainhand"
-                                        }
-                                    ]
-                                },
-                                "minecraft:unbreakable": {
-                                    "show_in_tooltip": false
-                                },
-                                "minecraft:enchantments": {
-                                    "show_in_tooltip": false,
-                                    "levels": {
-                                        "minecraft:quick_charge": 3,
-                                        "minecraft:piercing": 1
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    },
+                                    {
+                                        "id": "item.weapon",
+                                        "type": "minecraft:attack_speed",
+                                        "amount": 0,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    },
+                                    {
+                                        "id": "item.weapon.notweapon",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
                                     }
+                                ],
+                                "minecraft:unbreakable": {},
+                                "minecraft:enchantments": {
+                                    "minecraft:quick_charge": 3,
+                                    "minecraft:piercing": 1
+                                },
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:unbreakable",
+                                        "minecraft:enchantments"
+                                    ]
                                 },
                                 "minecraft:enchantment_glint_override": false
                             }

@@ -125,12 +125,12 @@
                         "italic": false
                     },
                     {
-                        "text": "遺跡から出土した剣。",
+                        "text": "遺跡から出土した弓。",
                         "color": "#ffffff",
                         "italic": false
                     },
                     {
-                        "text": "鋭さは衰えない。",
+                        "text": "引けず取らずのしなりを見せる。",
                         "color": "#ffffff",
                         "italic": false
                     },
@@ -201,30 +201,43 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:attribute_modifiers": {
-                                    "show_in_tooltip": false,
-                                    "modifiers": [
-                                        {
-                                            "id": "item.all.def",
-                                            "type": "minecraft:armor",
-                                            "amount": -1024,
-                                            "operation": "add_value",
-                                            "slot": "any"
-                                        }
-                                    ]
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    },
+                                    {
+                                        "id": "item.weapon",
+                                        "type": "minecraft:attack_speed",
+                                        "amount": 0,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    },
+                                    {
+                                        "id": "item.weapon.notweapon",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:unbreakable": {},
+                                "minecraft:enchantments": {
+                                    "minecraft:infinity": 1,
+                                    "minecraft:multishot": 1
                                 },
-                                "minecraft:unbreakable": {
-                                    "show_in_tooltip": false
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:enchantments",
+                                        "minecraft:unbreakable"
+                                    ]
                                 },
                                 "minecraft:repair_cost": 3984,
                                 "minecraft:max_stack_size": 1,
-                                "minecraft:enchantments": {
-                                    "show_in_tooltip": false,
-                                    "levels": {
-                                        "minecraft:infinity": 1,
-                                        "minecraft:multishot": 1
-                                    }
-                                },
                                 "minecraft:custom_model_data": {
                                     "strings": ["bow_1"]
                                 }

@@ -13,7 +13,7 @@ execute store result score random Temp run random value 0..9999
 ###* as (攻撃者)
 # 祝砲
 execute if predicate modify:enchantment/armor.h/firework run summon minecraft:firework_rocket ~ ~6.4 ~ \
-{FireworksItem:{id:"minecraft:firework_rocket", components:{"minecraft:fireworks":{explosions:[{shape: star,colors:[I; 4513268, 6147243, 12971519, 12575891]}]}}},Life:10}
+{FireworksItem:{id:"minecraft:firework_rocket", components:{"minecraft:fireworks":{explosions:[{shape: star,colors:[4513268, 6147243, 12971519, 12575891]}]}}},Life:10}
 
 # キルエフェクト
 execute if predicate modify:enchantment/armor.h/particle run particle minecraft:dust{color:[0.7490196078431370,0.8941176470588240,0.5764705882352940],scale:0.9} ~ ~ ~ 0.7 1.2 0.7 0 120 force @a
@@ -21,7 +21,7 @@ execute if predicate modify:enchantment/armor.h/particle run particle minecraft:
 execute if predicate modify:enchantment/armor.h/particle run particle minecraft:dust{color:[0.7490196078431370,0.4117647058823530,0.9568627450980390],scale:0.9} ~ ~ ~ 0.7 1.2 0.7 0 120 force @a
 
 # sound effect
-execute if predicate modify:enchantment/armor.h/sound run playsound minecraft:entity.wolf.howl voice @a ~ ~ ~ 0.15 1
+execute if predicate modify:enchantment/armor.h/sound run playsound minecraft:entity.donkey.chest voice @a ~ ~ ~ 0.8 1
 
 # すべてを(ry
 execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run scoreboard players operation @s CurrentHealth = @s MaxHealth
