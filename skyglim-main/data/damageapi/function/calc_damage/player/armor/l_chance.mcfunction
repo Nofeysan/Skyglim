@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/player/armor/l_chance
+# 
+# 
+# 
+# 
+
 # 体力をちょっと回復ね (3%)
 scoreboard players operation _ Temp = @s MaxHealth
 scoreboard players operation _ Temp *= #3 num

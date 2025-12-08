@@ -1,8 +1,8 @@
-##> damageapi:calc_damage/macro/when_death
-##* 
-##* プレイヤー起点に実行させる (as @p)
-##* 
-##* 
+#> damageapi:calc_damage/enemy/armor/death
+# 
+# 
+# 
+# 
 
 #? 一旦乱数使えるように出しときますね
 execute store result score random Temp run random value 0..9999

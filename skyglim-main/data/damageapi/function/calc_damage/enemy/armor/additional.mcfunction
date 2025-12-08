@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/enemy/armor/additional
+# 
+# 
+# 
+# 
+
 #* as (on attacker)
 execute at @n[tag=damage_taken] as @e[predicate=entity:entity_enemy, distance=..2] run damage @s 10 minecraft:player_attack by @p[tag=damage_dealt]
 execute at @n[tag=damage_taken] as @e[predicate=entity:entity_enemy, distance=..2] if score chargerate Temp matches ..89 run tag @s add additional_low

@@ -1,3 +1,8 @@
+#> damageapi:calc_damage/enemy/armor/when_damage
+# 
+# ダメージ与えたときのエンチャント効果
+# 
+# 
 
 # 攻撃は最大の(ry
 execute if predicate modify:enchantment/armor.f/attack if score random Temp matches 1..10 run function damageapi:calc_damage/enemy/armor/attack

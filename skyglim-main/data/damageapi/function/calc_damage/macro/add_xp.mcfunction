@@ -1,3 +1,9 @@
+#> damageapi:calc_damage/macro/add_xp
+# 
+# 経験値付与
+# 
+# 
+
 ###* **攻撃者の** 半径15m以内にいるプレイヤーにXPを共有する
 execute as @a[distance=..15] run scoreboard players operation @s CurrentXp += xp Temp
 execute as @a[distance=..15] run scoreboard players set @s ShowXpTime 40
