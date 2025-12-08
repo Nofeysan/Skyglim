@@ -21,9 +21,9 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, M:1.0f}
 # 各ステータスを保存
 scoreboard players set exist Temp 0
 
-execute on attacker run data modify storage enemy: temp.uuid set from entity @s UUID[0]
+execute on attacker run data modify storage km_solver: vars.S set from entity @s data.status.str
+execute on attacker run data modify storage km_solver: vars.D set from entity @s data.status.dmg
 execute on attacker run scoreboard players set exist Temp 1
-function damageapi:calc_damage/macro/dealt_enemy with storage enemy: temp
 
 # 実行
 execute at @p run function km_solver:solve
