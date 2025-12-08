@@ -1,5 +1,5 @@
 # 共通部分
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '[\
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value [\
 {text: "       ◆ ",color: "#11bbef",italic: false},\
 {text: "E", color: "#15c2ef"},\
 {text: "n", color: "#18c9ee"},\
@@ -13,16 +13,16 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append v
 {text: "n", color: "#31ffca"},\
 {text: "t", color: "#32ffc3"},\
 {text: " ◆",color: "#32ffbc"}\
-]'
+]
 
 # それぞれのやつ
 #* 名前
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value \
-'[{text: "\\uE010 ",color: "gray",italic: false},{text: "祝砲", color: "blue"}]'
+[{text: "\uE010 ",color: "gray",italic: false},{text: "祝砲", color: "blue"}]
 
 #* 説明 (絶対に1行で！！！！)
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value \
-'[{text: "敵を倒したとき、祝砲をあげる",color: "gray",italic: false}]'
+[{text: "敵を倒したとき、祝砲をあげる",color: "gray",italic: false}]
 
 
 #* 通知
