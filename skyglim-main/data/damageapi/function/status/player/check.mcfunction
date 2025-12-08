@@ -16,10 +16,10 @@ scoreboard players operation @s act_Luck = @s Luck
 scoreboard players set @s act_Damage 0
 
 # data が存在したら計算する
-execute if data entity @s Inventory[{Slot:103b}] run function damageapi:status/player/calc/head
-execute if data entity @s Inventory[{Slot:102b}] run function damageapi:status/player/calc/chest
-execute if data entity @s Inventory[{Slot:101b}] run function damageapi:status/player/calc/legs
-execute if data entity @s Inventory[{Slot:100b}] run function damageapi:status/player/calc/feet
+execute if data entity @s equipment.head run function damageapi:status/player/calc/head
+execute if data entity @s equipment.chest run function damageapi:status/player/calc/chest
+execute if data entity @s equipment.legs run function damageapi:status/player/calc/legs
+execute if data entity @s equipment.feet run function damageapi:status/player/calc/feet
 execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".data.offhand run function damageapi:status/player/calc/offhand
 
 execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand-2

@@ -3,13 +3,13 @@ execute if items entity @s player.cursor *[repair_cost=43001 | repair_cost=43002
 
 # もし未設定ならつけなおす
 execute if score e.id Temp matches 1.. store result score e.enc Temp run data get block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment
-execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
-execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
-execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
+execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
+execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
+execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 # かつ refinement があったらさらに追加
 execute if score e.id Temp matches 1.. store result score e.ref Temp run data get block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref
-execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 if score e.ref Temp matches 1.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "a"}'
+execute if score e.id Temp matches 1.. if score e.enc Temp matches ..0 if score e.ref Temp matches 1.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 # アイテムを探索して実行
 execute if items entity @s player.cursor *[repair_cost=43001] run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment set value 43001

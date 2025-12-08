@@ -3,7 +3,7 @@
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" set value []
 
 # 一行目を追加
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "************************************", color: "dark_gray", italic: false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "************************************", color: "dark_gray", italic: false}
 
 ###? ステータス計算
 ###? 順番は、[DMG > HP > STR > CC > CD > DEF > SPD > MP > LUCK] の順番
@@ -50,12 +50,12 @@ data modify storage modify: appraise.name set value '騎士の剣'
 function modify:appraise/list/macro/set_name with storage modify: appraise
 
 ###? 残りの Lore 付与
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "------------------------", color: "dark_gray", italic: false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "遺跡から出土した鎧。", color: "#ffffff", italic: false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "現役の鎧としてまだまだ使えそう。", color: "#ffffff", italic: false}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: ""}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "Legendary", color: "#ffd728", italic: false, bold: true}'
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value '{text: "------------------------", color: "dark_gray", italic: false}'
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "遺跡から出土した鎧。", color: "#ffffff", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "現役の鎧としてまだまだ使えそう。", color: "#ffffff", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: ""}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "Legendary", color: "#ffd728", italic: false, bold: true}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
 
 ###* その他
 # 鑑定済みにする

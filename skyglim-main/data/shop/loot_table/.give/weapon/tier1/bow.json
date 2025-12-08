@@ -167,10 +167,12 @@
                                         "slot": "mainhand"
                                     }
                                 ],
+                                "minecraft:enchantments": {},
                                 "minecraft:unbreakable": {},
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
+                                        "minecraft:enchantments",
                                         "minecraft:unbreakable"
                                     ]
                                 }
