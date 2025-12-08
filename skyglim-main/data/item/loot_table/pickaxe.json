@@ -91,24 +91,25 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:attribute_modifiers": {
-                                    "show_in_tooltip": false,
-                                    "modifiers": [
-                                        {
-                                            "id": "item.all.def",
-                                            "type": "minecraft:armor",
-                                            "amount": -1024,
-                                            "operation": "add_value",
-                                            "slot": "any"
-                                        }
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    }
+                                ],
+                                "minecraft:unbreakable": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:unbreakable"
                                     ]
                                 },
                                 "minecraft:repair_cost": 100009,
                                 "minecraft:max_stack_size": 1,
-                                "minecraft:enchantment_glint_override": false,
-                                "minecraft:unbreakable": {
-                                    "show_in_tooltip": false
-                                }
+                                "minecraft:enchantment_glint_override": false
                             }
                         }
                     ]
