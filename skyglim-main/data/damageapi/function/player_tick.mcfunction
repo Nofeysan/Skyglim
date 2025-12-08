@@ -66,4 +66,3 @@ function stage:player/gimmick
 
 # 進捗削除
 advancement revoke @s only damageapi:player_tick2
-
