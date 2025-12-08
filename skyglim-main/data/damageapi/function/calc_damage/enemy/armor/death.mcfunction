@@ -21,7 +21,7 @@ execute if predicate modify:enchantment/armor.h/particle run particle minecraft:
 execute if predicate modify:enchantment/armor.h/particle run particle minecraft:dust{color:[0.7490196078431370,0.4117647058823530,0.9568627450980390],scale:0.9} ~ ~ ~ 0.7 1.2 0.7 0 120 force @a
 
 # sound effect
-execute if predicate modify:enchantment/armor.h/sound run playsound minecraft:entity.wolf.howl voice @a ~ ~ ~ 0.15 1
+execute if predicate modify:enchantment/armor.h/sound run playsound minecraft:entity.donkey.chest voice @a ~ ~ ~ 0.8 1
 
 # すべてを(ry
 execute if predicate modify:enchantment/armor.c/allrobbing if score random Temp matches 0..49 run scoreboard players operation @s CurrentHealth = @s MaxHealth
