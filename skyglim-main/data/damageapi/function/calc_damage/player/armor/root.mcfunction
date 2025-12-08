@@ -1,4 +1,8 @@
-
+#> damageapi:calc_damage/player/armor/root
+# 
+# 防具効果
+# 
+# 
 
 #* 乱数生成しときますね (1% > 0..99)
 execute store result score random Temp run random value 0..9999

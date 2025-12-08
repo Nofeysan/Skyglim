@@ -1,3 +1,9 @@
+#> damageapi:analyze/act/macro/tell
+# 
+# 通知
+# 
+# 
+
 # text 部分
 tellraw @s {text: "\n---- [ 敵の情報 / Enemy Info. ] ------", color: "#bce2e8"}
 

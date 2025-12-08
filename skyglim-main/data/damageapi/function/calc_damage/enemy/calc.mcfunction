@@ -1,8 +1,14 @@
+#> damageapi:calc_damage/enemy/calc
+# 
+# mob のダメージ処理
+# 
+# 
+
 # とりあえずタグを付けましょう
 tag @s add damage_taken
 execute on attacker run tag @s add damage_dealt
 
-####* 攻撃力計算
+###* 攻撃力計算
 #- damage = (1 + dmg) * (100 + str) * CD * multiplier * ChargeRate * ChargeRate * 0.01
 #- D = dmg
 #- S = str
@@ -67,7 +73,7 @@ data modify storage damageapi: damage.value set from storage km_solver: outputs[
 
 
 
-####* 被ダメージ計算
+###* 被ダメージ計算
 #- dealt = damage * (1 - def/(def + 100)) * Error
 #- G = GetDamage
 #- D = def
@@ -84,8 +90,7 @@ data modify storage km_solver: inputs append value {f:{mul:[{mul:[{v:"E"},{v:"G"
 data modify storage km_solver: vars set value {G:0.0f, D:0.0f, E:1.0f}
 
 # ステータス保存
-data modify storage enemy: temp.uuid set from entity @s UUID[0]
-function damageapi:calc_damage/macro/get_enemy with storage enemy: temp
+execute store result storage km_solver: vars.D float 1 run data get entity @s data.status.def
 
 data modify storage km_solver: vars.G set from storage damageapi: damage.value
 
@@ -129,10 +134,10 @@ data modify entity @s Health set value 1024
 data modify entity @s AbsorptionAmount set value 1024
 
 ###* ダメージを付与
-execute at @s run function damageapi:calc_damage/macro/get_enemy_hp with storage enemy: temp
+execute at @s run function damageapi:calc_damage/macro/get_enemy_hp
 
 ###* 死亡処理
-execute at @s if score current Temp matches ..0 run function damageapi:calc_damage/macro/when_death with storage enemy: temp
+execute at @s if score current Temp matches ..0 run function damageapi:calc_damage/macro/when_death
 
 
 

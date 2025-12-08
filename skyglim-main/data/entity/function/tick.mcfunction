@@ -1,3 +1,9 @@
+#> entity:tick
+# 
+# エンティティ周りのティック処理
+# 
+# 
+
 # timer
 scoreboard players add _ Timer 1
 execute if score _ Timer matches 20.. run function damageapi:status/every_1sec
