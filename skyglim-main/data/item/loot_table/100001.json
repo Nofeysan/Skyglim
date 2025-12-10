@@ -242,6 +242,9 @@
                                         "slot": "mainhand"
                                     }
                                 ],
+                                "minecraft:enchantments": {
+                                    "minecraft:unbreaking": 1
+                                },
                                 "minecraft:repair_cost": 100001,
                                 "minecraft:custom_model_data": {
                                     "strings": ["heal_rod"]
