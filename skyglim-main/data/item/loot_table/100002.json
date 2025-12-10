@@ -217,7 +217,7 @@
                                     },
                                     "req_mp": 10,
                                     "mainhand": 1,
-                                    "appraise": -255,
+                                    "restore": -255,
                                     "enchantment": -1, 
                                     "buy": 10
                                 }
