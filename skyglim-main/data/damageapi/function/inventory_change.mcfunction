@@ -12,8 +12,8 @@ function damageapi:status/player/set_status
 
 
 
-###* Refinement, Appraise, Enchantment, Shop
-execute at @s if entity @e[type=minecraft:armor_stand,tag=appraise,distance=..7] as @n[type=minecraft:armor_stand,tag=appraise,distance=..7] at @s run function modify:appraise/inv_change
+###* Refinement, Restore, Enchantment, Shop
+execute at @s if entity @e[type=minecraft:armor_stand,tag=restore,distance=..7] as @n[type=minecraft:armor_stand,tag=restore,distance=..7] at @s run function modify:restore/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=refinement,distance=..7] as @n[type=minecraft:armor_stand,tag=refinement,distance=..7] at @s run function modify:refinement/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=enchantment,distance=..7] as @n[type=minecraft:armor_stand,tag=enchantment,distance=..7] at @s run function modify:enchantment/inv_change
 

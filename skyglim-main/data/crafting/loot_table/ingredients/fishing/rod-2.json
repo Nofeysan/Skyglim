@@ -91,7 +91,7 @@
                                         "mp": -1,
                                         "luck": -1
                                     },
-                                    "appraise": -255,
+                                    "restore": -255,
                                     "buy": 30,
                                     "enchantment": -255,
                                     "mainhand": 1

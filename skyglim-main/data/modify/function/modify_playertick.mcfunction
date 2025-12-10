@@ -8,8 +8,8 @@
 ##+ 共通 : ガラス
 execute if items entity @s player.cursor *[repair_cost=10000] run function modify:common/glass
 
-##+ appraise / 鑑定
-execute if items entity @s player.cursor *[repair_cost=20000] at @n[type=minecraft:armor_stand,tag=appraise] run function modify:appraise/click_appraise
+##+ restore / 鑑定
+execute if items entity @s player.cursor *[repair_cost=20000] at @n[type=minecraft:armor_stand,tag=restore] run function modify:restore/click_restore
 
 ##+ refineemnt / 洗練
 execute if items entity @s player.cursor *[repair_cost=30000] at @n[type=minecraft:armor_stand,tag=refinement] run function modify:refinement/click_refinement
