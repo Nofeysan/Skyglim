@@ -80,7 +80,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "data": {
-                                    "buy": 20
+                                    "sell": 20
                                 }
                             }
                         }

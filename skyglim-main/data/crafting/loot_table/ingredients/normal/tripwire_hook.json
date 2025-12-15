@@ -52,7 +52,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "data": {
-                                    "buy": 3
+                                    "sell": 3
                                 }
                             }
                         }

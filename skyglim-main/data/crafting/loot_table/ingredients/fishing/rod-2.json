@@ -92,7 +92,7 @@
                                         "luck": -1
                                     },
                                     "restore": -255,
-                                    "buy": 30,
+                                    "sell": 30,
                                     "enchantment": -255,
                                     "mainhand": 1
                                 }
