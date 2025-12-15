@@ -52,7 +52,7 @@
                                     "author": "§k@@@@@",
                                     "pages": [
                                         {
-                                            "raw": "[{\"text\": \"◆ 釣り竿 Tier-II\", \"color\": \"#746aac\"},{\"text\": \"\n\n\uf105\uf103\uf103\uf103§3\ue012\n\uf105\uf103\uf103§3\ue012§4\ue012\n\uf105\uf103§3\ue012\uf103§1\ue012\"},{\"text\": \"\n\n§3\ue012§7\uf101\ue010\uf101§0棒 x1  \n§4\ue012§7\uf101\ue010\uf101§0E-糸 x1  \n§1\ue012§7\uf101\ue010\uf101§0鱈 x32\"}]"
+                                            "raw": "[{text: \"◆ 釣り竿 Tier-II\", color: \"#746aac\"},{text: \"\n\n\uf105\uf103\uf103\uf103§3\ue012\n\uf105\uf103\uf103§3\ue012§4\ue012\n\uf105\uf103§3\ue012\uf103§1\ue012\"},{text: \"\n\n§3\ue012§7\uf101\ue010\uf101§0棒 x1  \n§4\ue012§7\uf101\ue010\uf101§0E-糸 x1  \n§1\ue012§7\uf101\ue010\uf101§0鱈 x32\"}]"
                                         }
                                     ]
                                 }
@@ -62,7 +62,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "data": {
-                                    "buy": 1
+                                    "sell": 1
                                 }
                             }
                         }
