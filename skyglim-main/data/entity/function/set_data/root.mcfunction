@@ -10,8 +10,8 @@ data remove storage km_solver: vars
 
 # 一般式を代入
 # Player: P, Health: H
-# H * ((P-1) *0.5)
-data modify storage km_solver: inputs append value {f:{mul:[{v: "H"}, {mul: [{sub: [{v: "P"}, {n: 1.0f}]}, {n: 0.5f}]}]}}
+# H * (1 + (P-1)*0.5)
+data modify storage km_solver: inputs append value {f:{mul: [{v: "H"}, {add: [{n: 1.0f}, {mul: [{sub: [{v: "P"}, {n: 1.0f}]}, {n: 0.5f}]}]}]}}
 
 # 初期値設定
 data modify storage km_solver: vars set value {P: 1.0f, H:0.0f}

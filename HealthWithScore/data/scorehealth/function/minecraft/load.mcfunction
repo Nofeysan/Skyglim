@@ -14,9 +14,4 @@ scoreboard players set #-1 CalcHealth -1
 scoreboard players set #5 CalcHealth 5
 scoreboard players set #100 CalcHealth 100
 
-
-
-
-
-
-
+scoreboard objectives add _ dummy ""
