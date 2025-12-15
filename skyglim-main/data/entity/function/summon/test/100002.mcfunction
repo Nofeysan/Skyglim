@@ -39,5 +39,8 @@ summon minecraft:zombie ~ ~ ~ \
                                     \
                                     "loot": "debug/test"\
                                 }\
-                            }\
+                            },\
+                            active_effects: [\
+                                {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 0, show_icon: false, show_particles: false}\
+                            ]\
                         }

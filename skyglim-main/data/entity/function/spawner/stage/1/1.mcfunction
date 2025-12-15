@@ -1,8 +1,8 @@
-##> ---
-##* 
-##* {"xyz": "~ ~ ~"} で場所を指定する
-##* equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
-##* 
+#> entity:spawner/stage/1/1
+# 
+# {"xyz": "~ ~ ~"} で場所を指定する
+# equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
+# 
 
 setblock ~ ~ ~ minecraft:spawner\
 {\
@@ -21,7 +21,7 @@ setblock ~ ~ ~ minecraft:spawner\
         {\
             data: {\
                 entity: {\
-                    id: "minecraft:villager", Health:-1, DeathTime:20,\
+                    id: "minecraft:villager", Health: -1, DeathTime: 20,\
                     attributes: [{id: "minecraft:scale", base: 0}],\
                     Passengers: [\
                         {\
@@ -61,7 +61,10 @@ setblock ~ ~ ~ minecraft:spawner\
                                     \
                                     "loot": "1/1-1"\
                                 }\
-                            }\
+                            },\
+                            active_effects: [\
+                                {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 0, show_icon: false, show_particles: false}\
+                            ]\
                         }\
                     ]\
                 }\
@@ -112,7 +115,10 @@ setblock ~ ~ ~ minecraft:spawner\
                                     \
                                     "loot": "1/1-2"\
                                 }\
-                            }\
+                            },\
+                            active_effects: [\
+                                {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 0, show_icon: false, show_particles: false}\
+                            ]\
                         }\
                     ]\
                 }\
