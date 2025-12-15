@@ -25,8 +25,8 @@ summon minecraft:zombie ~ ~ ~ \
                             CustomName: {text: "サンドバッグ", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 100000000,\
-                                    "current_hp": 100000000,\
+                                    "max_hp": 10000000,\
+                                    "current_hp": 10000000,\
                                     \
                                     "dmg": 5,\
                                     "str": 2,\
@@ -42,5 +42,5 @@ summon minecraft:zombie ~ ~ ~ \
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 0, show_icon: false, show_particles: false}\
-                            ]\
+                            ], NoAI: true, Silent: true\
                         }
