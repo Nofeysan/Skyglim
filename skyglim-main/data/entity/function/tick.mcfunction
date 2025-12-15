@@ -9,7 +9,7 @@ scoreboard players add _ Timer 1
 execute if score _ Timer matches 20.. run function damageapi:status/every_1sec
 
 # entity_type かつ tag 付いてたら設定する
-execute as @e[predicate=entity:entity_enemy, tag=req_setdata] at @s run function entity:set_data/root
+execute as @e[predicate=entity:entity_enemy, predicate=entity:is_req_multiplier] at @s run function entity:set_data/root
 
 #* すべてのモブに対してダメージを受けた時の処理
 # levitated
@@ -29,4 +29,3 @@ kill @e[predicate=damageapi:is_not_item]
 
 # 職業スコアボード
 #function entity:scoreboard/root
-
