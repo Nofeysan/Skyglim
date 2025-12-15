@@ -38,6 +38,7 @@ scoreboard objectives add DeathCount dummy "死亡検知"
 scoreboard objectives add UnbreakingCoolDown dummy "enc. unbreaking"
 
 # ダメージ計算用
+scoreboard objectives add _ dummy ""
 scoreboard objectives add Temp dummy "ダメージ計算用"
 scoreboard objectives add num dummy "数値"
 
