@@ -67,6 +67,7 @@ execute store result storage status: book.xpc int 1 run scoreboard players get @
 execute store result storage status: book.xpm int 1 run scoreboard players get @s NextXp
 execute store result storage status: book.xpri int 1 run scoreboard players get int XpRate
 execute store result storage status: book.xprf int 1 run scoreboard players get float XpRate
+loot replace block 0 0 0 container.0 loot entity:player_head
 data modify storage status: book.name set from block 0 0 0 Items[{Slot:0b}].components.minecraft:profile.name
 
 execute if score @s occupation matches 0 run data modify storage status: book.occupation set value "§7🜸 未設定"
@@ -90,4 +91,3 @@ function damageapi:status/player/macro/stat.list with storage status: book
 
 # リログとか死んだときとか用に消します
 execute at @s run kill @e[type=minecraft:item, distance=..2, predicate=entity:is_stats_book]
-
