@@ -45,4 +45,3 @@ execute store result score s.stat Temp run data get block ~ ~-1 ~ Items[{Slot:13
 execute store result score s.ref Temp run data get block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage
 scoreboard players operation s.stat Temp += s.ref Temp
 execute unless score s.stat Temp matches 0 run function modify:refinement/list/status/dmg
-

@@ -50,6 +50,3 @@ execute if score e.check Temp matches 1.. run function modify:enchantment/macro/
 ###* リセット
 scoreboard players reset act.ref Temp
 scoreboard players reset act.enc Temp
-
-
-

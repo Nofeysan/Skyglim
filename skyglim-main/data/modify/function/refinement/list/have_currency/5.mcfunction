@@ -9,4 +9,3 @@ execute if score el Currency matches 16.. run clear @s *[repair_cost=1003] 16
 
 # スコアリセット
 scoreboard players reset el Currency
-

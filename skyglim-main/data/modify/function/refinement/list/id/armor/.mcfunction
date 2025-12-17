@@ -91,4 +91,3 @@ scoreboard players set act.ref Temp 1
 
 # 共通ファイル実行
 function modify:refinement/list/id/add_lore
-
