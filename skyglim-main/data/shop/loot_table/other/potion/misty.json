@@ -119,7 +119,7 @@
                                     "strings": [ "misty" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 32201
+                                "minecraft:repair_cost": 230021
                             }
                         }
                     ],

@@ -112,7 +112,7 @@
                                     "strings": [ "mocha_milk" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 32200
+                                "minecraft:repair_cost": 230020
                             }
                         }
                     ],

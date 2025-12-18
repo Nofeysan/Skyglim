@@ -192,7 +192,7 @@
                                     "strings": [""]
                                 },
                                 "minecraft:item_model": "minecraft:wooden_axe",
-                                "minecraft:repair_cost": 30003,
+                                "minecraft:repair_cost": 200002,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255

@@ -192,7 +192,7 @@
                                     "strings": [""]
                                 },
                                 "minecraft:item_model": "minecraft:wooden_sword",
-                                "minecraft:repair_cost": 30001,
+                                "minecraft:repair_cost": 200000,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255
