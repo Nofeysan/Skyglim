@@ -1,5 +1,7 @@
 # Skyglim
-Skyglimのdatapack。
+Skyglimのdatapack。<br>
+本マップ未プレイの場合、重大なネタバレ及び楽しみを大きく損なわせる場合があります。閲覧等はプレイ後にすることを強く推奨します。これにはdatapack本体と、github上のIssuesやPRを含みます。
+
 ## ライセンス
 以下のディレクトリ（ライブラリ）を除いて [CC0-1.0 License](https://github.com/Nofeysan/Skyglim/blob/main/LICENSE) が適用されます。<br>
 - [KMSolver-main](https://github.com/Nofeysan/Skyglim/tree/main/KMSolver-main) - [MIT License](https://github.com/Nofeysan/Skyglim/blob/main/KMSolver-main/LICENSE), Copyright by コマ
