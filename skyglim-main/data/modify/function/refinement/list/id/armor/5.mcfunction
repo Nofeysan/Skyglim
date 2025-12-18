@@ -17,7 +17,7 @@ execute if score ref Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:1
 execute if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 ###* データを設定する
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 5
 
 ###* rarity ごとに値を入れる
 # 初期化
