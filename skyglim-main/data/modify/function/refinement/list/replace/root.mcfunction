@@ -10,4 +10,3 @@ scoreboard players operation status Temp += ref Temp
 # 実行
 #! もし status > 0 ならステータスが存在 = 追加
 #execute if score status Temp matches 1.. run function modify:refinement/list/replace/dmg
-

@@ -9,4 +9,3 @@ execute if score lb Currency matches 2.. run clear @s *[repair_cost=1002] 2
 
 # スコアリセット
 scoreboard players reset lb Currency
-

@@ -1,5 +1,5 @@
 ###* 
-###* id: - / -
+###* id: 5 / Sharp
 ###* scoreboard> roll Temp に rarity が入ってる
 ###* 
 ###* 1. 各レアリティの数値を設定する
@@ -17,7 +17,7 @@ execute if score ref Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:1
 execute if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 ###* データを設定する
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 5
 
 ###* rarity ごとに値を入れる
 # 初期化
@@ -35,8 +35,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".d
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set value 
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.hp set value 
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.str set value 
-#execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 
-#execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 
+execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 1
+execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 1
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.def set value 
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.spd set value 
 #execute if score rarity Temp matches 1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.mp set value 
@@ -46,8 +46,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".d
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set value 
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.hp set value 
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.str set value 
-#execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 
-#execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 
+execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 1
+execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 2
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.def set value 
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.spd set value 
 #execute if score rarity Temp matches 2 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.mp set value 
@@ -57,8 +57,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".d
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set value 
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.hp set value 
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.str set value 
-#execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 
-#execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 
+execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 2
+execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 3
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.def set value 
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.spd set value 
 #execute if score rarity Temp matches 3 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.mp set value 
@@ -68,8 +68,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".d
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set value 
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.hp set value 
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.str set value 
-#execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 
-#execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 
+execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 2
+execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 4
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.def set value 
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.spd set value 
 #execute if score rarity Temp matches 4 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.mp set value 
@@ -79,8 +79,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".d
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set value 
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.hp set value 
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.str set value 
-#execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 
-#execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 
+execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cc set value 3
+execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.cd set value 5
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.def set value 
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.spd set value 
 #execute if score rarity Temp matches 5 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.mp set value 

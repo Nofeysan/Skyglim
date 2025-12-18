@@ -14,4 +14,3 @@ execute if score restore Temp matches 2 run function modify:refinement/list/stat
 
 # roll がない時
 execute unless score restore Temp matches 2 run function modify:refinement/list/status/no_roll/luck with storage modify: setlore
-

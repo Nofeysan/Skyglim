@@ -36,4 +36,3 @@ loot replace block ~ ~-1 ~ container.26 loot modify:white_glass
 
 # debug
 #execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~ ~ 0.5 2
-
