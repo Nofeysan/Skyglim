@@ -41,8 +41,8 @@ function modify:restore/list/status/cd
 #scoreboard players set base Temp 
 #function modify:restore/list/status/spd
 
-scoreboard players set base Temp 15
-function modify:restore/list/status/mp
+#scoreboard players set base Temp 15
+#function modify:restore/list/status/mp
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/luck
