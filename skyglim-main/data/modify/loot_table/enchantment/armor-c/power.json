@@ -90,7 +90,8 @@
                     "minecraft:map_id": 12,
                     "minecraft:tooltip_display": {
                         "hidden_components": [
-                            "minecraft:attribute_modifiers"
+                            "minecraft:attribute_modifiers",
+                            "minecraft:map_id"
                         ]
                     }
                 }
