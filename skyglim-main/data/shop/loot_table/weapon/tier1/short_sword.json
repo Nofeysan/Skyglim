@@ -191,7 +191,7 @@
                                 "minecraft:custom_model_data": {
                                     "strings": ["short_sword_1"]
                                 },
-                                "minecraft:repair_cost": 30002,
+                                "minecraft:repair_cost": 200001,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255
