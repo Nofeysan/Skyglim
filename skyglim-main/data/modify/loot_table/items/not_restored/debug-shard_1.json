@@ -172,6 +172,7 @@
                                         "mp": -1,
                                         "luck": -1
                                     },
+                                    "shard": 1,
                                     "restore": -1,
                                     "sell": 25,
                                     "enchantment": -255
