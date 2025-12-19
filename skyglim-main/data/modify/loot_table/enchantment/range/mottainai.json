@@ -85,7 +85,8 @@
                     },
                     "minecraft:tooltip_display": {
                         "hidden_components": [
-                            "minecraft:potion_contents"
+                            "minecraft:potion_contents",
+                            "minecraft:map_id"
                         ]
                     },
                     "minecraft:map_id": 10

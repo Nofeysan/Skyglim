@@ -87,7 +87,12 @@
                     },
                     "minecraft:repair_cost": 46005,
                     "minecraft:enchantment_glint_override": true,
-                    "minecraft:map_id": 15
+                    "minecraft:map_id": 15,
+                    "minecraft:tooltip_display": {
+                        "hidden_components": [
+                            "minecraft:map_id"
+                        ]
+                    }
                 }
             },
             {
