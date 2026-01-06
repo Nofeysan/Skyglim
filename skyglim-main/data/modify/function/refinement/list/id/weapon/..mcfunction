@@ -1,5 +1,5 @@
 ###* 
-###* id: 1 / Light
+###* id: - / -
 ###* scoreboard> roll Temp に rarity が入ってる
 ###* 
 ###* 1. 各レアリティの数値を設定する
@@ -14,10 +14,10 @@ execute store result score enc Temp run data get block ~ ~-1 ~ Items[{Slot:13b}]
 execute if score ref Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 # もし既に enchantment が付与されてたら(not -1)分割線分も増やす
-execute unless score type Temp matches 9 if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
+execute if score ref Temp matches -1 unless score enc Temp matches -1 run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "a"}
 
 ###* データを設定する
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 1
+#%data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.ref set value 
 
 ###* rarity ごとに値を入れる
 # storage リセット
@@ -25,11 +25,11 @@ data modify storage modify: temp.ref set value {}
 
 #+ 未変更の場合、0 を入力すること
 # 1: normal / 2: rare / 3: epic / 4: legendary / 5: mythic
-execute if score rarity Temp matches 1 run data modify storage modify: temp.ref set value {damage: 0, hp:  2, str: 0, cc: 0, cd: 0, def: 0, spd: 1, mp: 0, luck: 0}
-execute if score rarity Temp matches 2 run data modify storage modify: temp.ref set value {damage: 0, hp:  4, str: 0, cc: 0, cd: 0, def: 0, spd: 2, mp: 0, luck: 0}
-execute if score rarity Temp matches 3 run data modify storage modify: temp.ref set value {damage: 0, hp:  6, str: 0, cc: 0, cd: 0, def: 0, spd: 3, mp: 0, luck: 0}
-execute if score rarity Temp matches 4 run data modify storage modify: temp.ref set value {damage: 0, hp:  8, str: 0, cc: 0, cd: 0, def: 0, spd: 4, mp: 0, luck: 0}
-execute if score rarity Temp matches 5 run data modify storage modify: temp.ref set value {damage: 0, hp: 10, str: 0, cc: 0, cd: 0, def: 0, spd: 5, mp: 0, luck: 0}
+execute if score rarity Temp matches 1 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 0, cc: 0, cd: 0, def: 0, spd: 0, mp: 0, luck: 0}
+execute if score rarity Temp matches 2 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 0, cc: 0, cd: 0, def: 0, spd: 0, mp: 0, luck: 0}
+execute if score rarity Temp matches 3 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 0, cc: 0, cd: 0, def: 0, spd: 0, mp: 0, luck: 0}
+execute if score rarity Temp matches 4 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 0, cc: 0, cd: 0, def: 0, spd: 0, mp: 0, luck: 0}
+execute if score rarity Temp matches 5 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 0, cc: 0, cd: 0, def: 0, spd: 0, mp: 0, luck: 0}
 
 # データをアイテムにコピー
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set from storage modify: temp.ref.damage
@@ -47,3 +47,7 @@ scoreboard players set act.ref Temp 1
 
 # 共通ファイル実行
 function modify:refinement/list/id/add_lore
+
+# 演出
+execute at @s run playsound minecraft:entity.ender_dragon.flap voice @a ~ ~ ~ 0.8 2
+execute at @s run playsound minecraft:block.glass.break voice @a ~ ~ ~ 0.8 1
