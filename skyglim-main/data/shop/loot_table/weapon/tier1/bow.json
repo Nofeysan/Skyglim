@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "普通の木の剣",
+                                "text": "普通の弓",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -197,7 +197,7 @@
                                     ]
                                 },
                                 "minecraft:enchantment_glint_override": false,
-                                "minecraft:repair_cost": 30004,
+                                "minecraft:repair_cost": 200003,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255

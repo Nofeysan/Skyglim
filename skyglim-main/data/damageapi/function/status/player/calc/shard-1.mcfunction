@@ -1,5 +1,5 @@
 ##? data get entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data.status.<id> で取得
-data modify storage calc_stats: temp set from entity @s Inventory[{Slot:-106b}].components.minecraft:custom_data
+data modify storage calc_stats: temp set from entity @s Inventory[{Slot: 9b}].components.minecraft:custom_data
 
 execute store result score _ DamageTemp run data get storage calc_stats: temp.status.hp
 scoreboard players operation @s act_Health += _ DamageTemp

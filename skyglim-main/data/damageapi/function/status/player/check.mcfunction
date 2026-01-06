@@ -20,7 +20,10 @@ execute if data entity @s equipment.head run function damageapi:status/player/ca
 execute if data entity @s equipment.chest run function damageapi:status/player/calc/chest
 execute if data entity @s equipment.legs run function damageapi:status/player/calc/legs
 execute if data entity @s equipment.feet run function damageapi:status/player/calc/feet
-execute if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".data.offhand run function damageapi:status/player/calc/offhand
+
+execute if data entity @s Inventory[{Slot: 9b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-1
+execute if data entity @s Inventory[{Slot: 10b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-2
+execute if data entity @s Inventory[{Slot: 11b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-3
 
 execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand-2
 

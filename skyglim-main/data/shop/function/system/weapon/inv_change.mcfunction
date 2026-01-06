@@ -33,7 +33,5 @@ loot replace block ~ ~-1 ~ container.24 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.25 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.26 loot modify:gray_glass
 
-
 # debug
 #execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~-1 ~ 0.5 2
-

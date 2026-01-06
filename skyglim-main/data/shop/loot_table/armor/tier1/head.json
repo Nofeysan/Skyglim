@@ -183,7 +183,7 @@
                                 "minecraft:custom_model_data": {
                                     "strings": [""]
                                 },
-                                "minecraft:repair_cost": 31000,
+                                "minecraft:repair_cost": 210000,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255

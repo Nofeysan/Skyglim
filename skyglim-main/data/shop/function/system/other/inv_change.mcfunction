@@ -27,7 +27,5 @@ loot replace block ~ ~-1 ~ container.24 loot shop:other/potion/misty
 loot replace block ~ ~-1 ~ container.25 loot shop:other/potion/maiotome
 loot replace block ~ ~-1 ~ container.26 loot shop:other/potion/prelude
 
-
 # debug
 #execute at @a run playsound minecraft:entity.experience_orb.pickup master @a ~ ~-1 ~ 0.5 2
-

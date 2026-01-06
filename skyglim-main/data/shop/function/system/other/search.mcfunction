@@ -10,28 +10,27 @@ execute store result score el Currency run clear @s *[repair_cost=1003] 0
 execute store result score elb Currency run clear @s *[repair_cost=1004] 0
 
 # 食料
-execute if items entity @s player.cursor *[repair_cost=32000] run function shop:system/.buy_check/id/32000
-execute if items entity @s player.cursor *[repair_cost=32001] run function shop:system/.buy_check/id/32001
-execute if items entity @s player.cursor *[repair_cost=32002] run function shop:system/.buy_check/id/32002
+execute if items entity @s player.cursor *[repair_cost=230000] run function shop:system/.buy_check/id/230000
+execute if items entity @s player.cursor *[repair_cost=230001] run function shop:system/.buy_check/id/230001
+execute if items entity @s player.cursor *[repair_cost=230002] run function shop:system/.buy_check/id/230002
 
 # カクテル (MP回復)
-execute if items entity @s player.cursor *[repair_cost=32200] run function shop:system/.buy_check/id/32200
-execute if items entity @s player.cursor *[repair_cost=32201] run function shop:system/.buy_check/id/32201
-execute if items entity @s player.cursor *[repair_cost=32202] run function shop:system/.buy_check/id/32202
-execute if items entity @s player.cursor *[repair_cost=32203] run function shop:system/.buy_check/id/32203
+execute if items entity @s player.cursor *[repair_cost=230020] run function shop:system/.buy_check/id/230020
+execute if items entity @s player.cursor *[repair_cost=230021] run function shop:system/.buy_check/id/230021
+execute if items entity @s player.cursor *[repair_cost=230022] run function shop:system/.buy_check/id/230022
+execute if items entity @s player.cursor *[repair_cost=230023] run function shop:system/.buy_check/id/230023
 
 # 矢
-execute if items entity @s player.cursor *[repair_cost=34000] run function shop:system/.buy_check/id/34000
-execute if items entity @s player.cursor *[repair_cost=34001] run function shop:system/.buy_check/id/34001
+execute if items entity @s player.cursor *[repair_cost=230030] run function shop:system/.buy_check/id/230030
+execute if items entity @s player.cursor *[repair_cost=230031] run function shop:system/.buy_check/id/230031
 
 ###* アイテムを消しましょう
 clear @s *[\
-repair_cost=32000 | repair_cost=32001 | repair_cost=32002 | \
-repair_cost=32200 | repair_cost=32201 | repair_cost=32202 | repair_cost=32203 | \
-repair_cost=32200 | repair_cost=32201 | repair_cost=32202 | repair_cost=32203 | \
-repair_cost=34000 | repair_cost=34001 \
+repair_cost=230000 | repair_cost=230001 | repair_cost=230002 | \
+repair_cost=230010 | repair_cost=230011 | repair_cost=230012 | repair_cost=230013 | \
+repair_cost=230020 | repair_cost=230021 | repair_cost=230022 | repair_cost=230023 | \
+repair_cost=230030 | repair_cost=230031 \
 ]
 
 ###* 元に戻す
 function shop:system/other/inv_change
-

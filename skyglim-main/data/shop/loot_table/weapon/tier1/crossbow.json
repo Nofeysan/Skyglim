@@ -200,7 +200,7 @@
                                     ]
                                 },
                                 "minecraft:enchantment_glint_override": false,
-                                "minecraft:repair_cost": 30005,
+                                "minecraft:repair_cost": 200004,
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255
