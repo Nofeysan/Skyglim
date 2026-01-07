@@ -11,7 +11,7 @@
 ###* armor-head
 # data が存在したら取得する
 scoreboard players set equip.head Temp 43002
-execute if data entity @s Inventory[{Slot:103b}] store result score equip.head Temp run data get entity @s Inventory[{Slot:103b}].components."minecraft:custom_data".data.enchantment
+execute if data entity @s equipment.head store result score equip.head Temp run data get entity @s equipment.head.components."minecraft:custom_data".data.enchantment
 
 execute unless score equip.head Temp matches 43002 run function modify:enchantment/calc/macro/root.head
 execute unless score equip.head Temp matches 43001 run effect clear @s minecraft:water_breathing
@@ -21,7 +21,7 @@ execute unless score equip.head Temp matches 43001 run effect clear @s minecraft
 
 ###* armor-leggings
 scoreboard players set equip.legs Temp -1
-execute if data entity @s Inventory[{Slot:101b}] store result score equip.legs Temp run data get entity @s Inventory[{Slot:101b}].components."minecraft:custom_data".data.enchantment
+execute if data entity @s equipment.legs store result score equip.legs Temp run data get entity @s equipment.legs.components."minecraft:custom_data".data.enchantment
 execute if score equip.legs Temp matches 45003..45004 run function modify:enchantment/calc/macro/root.legs
 
 # うさぎのこころ
@@ -30,7 +30,7 @@ execute unless score equip.legs Temp matches 45007 run effect clear @s minecraft
 
 ###* amror-chestplate
 scoreboard players set equip.chest Temp -1
-execute if data entity @s Inventory[{Slot:102b}] store result score equip.chest Temp run data get entity @s Inventory[{Slot:102b}].components."minecraft:custom_data".data.enchantment
+execute if data entity @s equipment.chest store result score equip.chest Temp run data get entity @s equipment.chest.components."minecraft:custom_data".data.enchantment
 execute if score equip.chest Temp matches 44004..44006 run function modify:enchantment/calc/macro/root.chest
 
 ###// armor-feet
