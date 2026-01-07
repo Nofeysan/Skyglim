@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{Inventory:[{Slot:101b,components:{\"minecraft:custom_data\":{data:{enchantment:45007}}}}]}"
+        "nbt": "{equipment: {legs: {components: {\"minecraft:custom_data\": {data: {enchantment: 45007} } } } } }"
     }
 }
