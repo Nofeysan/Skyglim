@@ -2,6 +2,12 @@
 ###* armor_stand の位置で、~ ~-1 ~ 指定
 ###* 
 
+###* まず restore を（存在するなら）取得して、-1 ならエンチャント不可
+scoreboard players set _ Temp -255
+execute if data block ~ ~ ~ Items[{Slot:13b}].components."minecraft:custom_data".data."restore" store result score _ Temp run data get block ~ ~ ~ Items[{Slot:13b}].components."minecraft:custom_data".data."restore"
+
+execute if score _ Temp matches -1 run return -1
+
 ###* type を取得して、それに応じて内容を変える
 scoreboard players set e.type Temp -1
 
