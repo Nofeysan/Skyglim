@@ -7,7 +7,7 @@
 # text 部分
 tellraw @s {text: "\n---- [ 敵の情報 / Enemy Info. ] ------", color: "#bce2e8"}
 
-$tellraw @s [{text: "\uE010 Target : ", color: "gray"},{text: "$(name)",color: "#ffffff"}]
+$tellraw @s [{text: "\uE010 Target : ", color: "gray"},$(name)]
 
 $tellraw @s [{text: "\uE000\uf101\uf101HP",color: "#e094d7"},{text: " : ",color: "#ffffff"},{text: "§a$(curhp)§f / §a$(maxhp)\n"}]
 

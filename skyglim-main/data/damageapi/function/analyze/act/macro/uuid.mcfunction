@@ -11,7 +11,7 @@ execute store result storage analyze: data.curhp int 0.01 run data get entity @n
 data modify storage analyze: data.lore1 set from entity @n[tag=analyzed] data.status.lore1
 data modify storage analyze: data.lore2 set from entity @n[tag=analyzed] data.status.lore2
 
-data modify storage analyze: data.name set from entity @n[tag=analyzed] data.status.name
+data modify storage analyze: data.name set from entity @n[tag=analyzed] CustomName
 
 # 実行！
 function damageapi:analyze/act/macro/tell with storage analyze: data
