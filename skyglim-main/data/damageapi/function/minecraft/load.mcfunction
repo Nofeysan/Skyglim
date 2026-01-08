@@ -131,5 +131,5 @@ gamerule showDeathMessages false
 # 一応通知
 tellraw @a [{text:"\uE010 ",color:"gray"},{text:"Reload Completed!",color:"#44ddf4"}]
 
-
-
+# シュルカーボックス配置
+setblock 0 0 0 minecraft:shulker_box
