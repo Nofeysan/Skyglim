@@ -5,7 +5,7 @@
 # 
 
 # その uuid でデータ取得して tellraw
-function damageapi:analyze/act/macro/uuid with storage analyze: entity
+function damageapi:analyze/act/macro/uuid
 
 # tag リセット
 execute as @e[tag=analyzed] run tag @s remove analyzed
