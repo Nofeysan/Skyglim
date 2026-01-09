@@ -77,6 +77,4 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append f
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.restore set value 2
 
 # 演出とか
-tellraw @s [{text: "\uE010 ",color: "gray"},{text: "鑑定完了！",color: "#44ddf4"}]
-execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~-1 ~ 1 1.5
-execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~-1 ~ 0.5 0.5
+function modify:restore/list/nums/restore-done
