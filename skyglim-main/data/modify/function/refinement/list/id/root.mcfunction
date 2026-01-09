@@ -7,6 +7,6 @@ $execute if score type Temp matches 4..7 run function modify:refinement/list/id/
 $execute if score type Temp matches 9 run function modify:refinement/list/id/armor/$(roll)
 
 # 演出
-execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~ ~ 0.8 2
-execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~ ~ 0.8 1.5
-execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~ ~ 0.8 1.6
+execute at @s run playsound minecraft:entity.wind_charge.wind_burst voice @a ~ ~ ~ 0.8 1.2
+execute at @s run particle minecraft:dust{color: [0.266666666666667, 0.866666666666667, 0.956862745098039], scale: 0.9} ~ ~ ~ 0.8 0.8 0.8 0 120 force @a
+execute at @s run particle minecraft:dust{color: [0.572549019607843, 0.952941176470588, 0.643137254901961], scale: 0.9} ~ ~ ~ 0.8 0.8 0.8 0 120 force @a
