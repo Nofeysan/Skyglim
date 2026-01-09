@@ -47,7 +47,3 @@ scoreboard players set act.ref Temp 1
 
 # 共通ファイル実行
 function modify:refinement/list/id/add_lore
-
-# 演出
-execute at @s run playsound minecraft:entity.ender_dragon.flap voice @a ~ ~ ~ 0.8 2
-execute at @s run playsound minecraft:block.glass.break voice @a ~ ~ ~ 0.8 1
