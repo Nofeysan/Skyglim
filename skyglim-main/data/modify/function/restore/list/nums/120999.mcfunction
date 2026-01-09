@@ -65,13 +65,6 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append f
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append from storage modify: lore.-2
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append from storage modify: lore.-1
 
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "異世界から流れ着いた未知の欠片。", color: "#ffffff", italic: false}
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "底知れぬ力が眠っている。", color: "#ffffff", italic: false}
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: ""}
-#function modify:restore/list/rarity_lore/set
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
-
 ###* その他
 # 鑑定済みにする
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.restore set value 2
