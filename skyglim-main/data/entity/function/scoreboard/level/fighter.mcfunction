@@ -10,4 +10,3 @@ tellraw @s [{text: "[ DEF +1 ]",color: "gray"}]
 
 scoreboard players add @s CritDamage 1
 tellraw @s [{text: "[ CritDamage +1 ]",color: "gray"}]
-

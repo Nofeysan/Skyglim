@@ -7,5 +7,3 @@ tellraw @s [{text: "[ STR +1 ]",color: "gray"}]
 
 scoreboard players add @s Defence 3
 tellraw @s [{text: "[ DEF +3 ]",color: "gray"}]
-
-

@@ -10,4 +10,3 @@ tellraw @s [{text: "[ DEF +1 ]",color: "gray"}]
 
 scoreboard players add @s MagicPoint 2
 tellraw @s [{text: "[ Max MP +2 ]",color: "gray"}]
-

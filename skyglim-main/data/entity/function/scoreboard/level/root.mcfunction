@@ -32,12 +32,12 @@ execute if score @s occupation matches 3 run function entity:scoreboard/level/ta
 execute if score @s occupation matches 4 run function entity:scoreboard/level/magic
 execute if score @s occupation matches 5 run function entity:scoreboard/level/zuishou
 
+# ステータスを有効化
+function damageapi:status/player/check
+
 # 全回復
 scoreboard players operation @s CurrentHealth = @s MaxHealth
 scoreboard players operation @s CurrentMP = @s MaxMP
-
-# ステータスを有効化
-function damageapi:status/player/check
 
 # もし、まだ超えてたら再帰
 execute if score @s NextXp <= @s CurrentXp run function entity:scoreboard/level/root

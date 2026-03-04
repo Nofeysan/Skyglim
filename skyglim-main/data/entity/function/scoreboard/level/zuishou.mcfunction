@@ -10,4 +10,3 @@ tellraw @s [{text: "[ DEF +2 ]",color: "gray"}]
 
 scoreboard players add @s Luck 2
 tellraw @s [{text: "[ LUCK +2 ]",color: "gray"}]
-
