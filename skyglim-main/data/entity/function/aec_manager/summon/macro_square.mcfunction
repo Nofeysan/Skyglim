@@ -32,9 +32,9 @@ $execute positioned ~ ~ ~ run summon minecraft:block_display ~ ~ ~ \
     \
     transformation: {\
         right_rotation: [0f, 0f, 0f, 1f],\
-        scale: [-0.01f, 0.01f, 0.01f],\
+        scale: [-0.01f, 0.02f, 0.01f],\
         left_rotation: [0f, 0f, 0f, 1f],\
-        translation: [0f, 0.001f, 0f]\
+        translation: [0f, -0.01f, 0f]\
     },\
     Tags: ["req_trans", "aec"],\
     \
