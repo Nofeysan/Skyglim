@@ -28,7 +28,7 @@ execute if block ~ ~-0.3 ~ minecraft:mud run effect give @s minecraft:wither 1 1
 execute if block ~ ~-0.3 ~ minecraft:nether_wart_block run damage @s 0.01 minecraft:magic
 
 #- 堕天床
-execute if block ~ ~-0.75 ~ minecraft:calcite run tag @s add cant_jump
-execute unless block ~ ~-0.75 ~ minecraft:calcite if entity @s[tag=cant_jump] run function stage:player/cant_jump/remove
+execute if block ~ ~-0.75 ~ minecraft:dead_brain_coral_block run tag @s add cant_jump
+execute unless block ~ ~-0.75 ~ minecraft:dead_brain_coral_block if entity @s[tag=cant_jump] run function stage:player/cant_jump/remove
 execute if entity @s[tag=cant_jump] run function stage:player/cant_jump/act
 
