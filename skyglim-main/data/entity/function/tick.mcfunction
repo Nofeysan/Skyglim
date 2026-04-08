@@ -17,6 +17,9 @@ execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cool
 execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] as @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] at @s run function entity:aec_manager/damage/root
 
 #* すべてのモブに対してダメージを受けた時の処理
+# 防御貫通ダメージ処理
+execute as @e if predicate entity:is_wind_charged run damage @s 0.0001
+
 # levitated
 execute as @e[predicate=entity:entity_enemy, tag=levitated, predicate=damageapi:is_on_ground] run tag @s remove levitated
 
