@@ -1,6 +1,7 @@
 {
     "values": [
         "entity:tick",
-        "modify:modify_tick"
+        "modify:modify_tick",
+        "story:tick"
     ]
 }
