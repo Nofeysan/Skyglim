@@ -2,8 +2,10 @@
 # 
 # macro で変更する
 # 
-# storage
-# {r: <radius>, half_r: <radius>/2, t: <tick>, dmg: <damage>, str: <strength>}
+# <storage> enemy: aec.list.
+#   r: 直径
+#   half_r: 半径
+#   t: 拡大完了までの時間
 # 
 
 $data merge entity @s \
