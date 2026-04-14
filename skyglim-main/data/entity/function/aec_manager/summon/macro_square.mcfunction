@@ -11,8 +11,8 @@
 #   t_2: 拡大用に合わせての2tickの遅延 (t+2 [t])
 #  
 
-# ダメージ処理用 Marker
-$summon minecraft:marker ~ ~ ~ {Small: true, Invulnerable: true, NoGravity: true, Invisible: true, data: {status: {dmg: $(dmg), str: $(str)}, r: $(r), half_r: $(half_r)}, PortalCooldown: $(t_2), Tags: ["aec"]}
+# ダメージ処理用 armor_stand
+$summon minecraft:armor_stand ~ ~ ~ {Small: true, Invulnerable: true, NoGravity: true, Invisible: true, data: {status: {dmg: $(dmg), str: $(str)}, r: $(r), half_r: $(half_r)}, PortalCooldown: $(t_2), Tags: ["aec"]}
 
 # 事前に表示するやつ
 $execute positioned ~ ~ ~ run summon minecraft:block_display ~ ~ ~ \

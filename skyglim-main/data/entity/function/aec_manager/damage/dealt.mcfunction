@@ -22,7 +22,7 @@ $data modify storage km_bounding: arguments.cuboid set value \
 execute at @s run function km_bounding:cuboid/
 
 # ダメージ判定
-execute as @a[tag=bounding_cuboid] at @s run damage @s 100 minecraft:magic by @n[type=minecraft:marker, tag=aec_dealt]
+execute as @a[tag=bounding_cuboid] at @s run damage @s 100 minecraft:magic by @n[type=minecraft:armor_stand, tag=aec_dealt]
 
 # tag remove
 tag @s remove aec_dealt
