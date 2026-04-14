@@ -10,4 +10,4 @@ $execute if score _ _ matches 10..99 store result storage km_solver: outputs[0] 
 execute if score _ _ matches 100 store result storage km_solver: outputs[0] float 0.01 run data get entity @s data.status.max_hp
 
 #! debug
-tellraw @a {text: "\ue010 [enemy] $(n)%のダメージを与えました"}
+#$tellraw @a {text: "\ue010 [enemy] $(n)%のダメージを与えました"}
