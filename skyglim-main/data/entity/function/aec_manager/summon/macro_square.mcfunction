@@ -1,10 +1,17 @@
-#>
+#> entity:aec_manager/summon/macro_square
 # 
+# 事前予告・拡大用のエンティティを召喚する
 # 
-# 
-# 
+# <storage> enemy: aec.list.
+#   dmg: [int] status.dmg の値
+#   str: [int] status.str の値
+#   r: 直径
+#   half_r: 半径
+#   t: 拡大完了までの時間
+#   t_2: 拡大用に合わせての2tickの遅延 (t+2 [t])
+#  
 
-# ダメージ処理用 Marker <= いったんデバッグで armor_stand にしてる
+# ダメージ処理用 armor_stand
 $summon minecraft:armor_stand ~ ~ ~ {Small: true, Invulnerable: true, NoGravity: true, Invisible: true, data: {status: {dmg: $(dmg), str: $(str)}, r: $(r), half_r: $(half_r)}, PortalCooldown: $(t_2), Tags: ["aec"]}
 
 # 事前に表示するやつ

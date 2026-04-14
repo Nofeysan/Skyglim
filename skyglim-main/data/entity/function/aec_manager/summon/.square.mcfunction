@@ -1,7 +1,13 @@
 #> entity:aec_manager/summon/.square
 # 
+# 実行位置で召喚されるため、召喚したい場所で呼び出すこと
+# align である必要はなし
 # 
-# 
+# @input args
+#   r: [float] 直径
+#   t: [int] 召喚からダメージ判定までの時間(tick)
+#   dmg: [int] status.dmg の値
+#   str: [int] status.str の値
 # 
 
 # data セット
