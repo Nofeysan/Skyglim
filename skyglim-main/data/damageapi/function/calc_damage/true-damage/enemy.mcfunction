@@ -4,6 +4,9 @@
 # 
 # 
 
+# crit でない状態にする
+execute if score random Temp > cc_r Temp run scoreboard players set c_did Temp 0
+
 # amplifier 取得
 execute store result score _ _ run data get entity @s active_effects[{id: "minecraft:wind_charged"}].amplifier
 
