@@ -100,6 +100,9 @@ execute store result storage km_solver: vars.E float 0.001 run random value 900.
 # 実行
 execute at @p run function km_solver:solve
 
+##* true-damage 処理（防御貫通）
+execute if predicate entity:is_wind_charged run function damageapi:calc_damage/true-damage/enemy
+
 #! debug
 #-tellraw @a [{text:"\ue010 与ダメージ(軽減後) float: ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
 #-tellraw @a [{text:"\ue010 vars : ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "vars"}]

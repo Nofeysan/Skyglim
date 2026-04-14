@@ -85,6 +85,9 @@ execute at @p run function km_solver:solve
 # もし敵がいない = 落下ダメージとか  なら MaxHP*5% を与える
 execute if score exist Temp matches 0 store result storage km_solver: outputs[0] float 0.0005 run scoreboard players get @s MaxHealth
 
+# true-damage 処理（防御貫通）
+execute if predicate entity:is_wind_charged run function damageapi:calc_damage/true-damage/player
+
 #! debug
 #-tellraw @a [{text:"\ue010 与ダメージ(軽減後) float: "},{"storage": "km_solver:","nbt": "outputs[0]"}]
 #-tellraw @a [{text:"\ue010 vars : "},{"storage": "km_solver:","nbt": "vars"}]

@@ -1,0 +1,24 @@
+#> damageapi:calc_damage/true-damage/enemy
+# 
+# エフェクトついてる→amplifier取得→マクロで割合取得→データに代入
+# 
+# 
+
+# crit でない状態にする
+execute if score random Temp > cc_r Temp run scoreboard players set c_did Temp 0
+
+# amplifier 取得
+execute store result score _ _ run data get entity @s active_effects[{id: "minecraft:wind_charged"}].amplifier
+
+# 調整(1~99)
+execute if score _ _ matches 101.. run scoreboard players set _ _ 100
+execute if score _ _ matches ..0 run scoreboard players set _ _ 1
+
+# storage
+execute store result storage damageapi: temp.n int 1 run scoreboard players get _ _
+
+# health 取得・ダメージ量代入
+function damageapi:calc_damage/true-damage/macro/get_enemy_max_health with storage damageapi: temp
+
+# effect clear
+effect clear @s minecraft:wind_charged
