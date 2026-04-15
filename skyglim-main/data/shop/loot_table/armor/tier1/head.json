@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "",
+                                "translate": "shop.item.tier-1.armor.head.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -68,12 +68,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "",
+                                    "translate": "shop.item.tier-1.armor.head.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "",
+                                    "translate": "shop.item.tier-1.armor.head.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

@@ -13,7 +13,7 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "text": "",
+                                    "translate": "item.analyze.name",
                                     "color": "#94d3e6",
                                     "italic": false,
                                     "bold": false
@@ -74,7 +74,12 @@
                                         "operation": "add_value",
                                         "slot": "mainhand"
                                     }
-                                ]
+                                ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers"
+                                    ]
+                                }
                             }
                         }
                     ],
