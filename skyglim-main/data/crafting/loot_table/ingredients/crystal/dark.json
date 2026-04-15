@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "闇のクリスタル",
+                                "translate": "crafting.ingredients.crystal.dark.name",
                                 "color": "#5a5faa",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102闇の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.dark.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102強大な力で敵を圧倒するが、",
+                                    "translate": "crafting.ingredients.crystal.dark.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102大いなる力には大いなる責任が伴う。",
+                                    "translate": "crafting.ingredients.crystal.dark.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

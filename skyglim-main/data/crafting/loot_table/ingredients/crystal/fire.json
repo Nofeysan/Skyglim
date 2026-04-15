@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "火のクリスタル",
+                                "translate": "crafting.ingredients.crystal.fire.name",
                                 "color": "#be2152",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102火の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.fire.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102揺るぎない情熱と破壊をもたらす。",
+                                    "translate": "crafting.ingredients.crystal.fire.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

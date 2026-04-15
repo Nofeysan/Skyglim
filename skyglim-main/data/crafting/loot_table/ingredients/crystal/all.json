@@ -12,16 +12,9 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "text": "##",
+                                    "translate": "crafting.ingredients.crystal.all.name",
                                     "color": "#ffffff",
-                                    "italic": false,
-                                    "obfuscated": true
-                                },
-                                {
-                                    "text": "のクリスタル",
-                                    "color": "#ffffff",
-                                    "italic": false,
-                                    "obfuscated": false
+                                    "italic": false
                                 }
                             ]
                         },
@@ -33,27 +26,18 @@
                                     "color": "dark_gray",
                                     "italic": false
                                 },
-                                [
-                                    {
-                                        "text": "\uf102",
-                                        "color": "#ffffff",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "##",
-                                        "obfuscated": true
-                                    },
-                                    {
-                                        "text": "の力を封じ込めたクリスタル。"
-                                    }
-                                ],
                                 {
-                                    "text": "\uf102触れるものすべての運命を掌握し、",
+                                    "translate": "crafting.ingredients.crystal.all.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102無限の可能性を秘める。",
+                                    "translate": "crafting.ingredients.crystal.all.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.crystal.all.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

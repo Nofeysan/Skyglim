@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "鱈",
+                                "translate": "crafting.ingredients.fishing.cod.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102生きのいい鱈。",
+                                    "translate": "crafting.ingredients.fishing.cod.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102生では食べれなさそうだ。",
+                                    "translate": "crafting.ingredients.fishing.cod.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

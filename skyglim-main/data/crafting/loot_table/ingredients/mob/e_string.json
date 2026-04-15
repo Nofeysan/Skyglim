@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "エンチャントされた糸",
+                                "translate": "crafting.ingredients.e-string.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102謎の力を秘めた糸。",
+                                    "translate": "crafting.ingredients.e-string.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102変幻自在に操ることができそうな糸になった。",
+                                    "translate": "crafting.ingredients.e-string.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

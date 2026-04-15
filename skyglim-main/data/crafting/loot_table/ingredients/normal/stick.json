@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "棒",
+                                "translate": "crafting.ingredients.normal.stick.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102いろんな道具のもとになる棒。",
+                                    "translate": "crafting.ingredients.normal.stick.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102頑丈で簡単には折れなさそう。",
+                                    "translate": "crafting.ingredients.normal.stick.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

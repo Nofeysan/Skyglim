@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "純粋な闇のクリスタル",
+                                "translate": "crafting.ingredients.crystal.e-dark.name",
                                 "color": "#5a5faa",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102純化した闇の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.e-dark.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102あらゆる光と存在を無に帰し、",
+                                    "translate": "crafting.ingredients.crystal.e-dark.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102新たな宇宙の萌芽を秘めた混沌の源となる。",
+                                    "translate": "crafting.ingredients.crystal.e-dark.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

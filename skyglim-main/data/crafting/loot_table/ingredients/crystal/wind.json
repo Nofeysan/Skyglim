@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "風のクリスタル",
+                                "translate": "crafting.ingredients.crystal.wind.name",
                                 "color": "#6eb487",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102風の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.wind.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102自由を求めて持ち主を翻弄する。",
+                                    "translate": "crafting.ingredients.crystal.wind.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

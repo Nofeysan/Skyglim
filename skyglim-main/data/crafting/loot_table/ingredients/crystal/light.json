@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "光のクリスタル",
+                                "translate": "crafting.ingredients.crystal.light.name",
                                 "color": "#fab80d",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102光の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.light.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102暖かな光で見方を包み込み、勇気を与える。",
+                                    "translate": "crafting.ingredients.crystal.light.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "蜘蛛の目",
+                                "translate": "crafting.ingredients.spider_eye.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102蜘蛛が落とす目。",
+                                    "translate": "crafting.ingredients.spider_eye.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102食べれなくはないが、それは得策ではない。",
+                                    "translate": "crafting.ingredients.spider_eye.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

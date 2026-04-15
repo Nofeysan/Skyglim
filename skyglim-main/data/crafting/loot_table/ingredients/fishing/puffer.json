@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "河豚 -fugu-",
+                                "translate": "crafting.ingredients.fishing.puffer.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102みんな大好き河豚。",
+                                    "translate": "crafting.ingredients.fishing.puffer.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102これを貴重品として扱うところがあるとか...",
+                                    "translate": "crafting.ingredients.fishing.puffer.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
