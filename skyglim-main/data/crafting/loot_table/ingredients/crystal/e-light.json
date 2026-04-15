@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "純粋な光のクリスタル",
+                                "translate": "crafting.ingredients.crystal.e-light.name",
                                 "color": "#fab80d",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102純化した光の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.e-light.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102宇宙の真理を映し出す輝きを放ち、",
+                                    "translate": "crafting.ingredients.crystal.e-light.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102高次の意識へと覚醒させる。",
+                                    "translate": "crafting.ingredients.crystal.e-light.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

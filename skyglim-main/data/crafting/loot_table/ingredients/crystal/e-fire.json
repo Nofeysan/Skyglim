@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "純粋な火のクリスタル",
+                                "translate": "crafting.ingredients.crystal.e-fire.name",
                                 "color": "#be2152",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102純化した火の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.e-fire.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102宇宙の始まりの輝きを宿し、",
+                                    "translate": "crafting.ingredients.crystal.e-fire.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102触れるもの全てを灰燼と化す。",
+                                    "translate": "crafting.ingredients.crystal.e-fire.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

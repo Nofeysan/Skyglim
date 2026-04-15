@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "純粋な風のクリスタル",
+                                "translate": "crafting.ingredients.crystal.e-wind.name",
                                 "color": "#6eb487",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102純化した風の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.e-wind.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102形なき速さの極致であり、",
+                                    "translate": "crafting.ingredients.crystal.e-wind.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102無限の可能性を秘めた自由な存在へと昇華させる。",
+                                    "translate": "crafting.ingredients.crystal.e-wind.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

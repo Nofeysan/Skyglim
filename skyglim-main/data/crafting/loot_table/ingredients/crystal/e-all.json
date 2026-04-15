@@ -12,19 +12,7 @@
                             "function": "minecraft:set_name",
                             "name": [
                                 {
-                                    "text": "純粋な",
-                                    "color": "#ffffff",
-                                    "italic": false,
-                                    "obfuscated": false
-                                },
-                                {
-                                    "text": "##",
-                                    "color": "#ffffff",
-                                    "italic": false,
-                                    "obfuscated": true
-                                },
-                                {
-                                    "text": "のクリスタル",
+                                    "translate": "crafting.ingredients.crystal.e-all.name",
                                     "color": "#ffffff",
                                     "italic": false,
                                     "obfuscated": false
@@ -39,27 +27,18 @@
                                     "color": "dark_gray",
                                     "italic": false
                                 },
-                                [
-                                    {
-                                        "text": "\uf102純化した",
-                                        "color": "#ffffff",
-                                        "italic": false
-                                    },
-                                    {
-                                        "text": "##",
-                                        "obfuscated": true
-                                    },
-                                    {
-                                        "text": "の力を封じ込めたクリスタル。"
-                                    }
-                                ],
                                 {
-                                    "text": "\uf102触れるものすべての運命を創造し、破壊し、",
+                                    "translate": "crafting.ingredients.crystal.e-all.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102宇宙の法則すらも超越する。",
+                                    "translate": "crafting.ingredients.crystal.e-all.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.crystal.e-all.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

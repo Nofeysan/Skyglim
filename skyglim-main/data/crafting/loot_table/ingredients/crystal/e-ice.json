@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "純粋な氷のクリスタル",
+                                "translate": "crafting.ingredients.crystal.e-ice.name",
                                 "color": "#7fd6e2",
                                 "italic": false
                             }
@@ -25,17 +25,17 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102純化した氷の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.e-ice.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102絶対零度の静寂を纏い、",
+                                    "translate": "crafting.ingredients.crystal.e-ice.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102触れるものすべてを永久の安らぎへと誘う。",
+                                    "translate": "crafting.ingredients.crystal.e-ice.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

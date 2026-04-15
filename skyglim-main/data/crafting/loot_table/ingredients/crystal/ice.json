@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "氷のクリスタル",
+                                "translate": "crafting.ingredients.crystal.ice.name",
                                 "color": "#7fd6e2",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102氷の力を封じ込めたクリスタル。",
+                                    "translate": "crafting.ingredients.crystal.ice.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102静寂を好み、触れるものを凍てつかせる。",
+                                    "translate": "crafting.ingredients.crystal.ice.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
