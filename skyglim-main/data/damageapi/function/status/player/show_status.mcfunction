@@ -70,18 +70,18 @@ execute store result storage status: book.xprf int 1 run scoreboard players get 
 loot replace block 0 0 0 container.0 loot entity:player_head
 data modify storage status: book.name set from block 0 0 0 Items[{Slot:0b}].components.minecraft:profile.name
 
-execute if score @s occupation matches 0 run data modify storage status: book.occupation set value "§7🜸 未設定"
-execute if score @s occupation matches 0 run data modify storage status: book.lore set value "§7特記事項なし"
-execute if score @s occupation matches 1 run data modify storage status: book.occupation set value "§3¤ 天弓"
-execute if score @s occupation matches 1 run data modify storage status: book.lore set value "§7遠距離攻撃強化"
-execute if score @s occupation matches 2 run data modify storage status: book.occupation set value "§c⚔ 狂戦士"
-execute if score @s occupation matches 2 run data modify storage status: book.lore set value "§7近接攻撃強化・防御、魔法攻撃弱体化"
-execute if score @s occupation matches 3 run data modify storage status: book.occupation set value "§2∅ 護神"
-execute if score @s occupation matches 3 run data modify storage status: book.lore set value "§7被ダメージ減少"
-execute if score @s occupation matches 4 run data modify storage status: book.occupation set value "§5‽ 魔術師"
-execute if score @s occupation matches 4 run data modify storage status: book.lore set value "§7魔法攻撃強化・近接攻撃弱体化"
-execute if score @s occupation matches 5 run data modify storage status: book.occupation set value "§b☆ 瑞祥"
-execute if score @s occupation matches 5 run data modify storage status: book.lore set value "§7会心率増加"
+execute if score @s occupation matches 0 run data modify storage status: book.occupation set value "status-book.occupation.0.name"
+execute if score @s occupation matches 0 run data modify storage status: book.lore set value "status-book.occupation.0.lore"
+execute if score @s occupation matches 1 run data modify storage status: book.occupation set value "status-book.occupation.1.name"
+execute if score @s occupation matches 1 run data modify storage status: book.lore set value "status-book.occupation.1.lore"
+execute if score @s occupation matches 2 run data modify storage status: book.occupation set value "status-book.occupation.2.name"
+execute if score @s occupation matches 2 run data modify storage status: book.lore set value "status-book.occupation.2.lore"
+execute if score @s occupation matches 3 run data modify storage status: book.occupation set value "status-book.occupation.3.name"
+execute if score @s occupation matches 3 run data modify storage status: book.lore set value "status-book.occupation.3.lore"
+execute if score @s occupation matches 4 run data modify storage status: book.occupation set value "status-book.occupation.4.name"
+execute if score @s occupation matches 4 run data modify storage status: book.lore set value "status-book.occupation.4.lore"
+execute if score @s occupation matches 5 run data modify storage status: book.occupation set value "status-book.occupation.5.name"
+execute if score @s occupation matches 5 run data modify storage status: book.lore set value "status-book.occupation.5.lore"
 
 # clear する
 clear @s *[minecraft:custom_data={"show_stats": 1}]

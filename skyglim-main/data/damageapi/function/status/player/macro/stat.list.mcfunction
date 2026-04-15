@@ -1,8 +1,8 @@
-##> damageapi:status/player/show_status
-##* 
-##* <storage> status: book.*
-##* 
-##* 
+#> damageapi:status/player/macro/stat.list
+# 
+# <storage> status: book.*
+# 
+# 
 
 $item replace entity @s player.crafting.0 with minecraft:book[\
 minecraft:custom_name=[\
@@ -30,12 +30,12 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "",\
+            translate: "status-book.occupation",\
             color: "#ffffff",\
             italic: false\
         },\
         {\
-            text: "\uf102\uf102職業",\
+            text: "",\
             color: "#b6c6f2"\
         },\
         {\
@@ -43,7 +43,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(occupation)",\
+            translate: "$(occupation)",\
             color: "#ffffff"\
         }\
     ],\
@@ -54,24 +54,16 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "\uf102\uf102* $(lore)",\
+            translate: "$(lore)",\
             color: "gray"\
         }\
     ],\
     {text: ""},\
     [\
         {\
-            text: "",\
+            translate: "status-book.exp",\
             color: "#ffffff",\
             italic: false\
-        },\
-        {\
-            text: "\uf102\uf102\uE011 経験値 \uE010",\
-            color: "#92f3a4"\
-        },\
-        {\
-            text: "",\
-            color: "gray"\
         }\
     ],\
     [\
@@ -109,7 +101,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "最大体力 (HP)",\
+            translate: "status-book.hp",\
             color: "#e094d7"\
         },\
         {\
@@ -128,7 +120,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "攻撃力 (STR)",\
+            translate: "status-book.str",\
             color: "#d94262"\
         },\
         {\
@@ -147,7 +139,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "会心率 (CC)",\
+            translate: "status-book.cc",\
             color: "#94d3e6"\
         },\
         {\
@@ -166,7 +158,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "会心ダメージ (CD)",\
+            translate: "status-book.cd",\
             color: "#66a5b8"\
         },\
         {\
@@ -185,7 +177,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "防御力 (DEF)",\
+            translate: "status-book.def",\
             color: "#5dccab"\
         },\
         {\
@@ -204,7 +196,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "移動速度 (SPD)",\
+            translate: "status-book.spd",\
             color: "#44ddf4"\
         },\
         {\
@@ -223,7 +215,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "魔力 (MP)",\
+            translate: "status-book.mp",\
             color: "#9279d3"\
         },\
         {\
@@ -242,7 +234,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "運 (LUCK)",\
+            translate: "status-book.luck",\
             color: "#bfe493"\
         },\
         {\
@@ -261,7 +253,7 @@ minecraft:lore=[\
             italic: false\
         },\
         {\
-            text: "ダメージ (DMG)",\
+            translate: "status-book.dmg",\
             color: "#ff4141"\
         },\
         {\
