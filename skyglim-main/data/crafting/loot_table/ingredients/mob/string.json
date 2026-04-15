@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "糸",
+                                "translate": "crafting.ingredients.string.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102蜘蛛が落とす糸。",
+                                    "translate": "crafting.ingredients.string.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102頑丈だが破壊は一瞬。",
+                                    "translate": "crafting.ingredients.string.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

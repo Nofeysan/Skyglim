@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "骨",
+                                "translate": "crafting.ingredients.bone.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102スケルトンが落とす骨。",
+                                    "translate": "crafting.ingredients.bone.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102内部の密度が高いので当たると痛い。",
+                                    "translate": "crafting.ingredients.bone.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
