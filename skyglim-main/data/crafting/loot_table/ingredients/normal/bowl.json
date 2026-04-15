@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "木の器",
+                                "translate": "crafting.ingredients.normal.bowl.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102料理のクラフトに必要なお皿。",
+                                    "translate": "crafting.ingredients.normal.bowl.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102いつでも清潔に保たれています。",
+                                    "translate": "crafting.ingredients.normal.bowl.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

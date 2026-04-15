@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "棒",
+                                "translate": "crafting.ingredients.normal.tripwire.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102絡繰り銃を作るのに必要な素材。",
+                                    "translate": "crafting.ingredients.normal.tripwire.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102特殊な形状をしている。",
+                                    "translate": "crafting.ingredients.normal.tripwire.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },

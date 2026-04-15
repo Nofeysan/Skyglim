@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "ガラス瓶",
+                                "translate": "crafting.ingredients.normal.glass_bottle.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102ポーションのクラフトに必要な瓶。",
+                                    "translate": "crafting.ingredients.normal.glass_bottle.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "\uf102どんな物質にも耐えられる。",
+                                    "translate": "crafting.ingredients.normal.glass_bottle.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
