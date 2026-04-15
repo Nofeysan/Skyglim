@@ -49,11 +49,6 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "",\
-            color: "#ffffff",\
-            italic: false\
-        },\
-        {\
             translate: "$(lore)",\
             color: "gray"\
         }\
