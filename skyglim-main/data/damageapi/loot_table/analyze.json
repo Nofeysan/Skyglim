@@ -13,7 +13,7 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "text": "識別の書",
+                                    "text": "",
                                     "color": "#94d3e6",
                                     "italic": false,
                                     "bold": false
@@ -30,7 +30,7 @@
                                 },
                                 [
                                     {
-                                        "text": "\uf102目線の先にいる敵の情報を得ることができる。",
+                                        "translate": "item.analyze.lore.1",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
@@ -40,7 +40,7 @@
                                 },
                                 [
                                     {
-                                        "text": "\uf102\uE010 範囲 : ",
+                                        "translate": "common.range",
                                         "color": "gray",
                                         "italic": false
                                     },
