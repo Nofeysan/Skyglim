@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "普通の木の剣",
+                                "translate": "shop.item.tier-1.weapon.sword.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -20,77 +20,77 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                        "text": "************************************",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    [
-                        {
-                            "text": "\uf102\uE008 ",
-                            "color": "#ffffff",
-                            "italic": false
-                        },
-                        {
-                            "text": "ダメージ",
-                            "color": "#ff4141"
-                        },
-                        {
-                            "text": " \uE010 ",
-                            "color": "gray"
-                        },
-                        {
-                            "text": "+3",
-                            "color": "#55ff55"
-                        }
-                    ],
-                    [
-                        {
-                            "text": "\uf102\uE001 ",
-                            "color": "#ffffff",
-                            "italic": false
-                        },
-                        {
-                            "text": "攻撃力",
-                            "color": "#d94262"
-                        },
-                        {
-                            "text": " \uE010 ",
-                            "color": "gray"
-                        },
-                        {
-                            "text": "+5",
-                            "color": "#55ff55"
-                        }
-                    ],
-                    {
-                        "text": "------------------------",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "初心者向けの剣。",
-                        "color": "#ffffff",
-                        "italic": false
-                    },
-                    {
-                        "text": "この剣でみんな経験を積む。",
-                        "color": "#ffffff",
-                        "italic": false
-                    },
-                    {
-                        "text": ""
-                    },
-                    {
-                        "text": "Normal",
-                        "color": "#ffffff",
-                        "italic": false,
-                        "bold": true
-                    },
-                    {
-                        "text": "------------------------",
-                        "color": "dark_gray",
-                        "italic": false
-                    }
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102\uE008 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "common.status.dmg",
+                                        "color": "#ff4141"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    { 
+                                        "text": "+3",
+                                        "color": "#55ff55"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE001 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "common.status.str",
+                                        "color": "#d94262"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "+5",
+                                        "color": "#55ff55"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "shop.item.tier-1.weapon.sword.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "shop.item.tier-1.weapon.sword.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Normal",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "bold": true
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
                             ],
                             "mode": "replace_all"
                         },

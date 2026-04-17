@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "普通の木の斧",
+                                "translate": "shop.item.tier-1.weapon.axe.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -20,7 +20,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "text": "************************************",
+                                    "translate": "common.lore.line.1",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
@@ -31,7 +31,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "ダメージ",
+                                        "translate": "common.status.dmg",
                                         "color": "#ff4141"
                                     },
                                     {
@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "攻撃力",
+                                        "translate": "common.status.str",
                                         "color": "#d94262"
                                     },
                                     {
@@ -63,17 +63,17 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 {
-                                    "text": "初心者向けの剣。",
+                                    "translate": "shop.item.tier-1.weapon.axe.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "この剣でみんな経験を積む。",
+                                    "translate": "shop.item.tier-1.weapon.axe.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -87,7 +87,7 @@
                                     "bold": true
                                 },
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }

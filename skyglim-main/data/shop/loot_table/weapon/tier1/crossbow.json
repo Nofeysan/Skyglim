@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "普通の絡繰り銃",
+                                "translate": "shop.item.tier-1.weapon.crossbow.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -20,7 +20,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "text": "************************************",
+                                    "translate": "common.lore.line.1",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
@@ -31,7 +31,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "ダメージ",
+                                        "translate": "common.status.dmg",
                                         "color": "#ff4141"
                                     },
                                     {
@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "攻撃力",
+                                        "translate": "common.status.str",
                                         "color": "#d94262"
                                     },
                                     {
@@ -63,17 +63,17 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 {
-                                    "text": "敵を一体まで貫通する。",
+                                    "translate": "shop.item.tier-1.weapon.crossbow.lore.1",
                                     "color": "#94d3e6",
                                     "italic": false
                                 },
                                 {
-                                    "text": "慣れれば扱いやすい銃。",
+                                    "translate": "shop.item.tier-1.weapon.crossbow.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -87,13 +87,13 @@
                                     "bold": true
                                 },
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "\uf102ℰ 価格",
+                                        "translate": "shop.item.value",
                                         "color": "#bfe493",
                                         "italic": false
                                     },
@@ -107,8 +107,8 @@
                                     }
                                 ],
                                 {
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
-                                    "text": "------------------------",
                                     "italic": false
                                 }
                             ],
