@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "駆け出しのブーツ",
+                                "translate": "shop.item.tier-1.armor.boots.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -20,7 +20,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "text": "************************************",
+                                    "translate": "common.lore.line.1",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
@@ -31,7 +31,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "最大体力",
+                                        "translate": "common.status.hp",
                                         "color": "#e094d7"
                                     },
                                     {
@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "防御力",
+                                        "translate": "common.status.def",
                                         "color": "#5dccab"
                                     },
                                     {
@@ -63,17 +63,17 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 {
-                                    "text": "初心者向けのブーツ。",
+                                    "translate": "shop.item.tier-1.armor.boots.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "温かみのある靴です。",
+                                    "translate": "shop.item.tier-1.armor.boots.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -87,13 +87,13 @@
                                     "bold": true
                                 },
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "\uf102ℰ 価格",
+                                        "translate": "shop.item.value",
                                         "color": "#bfe493",
                                         "italic": false
                                     },
@@ -107,7 +107,7 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }
