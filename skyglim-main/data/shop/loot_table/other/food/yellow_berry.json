@@ -13,7 +13,7 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "text": "イエローベリー",
+                                    "translate": "shop.item.other.food.yellow_berry.name",
                                     "color": "#94d3e6",
                                     "italic": false,
                                     "bold": false
@@ -24,27 +24,27 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "text": "************************************",
+                                    "translate": "common.lore.line.1",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "食べると活力が湧いてます。",
+                                        "translate": "shop.item.other.food.yellow_berry.lore.1",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": "魔力の回復量はおまけ程度。",
+                                        "translate": "shop.item.other.food.yellow_berry.lore.2",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": "(バニラに比べて回復量が増加しています)",
+                                        "translate": "shop.item.other.food.yellow_berry.lore.3",
                                         "color": "#aaaaaa",
                                         "italic": false
                                     }
@@ -58,7 +58,7 @@
                                 ],
                                 [
                                     {
-                                        "text": "\uf102\uE010 効果 : ",
+                                        "translate": "common.effect",
                                         "color": "gray",
                                         "italic": false
                                     },
@@ -68,13 +68,13 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "\uf102ℰ 価格",
+                                        "translate": "shop.item.value",
                                         "color": "#bfe493",
                                         "italic": false
                                     },
@@ -88,7 +88,7 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }
