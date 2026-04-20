@@ -13,7 +13,7 @@
                             "entity": "this",
                             "name": [
                                 {
-                                    "text": "ミスティ",
+                                    "translate": "shop.item.other.potion.mp.misty.name",
                                     "color": "#94d3e6",
                                     "italic": false,
                                     "bold": false
@@ -24,20 +24,20 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "text": "************************************",
+                                    "translate": "common.lore.line.1",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "アイリッシュ・ミストを使った、",
+                                        "translate": "shop.item.other.potion.mp.misty.lore.1",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "text": "曲にちなんで作られたカクテル。",
+                                        "translate": "shop.item.other.potion.mp.misty.lore.2",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
@@ -47,7 +47,7 @@
                                 },
                                 [
                                     {
-                                        "text": "\uf102\uE010 効果 : ",
+                                        "translate": "common.effect",
                                         "color": "gray",
                                         "italic": false
                                     },
@@ -58,7 +58,7 @@
                                 ],
                                 [
                                     {
-                                        "text": "\uf102\uE010 最大スタック数 : ",
+                                        "translate": "common.max_stack",
                                         "color": "gray",
                                         "italic": false
                                     },
@@ -68,7 +68,7 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }
