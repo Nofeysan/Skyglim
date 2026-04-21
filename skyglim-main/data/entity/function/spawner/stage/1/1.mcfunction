@@ -4,7 +4,7 @@
 # equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
 # 
 
-setblock ~ ~ ~ minecraft:spawner\
+$setblock $(xyz) minecraft:spawner\
 {\
     id: "minecraft:mob_spawner",\
     Delay: 0,\

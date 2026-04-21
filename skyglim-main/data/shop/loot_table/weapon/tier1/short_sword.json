@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "common.status,str",
+                                        "translate": "common.status.str",
                                         "color": "#d94262"
                                     },
                                     {
@@ -176,7 +176,7 @@
                                     {
                                         "id": "item.weapon",
                                         "type": "minecraft:attack_speed",
-                                        "amount": -1.8,
+                                        "amount": -1.2,
                                         "operation": "add_value",
                                         "slot": "mainhand"
                                     }

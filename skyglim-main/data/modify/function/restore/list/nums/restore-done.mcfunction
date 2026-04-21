@@ -5,7 +5,7 @@
 # 
 
 # 通知
-tellraw @s [{text: "\uE010 ",color: "gray"},{text: "鑑定完了！",color: "#44ddf4"}]
+#tellraw @s [{text: "\uE010 ",color: "gray"},{text: "鑑定完了！",color: "#44ddf4"}]
 
 # 演出
 execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~-1 ~ 1 1.5
