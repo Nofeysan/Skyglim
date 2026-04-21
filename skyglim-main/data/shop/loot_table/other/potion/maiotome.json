@@ -112,7 +112,12 @@
                                     "strings": [ "maiotome" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 230022
+                                "minecraft:repair_cost": 230022,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:potion_contents"
+                                    ]
+                                }
                             }
                         }
                     ],

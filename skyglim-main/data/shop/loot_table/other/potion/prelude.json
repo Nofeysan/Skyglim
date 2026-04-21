@@ -112,7 +112,12 @@
                                     "strings": [ "prelude_fizz" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 230023
+                                "minecraft:repair_cost": 230023,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:potion_contents"
+                                    ]
+                                }
                             }
                         }
                     ],

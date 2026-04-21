@@ -94,7 +94,8 @@
                                 "minecraft:enchantment_glint_override": false,
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
-                                        "minecraft:attribute_modifiers"
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:potion_contents"
                                     ]
                                 },
                                 "minecraft:lock": {

@@ -112,7 +112,12 @@
                                     "strings": [ "mocha_milk" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 230020
+                                "minecraft:repair_cost": 230020,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:potion_contents"
+                                    ]
+                                }
                             }
                         }
                     ],
