@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "stage.1.old-sword.name.restore",
+                                "translate": "stage.1.old-s-sword.name.restore",
                                 "color": "gray",
                                 "italic": false
                             }
@@ -20,7 +20,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "restore.item.type.sword",
+                                    "translate": "restore.item.type.short-sword",
                                     "italic": false,
                                     "color": "#f5de84"
                                 },
@@ -44,7 +44,7 @@
                                         "color": "gray"
                                     },
                                     { 
-                                        "text": "+8...?",
+                                        "text": "+3...?",
                                         "color": "#aaaaaa"
                                     }
                                 ],
@@ -73,12 +73,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": "stage.1.old-sword.lore.1",
+                                    "translate": "stage.1.old-s-sword.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "translate": "stage.1.old-sword.lore.2",
+                                    "translate": "stage.1.old-s-sword.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -181,7 +181,7 @@
                                         "minecraft:unbreakable"
                                     ]
                                 },
-                                "minecraft:repair_cost": 1101000,
+                                "minecraft:repair_cost": 1101001,
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_model_data": {
                                     "strings": ["normal"]
