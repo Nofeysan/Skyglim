@@ -6,6 +6,6 @@ clear @s *[repair_cost=1002] 1
 
 # アイテムあげるね～
 loot give @s loot shop:.give/food/yellow_berry
-execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 1 2
 
-tellraw @s [{text: "\uE010 ",color: "#44ddf4"},{text: "イエローベリー x2",color: "#eccbd9"},{text: " を購入しました！"}]
+# 通知
+function shop:system/.buy_check/id/.tell {id: "shop.item.other.food.yellow_berry.name"}

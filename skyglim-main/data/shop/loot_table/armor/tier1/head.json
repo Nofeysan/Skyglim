@@ -87,7 +87,7 @@
                                     "bold": true
                                 },
                                 {
-                                    "translate": "common.lore.line.1",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
@@ -107,7 +107,7 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }

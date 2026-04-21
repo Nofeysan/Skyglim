@@ -6,6 +6,6 @@ clear @s *[repair_cost=1001] 12
 
 # アイテムあげるね～
 loot give @s loot shop:.give/potion/mocha_milk
-execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 1 2
 
-tellraw @s [{text: "\uE010 ",color: "#44ddf4"},{text: "モカ・ミルク",color: "#eccbd9"},{text: " を購入しました！"}]
+# 通知
+function shop:system/.buy_check/id/.tell {id: "shop.item.other.potion.mp.mocha_milk.name"}

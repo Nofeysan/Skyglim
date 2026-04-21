@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "普通の弓",
+                                "translate": "shop.item.tier-1.weapon.bow.name",
                                 "color": "#ffffff",
                                 "italic": false
                             }
@@ -20,9 +20,9 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                "text": "************************************",
-                                "color": "dark_gray",
-                                "italic": false
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
                                 },
                                 [
                                     {
@@ -31,7 +31,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "ダメージ",
+                                        "translate": "common.status.dmg",
                                         "color": "#ff4141"
                                     },
                                     {
@@ -47,11 +47,11 @@
                                     {
                                         "text": "\uf102\uE001 ",
                                         "color": "#ffffff",
-                            "italic": false
+                                        "italic": false
                                     },
                                     {
-                                        "text": "攻撃力",
-                            "color": "#d94262"
+                                        "translate": "status.common.str",
+                                        "color": "#d94262"
                                     },
                                     {
                                         "text": " \uE010 ",
@@ -63,17 +63,17 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 {
-                                    "text": "初心者向けの弓。",
+                                    "translate": "shop.item.tier-1.weapon.bow.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "text": "はじめはみんな精度は悪い。",
+                                    "translate": "shop.item.tier-1.weapon.bow.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -87,13 +87,13 @@
                                     "bold": true
                                 },
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
                                     {
-                                        "text": "\uf102ℰ 価格",
+                                        "translate": "shop.item.value",
                                         "color": "#bfe493",
                                         "italic": false
                                     },
@@ -107,7 +107,7 @@
                                     }
                                 ],
                                 {
-                                    "text": "------------------------",
+                                    "translate": "common.lore.line.2",
                                     "color": "dark_gray",
                                     "italic": false
                                 }
