@@ -50,7 +50,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "status.common.str",
+                                        "translate": "common.status.str",
                                         "color": "#d94262"
                                     },
                                     {
