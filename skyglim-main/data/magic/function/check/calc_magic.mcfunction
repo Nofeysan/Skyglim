@@ -1,22 +1,40 @@
-# 他のステータスを取得
-#! ↓職業ごとの Multiplier とか
-scoreboard players set multiplier MagicTemp 100
-execute if score @s occupation matches 2 run scoreboard players set multiplier MagicTemp 70
-execute if score @s occupation matches 4 run scoreboard players set multiplier MagicTemp 115
+#> magic:check/calc_magic
+# 
+# dmg を計算する
+# 
+# 
 
+##* 攻撃力計算
+# damage = dmg * (MP/100) * Multiplier
+# D = dmg
+# I = MP
+# M = multiplier
 
-execute store result score base_dmg MagicTemp run data get entity @s SelectedItem.components."minecraft:custom_data".status.damage 1
-scoreboard players operation mp MagicTemp = @s ShowMaxMP
+# リセット
+data remove storage km_solver: inputs
+data remove storage km_solver: vars
+
+# 一般式を代入
+data modify storage km_solver: inputs append value {f:{mul: [{v: "D"}, {mul: [{div: [{v: "I"}, {n: 100.0f}]}, {v: "M"}]}]}}
+
+# 初期値を代入
+data modify storage km_solver: vars set value {D:0.0f, I:0.0f, M:1.0f}
+
+# D: 魔法の武器の dmg 加算後の合計 dmg
+execute store result storage km_solver: vars.D int 1 run scoreboard players get @s act_Damage
+
+# I: 最大 MP (表示値)
+execute store result storage km_solver: vars.I int 1 run scoreboard players get @s ShowMaxMP
+
+# M: 職業ごとの倍率
+execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 0.7f
+execute if score @s occupation matches 4 run data modify storage km_solver: vars.M set value 1.1f
 
 # 計算
-scoreboard players add mp MagicTemp 100
-scoreboard players operation AbilityDamage MagicTemp = mp MagicTemp
-scoreboard players operation AbilityDamage MagicTemp *= scale MagicTemp
-scoreboard players operation AbilityDamage MagicTemp /= #100 num
-scoreboard players operation AbilityDamage MagicTemp *= multiplier MagicTemp
-scoreboard players operation AbilityDamage MagicTemp /= #100 num
-scoreboard players operation AbilityDamage MagicTemp *= base_dmg MagicTemp
+execute at @s run function km_solver:solve
 
-# storage に保管
-execute store result storage damageapi: magic_damage.value int 0.01 run scoreboard players get AbilityDamage MagicTemp
+# 別の場所に保存
+data modify storage damageapi: magic_damage.dmg set from storage km_solver: outputs[0]
 
+#! debug
+#tellraw @a {text: "\ue010 計算完了"}
