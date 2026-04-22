@@ -16,6 +16,7 @@ execute store result storage magic: req_mp.rate double 0.01 run data get entity 
 function magic:check/get_mp/macro/calc_mp with storage magic: req_mp
 
 execute store result score req_mp _ run data get storage magic: req_mp.value
+execute store result storage magic: req_mp.show int 0.01 run data get storage magic: req_mp.value
 
 # 評価
-execute if score req_mp _ > @s CurrentMP run return run function magic:check/fail
+execute if score req_mp _ > @s CurrentMP run function magic:check/fail

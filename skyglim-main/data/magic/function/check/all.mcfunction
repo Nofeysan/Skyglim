@@ -9,14 +9,8 @@
 execute if data entity @s SelectedItem.components."minecraft:custom_data".data.req_mp.i run function magic:check/get_mp/i
 execute if data entity @s SelectedItem.components."minecraft:custom_data".data.req_mp.r run function magic:check/get_mp/r
 
-execute store result score req_mp MagicId run data get entity @s SelectedItem.components."minecraft:custom_data".data.req_mp
-scoreboard players operation req_mp MagicId *= #100 num
+# 魔法を実行
+$execute unless entity @s[tag=magic.failed] run function magic:act/$(id)
 
-# mp を評価
-execute unless score @s CurrentMP >= req_mp MagicId run return run function magic:check/fail
-
-###* 魔法を実行(別ファイル)
-$execute unless entity @s[tag=failed] at @s run function magic:act/$(id)
-
-
-###* リセット
+# tag reset
+tag @s remove magic.failed
