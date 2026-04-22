@@ -5,7 +5,7 @@
 ###* 
 
 ###? MP 減らす
-scoreboard players operation @s[tag=!failed] CurrentMP -= req_mp MagicId
+scoreboard players operation @s[tag=!failed] CurrentMP -= req_mp _
 
 ###? 実行部分
 # ダメージ関連

@@ -291,7 +291,7 @@
                                                 "luck": 0
                                             },
                                             "data": {
-                                                "req_mp": 10,
+                                                "req_mp": {"i": 10},
                                                 "mainhand": 1,
                                                 "enchantment": -1
                                             }
