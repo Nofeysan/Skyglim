@@ -93,7 +93,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "translate": "spd",
+                                        "translate": "common.status.spd",
                                         "color": "#44ddf4"
                                     },
                                     {

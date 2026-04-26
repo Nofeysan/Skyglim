@@ -20,7 +20,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "restore.item.type.bow",
+                                    "translate": "restore.item.type.crossbow",
                                     "italic": false,
                                     "color": "#f5de84"
                                 },
@@ -216,7 +216,8 @@
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
                                         "minecraft:enchantments",
-                                        "minecraft:unbreakable"
+                                        "minecraft:unbreakable",
+                                        "minecraft:charged_projectiles"
                                     ]
                                 },
                                 "minecraft:repair_cost": 1101104,
