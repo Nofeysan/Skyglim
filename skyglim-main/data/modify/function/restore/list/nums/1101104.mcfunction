@@ -77,7 +77,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:crossbow"
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value []
 
 # エンチャント追加
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" append value {piercing: 2}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"minecraft:piercing": 2}
 
 function modify:restore/list/macro/set_name with storage modify: restore
 

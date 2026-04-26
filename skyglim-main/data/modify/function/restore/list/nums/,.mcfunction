@@ -77,7 +77,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" se
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value []
 
 # エンチャント追加
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" append value {}
+#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {}
 
 function modify:restore/list/macro/set_name with storage modify: restore
 
