@@ -83,7 +83,8 @@
                                 ],
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
-                                        "minecraft:attribute_modifiers"
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:potion_contents"
                                     ]
                                 },
                                 "minecraft:max_stack_size": 64,
