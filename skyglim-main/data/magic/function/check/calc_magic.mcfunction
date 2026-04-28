@@ -5,7 +5,7 @@
 # 
 
 ##* 攻撃力計算
-# damage = dmg * (MP/100) * Multiplier
+# damage = dmg * (1.65 + MP/100) * Multiplier
 # D = dmg
 # I = MP
 # M = multiplier
@@ -15,7 +15,7 @@ data remove storage km_solver: inputs
 data remove storage km_solver: vars
 
 # 一般式を代入
-data modify storage km_solver: inputs append value {f:{mul: [{v: "D"}, {mul: [{div: [{v: "I"}, {n: 100.0f}]}, {v: "M"}]}]}}
+data modify storage km_solver: inputs append value {f:{mul: [{v: "D"}, {mul: [{add: [{n: 1.65f}, {div: [{v: "I"}, {n: 100.0f}]}]}, {v: "M"}]}]}}
 
 # 初期値を代入
 data modify storage km_solver: vars set value {D:0.0f, I:0.0f, M:1.0f}
