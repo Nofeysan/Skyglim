@@ -1,6 +1,7 @@
-###*
-###* storage> {"restore": {"rate": <0~100%>, "value": <status値>}}
-###*
+#> modify:restore/list/macro/status/cc
+#
+# storage> {"restore": {"rate": <0~100%>, "value": <status値>}}
+#
 
 # 値を設定
 $data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".status.cc set value $(value)

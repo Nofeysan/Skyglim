@@ -29,8 +29,7 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
 ###* 各値を入れていく
 # 各ステータスを保存 (D: Damage, S: Strength etc.)
 execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/get_status_from_player
-execute on attacker unless entity @s[type=minecraft:player] run data modify storage enemy: temp.uuid set from entity @s UUID[0]
-execute on attacker unless entity @s[type=minecraft:player] run function damageapi:calc_damage/macro/get_status_from_another with storage enemy: temp
+execute on attacker unless entity @s[type=minecraft:player] run function damageapi:calc_damage/macro/get_status_from_another
 
 execute if score chargerate Temp matches ..89 store result storage km_solver: vars.R float 0.01 run random value 10..30
 execute if score chargerate Temp matches 110.. run data modify storage km_solver: vars.R set value 1.10f

@@ -5,7 +5,7 @@
 ###* 
 
 ###? MP 減らす
-scoreboard players operation @s CurrentMP -= req_mp MagicId
+scoreboard players operation @s CurrentMP -= req_mp _
 
 ###? 実行部分
 # 自分には +2000, 周りには +500
