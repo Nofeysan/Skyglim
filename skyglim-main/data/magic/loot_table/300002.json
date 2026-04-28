@@ -39,7 +39,7 @@
                             "color": "gray"
                         },
                         {
-                            "text": "+3",
+                            "text": "+8",
                             "color": "#55ff55"
                         }
                     ],
@@ -160,7 +160,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "status": {
-                                    "damage": 3,
+                                    "damage": 8,
                                     "hp": 0,
                                     "str": 0,
                                     "cc": 0,
@@ -252,7 +252,7 @@
                                         "minecraft:repair_cost": 300002,
                                         "minecraft:custom_data": {
                                             "status": {
-                                                "damage": 3,
+                                                "damage": 8,
                                                 "hp": 0,
                                                 "str": 0,
                                                 "cc": 0,
