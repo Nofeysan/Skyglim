@@ -15,4 +15,3 @@ execute if entity @e[distance=..40, tag=analyzed] run return run function damage
 execute if entity @s[distance=..30] if block ~ ~ ~ minecraft:air positioned ^ ^ ^0.5 run function damageapi:analyze/act/search
 execute if entity @s[distance=..30] unless block ~ ~ ~ minecraft:air run function damageapi:analyze/act/fail
 execute unless entity @s[distance=..30] run function damageapi:analyze/act/fail
-
