@@ -5,7 +5,7 @@
 ##* 
 
 ##+ actionbar 表示
-###* 表示用計算
+##* 表示用計算
 scoreboard players operation @s ShowMaxMP = @s MaxMP
 scoreboard players operation @s ShowMaxMP /= #100 num
 
@@ -22,29 +22,59 @@ scoreboard players operation int XpRate /= #100 num
 scoreboard players operation float XpRate = @s XpRate
 scoreboard players operation float XpRate %= #100 num
 
-###* 表示
+##* 表示
 # 経験値表示を減らす
 scoreboard players remove @s[scores={ShowXpTime=0..}] ShowXpTime 1
 execute if score @s ShowXpTime matches -1 run scoreboard players set @s ShowXp 0
 
+#+ 各状況に応じて要素を代入
+# 体力
+data modify storage status: show.hp set value [{text: "\uE000\uf101"},{"score": {"name": "@s", "objective": "ShowCurrentHealth"}, color: "#ffffff", font: "hp"},{text: "/", color: "#ffffff", font: "hp"},{"score": {"name":"@s", "objective": "ShowMaxHealth"}, color: "#ffffff", font: "hp"}]
+
+# Absorption がある場合は上書き
+execute if score @s Absorption matches 1.. run data modify storage status: show.hp set value [{text: "\uE000\uf101"},{text: "HP ", color:"#e6a4a7"},{"score": {"name": "@s", "objective": "ShowCurrentHealth"}, color: "#e6a4a7"},{text: "+", color: "#f5de84"},{"score": {"name":"@s", "objective": "ShowAbsorption"}, color: "#f5de84"},{text: "/", color: "#e6a4a7"},{"score": {"name": "@s", "objective": "ShowMaxHealth"}, color:"#e6a4a7"}]
+
+# XP
+data modify storage status: show.xp set value [{text: "["},{"score": {"name": "@s", "objective": "CurrentLv"}, color: "#42ffff"},{text: "] "},{"score": {"name": "@s", "objective": "CurrentXp"}, color: "#92f3a4"},{text: "/", color: "#92f3a4"},{"score": {"name": "@s", "objective": "NextXp"}, color: "#92f3a4"},{text: " (", color: "#92f3a4"},{"score": {"name": "int", "objective": "XpRate"}, color:"#ffd728"},{text: ".", color: "#ffd728"},{"score": {"name": "float", "objective": "XpRate"}, color: "#ffd728"},{text: "%", color: "#ffd728"},{text: ")", color: "#92f3a4"}]
+#data modify storage status: show.xp set value [{text: "["},{"score": {"name": "@s", "objective": "CurrentLv"}, color: "#42ffff"},{text: "] "},{"score": {"name": "int", "objective": "XpRate"}, color:"#ffd728"},{text: ".", color: "#ffd728"},{"score": {"name": "float", "objective": "XpRate"}, color: "#ffd728"},{text: "%", color: "#ffd728"}]
+
+# XP 取得時は上書き
+execute if score @s ShowXpTime matches 1.. run data modify storage status: show.xp set value [{text: "["},{"score": {"name": "@s", "objective": "CurrentLv"}, color: "#42ffff"},{text: "] "},{"score": {"name": "@s", "objective": "CurrentXp"}, color: "#92f3a4"},{text: "/", color: "#92f3a4"},{"score": {"name": "@s", "objective": "NextXp"}, color: "#92f3a4"},{text: " +", color: "#c5edff"},{"score": {"name": "@s", "objective": "ShowXp"}, color: "#c5edff"},{text: "XP", color: "#c5edff"},{text: " (", color: "#92f3a4"},{"score": {"name": "int", "objective": "XpRate"}, color: "#ffd728"},{text: ".", color: "#ffd728"},{"score": {"name": "float", "objective": "XpRate"}, color: "#ffd728"},{text: "%", color:"#ffd728"},{text: ")", color:"#92f3a4"}]
+#execute if score @s ShowXpTime matches 1.. run data modify storage status: show.xp set value [{text: "["},{"score": {"name": "@s", "objective": "CurrentLv"}, color: "#42ffff"},{text: "] "},{"score": {"name": "@s", "objective": "CurrentXp"}, color: "#92f3a4"},{text: "/", color: "#92f3a4"},{"score": {"name": "@s", "objective": "NextXp"}, color: "#92f3a4"},{text: " +", color: "#c5edff"},{"score": {"name": "@s", "objective": "ShowXp"}, color: "#c5edff"},{text: "XP", color: "#c5edff"},{text: " (", color: "#92f3a4"},{"score": {"name": "int", "objective": "XpRate"}, color: "#ffd728"},{text: ".", color: "#ffd728"},{"score": {"name": "float", "objective": "XpRate"}, color: "#ffd728"},{text: "%", color:"#ffd728"},{text: ")", color:"#92f3a4"}]
+
+# MP
+data modify storage status: show.mp set value [{text: "\uE006\uf101"},{"score": {"name": "@s", "objective": "ShowCurrentMP"}, color: "#ffffff", font: "mp"},{text: "/", color: "#ffffff", font: "mp"},{"score": {"name": "@s", "objective": "ShowMaxMP"}, color: "#ffffff", font: "mp"}]
+
+# div
+data modify storage status: show.div set value {text:"  |  ",color: "gray"}
+
+# 表示
+title @s actionbar [\
+    {text: ""},\
+    {storage: "status:", nbt: "show.hp", interpret: true}, \
+    {storage: "status:", nbt: "show.div", interpret: true}, \
+    {storage: "status:", nbt: "show.xp", interpret: true}, \
+    {storage: "status:", nbt: "show.div", interpret: true},\
+    {storage: "status:", nbt: "show.mp", interpret: true}\
+]
 # XP 取得を表示する
-execute unless score @s Absorption matches 1.. if score @s ShowXpTime matches 0.. run title @s actionbar [\
+#execute unless score @s Absorption matches 1.. if score @s ShowXpTime matches 0.. run title @s actionbar [\
 {text:"\uE000\uf101"},{text:"HP ",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowCurrentHealth"},color:"#e6a4a7"},{text:"/",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowMaxHealth"},color:"#e6a4a7"},\
 {text:"  |  ",color: "gray"},{text:"["},{"score": {"name": "@s","objective": "CurrentLv"},color: "#42ffff"},{text: "] "},{"score": {"name": "@s","objective": "CurrentXp"},color: "#92f3a4"},{text: "/",color: "#92f3a4"},{"score": {"name": "@s","objective": "NextXp"},color: "#92f3a4"},{text: " +",color: "#c5edff"},{"score": {"name": "@s","objective": "ShowXp"},color: "#c5edff"},{text: "XP",color: "#c5edff"},{text: " (",color: "#92f3a4"},{"score":{"name":"int","objective":"XpRate"},color:"#ffd728"},{text: ".",color:"#ffd728"},{"score":{"name":"float","objective":"XpRate"},color:"#ffd728"},{text: "%",color:"#ffd728"},{text: ")",color:"#92f3a4"},{text: "  |  ",color:"gray"},\
 {text:"\uE006\uf101"},{text:"MP ",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowCurrentMP"},color:"#9279d3"},{text:"/",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowMaxMP"},color:"#9279d3"}]
 
-execute if score @s Absorption matches 1.. if score @s ShowXpTime matches 0.. run title @s actionbar [\
+#execute if score @s Absorption matches 1.. if score @s ShowXpTime matches 0.. run title @s actionbar [\
 {text:"\uE000\uf101"},{text:"HP ",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowCurrentHealth"},color:"#e6a4a7"},{text:"+",color:"#f5de84"},{"score":{"name":"@s", "objective":"ShowAbsorption"},color:"#f5de84"},{text:"/",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowMaxHealth"},color:"#e6a4a7"},\
 {text:"  |  ",color: "gray"},{text:"["},{"score": {"name": "@s","objective": "CurrentLv"},color: "#42ffff"},{text: "] "},{"score": {"name": "@s","objective": "CurrentXp"},color: "#92f3a4"},{text: "/",color: "#92f3a4"},{"score": {"name": "@s","objective": "NextXp"},color: "#92f3a4"},{text: " +",color: "#c5edff"},{"score": {"name": "@s","objective": "ShowXp"},color: "#c5edff"},{text: "XP",color: "#c5edff"},{text: " (",color: "#92f3a4"},{"score":{"name":"int","objective":"XpRate"},color:"#ffd728"},{text: ".",color:"#ffd728"},{"score":{"name":"float","objective":"XpRate"},color:"#ffd728"},{text: "%",color:"#ffd728"},{text: ")",color:"#92f3a4"},{text: "  |  ",color:"gray"},\
 {text:"\uE006\uf101"},{text:"MP ",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowCurrentMP"},color:"#9279d3"},{text:"/",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowMaxMP"},color:"#9279d3"}]
 
 # XP 表示なし
-execute unless score @s Absorption matches 1.. unless score @s ShowXpTime matches 0.. run title @s actionbar [\
+#execute unless score @s Absorption matches 1.. unless score @s ShowXpTime matches 0.. run title @s actionbar [\
 {text:"\uE000\uf101"},{text:"HP ",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowCurrentHealth"},color:"#e6a4a7"},{text:"/",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowMaxHealth"},color:"#e6a4a7"},\
 {text:"  |  ",color: "gray"},{text:"["},{"score": {"name": "@s","objective": "CurrentLv"},color: "#42ffff"},{text: "] "},{"score": {"name": "@s","objective": "CurrentXp"},color: "#92f3a4"},{text: "/",color: "#92f3a4"},{"score": {"name": "@s","objective": "NextXp"},color: "#92f3a4"},{text: " (",color: "#92f3a4"},{"score":{"name":"int","objective":"XpRate"},color:"#ffd728"},{text: ".",color:"#ffd728"},{"score":{"name":"float","objective":"XpRate"},color:"#ffd728"},{text: "%",color:"#ffd728"},{text: ")",color:"#92f3a4"},{text: "  |  ",color:"gray"},\
 {text:"\uE006\uf101"},{text:"MP ",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowCurrentMP"},color:"#9279d3"},{text:"/",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowMaxMP"},color:"#9279d3"}]
 
-execute if score @s Absorption matches 1.. unless score @s ShowXpTime matches 0.. run title @s actionbar [\
+#execute if score @s Absorption matches 1.. unless score @s ShowXpTime matches 0.. run title @s actionbar [\
 {text:"\uE000\uf101"},{text:"HP ",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowCurrentHealth"},color:"#e6a4a7"},{text:"+",color:"#f5de84"},{"score":{"name":"@s", "objective":"ShowAbsorption"},color:"#f5de84"},{text:"/",color:"#e6a4a7"},{"score": {"name":"@s", "objective":"ShowMaxHealth"},color:"#e6a4a7"},\
 {text:"  |  ",color: "gray"},{text:"["},{"score": {"name": "@s","objective": "CurrentLv"},color: "#42ffff"},{text: "] "},{"score": {"name": "@s","objective": "CurrentXp"},color: "#92f3a4"},{text: "/",color: "#92f3a4"},{"score": {"name": "@s","objective": "NextXp"},color: "#92f3a4"},{text: " (",color: "#92f3a4"},{"score":{"name":"int","objective":"XpRate"},color:"#ffd728"},{text: ".",color:"#ffd728"},{"score":{"name":"float","objective":"XpRate"},color:"#ffd728"},{text: "%",color:"#ffd728"},{text: ")",color:"#92f3a4"},{text: "  |  ",color:"gray"},\
 {text:"\uE006\uf101"},{text:"MP ",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowCurrentMP"},color:"#9279d3"},{text:"/",color:"#9279d3"},{"score": {"name":"@s", "objective":"ShowMaxMP"},color:"#9279d3"}]

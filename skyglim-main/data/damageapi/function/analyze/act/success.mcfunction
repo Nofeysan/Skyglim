@@ -4,7 +4,7 @@
 # 
 # 
 
-# その uuid でデータ取得して tellraw
+# 対象からデータを取得して tellraw
 function damageapi:analyze/act/macro/uuid
 
 # tag リセット

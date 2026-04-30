@@ -11,8 +11,8 @@ $tellraw @s [{text: "\uE010 Target : ", color: "gray"},$(name)]
 
 $tellraw @s [{text: "\uE000\uf101\uf101HP",color: "#e094d7"},{text: " : ",color: "#ffffff"},{text: "§a$(curhp)§f / §a$(maxhp)\n"}]
 
-$tellraw @s [{text: "\uE010 ", color: "gray"},{text: "$(lore1)",color: "#ffffff"}]
-$tellraw @s [{text: "\uE010 ", color: "gray"},{text: "$(lore2)",color: "#ffffff"}]
+$tellraw @s [{text: "\uE010 ", color: "gray"},{translate: "$(lore1)",color: "#ffffff"}]
+$tellraw @s [{text: "\uE010 ", color: "gray"},{translate: "$(lore2)",color: "#ffffff"}]
 
 tellraw @s {text: "--------------------------------", color: "#bce2e8"}
 

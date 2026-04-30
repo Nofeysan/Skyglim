@@ -139,7 +139,7 @@
                             "italic": false
                         },
                         {
-                            "text": "1.00 sec.",
+                            "text": "7.50 sec.",
                             "color": "#bce2e8"
                         }
                     ],
@@ -247,7 +247,7 @@
                                 },
                                 
                                 "minecraft:use_cooldown": {
-                                    "seconds": 1.00,
+                                    "seconds": 7.50,
                                     "cooldown_group": "heal"
                                 },
 

@@ -4,7 +4,7 @@
 # equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
 # 
 
-$setblock $(xyz) minecraft:spawner\
+setblock ~ ~ ~ minecraft:spawner\
 {\
     id: "minecraft:mob_spawner",\
     Delay: 0,\
@@ -32,7 +32,7 @@ $setblock $(xyz) minecraft:spawner\
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base:0.22}\
+                                {id:"minecraft:movement_speed", base: 0.22}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -44,7 +44,7 @@ $setblock $(xyz) minecraft:spawner\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {text: "腐朽の採掘士", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.1.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 3000,\
@@ -56,8 +56,8 @@ $setblock $(xyz) minecraft:spawner\
                                     \
                                     "xp": 2,\
                                     \
-                                    "lore1": "ここで朽ち果ててしまった採掘士。",\
-                                    "lore2": "肉体はそのまま腐ってしまった。",\
+                                    "lore1": "entity.stage.1.1.lore.1",\
+                                    "lore2": "entity.stage.1.1.lore.2",\
                                     \
                                     "loot": "1/1-1"\
                                 }\
@@ -98,7 +98,7 @@ $setblock $(xyz) minecraft:spawner\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {text: "屍の採掘士", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.1.2.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 3000,\
@@ -110,8 +110,8 @@ $setblock $(xyz) minecraft:spawner\
                                     \
                                     "xp": 2,\
                                     \
-                                    "lore1": "ここで朽ち果ててしまった採掘士。",\
-                                    "lore2": "白骨化し、§3移動速度が少し早くなった。",\
+                                    "lore1": "entity.stage.1.2.lore.1",\
+                                    "lore2": "entity.stage.1.2.lore.2",\
                                     \
                                     "loot": "1/1-2"\
                                 }\

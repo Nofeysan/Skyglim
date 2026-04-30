@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "ラピスラズリブロック",
+                                "translate": "item.currency.lb.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -20,31 +20,31 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                        "text": "************************************",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    {
-                        "text": "\uf102この世界の基本的な通貨。",
-                        "color": "#ffffff",
-                        "italic": false
-                    },
-                    [
-                        {
-                            "text": "\uf102LB ",
-                            "color": "#3755bd",
-                            "italic": false
-                        },
-                        {
-                            "text": "と省略される。",
-                            "color": "#ffffff"
-                        }
-                    ],
-                    {
-                        "text": "------------------------",
-                        "color": "dark_gray",
-                        "italic": false
-                    }
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "item.currency.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102LB ",
+                                        "color": "#3755bd",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "item.currency.lore.2",
+                                        "color": "#ffffff"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
                             ],
                             "mode": "replace_all"
                         },
