@@ -56,8 +56,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     \
                                     "xp": 2,\
                                     \
-                                    "lore1": "entity.stage.1.1.lore.1",\
-                                    "lore2": "entity.stage.1.1.lore.2",\
+                                    "lore": "entity.stage.1.1.lore",\
                                     \
                                     "loot": "1/1-1"\
                                 }\
@@ -110,8 +109,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     \
                                     "xp": 2,\
                                     \
-                                    "lore1": "entity.stage.1.2.lore.1",\
-                                    "lore2": "entity.stage.1.2.lore.2",\
+                                    "lore": "entity.stage.1.2.lore",\
                                     \
                                     "loot": "1/1-2"\
                                 }\
