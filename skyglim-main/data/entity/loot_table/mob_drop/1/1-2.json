@@ -39,6 +39,12 @@
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/1/restore/.1"
                 }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.075
+                }
             ]
         }
     ]

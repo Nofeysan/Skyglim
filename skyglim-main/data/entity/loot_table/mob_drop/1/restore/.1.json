@@ -24,12 +24,6 @@
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/1/restore/n-crossbow"
                 }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.125
-                }
             ]
         }
     ]
