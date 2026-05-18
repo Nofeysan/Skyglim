@@ -24,7 +24,7 @@ data modify block 9931 23 19 LootTable set value "entity:mob_drop/1/chest"
 forceload remove 9849 -8 9951 131
 
 # スコアの設定
-scoreboard players set _ stage.1 -1
+scoreboard players set _ stage.1 1
 
 #! debug
 tellraw @a {text: '[!] Stage 1 を構成しました。', color: "gray"}

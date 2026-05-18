@@ -57,3 +57,6 @@ scoreboard players set _ stage.ex.5 1
 scoreboard players set _ stage.ex.6 1
 scoreboard players set _ stage.ex.7 1
 scoreboard players set _ stage.ex.8 1
+
+# 入場時のやつ
+scoreboard objectives add stage.enter dummy
