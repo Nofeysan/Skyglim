@@ -38,9 +38,9 @@ setblock ~ ~ ~ minecraft:spawner\
                             AbsorptionAmount: 1024,\
                             equipment: {\
                                 head: {id: "minecraft:oak_log", components: {"minecraft:unbreakable": {}}},\
-                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
-                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
+                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
                                 mainhand: {id: "minecraft:oak_sapling", components: {"minecraft:enchantment_glint_override": true}},\
                                 offhand: {id: "minecraft:oak_sapling", components: {"minecraft:enchantment_glint_override": true}}\
                             },\
