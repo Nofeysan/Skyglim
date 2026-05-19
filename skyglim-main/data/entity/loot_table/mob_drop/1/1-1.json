@@ -37,7 +37,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/.1"
+                    "value": "entity:mob_drop/1/restore/.1w"
                 }
             ],
             "conditions": [
