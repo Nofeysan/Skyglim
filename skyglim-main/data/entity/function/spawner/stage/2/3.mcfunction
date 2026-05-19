@@ -61,7 +61,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     \
                                     "lore": "entity.stage.2.3.lore",\
                                     \
-                                    "loot": "2/2-1"\
+                                    "loot": "2/2-3"\
                                 }\
                             },\
                             active_effects: [\
