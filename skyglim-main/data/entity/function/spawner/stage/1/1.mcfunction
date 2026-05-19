@@ -47,11 +47,11 @@ setblock ~ ~ ~ minecraft:spawner\
                             CustomName: {translate: "entity.stage.1.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 3000,\
-                                    "current_hp": 3000,\
+                                    "max_hp": 3200,\
+                                    "current_hp": 3200,\
                                     \
-                                    "dmg": 4,\
-                                    "str": 3,\
+                                    "dmg": 6,\
+                                    "str": 15,\
                                     "def": 1,\
                                     \
                                     "xp": 2,\
@@ -63,7 +63,8 @@ setblock ~ ~ ~ minecraft:spawner\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
-                            ]\
+                            ],\
+                            Team: "enemy"\
                         }\
                     ]\
                 }\
@@ -100,11 +101,11 @@ setblock ~ ~ ~ minecraft:spawner\
                             CustomName: {translate: "entity.stage.1.2.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 3000,\
-                                    "current_hp": 3000,\
+                                    "max_hp": 3200,\
+                                    "current_hp": 3200,\
                                     \
-                                    "dmg": 4,\
-                                    "str": 3,\
+                                    "dmg": 6,\
+                                    "str": 8,\
                                     "def": 1,\
                                     \
                                     "xp": 2,\
@@ -116,7 +117,8 @@ setblock ~ ~ ~ minecraft:spawner\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
-                            ]\
+                            ],\
+                            Team: "enemy"\
                         }\
                     ]\
                 }\
