@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-head"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-chest"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-legs"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-boots"
+                }
+            ]
+        }
+    ]
+}

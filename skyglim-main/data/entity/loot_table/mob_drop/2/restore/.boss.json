@@ -6,23 +6,19 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/r-sword"
+                    "value": "entity:mob_drop/2/restore/r-head"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/r-s-sword"
+                    "value": "entity:mob_drop/2/restore/r-chest"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/r-axe"
+                    "value": "entity:mob_drop/2/restore/r-legs"
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/r-bow"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/1/restore/r-crossbow"
+                    "value": "entity:mob_drop/2/restore/r-boots"
                 }
             ],
             "conditions": [
