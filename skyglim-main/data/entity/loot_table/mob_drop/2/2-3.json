@@ -37,11 +37,6 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/normal/stick",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
                     "value": "crafting:ingredients/normal/tripwire_hook",
                     "weight": 1
                 }
