@@ -17,7 +17,7 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": "stage.4.r-shard.1.name"
+                                    "translate": "stage.4.r-shard.2.name"
                                 }
                             ]
                         },
@@ -35,23 +35,16 @@
                                     "italic": false
                                 },
                                 [
-                                    {
-                                        "text": "\uf102\uE002 ",
-                                        "color": "#ffffff",
-                                        "italic": false
-                                    },
-                                    {
-                                        "translate": "common.status.cc",
-                                        "color": "#94d3e6"
-                                    },
-                                    {
-                                        "text": " \uE010 ",
-                                        "color": "gray"
-                                    },
-                                    { 
-                                        "text": "+3...?",
-                                        "color": "#aaaaaa"
-                                    }
+                                    {"text": "\uf102\uE005 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.spd", "color": "#44ddf4"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "+1...?", "color": "#aaaaaa"}
+                                ],
+                                [
+                                    {"text": "\uf102\uE007 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.luck", "color": "#bfe493"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "+10...?", "color": "#aaaaaa"}
                                 ],
                                 {
                                     "translate": "common.lore.line.2",
@@ -59,12 +52,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": "stage.4.r-shard.1.lore.1",
+                                    "translate": "stage.4.r-shard.2.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "translate": "stage.4.r-shard.1.lore.2",
+                                    "translate": "stage.4.r-shard.2.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
@@ -167,7 +160,7 @@
                                         "minecraft:unbreakable"
                                     ]
                                 },
-                                "minecraft:repair_cost": 1104009,
+                                "minecraft:repair_cost": 1104010,
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:custom_model_data": {
                                     "strings": ["rare"]
