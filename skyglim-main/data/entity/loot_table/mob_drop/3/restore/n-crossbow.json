@@ -1,0 +1,221 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:chest",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                {
+                                    "translate": "restore.not-restored",
+                                    "color": "gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "stage.3.n-crossbow.name"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "restore.item.type.crossbow",
+                                    "italic": false,
+                                    "color": "#f5de84"
+                                },
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "text": "\uf102\uE008 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "common.status.dmg",
+                                        "color": "#ff4141"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    { 
+                                        "text": "+10...?",
+                                        "color": "#aaaaaa"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE001 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "common.status.str",
+                                        "color": "#d94262"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "+16...?",
+                                        "color": "#aaaaaa"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": "\uf102\uE003 ",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "common.status.cd",
+                                        "color": "#66a5b8"
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "+2...?",
+                                        "color": "#aaaaaa"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "stage.3.n-crossbow.lore.1",
+                                    "color": "#94d3e6",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "stage.3.n-crossbow.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Normal",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "bold": true
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 0,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 1,
+                                    "refinement": {
+                                        "ref": -1,
+                                        "type": 3,
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "restore": -1,
+                                    "sell": 5,
+                                    "enchantment": -1,
+                                    "mainhand": 1
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    },
+                                    {
+                                        "id": "item.weapon",
+                                        "type": "minecraft:attack_speed",
+                                        "amount": 0,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    },
+                                    {
+                                        "id": "item.weapon.notweapon",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:unbreakable": {},
+                                "minecraft:enchantments": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:enchantments",
+                                        "minecraft:unbreakable"
+                                    ]
+                                },
+                                "minecraft:repair_cost": 1103004,
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:custom_model_data": {
+                                    "strings": ["normal"]
+                                },
+                                "minecraft:enchantment_glint_override": false
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

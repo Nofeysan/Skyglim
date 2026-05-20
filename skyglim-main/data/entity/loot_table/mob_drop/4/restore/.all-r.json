@@ -1,0 +1,66 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-s.sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-axe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-bow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-crossbow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-head"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-chest"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-legs"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-boots"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-shard.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-shard.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-shard.3"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-shard.4"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/r-shard.5"
+                }
+            ]
+        }
+    ]
+}

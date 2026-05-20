@@ -1,0 +1,62 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-s.sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-axe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-bow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-crossbow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-head"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-chest"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-legs"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-boots"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-shard.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-shard.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-shard.3"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/4/restore/e-shard.4"
+                }
+            ]
+        }
+    ]
+}

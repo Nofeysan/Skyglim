@@ -207,7 +207,7 @@
                                     "req_mp": {"i": 20},
                                     "mainhand": 1,
                                     "restore": -255,
-                                    "enchantment": -1, 
+                                    "enchantment": -255, 
                                     "sell": 10
                                 }
                             }

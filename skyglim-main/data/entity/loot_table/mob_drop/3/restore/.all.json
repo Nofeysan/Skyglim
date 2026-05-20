@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-s.sword"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-axe"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-bow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-crossbow"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-head"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-chest"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-legs"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-boots"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-shard.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/3/restore/n-shard.2"
+                }
+            ]
+        }
+    ]
+}
