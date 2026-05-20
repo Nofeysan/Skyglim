@@ -48,8 +48,8 @@ scoreboard players set rolls_total Temp 0
 #scoreboard players set base Temp 
 #function modify:restore/list/status/spd
 
-#scoreboard players set base Temp 
-#function modify:restore/list/status/mp
+scoreboard players set base Temp 12
+function modify:restore/list/status/mp
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/luck

@@ -25,7 +25,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "restore.item.type.bow",
+                                    "translate": "restore.item.type.crossbow",
                                     "italic": false,
                                     "color": "#f5de84"
                                 },
@@ -59,7 +59,7 @@
                                 },
                                 {
                                     "translate": "stage.4.e-crossbow.lore.1",
-                                    "color": "#ffffff",
+                                    "color": "#94d3e6",
                                     "italic": false
                                 },
                                 {

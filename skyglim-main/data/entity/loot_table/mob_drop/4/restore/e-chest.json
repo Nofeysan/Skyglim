@@ -174,7 +174,8 @@
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
                                         "minecraft:enchantments",
-                                        "minecraft:unbreakable"
+                                        "minecraft:unbreakable",
+                                        "minecraft:trim"
                                     ]
                                 },
                                 "minecraft:repair_cost": 1104106,
