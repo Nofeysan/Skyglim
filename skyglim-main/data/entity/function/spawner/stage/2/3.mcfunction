@@ -41,8 +41,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                 head: {id: "minecraft:oak_log", components: {"minecraft:unbreakable": {}}},\
                                 chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}},\
-                                mainhand: {id: "minecraft:bow", components: {"minecraft:enchantment_glint_override": true}}\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
