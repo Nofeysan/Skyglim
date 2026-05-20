@@ -30,11 +30,11 @@ scoreboard players set rolls_total Temp 0
 #scoreboard players set base Temp 
 #function modify:restore/list/status/dmg
 
-#scoreboard players set base Temp 
-#function modify:restore/list/status/hp
+scoreboard players set base Temp 12
+function modify:restore/list/status/hp
 
-#scoreboard players set base Temp 
-#function modify:restore/list/status/str
+scoreboard players set base Temp 1
+function modify:restore/list/status/str
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/cc
@@ -42,8 +42,8 @@ scoreboard players set rolls_total Temp 0
 #scoreboard players set base Temp 
 #function modify:restore/list/status/cd
 
-#scoreboard players set base Temp 
-#function modify:restore/list/status/def
+scoreboard players set base Temp 5
+function modify:restore/list/status/def
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/spd
@@ -60,11 +60,11 @@ scoreboard players operation rolls_total Temp /= rolls Temp
 
 # 設定
 execute store result storage modify: restore.average int 1 run scoreboard players get rolls_total Temp
-data modify storage modify: restore.name set value 'path'
+data modify storage modify: restore.name set value 'stage.3.n-boots.name'
 
 # id と見た目の設定
-data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value ""
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" set value ""
+data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:chainmail_boots"
+#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" set value ""
 
 # 近接武器なら殴れるようにする
 #data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
