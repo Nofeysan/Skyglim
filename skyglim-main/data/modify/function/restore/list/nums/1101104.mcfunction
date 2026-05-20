@@ -54,6 +54,9 @@ function modify:restore/list/status/spd
 scoreboard players set base Temp 3
 function modify:restore/list/status/luck
 
+# もし avg. が 80 以上なら glint 付与
+execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true
+
 ###* アイテム名変更
 # 平均を導出
 scoreboard players operation rolls_total Temp /= rolls Temp
