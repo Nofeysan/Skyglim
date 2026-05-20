@@ -39,14 +39,6 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/3/restore/n-boots"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/3/restore/n-shard.1"
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/3/restore/n-shard.2"
                 }
             ]
         }
