@@ -10,35 +10,41 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/l",
-                    "weight": 85
+                    "weight": 90
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/lb",
-                    "weight": 14
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "item:currency/el",
-                    "weight": 1
+                    "weight": 10
                 }
             ]
         },
         {
             "rolls": {
-                "min": 0,
-                "max": 3
+                "min": 1,
+                "max": 1
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/mob/rotten_flesh",
-                    "weight": 99
+                    "value": "crafting:ingredients/normal/bowl",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/mob/e_rotten_flesh",
+                    "value": "crafting:ingredients/normal/glass_bottle",
                     "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/tripwire_hook",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
                 }
             ]
         },
@@ -48,12 +54,12 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/3/restore/.all",
-                    "weight": 50
+                    "weight": 60
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/4/restore/.all-r",
-                    "weight": 50
+                    "weight": 40
                 }
             ],
             "conditions": [

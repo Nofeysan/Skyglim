@@ -25,43 +25,43 @@ setblock ~ ~ ~ minecraft:spawner\
                     attributes: [{id: "minecraft:scale", base: 0}],\
                     Passengers: [\
                         {\
-                            id: "minecraft:skeleton",\
+                            id: "minecraft:zombie",\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
                                 {id: "minecraft:max_health", base: 1024},\
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.23}\
+                                {id:"minecraft:movement_speed", base: 0.22}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:warped_nylium", components: {"minecraft:unbreakable": {}}},\
-                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 3098038, "minecraft:enchantment_glint_override": true}},\
-                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 3103414, "minecraft:enchantment_glint_override": true}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 3109814, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:bow", components: {"minecraft:enchantment_glint_override": true}},\
-                                offhand: {id: "minecraft:tipped_arrow", components: {"minecraft:potion_contents": {custom_effects: [{id: "minecraft:slowness", duration: 2000, amplifier: 1}], custom_color: 5454242}}}\
+                                head: {id: "minecraft:bookshelf", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5620364, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5620364, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5620364, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:book", components: {"minecraft:enchantment_glint_override": true}},\
+                                offhand: {id: "minecraft:written_book", components: {"minecraft:enchantment_glint_override": true}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.3.2.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.4.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 9000,\
-                                    "current_hp": 9000,\
+                                    "max_hp": 14000,\
+                                    "current_hp": 14000,\
                                     \
-                                    "dmg": 11,\
-                                    "str": 25,\
-                                    "def": 7,\
+                                    "dmg": 17,\
+                                    "str": 20,\
+                                    "def": 12,\
                                     \
-                                    "xp": 18,\
+                                    "xp": 30,\
                                     \
-                                    "lore": "entity.stage.3.2.lore",\
+                                    "lore": "entity.stage.4.1.lore",\
                                     \
-                                    "loot": "3/3-2"\
+                                    "loot": "4/4-1"\
                                 }\
                             },\
                             active_effects: [\

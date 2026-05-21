@@ -1,6 +1,7 @@
 {
     "description": "Give Slow",
     "supported_items": [
+        "minecraft:stone_button",
         "minecraft:warped_fungus_on_a_stick"
     ],
     "slots": ["mainhand"],

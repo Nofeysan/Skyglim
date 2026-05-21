@@ -4,7 +4,7 @@
         {
             "rolls": {
                 "min": 0,
-                "max": 3
+                "max": 4
             },
             "entries": [
                 {
@@ -26,19 +26,30 @@
         },
         {
             "rolls": {
-                "min": 0,
-                "max": 3
+                "min": 1,
+                "max": 2
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/mob/rotten_flesh",
-                    "weight": 99
+                    "value": "crafting:ingredients/normal/bowl",
+                    "weight": 1
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/mob/e_rotten_flesh",
+                    "value": "crafting:ingredients/normal/glass_bottle",
                     "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/tripwire_hook",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.3
                 }
             ]
         },
