@@ -27,7 +27,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/mob/rotten_flesh",
+                    "value": "crafting:ingredients/mob/bone",
                     "weight": 100
                 }
             ]
