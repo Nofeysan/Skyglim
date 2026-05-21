@@ -16,7 +16,8 @@
         "minecraft:piglin_brute",
         "minecraft:drowned",
         "minecraft:blaze",
-        "minecraft:bogged"
+        "minecraft:bogged",
+        "minecraft:vindicator"
     ]
     }
 }
