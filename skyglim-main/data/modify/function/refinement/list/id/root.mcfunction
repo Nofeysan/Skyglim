@@ -2,7 +2,10 @@
 execute store result score type Temp run data get block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.type
 
 # 種類分けで実行
+# 1: 近接武器, 2: 遠距離武器
 $execute if score type Temp matches 1..2 run function modify:refinement/list/id/weapon/$(roll)
+
+# 4~7: 各部位防具, 9: 輝石
 $execute if score type Temp matches 4..7 run function modify:refinement/list/id/armor/$(roll)
 $execute if score type Temp matches 9 run function modify:refinement/list/id/armor/$(roll)
 
