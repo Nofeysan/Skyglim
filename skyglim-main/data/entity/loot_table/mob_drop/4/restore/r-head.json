@@ -110,8 +110,8 @@
                                     "text": ""
                                 },
                                 {
-                                    "text": "Normal",
-                                    "color": "#ffffff",
+                                    "text": "Rare",
+                                    "color": "#2f7bea",
                                     "italic": false,
                                     "bold": true
                                 },
