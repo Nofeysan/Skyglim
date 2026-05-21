@@ -3,19 +3,19 @@
     "pools": [
         {
             "rolls": {
-                "min": 0,
-                "max": 4
+                "min": 8,
+                "max": 16
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/l",
-                    "weight": 93
+                    "weight": 900
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/lb",
-                    "weight": 6
+                    "weight": 99
                 },
                 {
                     "type": "minecraft:loot_table",
@@ -25,23 +25,20 @@
             ]
         },
         {
-            "rolls": 1,
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/3/restore/.all",
-                    "weight": 50
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/4/restore/.all-r",
-                    "weight": 50
-                }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.075
+                    "value": "entity:mob_drop/3/restore/.all-nr",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.30
+                        }
+                    ]
                 }
             ]
         }
