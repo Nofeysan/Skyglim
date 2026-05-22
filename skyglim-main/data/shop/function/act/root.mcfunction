@@ -14,3 +14,5 @@ execute if predicate shop:potion/use_misty run function shop:act/potion/use_mist
 execute if predicate shop:potion/use_maiotome run function shop:act/potion/use_maiotome
 execute if predicate shop:potion/use_prelude run function shop:act/potion/use_prelude
 
+# story用
+execute if predicate shop:potion/use_story_star run function story:0-tutorial/use_star
