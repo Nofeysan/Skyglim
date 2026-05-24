@@ -28,7 +28,12 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": "story.item.star.lore",
+                                    "translate": "story.item.star.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "story.item.star.lore.2",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
