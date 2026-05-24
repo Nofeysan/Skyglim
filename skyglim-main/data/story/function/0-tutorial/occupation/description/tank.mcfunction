@@ -14,4 +14,7 @@ tellraw @s \
 
 tellraw @s [{translate: "tutorial.occupation.tank"}, "\n"]
 
-tellraw @s {translate: "tutorial.occupation.choose", click_event: {action: "run_command", command: "function story:0-tutorial/occupation/click/tank"}}
+tellraw @s {translate: "tutorial.occupation.choose", click_event: {action: "run_command", command: "trigger story.trigger set 12"}}
+
+# trigger
+scoreboard players enable @s story.trigger
