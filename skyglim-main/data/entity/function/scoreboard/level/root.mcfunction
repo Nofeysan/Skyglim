@@ -26,14 +26,17 @@ scoreboard players remove @s NextXp 25
 
 # 職業ごとにステータス上昇
 execute if score @s occupation matches 0 run function entity:scoreboard/level/none
-execute if score @s occupation matches 1 run function entity:scoreboard/level/dasher
-execute if score @s occupation matches 2 run function entity:scoreboard/level/fighter
+execute if score @s occupation matches 1 run function entity:scoreboard/level/archer
+execute if score @s occupation matches 2 run function entity:scoreboard/level/berserker
 execute if score @s occupation matches 3 run function entity:scoreboard/level/tank
 execute if score @s occupation matches 4 run function entity:scoreboard/level/magic
 execute if score @s occupation matches 5 run function entity:scoreboard/level/zuishou
 
 # ステータスを有効化
 function damageapi:status/player/check
+
+# token
+scoreboard players add @s token 1
 
 # 全回復
 scoreboard players operation @s CurrentHealth = @s MaxHealth

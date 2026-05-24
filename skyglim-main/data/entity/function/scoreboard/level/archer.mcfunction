@@ -1,8 +1,8 @@
 # ステータス伸びたら通知してあげましょうか
-scoreboard players add @s Health 5
-tellraw @s [{text: "[ MAX HP +5 ]",color: "gray"}]
+scoreboard players add @s Health 3
+tellraw @s [{text: "[ MAX HP +3 ]",color: "gray"}]
 
-scoreboard players add @s Strength 2
+scoreboard players add @s Strength 3
 tellraw @s [{text: "[ STR +2 ]",color: "gray"}]
 
 scoreboard players add @s Defence 2
