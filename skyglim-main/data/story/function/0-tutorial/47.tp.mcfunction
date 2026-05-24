@@ -15,5 +15,8 @@ scoreboard players set _ story.phase -1
 # spawnpoint
 spawnpoint @a 89 51 183
 
+# 途中参加者用
+setblock 100 61 -222 minecraft:end_gateway{exit_portal: [90, 33, 80], ExactTeleport: true}
+
 # allay
 kill @n[type=minecraft:allay, tag=kalmia]

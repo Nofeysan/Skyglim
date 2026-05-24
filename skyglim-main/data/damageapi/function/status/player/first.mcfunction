@@ -29,6 +29,7 @@ scoreboard players set @s StatusRegister 1
 # ステータスを有効化
 function damageapi:status/player/check
 
-
+# spawnpoint
+setworldspawn 100 62 -350 0.0 0.0
 
 tellraw @s [{text:"\uE010 ステータスの初期設定が完了しました。",color:"#9279d3"}]
