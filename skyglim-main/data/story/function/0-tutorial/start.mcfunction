@@ -18,6 +18,7 @@ scoreboard players set _ story.phase 1
 
 # effect
 effect give @a minecraft:blindness 5 0 true
+effect give @a minecraft:saturation infinite 0 true
 
 # story 開始
 schedule function story:0-tutorial/1 100t
