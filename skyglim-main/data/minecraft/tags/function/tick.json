@@ -2,6 +2,7 @@
     "values": [
         "entity:tick",
         "modify:modify_tick",
-        "stage:tick"
+        "stage:tick",
+        "story:tick"
     ]
 }

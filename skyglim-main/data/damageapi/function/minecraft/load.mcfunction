@@ -124,6 +124,9 @@ scoreboard objectives setdisplay list CurrentLv
 gamerule doImmediateRespawn true
 gamerule keepInventory true
 gamerule showDeathMessages false
+gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule fallDamage true
 
 # 統計
 #! スポナー壊した数とか、受けたダメージとか......
