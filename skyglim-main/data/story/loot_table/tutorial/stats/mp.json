@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue006 MP",
-                                    "color": "#9279d3",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/mp"
+                                [
+                                    {
+                                        "text": "\ue006 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/mp"
+                                        }
+                                    },
+                                    {
+                                        "text": "MP",
+                                        "color": "#9279d3"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "Status - CC",
+                        "text": "token - STR+1",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -29,19 +29,19 @@
                                 "",
                                 [
                                     {
-                                        "text": "\ue002 ",
+                                        "text": "\ue001 ",
                                         "italic": false,
                                         "click_event": {
                                             "action": "run_command",
-                                            "command": "function story:0-tutorial/stats/cc"
+                                            "command": "function damageapi:status/player/token/select/str"
                                         }
                                     },
                                     {
-                                        "text": "CC",
-                                        "color": "#94d3e6"
+                                        "text": "STR",
+                                        "color": "#d94262"
                                     }
                                 ],                                
-                                "",
+                                "+1",
                                 ""
                             ],
                             "has_glowing_text": true,

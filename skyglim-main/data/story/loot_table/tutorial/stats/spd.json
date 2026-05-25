@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue005 SPD",
-                                    "color": "#44ddf4",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/spd"
+                                [
+                                    {
+                                        "text": "\ue005 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/spd"
+                                        }
+                                    },
+                                    {
+                                        "text": "SPD",
+                                        "color": "#44ddf4"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

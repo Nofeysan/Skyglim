@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue000 HP",
-                                    "color": "#e094d7",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/hp"
+                                [
+                                    {
+                                        "text": "\ue000 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/hp"
+                                        }
+                                    },
+                                    {
+                                        "text": "HP",
+                                        "color": "#e094d7"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

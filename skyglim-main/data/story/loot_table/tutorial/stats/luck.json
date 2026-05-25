@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue007 LUCK",
-                                    "color": "#bfe493",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/luck"
+                                [
+                                    {
+                                        "text": "\ue007 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/luck"
+                                        }
+                                    },
+                                    {
+                                        "text": "LUCK",
+                                        "color": "#bfe493"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

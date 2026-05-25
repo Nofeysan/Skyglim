@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "Status - CC",
+                        "text": "token - LUCK+3",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -27,21 +27,14 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                [
-                                    {
-                                        "text": "\ue002 ",
-                                        "italic": false,
-                                        "click_event": {
-                                            "action": "run_command",
-                                            "command": "function story:0-tutorial/stats/cc"
-                                        }
-                                    },
-                                    {
-                                        "text": "CC",
-                                        "color": "#94d3e6"
-                                    }
-                                ],                                
-                                "",
+                                {
+                                    "translate": "token.reset.sign.1",
+                                    "color": "#bfcfd8"
+                                },                                
+                                {
+                                    "translate": "token.reset.sign.2",
+                                    "color": "#bfcfd8"
+                                },
                                 ""
                             ],
                             "has_glowing_text": true,
