@@ -21,5 +21,5 @@ function damageapi:status/player/check
 tellraw @s [{text: "\ue010 ", color: "#fff6fe"}, {text: "DEF", color: "#5dccab"}, {"translate": "token.selected"}, {translate: "token.selected.remain"}, {score: {name: "@s", objective: "token"}, color: "gold"}, {text: ")"}]
 
 # sound
-execute at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 0.7 1
+execute at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 0.7 2
 execute at @s run particle minecraft:dust{color: [0.364705882352941, 0.8, 0.670588235294118], scale: 0.9} ~ ~ ~ 0.5 0.8 0.5 0.1 120

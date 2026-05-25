@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "token - LUCK+3",
+                        "text": "token - Reset",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -29,7 +29,11 @@
                                 "",
                                 {
                                     "translate": "token.reset.sign.1",
-                                    "color": "#bfcfd8"
+                                    "color": "#bfcfd8",
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function damageapi:status/player/token/select/reset"
+                                        }
                                 },                                
                                 {
                                     "translate": "token.reset.sign.2",

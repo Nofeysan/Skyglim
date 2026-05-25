@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "token - LUCK+3",
+                        "text": "token - Get",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -29,7 +29,11 @@
                                 "",
                                 {
                                     "translate": "token.get.sign.1",
-                                    "color": "#bfcfd8"
+                                    "color": "#bfcfd8",
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function damageapi:status/player/token/select/check"
+                                        }
                                 },                                
                                 {
                                     "translate": "token.get.sign.2",

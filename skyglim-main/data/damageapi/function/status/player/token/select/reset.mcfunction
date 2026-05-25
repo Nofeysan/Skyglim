@@ -33,7 +33,6 @@
     scoreboard players operation @s token += @s token.useto.mp
     scoreboard players set @s token.useto.mp 0
 
-
     # LUCK
     scoreboard players operation @s Luck -= @s token.useto.luck
     scoreboard players operation @s Luck -= @s token.useto.luck
@@ -42,7 +41,10 @@
     scoreboard players set @s token.useto.luck 0
 
 # tell
-tellraw @s [{translate: "token.reset", color: gray}, {translate: "token.get.count"}, {score: {name: "@s", objective: "token"}, color: "gold"}, {text: ")"}]
+tellraw @s [{translate: "token.reset", color: gray}, {text: " ("}, {translate: "token.get.count"}, {score: {name: "@s", objective: "token"}, color: "gold"}, {text: ")"}]
 
 # sound
-execute at @s run playsound minecraft:block.brewing_stand.brew voice @s ~ ~ ~ 1 0.5
+execute at @s run playsound minecraft:block.brewing_stand.brew voice @s ~ ~ ~ 1 1
+
+# reload
+function damageapi:status/player/check
