@@ -59,7 +59,7 @@
                                 ]
                             ],
                             "has_glowing_text": true,
-                            "color": "white"
+                            "color": "black"
                         },
                         "back_text": {
                             "messages": [

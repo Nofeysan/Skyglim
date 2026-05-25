@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "ELBx64 \ue010 ELx1",
+                        "text": "ELBx1 \ue010 ELx64",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -59,7 +59,7 @@
                                 ]
                             ],
                             "has_glowing_text": true,
-                            "color": "white"
+                            "color": "black"
                         },
                         "back_text": {
                             "messages": [
