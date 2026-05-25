@@ -10,12 +10,12 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/l",
-                    "weight": 900
+                    "weight": 930
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "item:currency/lb",
-                    "weight": 99
+                    "weight": 69
                 },
                 {
                     "type": "minecraft:loot_table",
