@@ -18,3 +18,6 @@ scoreboard objectives add story.progress dummy
 
 # 会話
 scoreboard objectives add TalkToVillager dummy
+
+# 帰還用
+scoreboard objectives add ReturnPearl dummy
