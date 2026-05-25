@@ -13,7 +13,7 @@ scoreboard players reset @s DeathCount
 execute store result score _ _ run random value 2..8
 
 # tell
-tellraw @s [{translate: "death.penalty.1"}, {score: {name: "_", objective: "_"}}, {translate: "death.penalty.2"}]
+tellraw @s [{translate: "death.penalty.1", color: "#746aac"}, {score: {name: "_", objective: "_"}}, {translate: "death.penalty.2"}]
 
 # calc
 scoreboard players set $death_penalty _ 100
