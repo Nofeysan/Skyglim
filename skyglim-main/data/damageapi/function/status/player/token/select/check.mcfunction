@@ -1,0 +1,11 @@
+#> damageapi:status/player/token/check
+# 
+# 
+# 
+# 
+
+# 表示
+tellraw @s [{translate: "token.get.count", color: "gold"}, {score: {name: "@s", objective: "token"}}]
+
+# sound
+execute at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 0.5

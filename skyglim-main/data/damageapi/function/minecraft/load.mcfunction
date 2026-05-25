@@ -92,6 +92,13 @@ scoreboard objectives add token dummy "ステータス振り"
 scoreboard objectives add ShowXp dummy "経験値表示用"
 scoreboard objectives add ShowXpTime dummy "経験値表示時間"
 
+scoreboard objectives add token.useto.hp dummy
+scoreboard objectives add token.useto.mp dummy
+scoreboard objectives add token.useto.str dummy
+scoreboard objectives add token.useto.def dummy
+scoreboard objectives add token.useto.cd dummy
+scoreboard objectives add token.useto.luck dummy
+
 team add none "職業未設定"
 team add archer "天弓"
 team add berserker "狂戦士"

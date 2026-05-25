@@ -9,8 +9,9 @@ execute unless score @s token matches 1.. run return run function damageapi:stat
 
 # token 消費
 scoreboard players remove @s token 1
+scoreboard players add @s token.useto.def 1
 
-# HP+
+# DEF+
 scoreboard players add @s Defence 1
 
 # reload
