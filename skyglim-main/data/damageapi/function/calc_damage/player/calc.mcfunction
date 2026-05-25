@@ -123,7 +123,8 @@ function damageapi:calc_damage/player/armor/root
 
 #tellraw @s [{text: "",color: "#ec1d2f"},{text:"\uE010 ",color: "gray"},{"score":{"name":"@s", "objective":"Damage.int"}},{text:"."},{"score":{"name":"@s", "objective":"Damage.float"}},{text:" ダメージ！"}]
 
-
+# return 処理のリセット
+execute if score @s ReturnPearl matches 1.. run function stage:player/return/fail
 
 # リセット
 #data modify entity @s HurtTime set value 0s
