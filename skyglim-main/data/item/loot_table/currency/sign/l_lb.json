@@ -1,0 +1,86 @@
+{
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:birch_sign",
+            "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                        "text": "Lx64 \ue010 LBx1",
+                        "color": "aqua",
+                        "italic": false,
+                        "bold": false,
+                        "underlined": true
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:block_entity_data": {
+                        "id": "minecraft:sign",
+                        "front_text": {
+                            "messages": [
+                                {
+                                    "text": "\ue011 Exchange \ue010",
+                                    "color": "#746aac",
+                                    "click_event": {
+                                        "action": "run_command",
+                                        "command": "function item:currency/change/l_lb"
+                                    }
+                                },
+                                [
+                                    {
+                                        "text": "L",
+                                        "color": "#3755bd"
+                                    },
+                                    {
+                                        "text": " x64",
+                                        "color": "#000000"
+                                    }
+                                ],                                
+                                {
+                                    "text": "⇩ ⇩ ⇩"
+                                },
+                                [
+                                    {
+                                        "text": "LB",
+                                        "color": "#3755bd"
+                                    },
+                                    {
+                                        "text": " x1",
+                                        "color": "#000000"
+                                    }
+                                ]
+                            ],
+                            "has_glowing_text": true,
+                            "color": "white"
+                        },
+                        "back_text": {
+                            "messages": [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "has_glowing_text": true
+                        }
+                    },
+                "minecraft:enchantment_glint_override": true
+                }
+            },
+            {
+                "function": "minecraft:set_count",
+                "count": 1
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
