@@ -16,3 +16,6 @@ execute if predicate shop:potion/use_prelude run function shop:act/potion/use_pr
 
 # story用
 execute if predicate shop:potion/use_story_star run function story:0-tutorial/use_star
+
+# 帰還アイテム用
+execute if predicate shop:potion/use_return_pearl run function stage:player/return/root

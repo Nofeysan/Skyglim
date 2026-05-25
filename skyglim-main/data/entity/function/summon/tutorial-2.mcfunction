@@ -17,7 +17,7 @@ summon minecraft:zombie ~ ~ ~ \
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:iron_helmet", components: {"minecraft:unbreakable": {}}},\
+                                head: {id: "minecraft:leather_helmet", components: {"minecraft:unbreakable": {}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
@@ -30,7 +30,7 @@ summon minecraft:zombie ~ ~ ~ \
                                     \
                                     "dmg": 0,\
                                     "str": 0,\
-                                    "def": 999,\
+                                    "def": 99999,\
                                     \
                                     "xp": 0,\
                                     \

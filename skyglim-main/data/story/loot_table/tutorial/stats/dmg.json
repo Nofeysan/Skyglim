@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue008 DMG",
-                                    "color": "#ff4141",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/dmg"
+                                [
+                                    {
+                                        "text": "\ue008 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/dmg"
+                                        }
+                                    },
+                                    {
+                                        "text": "DMG",
+                                        "color": "#ff4141"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

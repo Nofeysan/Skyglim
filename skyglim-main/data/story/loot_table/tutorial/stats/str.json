@@ -27,15 +27,20 @@
                         "front_text": {
                             "messages": [
                                 "",
-                                {
-                                    "text": "\ue001 STR",
-                                    "color": "#d94262",
-                                    "italic": false,
-                                    "click_event": {
-                                        "action": "run_command",
-                                        "command": "function story:0-tutorial/stats/str"
+                                [
+                                    {
+                                        "text": "\ue001 ",
+                                        "italic": false,
+                                        "click_event": {
+                                            "action": "run_command",
+                                            "command": "function story:0-tutorial/stats/str"
+                                        }
+                                    },
+                                    {
+                                        "text": "STR",
+                                        "color": "#d94262"
                                     }
-                                },                                
+                                ],                                
                                 "",
                                 ""
                             ],

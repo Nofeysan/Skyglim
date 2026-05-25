@@ -19,6 +19,12 @@ scoreboard players set @s CurrentXp 0
 scoreboard players set @s CurrentLv 1
 scoreboard players set @s occupation 0
 scoreboard players set @s token 2
+scoreboard players set @s token.useto.hp 0
+scoreboard players set @s token.useto.str 0
+scoreboard players set @s token.useto.cd 0
+scoreboard players set @s token.useto.def 0
+scoreboard players set @s token.useto.mp 0
+scoreboard players set @s token.useto.luck 0
 
 team leave @s
 team join none

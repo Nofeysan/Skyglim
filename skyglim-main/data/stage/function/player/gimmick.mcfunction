@@ -32,3 +32,5 @@ execute if block ~ ~-0.75 ~ minecraft:dead_brain_coral_block run tag @s add cant
 execute unless block ~ ~-0.75 ~ minecraft:dead_brain_coral_block if entity @s[tag=cant_jump] run function stage:player/cant_jump/remove
 execute if entity @s[tag=cant_jump] run function stage:player/cant_jump/act
 
+# 帰還用
+execute if score @s ReturnPearl matches 0.. run function stage:player/return/every
