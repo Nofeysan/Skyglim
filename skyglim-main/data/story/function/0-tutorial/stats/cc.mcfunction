@@ -15,3 +15,5 @@ tellraw @s \
 ]
 
 tellraw @s {translate: "tutorial.stats.cc"}
+
+execute at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.5 2

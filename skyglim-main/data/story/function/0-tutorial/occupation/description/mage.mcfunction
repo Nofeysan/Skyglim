@@ -18,3 +18,6 @@ tellraw @s {translate: "tutorial.occupation.choose", click_event: {action: "run_
 
 # trigger
 scoreboard players enable @s story.trigger
+
+# sound
+execute at @s run playsound minecraft:entity.wither.ambient voice @s ~ ~ ~ 0.3 1
