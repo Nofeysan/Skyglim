@@ -14,7 +14,7 @@ tellraw @s \
 
 tellraw @s [{translate: "difficulty.singularity.description"}, "\n"]
 
-tellraw @s {translate: "difficulty.select.button", click_event: {action: "run_command", command: "trigger story.trigger set 2"}}
+tellraw @s {translate: "difficulty.select.button", click_event: {action: "run_command", command: "trigger story.trigger set 3"}}
 
 # trigger
 scoreboard players enable @s story.trigger
