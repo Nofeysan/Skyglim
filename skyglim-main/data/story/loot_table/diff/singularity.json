@@ -11,7 +11,7 @@
                 "function": "minecraft:set_name",
                 "name": [
                     {
-                        "text": "diff - oracle(1)",
+                        "text": "diff - singularity(3)",
                         "color": "aqua",
                         "italic": false,
                         "bold": false,
@@ -28,12 +28,12 @@
                             "messages": [
                                 "",
                                 {
-                                    "text": "\ue011 Oracle \ue010",
-                                    "color": "green",
+                                    "text": "\ue011 Singularity \ue010",
+                                    "color": "dark_red",
                                     "italic": false,
                                     "click_event": {
                                         "action": "run_command",
-                                        "command": "function story:-1-diff/description/oracle"
+                                        "command": "function story:-1-diff/description/singularity"
                                     }
                                 },                                
                                 "",
