@@ -21,3 +21,6 @@ setblock 98 62 -258 minecraft:heavy_weighted_pressure_plate
 
 # 自動進行
 #schedule function story:0-tutorial/36 60t
+
+# playsound
+execute at @n[type=minecraft:allay, tag=kalmia] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5

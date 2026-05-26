@@ -20,3 +20,6 @@ execute positioned 104 61 -244 run particle minecraft:end_rod ~ ~ ~ 0.3 2 3 0.1 
 
 # 自動進行
 #schedule function story:0-tutorial/2 60t
+
+# playsound
+execute at @n[type=minecraft:allay, tag=kalmia] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5

@@ -9,6 +9,7 @@ scoreboard players add @s stage.enter 1
 
 # effect
 execute if score @s stage.enter matches 0 at @s run effect give @s minecraft:blindness 4 0 true
+execute if score @s stage.enter matches 0 at @s run effect give @s minecraft:slowness 4 9 true
 
 # sound
 execute if score @s stage.enter matches 0 at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 1 0.5

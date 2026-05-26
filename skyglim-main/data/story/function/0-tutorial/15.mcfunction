@@ -11,3 +11,6 @@ tellraw @a [{translate: "story.tutorial.15.tips", color: "gray"}]
 # ここでプレイヤーに実行させる
 # ランダムなプレイヤーに残滓を与える
 loot replace entity @r[gamemode=adventure] inventory.13 loot story:tutorial/star
+
+# playsound
+execute at @n[type=minecraft:allay, tag=kalmia] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5

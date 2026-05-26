@@ -35,9 +35,6 @@ execute if score @s occupation matches 5 run function entity:scoreboard/level/zu
 # ステータスを有効化
 function damageapi:status/player/check
 
-# token
-scoreboard players add @s token 1
-
 # 全回復
 scoreboard players operation @s CurrentHealth = @s MaxHealth
 scoreboard players operation @s CurrentMP = @s MaxMP

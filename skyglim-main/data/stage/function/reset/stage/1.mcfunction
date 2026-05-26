@@ -21,5 +21,8 @@ forceload remove 9849 -8 9951 131
 # スコアのリセット
 scoreboard players set _ stage.1 -1
 
+# boss 用
+bossbar remove minecraft:stage1.boss
+
 #! debug
-tellraw @a {text: '[!] プレイヤーがいないため、「Stage 1」をリセットしました。', color: "gray"}
+#tellraw @a {text: '[!] プレイヤーがいないため、「Stage 1」をリセットしました。', color: "gray"}

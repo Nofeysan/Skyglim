@@ -21,3 +21,10 @@ scoreboard objectives add TalkToVillager minecraft.custom:minecraft.talked_to_vi
 
 # 帰還用
 scoreboard objectives add ReturnPearl dummy
+
+# boss 用
+scoreboard objectives add BossMoves dummy
+scoreboard objectives add BossSlain dummy
+
+# difficulty
+scoreboard objectives add difficulty dummy

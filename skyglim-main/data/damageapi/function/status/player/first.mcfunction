@@ -35,6 +35,9 @@ scoreboard players set @s StatusRegister 1
 # ステータスを有効化
 function damageapi:status/player/check
 
+# stage 入場用
+scoreboard players add @s stage.enter 1
+
 # spawnpoint
 setworldspawn 100 62 -350 0.0 0.0
 

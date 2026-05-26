@@ -13,3 +13,4 @@ execute align xyz run summon minecraft:villager ~0.5 ~ ~0.5 {Invulnerable: true,
 execute align xyz run summon minecraft:villager ~0.5 ~ ~0.5 {Invulnerable: true, Silent: true, Rotation: [0,0], data: {role: "witch"}, VillagerData: {profession: "minecraft:none", type: "minecraft:swamp"}, NoAI: true, Offers: {}}
 
 execute align xyz run summon minecraft:villager ~0.5 ~ ~0.5 {Invulnerable: true, Silent: true, Rotation: [165,0], data: {role: "guard"}, VillagerData: {profession: "minecraft:weaponsmith", type: "minecraft:plains"}, NoAI: true, Offers: {}}
+execute align xyz run summon minecraft:villager 90.0 55 244 {Invulnerable: true, Silent: true, Rotation: [180,0], data: {role: "Avelian"}, VillagerData: {profession: "minecraft:mason", type: "minecraft:taiga"}, NoAI: true, Offers: {}}
