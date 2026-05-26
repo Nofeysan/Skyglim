@@ -21,7 +21,7 @@ data modify block 9894 16 5 LootTable set value "entity:mob_drop/1/chest"
 data modify block 9931 23 19 LootTable set value "entity:mob_drop/1/chest"
 
 # ボス召喚設置
-setblock 9920 11 88 minecraft:command_block{Command: "schedule function stage:boss/1/summon 40t"}
+setblock 9920 11 88 minecraft:command_block{Command: "function stage:boss/1/summon"}
 setblock 9920 12 88 minecraft:lapis_block
 setblock 9920 13 88 minecraft:polished_blackstone_button[face=floor, facing=west]
 
@@ -35,4 +35,4 @@ forceload remove 9849 -8 9951 131
 scoreboard players set _ stage.1 1
 
 #! debug
-tellraw @a {text: '[!] Stage 1 を構成しました。', color: "gray"}
+#tellraw @a {text: '[!] Stage 1 を構成しました。', color: "gray"}
