@@ -5,6 +5,9 @@
 # 
 
 ##* 分岐
+# 難易度選択
+execute if score @s story.trigger matches 1..3 run function story:-1-diff/select/root
+
 # 職業選択
 execute if score @s story.trigger matches 10..14 run function story:trigger/occupation/base
 
