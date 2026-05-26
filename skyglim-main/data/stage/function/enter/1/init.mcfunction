@@ -20,6 +20,9 @@ function entity:spawner/set {id: 'stage/1/1', xyz: '9926 17 33'}
 data modify block 9894 16 5 LootTable set value "entity:mob_drop/1/chest"
 data modify block 9931 23 19 LootTable set value "entity:mob_drop/1/chest"
 
+# ボス召喚設置
+#! ここに記入する
+
 # foeceload remove
 forceload remove 9849 -8 9951 131
 

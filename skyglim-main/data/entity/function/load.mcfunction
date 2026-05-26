@@ -5,3 +5,5 @@ scoreboard objectives add BeforeTrans dummy "Transportationまでの時間"
 
 # team
 team add enemy
+team modify enemy color red
+team modify enemy friendlyFire false
