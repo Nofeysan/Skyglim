@@ -21,7 +21,12 @@ data modify block 9894 16 5 LootTable set value "entity:mob_drop/1/chest"
 data modify block 9931 23 19 LootTable set value "entity:mob_drop/1/chest"
 
 # ボス召喚設置
-#! ここに記入する
+setblock 9920 11 88 minecraft:command_block{Command: "schedule function stage:boss/1/summon 40t"}
+setblock 9920 12 88 minecraft:lapis_block
+setblock 9920 13 88 minecraft:polished_blackstone_button[face=floor, facing=west]
+
+# ボス部屋出口
+fill 9901 14 89 9901 12 87 minecraft:cracked_stone_bricks
 
 # foeceload remove
 forceload remove 9849 -8 9951 131

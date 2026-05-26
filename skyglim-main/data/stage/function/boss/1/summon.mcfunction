@@ -5,12 +5,12 @@
 # 
 
 # ボタンとかを削除
-fill ~ ~ ~ ~ ~ ~ minecraft:air
+fill ~ ~ ~ ~ ~2 ~ minecraft:air
 setblock ~ ~ ~ minecraft:stone
 
 # summon
-function stage:boss/1/boss
-scoreboard players set @n[predicate=entity:entity_enemy, tag=boss, tag=s1] BossMoves 120
+execute positioned ~ ~2 ~ run function stage:boss/1/boss
+scoreboard players set s1 BossMoves 120
 
 # title
 title @a[distance=..30] times 10 40 20

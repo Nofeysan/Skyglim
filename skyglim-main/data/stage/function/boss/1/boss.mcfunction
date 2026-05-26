@@ -18,9 +18,9 @@ summon minecraft:zombie ~ ~ ~ \
                             AbsorptionAmount: 1024,\
                             equipment: {\
                                 head: {id: "minecraft:iron_helmet", components: {"minecraft:unbreakable": {}}},\
-                                head: {id: "minecraft:chainmail_chestplate", components: {"minecraft:unbreakable": {}}},\
-                                head: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}}},\
-                                head: {id: "minecraft:iron_boots", components: {"minecraft:unbreakable": {}}},\
+                                chest: {id: "minecraft:chainmail_chestplate", components: {"minecraft:unbreakable": {}}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}}},\
+                                feet: {id: "minecraft:iron_boots", components: {"minecraft:unbreakable": {}}},\
                                 mainhand: {id: "minecraft:iron_pickaxe", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
                             },\
                             drop_chances: {\
@@ -46,7 +46,6 @@ summon minecraft:zombie ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            NoAI: true, Silent: true,\
                             Tags: ["boss", "s1"]\
                         }
 

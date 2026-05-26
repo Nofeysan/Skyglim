@@ -5,7 +5,7 @@
 # 
 
 # random
-execute store result score s1-type BossMoves run random value 1..4
+execute store result score s1-type BossMoves run random value 1..5
 
 # 1: 自身の足元にでっかくAEC
 execute if score s1-type BossMoves matches 1 run function stage:boss/1/move/1/root

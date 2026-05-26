@@ -21,3 +21,11 @@ bossbar remove minecraft:stage1.boss
 tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.1.boss.name", color: "#be2152"}, {translate: "stage.boss.slain"}]
 
 execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.7 0.5
+
+# 出口開放
+fill 9901 14 89 9901 12 87 minecraft:air
+
+# 次の道
+forceload add 9991 -25 9987 -21
+fill 9991 67 -25 9987 62 -21 minecraft:air replace minecraft:oak_fence
+forceload remove 9991 -25 9987 -21

@@ -8,4 +8,4 @@
 effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:speed 7 2
 
 # score
-scoreboard players set @n[predicate=entity:entity_enemy, tag=boss, tag=s1] BossMoves 0
+scoreboard players set s1 BossMoves 0

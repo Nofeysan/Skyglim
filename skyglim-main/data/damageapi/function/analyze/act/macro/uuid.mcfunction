@@ -13,8 +13,8 @@ data modify storage analyze: data.lore set from entity @n[tag=analyzed] data.sta
 data modify storage analyze: data.name set from entity @n[tag=analyzed] CustomName
 
 # もし boss であれば一部情報を隠す
-execute if entity @n[tag=analyzed] run data modify storage analyze: data.maxhp set value "???"
-execute if entity @n[tag=analyzed] run data modify storage analyze: data.curhp set value "???"
+execute if entity @n[tag=analyzed, tag=boss] run data modify storage analyze: data.maxhp set value "???"
+execute if entity @n[tag=analyzed, tag=boss] run data modify storage analyze: data.curhp set value "???"
 
 # 実行！
 function damageapi:analyze/act/macro/tell with storage analyze: data
