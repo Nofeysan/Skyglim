@@ -26,6 +26,6 @@ particle minecraft:ash ~ ~ ~ 2 2 2 0.07 400
 
 # bossbar
 bossbar add minecraft:stage1.boss {translate: "entity.stage.1.boss.name", color: "#be2152"}
-bossbar set minecraft:stage1.boss color blue
+bossbar set minecraft:stage1.boss color green
 bossbar set minecraft:stage1.boss visible true
 bossbar set minecraft:stage1.boss players @a
