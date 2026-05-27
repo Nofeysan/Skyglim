@@ -8,6 +8,7 @@ loot replace block ~ ~-1 ~ container.5 loot shop:other/arrow/normal
 loot replace block ~ ~-1 ~ container.6 loot shop:other/arrow/slow
 loot replace block ~ ~-1 ~ container.7 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.8 loot modify:gray_glass
+
 loot replace block ~ ~-1 ~ container.9 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.10 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.11 loot modify:gray_glass
@@ -17,10 +18,11 @@ loot replace block ~ ~-1 ~ container.14 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.15 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.16 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.17 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.18 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.19 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.20 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.21 loot modify:gray_glass
+
+loot replace block ~ ~-1 ~ container.18 loot shop:other/potion/caramel_tea
+loot replace block ~ ~-1 ~ container.19 loot shop:other/potion/lady_grey
+loot replace block ~ ~-1 ~ container.20 loot shop:other/potion/royal_blend
+loot replace block ~ ~-1 ~ container.21 loot shop:other/potion/queens_choise
 loot replace block ~ ~-1 ~ container.22 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.23 loot shop:other/potion/mocha_milk
 loot replace block ~ ~-1 ~ container.24 loot shop:other/potion/misty

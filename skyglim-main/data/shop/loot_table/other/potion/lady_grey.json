@@ -1,0 +1,136 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "translate": "shop.item.other.potion.hp.lady_grey.name",
+                                    "color": "#94d3e6",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "shop.item.other.potion.hp.lady_grey.lore.1",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "shop.item.other.potion.hp.lady_grey.lore.2",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "translate": "common.effect",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "HP +100",
+                                        "color": "#e094d7"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "common.max_stack",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "4",
+                                        "color": "#e9b530"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "shop.item.value",
+                                        "color": "#bfe493",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "48L",
+                                        "color": "#3755bd"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:potion_contents": {
+                                    "custom_effects": [
+                                        {
+                                            "id": "minecraft:luck",
+                                            "duration": 4,
+                                            "amplifier": 1,
+                                            "show_icon": false,
+                                            "show_particles": false
+                                        }
+                                    ]
+                                },
+                                "minecraft:lock": {
+                                    "components": {
+                                        "minecraft:repair_cost": 255
+                                    }
+                                },
+                                "minecraft:custom_model_data": {
+                                    "strings": [ "" ]
+                                },
+                                "minecraft:max_stack_size": 4,
+                                "minecraft:repair_cost": 230011,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:potion_contents"
+                                    ]
+                                }
+                            }
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}
