@@ -112,15 +112,13 @@
                                             "show_icon": false,
                                             "show_particles": false
                                         }
-                                    ]
+                                    ],
+                                    "custom_color": 14197308
                                 },
                                 "minecraft:lock": {
                                     "components": {
                                         "minecraft:repair_cost": 255
                                     }
-                                },
-                                "minecraft:custom_model_data": {
-                                    "strings": [ "" ]
                                 },
                                 "minecraft:max_stack_size": 4,
                                 "minecraft:repair_cost": 230010,

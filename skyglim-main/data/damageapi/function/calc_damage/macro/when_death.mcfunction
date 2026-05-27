@@ -17,6 +17,15 @@ scoreboard players operation xp Temp /= #100 num
 execute unless entity @s[tag=boss] on attacker at @s run function damageapi:calc_damage/macro/add_xp
 execute if entity @s[tag=boss] on attacker at @s run function damageapi:calc_damage/macro/add_xp_boss
 
+# XP の方の経験値
+execute store result score _ _ run random value 0..99
+execute if score _ _ matches 0..49 run xp add @a[distance=..15] 2 points
+execute if score _ _ matches 50..74 run xp add @a[distance=..15] 3 points
+execute if score _ _ matches 75..84 run xp add @a[distance=..15] 5 points
+execute if score _ _ matches 85..92 run xp add @a[distance=..15] 7 points
+execute if score _ _ matches 93..97 run xp add @a[distance=..15] 15 points
+execute if score _ _ matches 98..99 run xp add @a[distance=..15] 25 points
+
 # 装備効果
 execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/armor/death
 execute on attacker if entity @s[type=minecraft:armor_stand] as @p[scores={UseMagicCheck=1}] run function damageapi:calc_damage/enemy/armor/death

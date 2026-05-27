@@ -8,11 +8,11 @@
 effect clear @s minecraft:luck
 
 # 回復処理
-scoreboard players operation _ Temp = @s MaxMP
+scoreboard players operation _ Temp = @s MaxHealth
 scoreboard players operation _ Temp *= #60 num
 scoreboard players operation _ Temp /= #100 num
 
-scoreboard players operation @s CurrentMP += _ Temp
+scoreboard players operation @s CurrentHealth += _ Temp
 
 scoreboard players operation _ Temp /= #100 num
 

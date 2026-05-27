@@ -99,7 +99,8 @@
                                             "show_icon": false,
                                             "show_particles": false
                                         }
-                                    ]
+                                    ],
+                                    "custom_color": 12734993
                                 },
                                 "minecraft:custom_model_data": {
                                     "strings": [ "" ]

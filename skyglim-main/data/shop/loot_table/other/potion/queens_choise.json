@@ -119,7 +119,8 @@
                                             "show_icon": false,
                                             "show_particles": false
                                         }
-                                    ]
+                                    ],
+                                    "custom_color": 12734993
                                 },
                                 "minecraft:lock": {
                                     "components": {
@@ -130,7 +131,7 @@
                                     "strings": [ "" ]
                                 },
                                 "minecraft:max_stack_size": 4,
-                                "minecraft:repair_cost": 230012,
+                                "minecraft:repair_cost": 230013,
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
                                         "minecraft:potion_contents"

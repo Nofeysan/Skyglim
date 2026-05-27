@@ -4,4 +4,4 @@
 # 
 # 
 
-tellraw @s [{translate: "villager.name.avelian"}, {translate: "villager.talk.avelian.1"}]
+tellraw @s [{translate: "story.avelian"}, {translate: "villager.talk.avelian.1"}]

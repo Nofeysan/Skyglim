@@ -20,4 +20,4 @@ repair_cost=270001 | repair_cost=270002\
 ]
 
 ###* 元に戻す
-function shop:system/other/inv_change
+function shop:system/magic/inv_change
