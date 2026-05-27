@@ -18,6 +18,7 @@ scoreboard objectives add story.progress dummy
 
 # 会話
 scoreboard objectives add TalkToVillager minecraft.custom:minecraft.talked_to_villager
+scoreboard objectives add CanTalkWithMe dummy
 
 # 帰還用
 scoreboard objectives add ReturnPearl dummy

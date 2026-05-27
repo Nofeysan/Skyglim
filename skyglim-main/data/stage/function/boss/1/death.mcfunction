@@ -29,3 +29,7 @@ fill 9901 14 89 9901 12 87 minecraft:air
 forceload add 9991 -25 9987 -21
 fill 9991 67 -25 9987 62 -21 minecraft:air replace minecraft:oak_fence
 forceload remove 9991 -25 9987 -21
+
+# story
+scoreboard players set _ CanTalkWithMe 1
+scoreboard players set $avelian_talks story.progress 2

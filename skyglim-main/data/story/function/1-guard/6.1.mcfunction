@@ -7,6 +7,10 @@
 # tellraw
 tellraw @a [{translate: "story.guard"}, {translate: "story.guard.6"}]
 
+# avelian talks set
+scoreboard players set $avelian_talks story.progress 1
+scoreboard players set _ CanTalkWithMe 1
+
 # 自動進行
 schedule function story:1-guard/6.2 20t
 
