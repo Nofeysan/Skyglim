@@ -67,6 +67,17 @@
                                         "color": "#e9b530"
                                     }
                                 ],
+                                [
+                                    {
+                                        "translate": "magic.cooldown",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "60.00 sec.",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
                                 {
                                     "translate": "common.lore.line.2",
                                     "color": "dark_gray",
