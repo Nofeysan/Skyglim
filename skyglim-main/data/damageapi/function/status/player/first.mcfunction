@@ -36,9 +36,10 @@ scoreboard players set @s StatusRegister 1
 function damageapi:status/player/check
 
 # stage 入場用
-scoreboard players add @s stage.enter 1
+scoreboard players set @s stage.enter -1
 
 # spawnpoint
 setworldspawn 100 62 -350 0.0 0.0
+tp 100 62 -350
 
 tellraw @s [{text:"\uE010 ステータスの初期設定が完了しました。",color:"#9279d3"}]
