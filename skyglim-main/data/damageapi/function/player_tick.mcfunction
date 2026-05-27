@@ -60,6 +60,9 @@ clear @s *[minecraft:lock={components:{"minecraft:repair_cost": 255}}]
 #* ステージギミック
 function stage:player/gimmick
 
+# 寝たときの回復
+execute if predicate damageapi:go_bed run function damageapi:status/player/regen_comp
+
 #! debug
 # cursor アイテムとれる？
 #execute if data entity @s Inventory[499] run effect give @a minecraft:levitation 1 1
