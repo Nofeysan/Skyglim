@@ -4,6 +4,9 @@
 # 
 # 
 
+# shfit で中断
+execute if predicate stage:is_shift run return run function stage:player/return/fail
+
 # increment
 scoreboard players add @s ReturnPearl 1
 
@@ -15,6 +18,9 @@ effect give @s minecraft:glowing 1 0 true
 scoreboard players operation _ _ = @s ReturnPearl
 scoreboard players operation _ _ %= #20 num
 execute if score _ _ matches 1 at @s run playsound minecraft:block.note_block.hat voice @s ~ ~ ~ 1 1
+execute if score _ _ matches 1 at @s run particle minecraft:enchant ~ ~ ~ 0.7 1.4 0.7 0.1 120
+execute if score _ _ matches 10 at @s run particle minecraft:enchant ~ ~ ~ 0.7 1.4 0.7 0.1 120
+particle minecraft:dust{color: [0.917647058823529, 0.333333333333333, 0.0235294117647059], scale: 0.9} ~ ~ ~ 0.7 1.4 0.7 0.1 120
 
 # title
 title @s title ""
