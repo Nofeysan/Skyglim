@@ -12,7 +12,7 @@ summon minecraft:zombie ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base:0.27}\
+                                {id:"minecraft:movement_speed", base:0.26}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\

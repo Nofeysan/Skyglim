@@ -36,7 +36,7 @@ summon minecraft:zombie ~ ~ ~ \
                                     "str": 10,\
                                     "def": 12,\
                                     \
-                                    "xp": 200,\
+                                    "xp": 160,\
                                     \
                                     "lore": "entity.stage.1.boss.lore",\
                                     \

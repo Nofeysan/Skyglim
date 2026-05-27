@@ -10,4 +10,4 @@
 execute at @s run playsound minecraft:entity.player.levelup voice @a ~ ~ ~ 1 2
 
 # 通知
-$tellraw @s [{text: "\uE010 ",color: "#44ddf4"},{translate: "$(id)",color: "#eccbd9"},{text: " を購入しました！"}]
+$tellraw @s [{text: "\uE010 ",color: "#bce2e8"},{translate: "$(id)",color: "#ffd728"},{text: " を購入しました！"}]

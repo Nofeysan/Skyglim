@@ -16,4 +16,6 @@ execute if score s1 BossMoves matches 220 run effect give @n[predicate=entity:en
 
 execute if score s1 BossMoves matches 260 run effect give @a[distance=..30, predicate=damageapi:is_on_ground] minecraft:wind_charged 1 50
 execute if score s1 BossMoves matches 260 run particle minecraft:block{block_state: "minecraft:dirt"} ~ ~ ~ 10 0.2 10 0.1 480
+execute if score s1 BossMoves matches 260 run particle minecraft:sweep_attack ~ ~ ~ 10 0.2 10 0.1 200
+execute if score s1 BossMoves matches 260 run playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.3 0.5
 execute if score s1 BossMoves matches 260.. run scoreboard players set s1 BossMoves 0

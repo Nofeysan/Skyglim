@@ -12,14 +12,14 @@ summon minecraft:zombie ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base:0.27}\
+                                {id:"minecraft:movement_speed", base:0.285}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:leather_helmet", components: {"minecraft:unbreakable": {}}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}}},\
-                                mainhand: {id: "minecraft:wooden_sword", components: {"minecraft:unbreakable": {}}},\
+                                head: {id: "minecraft:chainmail_helmet", components: {"minecraft:unbreakable": {}}},\
+                                feet: {id: "minecraft:chainmail_boots", components: {"minecraft:unbreakable": {}}},\
+                                mainhand: {id: "minecraft:wooden_hoe", components: {"minecraft:unbreakable": {}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\

@@ -9,8 +9,8 @@ setblock ~ ~ ~ minecraft:spawner\
     id: "minecraft:mob_spawner",\
     Delay: 0,\
     \
-    MinSpawnDelay: 400,\
-    MaxSpawnDelay: 600,\
+    MinSpawnDelay: 200,\
+    MaxSpawnDelay: 400,\
     SpawnCount: 6,\
     SpawnRange: 4,\
     \
