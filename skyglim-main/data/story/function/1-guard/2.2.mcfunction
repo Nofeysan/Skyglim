@@ -10,3 +10,6 @@ tellraw @a [{text: "\uf104\ue010 ", color: "#94d3e6"}, {translate: "story.guard.
 
 # playsound
 execute at @n[type=minecraft:villager, nbt={data: {role: "guard"}}] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
+
+# trigger
+scoreboard players enable @a story.trigger

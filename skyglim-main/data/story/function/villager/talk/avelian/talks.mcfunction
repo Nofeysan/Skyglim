@@ -11,4 +11,4 @@
 execute if score $avelian_talks story.progress matches 1 run function story:avelian/1/1
 
 # 2: S1 クリア後、鑑定チュートリアル
-execute if score $avelian_talks story.progress matches 2 run function story:avelian/1/1
+execute if score $avelian_talks story.progress matches 2 run function story:avelian/2/1
