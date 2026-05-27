@@ -1,5 +1,5 @@
 # 通知
-tellraw @s [{text: "\uE010 "},{text: "通貨が足りません！",color: "#d94262"}]
+tellraw @s [{translate: "restore.fail.nomoney",color: "#d94262"}]
 execute at @s run playsound minecraft:block.dispenser.dispense voice @s ~ ~ ~ 1 2
 
 # タグ
