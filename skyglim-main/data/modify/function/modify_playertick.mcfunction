@@ -23,3 +23,4 @@ execute if entity @e[type=minecraft:armor_stand, tag=enchantment] at @n[type=min
 execute if entity @e[type=minecraft:armor_stand, tag=weapon] at @n[type=minecraft:armor_stand,tag=weapon] run function shop:system/weapon/search
 execute if entity @e[type=minecraft:armor_stand, tag=armor] at @n[type=minecraft:armor_stand,tag=armor] run function shop:system/armor/search
 execute if entity @e[type=minecraft:armor_stand, tag=other] at @n[type=minecraft:armor_stand,tag=other] run function shop:system/other/search
+execute if entity @e[type=minecraft:armor_stand, tag=magic] at @n[type=minecraft:armor_stand,tag=magic] run function shop:system/magic/search
