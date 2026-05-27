@@ -6,3 +6,4 @@
 
 # check
 execute if score _ stage.1 matches 1.. positioned 9849 4 -8 unless entity @a[dx=102, dy=52, dz=139] run function stage:reset/stage/1
+execute if score _ stage.2 matches 1.. positioned 9862 -64 -100 unless entity @a[dx=32, dy=98, dz=32] run function stage:reset/stage/2
