@@ -15,10 +15,10 @@ execute if items entity @s player.cursor *[repair_cost=230001] run function shop
 execute if items entity @s player.cursor *[repair_cost=230002] run function shop:system/.buy_check/id/230002
 
 # 紅茶 (HP回復)
-execute if items entity @s player.cursor *[repair_cost=230010] run function shop:system/.buy_check/id/230020
-execute if items entity @s player.cursor *[repair_cost=230011] run function shop:system/.buy_check/id/230021
-execute if items entity @s player.cursor *[repair_cost=230012] run function shop:system/.buy_check/id/230022
-execute if items entity @s player.cursor *[repair_cost=230013] run function shop:system/.buy_check/id/230023
+execute if items entity @s player.cursor *[repair_cost=230010] run function shop:system/.buy_check/id/230010
+execute if items entity @s player.cursor *[repair_cost=230011] run function shop:system/.buy_check/id/230011
+execute if items entity @s player.cursor *[repair_cost=230012] run function shop:system/.buy_check/id/230012
+execute if items entity @s player.cursor *[repair_cost=230013] run function shop:system/.buy_check/id/230013
 
 
 # カクテル (MP回復)

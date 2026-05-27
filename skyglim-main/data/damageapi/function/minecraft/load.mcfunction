@@ -68,6 +68,7 @@ scoreboard players set #17 num 17
 scoreboard players set #18 num 18
 scoreboard players set #19 num 19
 scoreboard players set #20 num 20
+scoreboard players set #25 num 25
 scoreboard players set #30 num 30
 scoreboard players set #60 num 60
 scoreboard players set #100 num 100

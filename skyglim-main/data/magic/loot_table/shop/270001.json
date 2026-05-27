@@ -307,7 +307,12 @@
                                         }
                                     }
                                 },
-                                "minecraft:enchantment_glint_override": false
+                                "minecraft:enchantment_glint_override": false,
+                                "minecraft:lock": {
+                                    "components": {
+                                        "minecraft:repair_cost": 255
+                                    }
+                                }
                             }
                         }
                     ]

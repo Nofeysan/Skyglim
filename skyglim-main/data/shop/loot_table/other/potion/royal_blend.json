@@ -112,7 +112,8 @@
                                             "show_icon": false,
                                             "show_particles": false
                                         }
-                                    ]
+                                    ],
+                                    "custom_color": 14190166
                                 },
                                 "minecraft:lock": {
                                     "components": {
