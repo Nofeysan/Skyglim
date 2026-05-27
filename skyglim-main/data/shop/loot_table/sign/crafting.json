@@ -28,7 +28,7 @@
                             "messages": [
                                 "",
                                 {
-                                    "translate": "shop.description.crafting",
+                                    "translate": "shop.sign.crafting",
                                     "color": "#fab80d",
                                     "italic": false,
                                     "click_event": {
