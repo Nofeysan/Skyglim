@@ -47,7 +47,7 @@ execute if entity @s[scores={UseMagic=1..}] run function damageapi:analyze/right
 execute if entity @s[scores={UseMagicCheck=1..}] run scoreboard players remove @s UseMagicCheck 1
 
 # Spawner 壊した？
-execute if entity @s[scores={IsSpawnerMined=1..}] run function modify:enchantment/calc/spawner
+execute if entity @s[scores={IsSpawnerMined=1..}] at @s run function modify:enchantment/calc/spawner
 
 
 # 死んだときに実行するやつ
