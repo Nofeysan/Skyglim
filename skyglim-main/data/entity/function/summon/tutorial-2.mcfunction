@@ -22,7 +22,7 @@ summon minecraft:zombie ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {text: "サンドバッグ", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "story.tutorial.enemy.1", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 10000000,\

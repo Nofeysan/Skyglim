@@ -9,7 +9,7 @@ tellraw @s "\n"
 tellraw @s \
 [\
     {translate: "tutorial.stats.left", color: "#e094d7"}, \
-    {text: "\ue000 "}, \
+    {text: "\ue000 ", color: "#ffffff"}, \
     {translate: "status-book.hp"}, \
     {translate: "tutorial.stats.right"}\
 ]

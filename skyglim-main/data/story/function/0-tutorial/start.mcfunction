@@ -17,7 +17,7 @@ scoreboard players set _ story.phase 1
 tp @a 100 61 -310
 
 # effect
-effect give @a minecraft:blindness 5 0 true
+effect give @a minecraft:blindness 12 0 true
 effect give @a minecraft:saturation infinite 0 true
 
 # story 開始
