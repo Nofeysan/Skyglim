@@ -20,12 +20,6 @@
                     "type": "minecraft:loot_table",
                     "value": "entity:mob_drop/2/restore/r-boots"
                 }
-            ],
-            "conditions": [
-                {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.5
-                }
             ]
         }
     ]
