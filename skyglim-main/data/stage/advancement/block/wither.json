@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:mud"
+        },
+        "title": "",
+        "description": "",
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "stage:block/lazy"
+}

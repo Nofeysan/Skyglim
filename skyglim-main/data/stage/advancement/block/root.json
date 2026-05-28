@@ -1,0 +1,19 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:grass_block"
+        },
+        "title": "",
+        "description": "",
+        "announce_to_chat": false,
+        "show_toast": false,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:block/quartz_bricks"
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
