@@ -10,6 +10,10 @@
 # Count: アイテムの個数
 # Error: 揺れ(0.8~1.2)
 
+# リセット
+data remove storage km_solver: inputs
+data remove storage km_solver: vars
+
 # 一般式を代入
 data modify storage km_solver: inputs append value {f: {mul: [{mul: [{v: "S"}, {v: "C"}]}, {v: "E"}]}}
 
@@ -18,19 +22,20 @@ data modify storage km_solver: vars set value {S:0.0f, C:0.0f, E:1.0f}
 
 # 変数入力
     # S: sell 値
-    data modify storage km_solver: vars.S set from entity @n[type=minecraft:item] data.sell
+    data modify storage km_solver: vars.S set from entity @n[type=minecraft:item] Item.components."minecraft:custom_data".data.sell
 
     # C: count
-    data modify storage km_solver: vars.S set from entity @n[type=minecraft:item] Item.count
+    data modify storage km_solver: vars.C set from entity @n[type=minecraft:item] Item.count
 
     # 乱数でちょっと変える (*0.90-1.05)
-    execute store result storage km_solver: vars.E float 0.01 run random value 80..120
+    execute store result storage km_solver: vars.E float 0.01 run random value 90..120
 
 # 実行
 execute at @p run function km_solver:solve
 
 # score に保存（切り捨て）
 execute store result score $total _ run data get storage km_solver: outputs[0]
+tellraw @a {storage: "km_solver:", nbt: "outputs"}
 
 # 各通貨量取得
 # L: 1, LB: 64, EL: 4096, ELB: 262144
@@ -59,6 +64,7 @@ execute store result storage sell: data.el int 1 run scoreboard players get $sel
 execute store result storage sell: data.lb int 1 run scoreboard players get $sell_lb _
 execute store result storage sell: data.l int 1 run scoreboard players get $sell_l _
 
+tellraw @a {storage: "sell:", nbt: "data"}
 # 実行
 function item:currency/summon with storage sell: data
 
