@@ -11,6 +11,9 @@ execute if score @s story.trigger matches 1..3 run function story:-1-diff/select
 # 職業選択
 execute if score @s story.trigger matches 10..14 run function story:trigger/occupation/base
 
+# tutorial 分岐
+execute if score @s story.trigger matches 20 run function story:0-tutorial/6-2.1
+
 # 門番分岐
 execute if score @s story.trigger matches 30 run function story:1-guard/3.1
 execute if score @s story.trigger matches 31 run function story:1-guard/3.2

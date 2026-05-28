@@ -8,4 +8,4 @@
 setblock ~ ~2 ~ minecraft:air
 
 # start
-schedule function story:0-tutorial/28 20t
+schedule function story:0-tutorial/28 40t
