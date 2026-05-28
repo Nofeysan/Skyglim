@@ -1,14 +1,17 @@
 {
     "display": {
         "icon": {
-            "id": "minecraft:mud"
+            "id": "minecraft:wind_charge",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
         },
         "title": {
-            "translate": "stage.gimmick.wither.name",
-            "color": "#5a5faa"
+            "translate": "stage.rate_damage.name",
+            "color": "#6bc3fd"
         },
         "description": {
-            "translate": "stage.gimmick.wither.lore"
+            "translate": "stage.rate_damage.lore"
         },
         "announce_to_chat": false,
         "show_toast": true,
@@ -20,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "stage:block/lazy"
+    "parent": "stage:block/root"
 }

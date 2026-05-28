@@ -35,7 +35,6 @@ execute at @p run function km_solver:solve
 
 # score に保存（切り捨て）
 execute store result score $total _ run data get storage km_solver: outputs[0]
-tellraw @a {storage: "km_solver:", nbt: "outputs"}
 
 # 各通貨量取得
 # L: 1, LB: 64, EL: 4096, ELB: 262144
@@ -64,7 +63,6 @@ execute store result storage sell: data.el int 1 run scoreboard players get $sel
 execute store result storage sell: data.lb int 1 run scoreboard players get $sell_lb _
 execute store result storage sell: data.l int 1 run scoreboard players get $sell_l _
 
-tellraw @a {storage: "sell:", nbt: "data"}
 # 実行
 function item:currency/summon with storage sell: data
 

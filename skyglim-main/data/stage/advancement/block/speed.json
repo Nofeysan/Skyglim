@@ -3,8 +3,13 @@
         "icon": {
             "id": "minecraft:light_blue_concrete"
         },
-        "title": "",
-        "description": "",
+        "title": {
+            "translate": "stage.gimmick.speed.name",
+            "color": "#44ddf4"
+        },
+        "description": {
+            "translate": "stage.gimmick.speed.lore"
+        },
         "announce_to_chat": false,
         "show_toast": true,
         "frame": "task",

@@ -3,8 +3,13 @@
         "icon": {
             "id": "minecraft:dead_brain_coral_block"
         },
-        "title": "",
-        "description": "",
+        "title": {
+            "translate": "stage.gimmick.not_jump.name",
+            "color": "#746aac"
+        },
+        "description": {
+            "translate": "stage.gimmick.not_jump.lore"
+        },
         "announce_to_chat": false,
         "show_toast": true,
         "frame": "task",

@@ -19,3 +19,7 @@ function damageapi:calc_damage/true-damage/macro/get_player_max_health with stor
 
 # effect clear
 effect clear @s minecraft:wind_charged
+
+# effect
+effect give @s minecraft:blindness 1 0 true
+advancement grant @s only stage:block/rate
