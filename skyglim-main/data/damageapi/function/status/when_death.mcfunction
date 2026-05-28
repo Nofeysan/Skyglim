@@ -36,5 +36,8 @@ execute store result storage km_solver: vars.X float 1 run scoreboard players ge
 # 実行
 execute at @p run function km_solver:solve
 
+# tips
+function story:tips/call
+
 # 戻す
 execute store result score @s CurrentXp run data get storage km_solver: outputs[0]
