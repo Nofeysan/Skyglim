@@ -9,6 +9,29 @@
 forceload add 9849 -8 9951 131
 
 # スポナー設置
+setblock 9919 44 1 minecraft:spawner\
+{id: "minecraft:mob_spawner", \
+    SpawnData: {\
+        entity: {\
+            id: "minecraft:area_effect_cloud", \
+            Radius: 3, \
+            RadiusOnUse: -3, \
+            Duration: 40, \
+            potion_contents: {\
+                custom_color: 4511703, \
+                custom_effects: [\
+                    {id: "minecraft:speed", duration: 60, amplifier: 1}\
+                ]\
+            }\
+        }\
+    }, \
+    Delay:-1, \
+    MinSpawnDelay: 40, MaxSpawnDelay: 40, \
+    SpawnCount: 1, SpawnRange: 5, \
+    RequiredPlayerRange: 6, \
+    MaxNearbyEntities: 1\
+}
+
 function entity:spawner/set {id: 'stage/1/1', xyz: '9879 13 27'}
 function entity:spawner/set {id: 'stage/1/1', xyz: '9889 12 14'}
 function entity:spawner/set {id: 'stage/1/1', xyz: '9903 15 23'}
