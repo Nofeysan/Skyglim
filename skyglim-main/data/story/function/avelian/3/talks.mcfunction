@@ -14,4 +14,4 @@ execute if score $avelian_talks story.progress matches 1 run function story:avel
 execute if score $avelian_talks story.progress matches 2 run function story:avelian/2/1
 
 # 3: TP 解放後ちょっとした話
-execute if score $avelian_talks story.progress matches 3 run function story:avelian/3/1
+execute if score $avelian_talks story.progress matches 3 run function story:avelian/2/1
