@@ -60,3 +60,5 @@ scoreboard players set _ stage.ex.8 1
 
 # 入場時のやつ
 scoreboard objectives add stage.enter dummy
+
+scoreboard objectives add s4.updown dummy

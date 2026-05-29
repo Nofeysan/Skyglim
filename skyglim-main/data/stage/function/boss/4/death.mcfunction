@@ -1,0 +1,32 @@
+#> stage:boss/4/death
+# 
+# 死亡時の処理
+# 
+# 
+
+# loot
+execute at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/4/boss
+
+# kill
+effect give @e[predicate=entity:entity_enemy, distance=..30] minecraft:wind_charged 1 100
+kill @e[tag=gimmick, distance=..30]
+
+# bossbar
+bossbar remove minecraft:stage4.boss
+
+# tell
+tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.4.boss.name", color: "#be2152"}, {translate: "stage.boss.slain"}]
+
+execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.7 0.5
+
+# 出口開放
+#!fill 9901 14 89 9901 12 87 minecraft:air destroy
+
+# 次の道
+#!forceload add 9991 -25 9987 -21
+#!fill 9991 67 -25 9987 62 -21 minecraft:air replace minecraft:oak_fence
+#!forceload remove 9991 -25 9987 -21
+
+# story
+#scoreboard players set _ CanTalkWithMe 1
+#scoreboard players set $avelian_talks story.progress 2
