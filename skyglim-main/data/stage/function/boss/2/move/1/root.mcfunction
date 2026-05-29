@@ -1,17 +1,13 @@
-#> stage:boss/1/move/1/root
+#> stage:boss/2/move/1/root
 # 
-# でっかく AEC
-# 
+# デバフ
+# at boss
 # 
 
-# 自身は移動速度低下
-effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:slowness 5 9
+# 200~220: 警告
+execute if score s2 BossMoves matches 200 run function stage:boss/2/move/1/warn
 
-# aec
-execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] run function entity:aec_manager/summon/.square {r: 30, t: 100, dmg: 15, str: 10}
-
-# effect
-execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] run playsound minecraft:entity.firework_rocket.shoot voice @a ~ ~ ~ 1 1
+execute if score s2 BossMoves matches 220 run function stage:boss/2/move/1/debuff
 
 # score
-scoreboard players set s1 BossMoves -100
+execute if score s2 BossMoves matches 220.. run scoreboard players set s2 BossMoves 60

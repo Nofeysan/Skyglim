@@ -11,4 +11,4 @@ execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] at @a[distance=..
 execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] as @a at @s run playsound minecraft:entity.firework_rocket.launch voice @a ~ ~ ~ 1 1.5
 
 # score
-scoreboard players set s1 BossMoves 0
+scoreboard players set s1 BossMoves 40

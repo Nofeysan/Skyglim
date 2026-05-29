@@ -4,18 +4,16 @@
 # 200 start
 # 
 
-# 200~220: 警告
-execute if score s1 BossMoves matches 200 run title @a[distance=..30] title {text: "[!]", color: "#c10e49"}
-execute if score s1 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
-execute if score s1 BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:glowing 1 0 true
+# 200: 召喚
+execute if score s2 BossMoves matches 200 run function stage:boss/2/move/5/summon
 
-execute if score s1 BossMoves matches 210 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 1
+# 220, 240, 260: countdown
+execute if score s2 BossMoves matches 220 run function stage:boss/2/move/5/count-3
+execute if score s2 BossMoves matches 240 run function stage:boss/2/move/5/count-2
+execute if score s2 BossMoves matches 260 run function stage:boss/2/move/5/count-1
 
-execute if score s1 BossMoves matches 220 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 2
-execute if score s1 BossMoves matches 220 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:levitation 1 9
+# 280: bomb
+execute if score s2 BossMoves matches 280 run function stage:boss/2/move/5/bomb
 
-execute if score s1 BossMoves matches 260 run effect give @a[distance=..30, predicate=damageapi:is_on_ground] minecraft:wind_charged 1 50
-execute if score s1 BossMoves matches 260 run particle minecraft:block{block_state: "minecraft:dirt"} ~ ~ ~ 10 0.2 10 0.1 480
-execute if score s1 BossMoves matches 260 run particle minecraft:sweep_attack ~ ~ ~ 10 0.2 10 0.1 200
-execute if score s1 BossMoves matches 260 run playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.3 0.5
-execute if score s1 BossMoves matches 260.. run scoreboard players set s1 BossMoves 0
+# reset
+execute if score s1 BossMoves matches 280.. run scoreboard players set s2 BossMoves 60

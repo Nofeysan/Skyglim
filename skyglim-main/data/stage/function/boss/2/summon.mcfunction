@@ -29,3 +29,11 @@ bossbar add minecraft:stage2.boss {translate: "entity.stage.2.boss.name", color:
 bossbar set minecraft:stage2.boss color green
 bossbar set minecraft:stage2.boss visible true
 bossbar set minecraft:stage2.boss players @a
+
+# team
+team add bomb.1
+team modify bomb.1 color red
+team add bomb.2
+team modify bomb.2 color yellow
+team add bomb.3
+team modify bomb.3 color green
