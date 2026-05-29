@@ -6,6 +6,7 @@
 
 # 200: 召喚
 execute if score s2 BossMoves matches 200 run function stage:boss/2/move/5/summon
+execute if score s2 BossMoves matches 202 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawn]
 
 # 220, 240, 260: countdown
 execute if score s2 BossMoves matches 220 run function stage:boss/2/move/5/count-3

@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:spawner_minecart ~ ~ ~ \
+summon minecraft:spawner_minecart 9878 26 -84 \
 {\
     SpawnCount: 30, Delay: -1, MinSpawnDelay: 1000, MaxSpawnDelay: 1000, MaxNearbyEntities: 1000, \
     SpawnRange: 30, \
@@ -21,7 +21,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
             Tags: ["gimmick.tnt", "gimmick"], \
             Glowing: true\
         }\
-    }\
+    }, Tags: ["gimmick", "gimmick.spawn"]\
 }
 
 # sound
