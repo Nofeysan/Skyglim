@@ -4,4 +4,4 @@
 # 
 # 
 
-$tellraw @s [{text: "[Tips] ", color: "#c5edff"}, {translate: "tips.$(id)"}]
+$tellraw @s [{text: "[Tips] ", color: "#bfcfd8"}, {translate: "tips.$(id)"}]
