@@ -23,10 +23,8 @@ execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~
 fill 9883 -24 -124 9881 -27 -124 minecraft:air destroy
 
 # 次の道
-#!forceload add 9991 -25 9987 -21
-#!fill 9991 67 -25 9987 62 -21 minecraft:air replace minecraft:oak_fence
-#!forceload remove 9991 -25 9987 -21
+setblock 9866 107 -143 minecraft:end_portal_frame[facing=north]
 
 # story
-#scoreboard players set _ CanTalkWithMe 1
-#scoreboard players set $avelian_talks story.progress 2
+scoreboard players set _ CanTalkWithMe 1
+scoreboard players set $avelian_talks story.progress 4

@@ -41,3 +41,6 @@ execute if block ~ ~-0.3 ~ minecraft:dead_brain_coral_block run advancement gran
 
 # 帰還用
 execute if score @s ReturnPearl matches 0.. run function stage:player/return/every
+
+# S3 専用水にいたら毒
+execute positioned 9853 -28 -152 if entity @s[dx=43, dy=118, dz=38] run effect give @s minecraft:poison 1 1
