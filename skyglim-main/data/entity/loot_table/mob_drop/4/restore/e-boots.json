@@ -137,7 +137,7 @@
                                         "luck": -1
                                     },
                                     "restore": -1,
-                                    "sell": 5,
+                                    "sell": 256,
                                     "enchantment": -1
                                 }
                             }

@@ -73,7 +73,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "data": {
-                                    "sell": 1
+                                    "sell": 10
                                 }
                             }
                         }
