@@ -1,0 +1,70 @@
+{
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:dark_oak_sign",
+            "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                        "text": "description - sell",
+                        "color": "aqua",
+                        "italic": false,
+                        "bold": false,
+                        "underlined": true
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                    "minecraft:block_entity_data": {
+                        "id": "minecraft:sign",
+                        "front_text": {
+                            "messages": [
+                                "",
+                                {
+                                    "translate": "shop.sign.sell",
+                                    "color": "#fab80d",
+                                    "italic": false,
+                                    "click_event": {
+                                        "action": "run_command",
+                                        "command": "function shop:description/sell"
+                                    }
+                                },                                
+                                {
+                                    "translate": "shop.sign.about",
+                                    "color": "#fab80d"
+                                },
+                                ""
+                            ],
+                            "has_glowing_text": true,
+                            "color": "white"
+                        },
+                        "back_text": {
+                            "messages": [
+                                "",
+                                "",
+                                "",
+                                ""
+                            ],
+                            "has_glowing_text": true
+                        }
+                    },
+                "minecraft:enchantment_glint_override": true
+                }
+            },
+            {
+                "function": "minecraft:set_count",
+                "count": 1
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
