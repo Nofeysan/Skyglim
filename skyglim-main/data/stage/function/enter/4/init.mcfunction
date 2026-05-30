@@ -39,7 +39,7 @@ data modify block 9872 36 -145 LootTable set value "entity:mob_drop/4/chest"
 # ボス召喚設置
 setblock 9882 -28 -138 minecraft:command_block{Command: "function stage:boss/4/summon"}
 setblock 9882 -27 -138 minecraft:lapis_block
-setblock 9875 18 -129 minecraft:polished_blackstone_button[face=floor, facing=north]
+setblock 9882 -26 -138 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 # ボス部屋出口
 fill 9883 -24 -124 9881 -27 -124 minecraft:gold_block

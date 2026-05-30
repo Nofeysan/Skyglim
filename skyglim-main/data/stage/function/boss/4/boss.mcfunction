@@ -22,7 +22,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 2171267}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 2171267}},\
                                 mainhand: {id: "minecraft:bow", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"minecraft:multishot": 1}}},\
-                                mainhand: {id: "minecraft:tipped_arrow", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true, "minecraft:potion_contents": {custom_color: 1, custom_effects: [{id: "minecraft:levitation", duration: 10, amplifier: 4}, {id: "minecraft:slowness", duration: 20, amplifier: 2}]}}},\
+                                offhand: {id: "minecraft:tipped_arrow", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true, "minecraft:potion_contents": {custom_color: 1, custom_effects: [{id: "minecraft:levitation", duration: 10, amplifier: 4}, {id: "minecraft:slowness", duration: 20, amplifier: 2}]}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
@@ -30,14 +30,14 @@ summon minecraft:skeleton ~ ~ ~ \
                             CustomName: {translate: "entity.stage.4.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 800000,\
-                                    "current_hp": 800000,\
+                                    "max_hp": 370000,\
+                                    "current_hp": 370000,\
                                     \
-                                    "dmg": 75,\
-                                    "str": 55,\
-                                    "def": 55,\
+                                    "dmg": 54,\
+                                    "str": 26,\
+                                    "def": 45,\
                                     \
-                                    "xp": 2000,\
+                                    "xp": 525,\
                                     \
                                     "lore": "entity.stage.4.boss.lore",\
                                     \

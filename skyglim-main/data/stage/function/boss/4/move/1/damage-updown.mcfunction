@@ -14,8 +14,8 @@ execute if score _ _ matches 1 positioned 9868 -21 -152 run effect give @a[dx=28
 
 # sound
 # 適切な方にいる人は levelup, 間違ってる人は wither.shoot
-execute if score _ _ matches 0 positioned 9868 -27 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 2
-execute if score _ _ matches 0 positioned 9868 -21 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 0 positioned 9868 -27 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 0 positioned 9868 -21 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
 
-execute if score _ _ matches 1 positioned 9868 -27 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 2
-execute if score _ _ matches 1 positioned 9868 -21 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 1 positioned 9868 -27 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 1 positioned 9868 -21 -152 as @a[dx=28, dy=5, dz=28] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1

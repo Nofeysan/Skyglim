@@ -5,7 +5,7 @@
 # 
 
 # random
-execute store result score s4-type BossMoves run random value 1..4
+execute store result score s4-type BossMoves run random value 1..5
 
 # 1: 上下移動
 #execute if score s4-type BossMoves matches 1 run function stage:boss/4/move/1/root
@@ -18,3 +18,6 @@ execute store result score s4-type BossMoves run random value 1..4
 
 # 4: 眷属召喚
 execute if score s4-type BossMoves matches 4 run function stage:boss/4/move/4/root
+
+# 5: tp
+execute if score s4-type BossMoves matches 5 run function stage:boss/4/move/5/root
