@@ -37,7 +37,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                     "str": 18,\
                                     "def": 35,\
                                     \
-                                    "xp": 320,\
+                                    "xp": 300,\
                                     \
                                     "lore": "entity.stage.2.boss.lore",\
                                     \

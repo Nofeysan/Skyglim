@@ -57,7 +57,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     "str": 18,\
                                     "def": 4,\
                                     \
-                                    "xp": 4,\
+                                    "xp": 7,\
                                     \
                                     "lore": "entity.stage.2.1.lore",\
                                     \

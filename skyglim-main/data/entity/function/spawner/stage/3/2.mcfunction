@@ -53,8 +53,8 @@ setblock ~ ~ ~ minecraft:spawner\
                                     "max_hp": 9000,\
                                     "current_hp": 9000,\
                                     \
-                                    "dmg": 11,\
-                                    "str": 25,\
+                                    "dmg": 14,\
+                                    "str": 30,\
                                     "def": 7,\
                                     \
                                     "xp": 18,\
