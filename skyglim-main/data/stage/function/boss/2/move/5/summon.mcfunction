@@ -4,10 +4,10 @@
 # 
 # 
 
-summon minecraft:spawner_minecart 9878 26 -84 \
+summon minecraft:spawner_minecart 9878 24 -84 \
 {\
-    SpawnCount: 30, Delay: -1, MinSpawnDelay: 1000, MaxSpawnDelay: 1000, MaxNearbyEntities: 1000, \
-    SpawnRange: 30, \
+    SpawnCount: 70, Delay: 0, MinSpawnDelay: 1000, MaxSpawnDelay: 1000, MaxNearbyEntities: 1000, \
+    SpawnRange: 16, \
     SpawnData: { \
         entity: { \
             id: "minecraft:item", \
@@ -21,7 +21,7 @@ summon minecraft:spawner_minecart 9878 26 -84 \
             Tags: ["gimmick.tnt", "gimmick"], \
             Glowing: true\
         }\
-    }, Tags: ["gimmick", "gimmick.spawn"]\
+    }, Tags: ["gimmick", "gimmick.spawn"], RequiredPlayerRange: 20\
 }
 
 # sound

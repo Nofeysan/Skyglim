@@ -6,7 +6,7 @@
 
 # ボタンとかを削除
 fill ~ ~ ~ ~ ~2 ~ minecraft:air
-setblock ~ ~ ~ minecraft:stone
+setblock ~ ~ ~ minecraft:oak_log
 
 # summon
 execute positioned ~ ~2 ~ run function stage:boss/2/boss

@@ -19,7 +19,7 @@ $summon minecraft:item ^ ^ ^1 \
 team join bomb.1 @e[distance=..30, tag=gimmick.magma]
 
 # 予測線 particle
-scoreboard players set $count _ 10
+scoreboard players set $count _ 16
 function stage:boss/2/move/4/particle-line
 
 # sound

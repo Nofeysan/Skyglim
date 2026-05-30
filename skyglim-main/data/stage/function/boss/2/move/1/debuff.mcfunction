@@ -20,5 +20,5 @@ effect give @a[distance=..5] minecraft:slowness 7 2
 
 # wither は近い人ほど長く
 effect give @a[distance=..30] minecraft:wither 1 0
-effect give @a[distance=..15] minecraft:wither 5 0
-effect give @a[distance=..5] minecraft:wither 9 0
+effect give @a[distance=..15] minecraft:wither 3 0
+effect give @a[distance=..5] minecraft:wither 7 0

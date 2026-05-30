@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:zombie ~ ~ ~ \
+summon minecraft:skeleton ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
@@ -22,7 +22,7 @@ summon minecraft:zombie ~ ~ ~ \
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
                                 mainhand: {id: "minecraft:bow", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
-                                offhand: {id: "minecraft:tipped_arrow", components: {"minecraft:potion_contents": {custom_color: 5974462, custom_effects: [{id: "minecraft:slowness", duration: 60, amplifier: 1}]}, "minecraft:enchantment_glint_override": true}}\
+                                offhand: {id: "minecraft:tipped_arrow", components: {"minecraft:potion_contents": {custom_color: 5974462, custom_effects: [{id: "minecraft:slowness", duration: 200, amplifier: 1}]}, "minecraft:enchantment_glint_override": true}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
