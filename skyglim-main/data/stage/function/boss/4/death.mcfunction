@@ -26,5 +26,6 @@ fill 9883 -24 -124 9881 -27 -124 minecraft:air destroy
 setblock 9866 107 -143 minecraft:end_portal_frame[facing=north]
 
 # story
-scoreboard players set _ CanTalkWithMe 1
+execute unless score $talks_1 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1
+scoreboard players set $talks_1 CanTalkWithMe 1
 scoreboard players set $avelian_talks story.progress 4
