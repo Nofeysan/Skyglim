@@ -30,3 +30,6 @@ forceload remove 9931 -36 9931 -36
 # story - テレポーター解放時にする
 #scoreboard players set _ CanTalkWithMe 1
 #scoreboard players set $avelian_talks story.progress 3
+
+# 進行度
+scoreboard players set $stage_progress _ 2

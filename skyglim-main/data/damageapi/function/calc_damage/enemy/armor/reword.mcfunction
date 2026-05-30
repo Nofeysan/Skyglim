@@ -5,7 +5,7 @@
 # 
 
 # 経験値付与
-experience add @s 4 points
+experience add @s 3 points
 
 # 音
-execute at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 1 2
+execute at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.3 2

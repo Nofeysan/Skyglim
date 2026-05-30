@@ -8,5 +8,5 @@
 effect give @s minecraft:strength 3 0
 
 # particle, playsound
-#execute at @s run playsound 
+execute at @s run playsound minecraft:block.anvil.use voice @a ~ ~ ~ 0.3 2
 execute at @s run particle minecraft:crit ~ ~ ~ 0.7 1.4 0.7 0 120 force @a

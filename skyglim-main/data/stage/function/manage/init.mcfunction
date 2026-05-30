@@ -84,3 +84,5 @@ forceload add 60 168 138 202
 
 forceload remove 60 168 138 202
 
+# 進行度
+scoreboard players set $stage_progress _ 1

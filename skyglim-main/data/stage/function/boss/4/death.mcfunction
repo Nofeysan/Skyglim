@@ -29,3 +29,6 @@ setblock 9866 107 -143 minecraft:end_portal_frame[facing=north]
 execute unless score $talks_1 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1
 scoreboard players set $talks_1 CanTalkWithMe 1
 scoreboard players set $avelian_talks story.progress 4
+
+# 進行度
+scoreboard players set $stage_progress _ 3
