@@ -32,3 +32,7 @@ scoreboard players set $avelian_talks story.progress 4
 
 # 進行度
 scoreboard players set $stage_progress _ 3
+
+# shop
+execute unless score $boss_slain_4 story.progress matches 1 run function shop:token/open/4
+scoreboard players set $boss_slain_4 story.progress 1

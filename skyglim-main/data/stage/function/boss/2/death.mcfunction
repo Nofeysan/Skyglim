@@ -33,3 +33,7 @@ forceload remove 9931 -36 9931 -36
 
 # 進行度
 scoreboard players set $stage_progress _ 2
+
+# shop
+execute unless score $boss_slain_2 story.progress matches 1 run function shop:token/open/2
+scoreboard players set $boss_slain_2 story.progress 1

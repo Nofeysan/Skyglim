@@ -18,3 +18,7 @@ forceload remove 9817 -36 9830 -36
 
 # tell
 tellraw @a {translate: "gate.open", color: "#f5de84"}
+
+# shop
+execute unless score $boss_slain_3 story.progress matches 1 run function shop:token/open/3
+scoreboard players set $boss_slain_3 story.progress 1
