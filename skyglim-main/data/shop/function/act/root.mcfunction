@@ -4,6 +4,10 @@
 ##* 
 ##* 
 
+# magic 用
+execute if predicate magic:is_magic_boost.1 run return -1
+
+
 # food
 execute if predicate shop:food/use_heart_berry run function shop:act/food/use_heart_berry
 execute if predicate shop:food/use_yellow_berry run function shop:act/food/use_yellow_berry

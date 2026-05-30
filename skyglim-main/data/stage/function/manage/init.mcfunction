@@ -86,3 +86,4 @@ forceload remove 60 168 138 202
 
 # 進行度
 scoreboard players set $stage_progress _ 1
+scoreboard players set $magic_progress story.progress 1
