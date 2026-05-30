@@ -32,7 +32,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.25}\
+                                {id:"minecraft:movement_speed", base: 0.265}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -52,7 +52,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     "str": 25,\
                                     "def": 10,\
                                     \
-                                    "xp": 32,\
+                                    "xp": 36,\
                                     \
                                     "lore": "entity.stage.4.2.lore",\
                                     \

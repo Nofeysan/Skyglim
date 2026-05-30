@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:grass_block"
+        },
+        "title": {
+            "translate": "stage.gimmick.root.name",
+            "color": "#fff6fe"
+        },
+        "description": {
+            "translate": "stage.gimmick.root.lore"
+        },
+        "announce_to_chat": false,
+        "show_toast": false,
+        "frame": "task",
+        "hidden": false,
+        "background": "minecraft:block/quartz_bricks"
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

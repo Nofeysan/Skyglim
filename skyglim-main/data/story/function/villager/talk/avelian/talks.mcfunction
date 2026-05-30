@@ -12,3 +12,9 @@ execute if score $avelian_talks story.progress matches 1 run function story:avel
 
 # 2: S1 クリア後、鑑定チュートリアル
 execute if score $avelian_talks story.progress matches 2 run function story:avelian/2/1
+
+# 3: TP 解放後ちょっとした話
+execute if score $avelian_talks story.progress matches 3 run function story:avelian/3/1
+
+# 4: 空気変わるよ見たいな話（α版エンド）
+execute if score $avelian_talks story.progress matches 4 run function story:avelian/4/1

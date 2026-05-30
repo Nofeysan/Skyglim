@@ -1,14 +1,21 @@
-#> stage:boss/1/move/2/root
+#> stage:boss/1/move/4/root
 # 
-# 各プレイヤーの足元に AEC
+# 移動速度上昇
 # 
 # 
 
-# aec
-execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] at @a[distance=..30] run function entity:aec_manager/summon/.square {r: 20, t: 80, dmg: 15, str: 10}
+# 召喚
+# 2 + (players - 1)* 2 (n <= 4)
+execute store result score $players _ if entity @a[distance=..30]
 
-# sound
-execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] as @a at @s run playsound minecraft:entity.firework_rocket.launch voice @a ~ ~ ~ 1 1.5
+execute positioned 9869 22 -84 run function stage:boss/2/move/2/random_spawn
+execute positioned 9887 22 -83 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 2.. positioned 9878 22 -75 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 2.. positioned 9878 22 -94 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 3.. positioned 9871 22 -77 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 3.. positioned 9885 22 -91 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 4.. positioned 9885 22 -77 run function stage:boss/2/move/2/random_spawn
+execute if score $players _ matches 4.. positioned 9871 22 -91 run function stage:boss/2/move/2/random_spawn
 
 # score
-scoreboard players set s1 BossMoves 0
+scoreboard players set s2 BossMoves 0

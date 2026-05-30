@@ -1,0 +1,11 @@
+# 通貨チェック
+execute unless score t Currency matches 2.. run return run function shop:system/.buy_check/fail
+
+# 通貨消す
+clear @s *[repair_cost=90001] 2
+
+# アイテムあげるね～
+loot give @s loot entity:mob_drop/1/restore/r-bow
+
+# 通知
+function shop:system/.buy_check/id/.tell {id: "stage.1.tenkyu.name"}

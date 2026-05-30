@@ -8,6 +8,7 @@
 forceload add 9849 -8 9951 131
 
 # スポナーの破壊
+setblock 9919 44 1 minecraft:air
 setblock 9879 13 27 minecraft:air
 setblock 9889 12 14 minecraft:air
 setblock 9903 15 23 minecraft:air

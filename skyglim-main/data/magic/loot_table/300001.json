@@ -208,7 +208,7 @@
                                     "mainhand": 1,
                                     "restore": -255,
                                     "enchantment": -255, 
-                                    "sell": 10
+                                    "sell": 64
                                 }
                             }
                         },

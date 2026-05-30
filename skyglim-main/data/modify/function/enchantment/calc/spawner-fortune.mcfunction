@@ -4,4 +4,11 @@
 # 
 # 
 
-tellraw @s {text: "[!] 処理未実装です", color: "dark_red", bold: true}
+# random
+execute store result score _ _ run random value 0..99
+
+# 1(初期): 1L 50%
+execute if score _ _ matches 0 if score _ _ matches 0..49 run function item:currency/summon {l: 1, lb: 0, el: 0, elb: 0, pos: "~ ~ ~"}
+
+# 2(S2クリア後): 2L
+execute if score _ _ matches 1 run function item:currency/summon {l: 1, lb: 0, el: 0, elb: 0, pos: "~ ~ ~"}

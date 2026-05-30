@@ -14,4 +14,4 @@ execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] run function enti
 execute at @n[predicate=entity:entity_enemy, tag=boss, tag=s1] run playsound minecraft:entity.firework_rocket.shoot voice @a ~ ~ ~ 1 1
 
 # score
-scoreboard players set s1 BossMoves -100
+scoreboard players set s1 BossMoves -60

@@ -49,7 +49,22 @@
             "conditions": [
                 {
                     "condition": "minecraft:random_chance",
-                    "chance": 0.075
+                    "chance": 0.08
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stage:token/s3",
+                    "conditions": [
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.01
+                        }
+                    ]
                 }
             ]
         }

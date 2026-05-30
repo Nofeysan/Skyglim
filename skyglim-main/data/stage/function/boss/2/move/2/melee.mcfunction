@@ -1,4 +1,4 @@
-#> stage:boss/1/move/4/*
+#> stage:boss/2/move/2/*
 # 
 # S1 眷属
 # 
@@ -17,28 +17,30 @@ summon minecraft:zombie ~ ~ ~ \
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:leather_helmet", components: {"minecraft:unbreakable": {}}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}}},\
-                                mainhand: {id: "minecraft:iron_sword", components: {"minecraft:unbreakable": {}}},\
+                                head: {id: "minecraft:oak_log", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:stick", components: {"minecraft:unbreakable": {}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.1.boss.friend.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.2.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 2500,\
-                                    "current_hp": 2500,\
+                                    "max_hp": 6400,\
+                                    "current_hp": 6400,\
                                     \
-                                    "dmg": 20,\
-                                    "str": 25,\
-                                    "def": 1,\
+                                    "dmg": 9,\
+                                    "str": 18,\
+                                    "def": 3,\
                                     \
-                                    "xp": 2,\
+                                    "xp": 3,\
                                     \
-                                    "lore": "entity.stage.1.boss.friend.lore",\
+                                    "lore": "entity.stage.2.1.lore",\
                                     \
-                                    "loot": "1/1-1"\
+                                    "loot": "2/2-1"\
                                 }\
                             },\
                             active_effects: [\

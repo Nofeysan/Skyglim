@@ -1,0 +1,24 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:lime_carpet"
+        },
+        "title": {
+            "translate": "stage.gimmick.jump.name",
+            "color": "#92f3a4"
+        },
+        "description": {
+            "translate": "stage.gimmick.jump.lore"
+        },
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "stage:block/speed"
+}

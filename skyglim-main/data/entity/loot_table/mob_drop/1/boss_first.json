@@ -45,6 +45,15 @@
                     "value": "entity:mob_drop/1/restore/.boss"
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stage:token/s1"
+                }
+            ]
         }
     ]
 }

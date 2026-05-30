@@ -20,3 +20,6 @@ scoreboard players set @s ReturnPearl -1
 
 # tell
 tellraw @s {translate: "stage.return.success", color: "#e094d7"}
+
+# tips
+function story:tips/call

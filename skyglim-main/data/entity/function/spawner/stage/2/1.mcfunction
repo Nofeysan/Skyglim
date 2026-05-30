@@ -15,7 +15,7 @@ setblock ~ ~ ~ minecraft:spawner\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
-    RequiredPlayerRange: 16,\
+    RequiredPlayerRange: 12,\
     \
     SpawnPotentials: [\
         {\
@@ -57,7 +57,7 @@ setblock ~ ~ ~ minecraft:spawner\
                                     "str": 18,\
                                     "def": 4,\
                                     \
-                                    "xp": 4,\
+                                    "xp": 7,\
                                     \
                                     "lore": "entity.stage.2.1.lore",\
                                     \

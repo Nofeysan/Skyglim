@@ -46,8 +46,8 @@ setblock ~ ~ ~ minecraft:spawner\
                                     "max_hp": 7500,\
                                     "current_hp": 7500,\
                                     \
-                                    "dmg": 15,\
-                                    "str": 25,\
+                                    "dmg": 17,\
+                                    "str": 27,\
                                     "def": 5,\
                                     \
                                     "xp": 20,\

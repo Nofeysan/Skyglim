@@ -35,5 +35,5 @@ execute as @e[predicate=damageapi:old_armorstand] run function magic:kill_armors
 # 選択用アイテムを消す
 kill @e[predicate=damageapi:is_not_item]
 
-# 職業スコアボード
-#function entity:scoreboard/root
+# 売却処理
+execute as @e[type=minecraft:armor_stand, tag=sell] at @s if entity @e[type=minecraft:item, distance=..1] run function shop:sell/check

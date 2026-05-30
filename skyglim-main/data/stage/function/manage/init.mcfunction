@@ -60,3 +60,30 @@ scoreboard players set _ stage.ex.8 1
 
 # 入場時のやつ
 scoreboard objectives add stage.enter dummy
+
+scoreboard objectives add s4.updown dummy
+
+
+# ついでに街の初期設定
+forceload add 60 168 138 202
+
+# armorstand
+    # weapon, armor, item, magic
+    summon minecraft:armor_stand 100 52 198 {Tags: ["shop", "weapon"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 98 52 198 {Tags: ["shop", "armor"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 96 52 198 {Tags: ["shop", "other"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 75 53 172 {Tags: ["shop", "magic"], Invisible: true, Invulnerable: true}
+
+    # restore, refinement, enchant
+    summon minecraft:armor_stand 98 52 174 {Tags: ["shop", "restore"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 109 52 194 {Tags: ["shop", "refinement"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 109 52 174 {Tags: ["shop", "enchantment"], Invisible: true, Invulnerable: true}
+
+    # sell
+    summon minecraft:armor_stand 116 50 191 {Tags: ["shop", "sell"], Invisible: true, Invulnerable: true}
+
+forceload remove 60 168 138 202
+
+# 進行度
+scoreboard players set $stage_progress _ 1
+scoreboard players set $magic_progress story.progress 1

@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:zombie ~ ~ ~ \
+summon minecraft:skeleton ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
@@ -12,33 +12,34 @@ summon minecraft:zombie ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base:0.23}\
+                                {id:"minecraft:movement_speed", base:0.24}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:iron_helmet", components: {"minecraft:unbreakable": {}}},\
-                                chest: {id: "minecraft:chainmail_chestplate", components: {"minecraft:unbreakable": {}}},\
-                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}}},\
-                                feet: {id: "minecraft:iron_boots", components: {"minecraft:unbreakable": {}}},\
-                                mainhand: {id: "minecraft:iron_pickaxe", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                head: {id: "minecraft:dark_oak_leaves", components: {"minecraft:unbreakable": {}}},\
+                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 1399829, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:cherry_sapling", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                offhand: {id: "minecraft:lantern", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.1.boss.name", color: "#be2152", italic: false},\
+                            CustomName: {translate: "entity.stage.2.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 120000,\
-                                    "current_hp": 120000,\
+                                    "max_hp": 210000,\
+                                    "current_hp": 210000,\
                                     \
-                                    "dmg": 15,\
-                                    "str": 10,\
-                                    "def": 12,\
+                                    "dmg": 18,\
+                                    "str": 18,\
+                                    "def": 35,\
                                     \
-                                    "xp": 160,\
+                                    "xp": 300,\
                                     \
-                                    "lore": "entity.stage.1.boss.lore",\
+                                    "lore": "entity.stage.2.boss.lore",\
                                     \
                                     "loot": "tutorial"\
                                 }\
@@ -46,6 +47,6 @@ summon minecraft:zombie ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            Tags: ["boss", "s1"]\
+                            Tags: ["boss", "s2"]\
                         }
 

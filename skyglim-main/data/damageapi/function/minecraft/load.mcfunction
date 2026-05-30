@@ -76,6 +76,10 @@ scoreboard players set #105 num 105
 scoreboard players set #1000 num 1000
 scoreboard players set #10000 num 10000
 
+scoreboard players set #64 num 64
+scoreboard players set #4096 num 4096
+scoreboard players set #262144 num 262144
+
 # 魔法用
 scoreboard objectives add UseMagic minecraft.used:minecraft.carrot_on_a_stick "右クリ検知"
 scoreboard objectives add MagicId dummy "魔法のid"

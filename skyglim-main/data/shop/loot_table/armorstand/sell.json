@@ -1,0 +1,56 @@
+{
+    "pools": [
+    {
+        "rolls": 1,
+        "entries": [
+        {
+            "type": "minecraft:item",
+            "name": "minecraft:armor_stand",
+            "functions": [
+            {
+                "function": "minecraft:set_name",
+                "name": [
+                    {
+                        "text": "【売却】",
+                        "color": "#e9b530",
+                        "italic": false,
+                        "bold": false
+                    }
+                ]
+            },
+            {
+                "function": "minecraft:set_lore",
+                "lore": [
+                    {
+                        "text": ""
+                    },
+                    {
+                        "text": "置いた場所で売却処理を行います。",
+                        "color": "#ffffff",
+                        "italic": false,
+                        "bold": false
+                    }
+                ],
+                "mode": "replace_all"
+            },
+            {
+                "function": "minecraft:set_components",
+                "components": {
+                "minecraft:enchantment_glint_override": true,
+                "minecraft:max_stack_size": 1,
+                "entity_data": {
+                    "id": "armor_stand",
+                    "Tags": ["shop", "sell"]
+                }
+                }
+            },
+            {
+                "function": "minecraft:set_count",
+                "count": 1
+            }
+            ]
+        }
+        ]
+    }
+    ]
+}
