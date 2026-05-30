@@ -22,10 +22,10 @@ data modify storage km_solver: vars set value {S:0.0f, C:0.0f, E:1.0f}
 
 # 変数入力
     # S: sell 値
-    data modify storage km_solver: vars.S set from entity @n[type=minecraft:item] Item.components."minecraft:custom_data".data.sell
+    data modify storage km_solver: vars.S set from entity @n[type=minecraft:item, distance=..1] Item.components."minecraft:custom_data".data.sell
 
     # C: count
-    data modify storage km_solver: vars.C set from entity @n[type=minecraft:item] Item.count
+    data modify storage km_solver: vars.C set from entity @n[type=minecraft:item, distance=..1] Item.count
 
     # 乱数でちょっと変える (*0.90-1.05)
     execute store result storage km_solver: vars.E float 0.01 run random value 90..120
@@ -67,4 +67,4 @@ execute store result storage sell: data.l int 1 run scoreboard players get $sell
 function item:currency/summon with storage sell: data
 
 # kill
-kill @n[type=minecraft:item]
+kill @n[type=minecraft:item, distance=..1]

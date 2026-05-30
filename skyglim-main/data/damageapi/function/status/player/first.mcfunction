@@ -35,6 +35,10 @@ scoreboard players set @s StatusRegister 1
 # ステータスを有効化
 function damageapi:status/player/check
 
+# XP
+xp set @s 0 points
+xp set @s 0 levels
+
 # stage 入場用
 scoreboard players set @s stage.enter -1
 
