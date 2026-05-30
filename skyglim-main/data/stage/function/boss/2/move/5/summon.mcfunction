@@ -14,7 +14,8 @@ summon minecraft:spawner_minecart 9878 24 -84 \
             Item: {\
                 id: "minecraft:tnt", \
                 components: {\
-                    "minecraft:enchantment_glint_override": true\
+                    "minecraft:enchantment_glint_override": true, \
+                    "minecraft:max_stack_size": 1\
                 }\
             }, \
             PickupDelay: 4000, \

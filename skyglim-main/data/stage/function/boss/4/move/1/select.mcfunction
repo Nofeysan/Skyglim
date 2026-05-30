@@ -50,6 +50,6 @@ title @a[distance=..30] subtitle \
 execute as @a at @s run playsound minecraft:entity.wither.ambient voice @s ~ ~ ~ 0.7 1
 
 # boss
-tp @n[predicate=entity:entity_enemy, tag=boss, tag=s4] 9882 -28 -138
+tp @n[predicate=entity:entity_enemy, tag=boss, tag=s4] 9882 -26 -138
 effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s4] minecraft:slowness 14 99
 particle minecraft:end_rod 9882 -28 -138 0.5 0.8 0.5 0.1 120
