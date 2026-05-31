@@ -19,7 +19,3 @@ forceload remove 100 253 102 255
 
 # tell
 tellraw @a {translate: "tp.open", color: "#f5de84"}
-
-# story
-scoreboard players set _ CanTalkWithMe 1
-scoreboard players set $avelian_talks story.progress 3
