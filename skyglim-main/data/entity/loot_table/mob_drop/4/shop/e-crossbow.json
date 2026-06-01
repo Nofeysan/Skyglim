@@ -182,7 +182,9 @@
                                     }
                                 ],
                                 "minecraft:unbreakable": {},
-                                "minecraft:enchantments": {},
+                                "minecraft:enchantments": {
+                                    "minecraft:quick_charge":  3
+                                },
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
