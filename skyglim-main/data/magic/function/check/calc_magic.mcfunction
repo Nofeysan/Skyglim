@@ -31,7 +31,7 @@ execute store result storage km_solver: vars.I int 1 run scoreboard players get 
 execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 0.7f
 execute if score @s occupation matches 4 run data modify storage km_solver: vars.M set value 1.1f
 
-execute if predicate magic:is_magic_boost.1 run data modify storage km_solver: vars.B set value 1.5f
+execute if predicate magic:is_magic_boost.1 run data modify storage km_solver: vars.B set value 1.2f
 
 # 計算
 execute at @s run function km_solver:solve

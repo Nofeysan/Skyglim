@@ -4,7 +4,7 @@
     "predicate": {
         "effects": {
             "minecraft:hero_of_the_village": {
-                "amplifier": 100
+                "amplifier": 0
             }
         }
     }
