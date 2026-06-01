@@ -15,7 +15,7 @@ setblock ~ ~ ~ minecraft:spawner\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
-    RequiredPlayerRange: 12,\
+    RequiredPlayerRange: 10,\
     \
     SpawnPotentials: [\
         {\
