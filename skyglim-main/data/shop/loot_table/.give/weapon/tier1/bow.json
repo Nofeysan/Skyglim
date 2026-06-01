@@ -175,6 +175,10 @@
                                         "minecraft:enchantments",
                                         "minecraft:unbreakable"
                                     ]
+                                },
+                                "minecraft:use_cooldown": {
+                                    "seconds": 0.25,
+                                    "cooldown_group": "bow"
                                 }
                             }
                         }
