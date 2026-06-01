@@ -6,8 +6,8 @@
 
 # loot
 # s1 のみ初回に限り 100% ドロップ
-execute unless score S1 BossSlain matches 1.. at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/1/boss_first
-execute if score S1 BossSlain matches 1.. at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/1/boss
+execute unless score S1 BossSlain matches 1.. run loot give @a[distance=..30] loot entity:mob_drop/1/boss_first
+execute if score S1 BossSlain matches 1.. run loot give @a[distance=..30] loot entity:mob_drop/1/boss
 scoreboard players add S1 BossSlain 1
 
 # kill

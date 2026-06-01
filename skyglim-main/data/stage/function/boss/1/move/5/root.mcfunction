@@ -7,7 +7,7 @@
 # 200~220: 警告
 execute if score s1 BossMoves matches 200 run title @a[distance=..30] title {text: "[!]", color: "#c10e49"}
 execute if score s1 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
-execute if score s1 BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:glowing 1 0 true
+execute if score s1 BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s1] minecraft:glowing 3 0 true
 
 execute if score s1 BossMoves matches 210 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 1
 
