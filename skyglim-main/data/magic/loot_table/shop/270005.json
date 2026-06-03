@@ -1,0 +1,294 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "magic.fire-area.1.name",
+                                "color": "#c10e49",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {"text": "\uf102\uE008 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.cc", "color": "#ff4141"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "+2...?", "color": "#aaaaaa"}
+                                ],
+                                [
+                                    {"text": "\uf102\uE006 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.cc", "color": "#94d39279d3e6"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "+10...?", "color": "#aaaaaa"}
+                                ],
+                                {
+                                    "text": "",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "bold": false
+                                },
+                                [
+                                    {
+                                        "translate": "magic.name.introduce",
+                                        "color": "#086776",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "magic.fire-area.1.magic",
+                                        "color": "#92f3a4"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.fire-area.1.description.1",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.fire-area.1.description.2",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.fire-area.1.description.3",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.cost",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "40",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.cooldown",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "4.00 sec.",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
+                                            {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "magic.fire-area.1.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "magic.fire-area.1.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "magic.fire-area.1.lore.3",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Normal",
+                                    "color": "#ffffff",
+                                    "italic": false,
+                                    "bold": true
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "shop.item.value",
+                                        "color": "#bfe493",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": " \uE010 ",
+                                        "color": "gray"
+                                    },
+                                    {
+                                        "text": "4LB",
+                                        "color": "#3755bd"
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 2,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 10,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 1,
+                                    "refinement": {
+                                        "ref": -255, 
+                                        "type": 3, 
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "req_mp": {"i": 40},
+                                    "mainhand": 1,
+                                    "restore": -255,
+                                    "enchantment": -255, 
+                                    "sell": 64
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    },
+                                    {
+                                        "id": "item.magic.wand",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:enchantments": {
+                                    "minecraft:unbreaking": 1
+                                },
+                                
+                                "minecraft:repair_cost": 270005,
+                                "minecraft:custom_model_data": {
+                                    "strings": [""]
+                                },
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:enchantments",
+                                        "minecraft:potion_contents"
+                                    ]
+                                },
+                                "minecraft:item_model": "minecraft:tipped_arrow",
+                                "minecraft:potion_contents": {
+                                    "custom_color": 8540359
+                                },
+                                
+                                "minecraft:use_cooldown": {
+                                    "seconds": 4.0,
+                                    "cooldown_group": "fire-area"
+                                },
+
+                                "minecraft:consumable": {
+                                    "consume_seconds": 0,
+                                    "sound": "minecraft:intentionally_empty",
+                                    "has_consume_particles": false
+                                },
+
+                                "minecraft:use_remainder": {
+                                    "id": "minecraft:stick",
+                                    "components": {
+                                        "minecraft:custom_name": "",
+                                        "minecraft:custom_model_data": {
+                                            "strings": [""]
+                                        },
+                                        "minecraft:enchantments": {
+                                            "minecraft:remainder_item": 1
+                                        },
+                                        "minecraft:repair_cost": 270005,
+                                        "minecraft:custom_data": {
+                                            "status": {
+                                                "damage": 2,
+                                                "hp": 0,
+                                                "str": 0,
+                                                "cc": 0,
+                                                "cd": 0,
+                                                "def": 0,
+                                                "spd": 0,
+                                                "mp": 10,
+                                                "luck": 0
+                                            },
+                                            "data": {
+                                                "mainhand": 1,
+                                                "enchantment": -1
+                                            }
+                                        },
+                                        "minecraft:item_model": "minecraft:magma_block",
+                                        "minecraft:enchantment_glint_override": true
+                                    }
+                                },
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:lock": {
+                                    "components": {
+                                        "minecraft:repair_cost": 255
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

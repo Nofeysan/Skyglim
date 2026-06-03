@@ -28,7 +28,8 @@ execute if score _ _ matches 98..99 run xp add @a[distance=..15] 25 points
 
 # 装備効果
 execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/armor/death
-execute on attacker if entity @s[type=minecraft:armor_stand] as @p[scores={UseMagicCheck=1}] run function damageapi:calc_damage/enemy/armor/death
+execute on attacker if entity @s[type=minecraft:armor_stand] as @p[scores={UseMagicCheck=1..}] run function damageapi:calc_damage/enemy/armor/death
+execute on attacker if entity @s[type=minecraft:armor_stand] unless entity @p[scores={UseMagicCheck=1..}] as @p run function damageapi:calc_damage/enemy/armor/death
 
 # 付近にプレイヤーがいたら Item Drop
 execute unless entity @s[tag=boss] at @s if entity @a[distance=..20] run function damageapi:calc_damage/enemy/itemdrop/root
