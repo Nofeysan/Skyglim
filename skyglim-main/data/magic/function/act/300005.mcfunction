@@ -34,7 +34,8 @@ kill @n[type=minecraft:area_effect_cloud, tag=getMotion]
 
 # 演出
 execute at @s run playsound minecraft:entity.dragon_fireball.explode voice @a ~ ~ ~ 0.7 2
-execute at @s run particle minecraft:lava ~ ~ ~ 0.2 1 0.2 1 30
+execute at @s run particle minecraft:lava ~ ~ ~ 0.2 1 0.2 1 10
+execute at @s run particle minecraft:dust{color: [0.745098039215686, 0.129411764705882, 0.32156862745098], scale: 0.9} ~ ~ ~ 0.7 1.4 0.7 0 120
 
 # (攻撃)魔法使いました。
 scoreboard players set @s UseMagicCheck 20
