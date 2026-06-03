@@ -36,20 +36,20 @@
                                 },
                                 [
                                     {
-                                        "text": "\uf102\uE002 ",
+                                        "text": "\uf102\uE000 ",
                                         "color": "#ffffff",
                                         "italic": false
                                     },
                                     {
-                                        "translate": "common.status.cc",
-                                        "color": "#94d3e6"
+                                        "translate": "common.status.hp",
+                                        "color": "#e094d7"
                                     },
                                     {
                                         "text": " \uE010 ",
                                         "color": "gray"
                                     },
                                     { 
-                                        "text": "+3...?",
+                                        "text": "+12...?",
                                         "color": "#aaaaaa"
                                     }
                                 ],
