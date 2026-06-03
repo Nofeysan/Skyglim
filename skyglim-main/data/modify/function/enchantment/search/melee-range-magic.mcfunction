@@ -19,6 +19,7 @@ execute if items entity @s player.cursor *[repair_cost=40004] run data modify bl
 execute if items entity @s player.cursor *[repair_cost=40005] run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment set value 40005
 execute if items entity @s player.cursor *[repair_cost=41005] run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment set value 41005
 execute if items entity @s player.cursor *[repair_cost=42005] run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment set value 42005
+execute if items entity @s player.cursor *[repair_cost=44003] run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.enchantment set value 44003
 
 # アイテム消します
-clear @s *[repair_cost=40001 | repair_cost=40002 | repair_cost=40003 | repair_cost=40004 | repair_cost=40005 | repair_cost=41005 | repair_cost=42005]
+clear @s *[repair_cost=40001 | repair_cost=40002 | repair_cost=40003 | repair_cost=40004 | repair_cost=40005 | repair_cost=41005 | repair_cost=42005 | repair_cost=44003]
