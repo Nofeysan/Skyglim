@@ -70,8 +70,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" se
 data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
 
 # 振り速度設定
-# 剣: -2.4d / 短剣: -1.2d / 斧: -3.2d
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[{id: "minecraft:item.weapon"}].amount set value -3.2d
+# 剣: -2.4d / 短剣: -1.2d / 斧: -3.6d
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[{id: "minecraft:item.weapon"}].amount set value -3.6d
 
 # 見た目の設定
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value []

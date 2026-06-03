@@ -70,7 +70,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:leather_ches
 #data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
 
 # 振り速度設定
-# 剣: -2.4d / 短剣: -1.2d / 斧: -3.2d
+# 剣: -2.4d / 短剣: -1.2d / 斧: -3.6d
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[{id: "minecraft:item.weapon"}].amount set value 
 
 # 見た目の設定
