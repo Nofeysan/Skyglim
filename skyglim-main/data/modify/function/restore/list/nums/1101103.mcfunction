@@ -77,7 +77,10 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:bow"
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value []
 
 # エンチャント追加
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" append value {}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" append value {"shop:no_ammo": 1}
+
+# 弓の連射制限
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:use_cooldown" set value {seconds: 0.25, cooldown_group: "minecraft:bow"}
 
 # もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true

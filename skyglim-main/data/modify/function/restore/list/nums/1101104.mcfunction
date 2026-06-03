@@ -77,7 +77,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:crossbow"
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value []
 
 # エンチャント追加
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"minecraft:piercing": 2}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"minecraft:piercing": 2, "shop:no_ammo": 1, "minecraft:quick_charge": 3}
 
 # もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true

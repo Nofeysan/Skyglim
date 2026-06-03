@@ -2,7 +2,7 @@
     "description": "",
     "supported_items": "minecraft:crossbow",
     "weight": 1,
-    "max_level": 1,
+    "max_level": 10,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
@@ -24,6 +24,18 @@
                         "type": "minecraft:linear",
                         "base": 1,
                         "per_level_above_first": 1
+                    }
+                }
+            }
+        ],
+        "minecraft:projectile_spread": [
+            {
+                "effect": {
+                    "type": "minecraft:add",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 2,
+                        "per_level_above_first": 2
                     }
                 }
             }

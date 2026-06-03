@@ -167,7 +167,9 @@
                                         "slot": "mainhand"
                                     }
                                 ],
-                                "minecraft:enchantments": {},
+                                "minecraft:enchantments": {
+                                    "shop:no_ammo": 1
+                                },
                                 "minecraft:unbreakable": {},
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [

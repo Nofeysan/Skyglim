@@ -102,7 +102,7 @@
                         },
                         {
                             "function": "minecraft:set_count",
-                            "count": 4
+                            "count": 16
                         }
                     ],
                     "conditions": []

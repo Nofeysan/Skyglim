@@ -170,7 +170,8 @@
                                 "minecraft:unbreakable": {},
                                 "minecraft:enchantments": {
                                     "minecraft:quick_charge": 3,
-                                    "minecraft:piercing": 1
+                                    "minecraft:piercing": 1,
+                                    "shop:no_ammo": 1
                                 },
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
