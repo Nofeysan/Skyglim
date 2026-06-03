@@ -44,6 +44,6 @@ summon minecraft:skeleton ~ ~ ~ \
                                 {id: "minecraft:invisibility", duration: 2100000000, amplifier: 0, show_particles: false},\
                                 {id: "minecraft:glowing", duration: 2100000000, amplifier: 0, show_particles: false}\
                             ], \
-                            Tags: ["gimmick"]\
+                            Tags: ["gimmick", "gimmick.enemy.s4"]\
                         }
 
