@@ -3,6 +3,7 @@
         "entity:tick",
         "modify:modify_tick",
         "stage:tick",
-        "story:tick"
+        "story:tick",
+        "magic:tick_buff"
     ]
 }

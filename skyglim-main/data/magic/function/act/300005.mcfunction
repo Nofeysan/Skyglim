@@ -1,11 +1,8 @@
-###* 
-###*   id: 100002
-###*   MP: 10
-###*   name: ダメージ
-###* 
-
-###? 敵いるかチェック
-execute unless entity @e[predicate=entity:entity_enemy,distance=..10] run return run function magic:check/fail-noenemy
+#> magic:act/300005
+# id: 100005
+# MP: 40
+# name: 範囲ダメージ
+# 
 
 ###? MP 減らす
 scoreboard players operation @s[tag=!failed] CurrentMP -= req_mp _
@@ -24,15 +21,20 @@ data modify storage damageapi: magic_damage.Glowing set value true
 data modify storage damageapi: magic_damage.NoGravity set value false
 
 # item 召喚
-function magic:macro/summon_item with storage damageapi: magic_damage
+execute positioned ~ ~1.3 ~ run function magic:macro/summon_item with storage damageapi: magic_damage
 
-# ダメージ実行
-#execute as @n[type=minecraft:armor_stand, tag=300002] at @s as @n[predicate=entity:entity_enemy] run tag @s add target
-#execute as @n[type=minecraft:armor_stand, tag=300002] at @s run damage @n[tag=target] 100 minecraft:magic by @s
+team join magic.color.red @n[type=minecraft:item, tag=300005]
+
+# 飛ばす
+execute positioned 0.0 0.0 0.0 run summon minecraft:area_effect_cloud ^ ^ ^1 {Tags: ["getMotion"]}
+execute store result entity @n[type=minecraft:item, tag=300005] Motion[0] double 0.0001 run data get entity @n[type=minecraft:area_effect_cloud, tag=getMotion] Pos[0] 10000
+execute store result entity @n[type=minecraft:item, tag=300005] Motion[1] double 0.0001 run data get entity @n[type=minecraft:area_effect_cloud, tag=getMotion] Pos[1] 10000
+execute store result entity @n[type=minecraft:item, tag=300005] Motion[2] double 0.0001 run data get entity @n[type=minecraft:area_effect_cloud, tag=getMotion] Pos[2] 10000
+kill @n[type=minecraft:area_effect_cloud, tag=getMotion]
 
 # 演出
-execute at @n[tag=target] run playsound minecraft:entity.dragon_fireball.explode voice @a ~ ~ ~ 0.7 2
-execute at @n[tag=target] run particle minecraft:lava ~ ~ ~ 0.2 1 0.2 1 30
+execute at @s run playsound minecraft:entity.dragon_fireball.explode voice @a ~ ~ ~ 0.7 2
+execute at @s run particle minecraft:lava ~ ~ ~ 0.2 1 0.2 1 30
 
 # (攻撃)魔法使いました。
 scoreboard players set @s UseMagicCheck 20

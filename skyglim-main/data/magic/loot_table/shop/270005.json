@@ -26,15 +26,15 @@
                                 },
                                 [
                                     {"text": "\uf102\uE008 ", "color": "#ffffff", "italic": false},
-                                    {"translate": "common.status.cc", "color": "#ff4141"},
+                                    {"translate": "common.status.dmg", "color": "#ff4141"},
                                     {"text": " \uE010 ","color": "gray"},
-                                    {"text": "+2...?", "color": "#aaaaaa"}
+                                    {"text": "+5", "color": "#55ff55"}
                                 ],
                                 [
                                     {"text": "\uf102\uE006 ", "color": "#ffffff", "italic": false},
-                                    {"translate": "common.status.cc", "color": "#94d39279d3e6"},
+                                    {"translate": "common.status.mp", "color": "#9279d3"},
                                     {"text": " \uE010 ","color": "gray"},
-                                    {"text": "+10...?", "color": "#aaaaaa"}
+                                    {"text": "+10", "color": "#55ff55"}
                                 ],
                                 {
                                     "text": "",
@@ -97,7 +97,7 @@
                                         "italic": false
                                     },
                                     {
-                                        "text": "4.00 sec.",
+                                        "text": "3.00 sec.",
                                         "color": "#bce2e8"
                                     }
                                 ],
@@ -162,7 +162,7 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "status": {
-                                    "damage": 2,
+                                    "damage": 5,
                                     "hp": 0,
                                     "str": 0,
                                     "cc": 0,
@@ -230,13 +230,10 @@
                                         "minecraft:potion_contents"
                                     ]
                                 },
-                                "minecraft:item_model": "minecraft:tipped_arrow",
-                                "minecraft:potion_contents": {
-                                    "custom_color": 8540359
-                                },
+                                "minecraft:item_model": "minecraft:magma_block",
                                 
                                 "minecraft:use_cooldown": {
-                                    "seconds": 4.0,
+                                    "seconds": 3.0,
                                     "cooldown_group": "fire-area"
                                 },
 
@@ -259,7 +256,7 @@
                                         "minecraft:repair_cost": 270005,
                                         "minecraft:custom_data": {
                                             "status": {
-                                                "damage": 2,
+                                                "damage": 5,
                                                 "hp": 0,
                                                 "str": 0,
                                                 "cc": 0,
