@@ -27,39 +27,37 @@ data modify storage km_solver: inputs append value {f:{mul:[{mul:[{add:[{n:1.0f}
 data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R:1.0f}
 
 ###* 各値を入れていく
-# 各ステータスを保存 (D: Damage, S: Strength etc.)
-execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/get_status_from_player
-execute on attacker unless entity @s[type=minecraft:player] run function damageapi:calc_damage/macro/get_status_from_another
-execute on attacker if entity @s[type=minecraft:item] run say 1
+    # 各ステータスを保存 (D: Damage, S: Strength etc.)
+    execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/get_status_from_player
+    execute on attacker unless entity @s[type=minecraft:player] run function damageapi:calc_damage/macro/get_status_from_another
 
-execute if score chargerate Temp matches ..89 store result storage km_solver: vars.R float 0.01 run random value 10..30
-execute if score chargerate Temp matches 110.. run data modify storage km_solver: vars.R set value 1.10f
-execute if entity @s[tag=additional_low] run data modify storage km_solver: vars.R set value 0.20f
-execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.78f
+    execute if score chargerate Temp matches ..89 store result storage km_solver: vars.R float 0.01 run random value 10..30
+    execute if score chargerate Temp matches 110.. run data modify storage km_solver: vars.R set value 1.10f
+    execute if entity @s[tag=additional_low] run data modify storage km_solver: vars.R set value 0.20f
+    execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.78f
 
-#% cc 計算
-# 100 から減算する
-scoreboard players operation cc_r Temp = #100 num
-scoreboard players operation cc_r Temp -= cc Temp
+    #% cc 計算
+        # 100 から減算する  
+        scoreboard players operation cc_r Temp = #100 num
+        scoreboard players operation cc_r Temp -= cc Temp
 
-# 瑞祥なら +4%
-execute on attacker if score @s occupation matches 5 run scoreboard players operation cc_r Temp += #4 num
+        # 瑞祥なら +4%
+        execute on attacker if score @s occupation matches 5 run scoreboard players operation cc_r Temp += #4 num
 
-# 計算
-execute store result score random Temp run random value 1..100
+        # 計算
+        execute store result score random Temp run random value 1..100
 
-execute if score random Temp > cc_r Temp store result storage km_solver: vars.C float 0.01 run scoreboard players get cd Temp
-execute if score random Temp > cc_r Temp run scoreboard players set c_did Temp 1
+        execute if score random Temp > cc_r Temp store result storage km_solver: vars.C float 0.01 run scoreboard players get cd Temp
+        execute if score random Temp > cc_r Temp run scoreboard players set c_did Temp 1
 
-###* いろんな効果
-# 防具の倍率
-# 追撃
-execute on attacker if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
-execute on attacker if entity @s[type=minecraft:armor_stand] as @p if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
+    #% いろんな効果
+        # 追撃
+        execute on attacker if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
+        execute on attacker if entity @s[type=minecraft:armor_stand] as @p if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
 
-#* 職業ごとの倍率
-execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.2f
-execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.8f
+    # 職業ごとの倍率
+    execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.2f
+    execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.8f
 
 # 実行
 execute at @p run function km_solver:solve
@@ -117,20 +115,20 @@ execute on attacker if entity @s[type=minecraft:player] run function damageapi:c
 execute on attacker if entity @s[type=minecraft:armor_stand] as @p run function damageapi:calc_damage/enemy/armor/when_damage
 
 ###* 与ダメージ表示
-# int float に分ける
-scoreboard players operation @s Damage.int = DealtDamage Temp
-scoreboard players operation @s Damage.int /= #100 num
+    # int float に分ける
+    scoreboard players operation @s Damage.int = DealtDamage Temp
+    scoreboard players operation @s Damage.int /= #100 num
 
-scoreboard players operation @s Damage.float = DealtDamage Temp
-scoreboard players operation @s Damage.float %= #100 num
-scoreboard players operation @s Damage.float /= #10 num
+    scoreboard players operation @s Damage.float = DealtDamage Temp
+    scoreboard players operation @s Damage.float %= #100 num
+    scoreboard players operation @s Damage.float /= #10 num
 
-# macro で -179..180 で rotate に代入して召喚
-execute store result storage damageapi: rotation.xy int 1 run random value -179..180
-execute store result storage damageapi: rotation.z int 1 run random value -50..50
-function damageapi:calc_damage/macro/summon_damage with storage damageapi: rotation
+    # macro で -179..180 で rotate に代入して召喚
+    execute store result storage damageapi: rotation.xy int 1 run random value -179..180
+    execute store result storage damageapi: rotation.z int 1 run random value -50..50
+    function damageapi:calc_damage/macro/summon_damage with storage damageapi: rotation
 
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run function damageapi:calc_damage/enemy/damage_modify
+    execute as @n[predicate=damageapi:is_stick,tag=!modified] run function damageapi:calc_damage/enemy/damage_modify
 
 # リセット
 data modify entity @s Health set value 1024

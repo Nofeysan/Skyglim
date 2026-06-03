@@ -16,7 +16,7 @@ tag @s add aec_dealt
 
 # 引数設定
 $data modify storage km_bounding: arguments.cuboid set value \
-{selector: "@a[distance=..100]", x_plus: $(half_r), y_plus: 5.0, z_plus: $(half_r), x_minus: $(half_r), y_minus: 0.1, z_minus: $(half_r)}
+{selector: "@a[distance=..100]", x_plus: $(half_r), y_plus: 16.0, z_plus: $(half_r), x_minus: $(half_r), y_minus: 0.1, z_minus: $(half_r)}
 
 # 対象特定
 execute at @s run function km_bounding:cuboid/
