@@ -8,7 +8,7 @@
 scoreboard players set @s Health 100
 scoreboard players set @s Strength 10
 scoreboard players set @s CritChance 1
-scoreboard players set @s CritDamage 100
+scoreboard players set @s CritDamage 50
 scoreboard players set @s Defence 0
 scoreboard players set @s Speed 100
 scoreboard players set @s MagicPoint 100

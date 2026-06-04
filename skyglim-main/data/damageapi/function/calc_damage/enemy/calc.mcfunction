@@ -34,7 +34,7 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
     execute if score chargerate Temp matches ..89 store result storage km_solver: vars.R float 0.01 run random value 10..30
     execute if score chargerate Temp matches 110.. run data modify storage km_solver: vars.R set value 1.10f
     execute if entity @s[tag=additional_low] run data modify storage km_solver: vars.R set value 0.20f
-    execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.78f
+    execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.67f
 
     #% cc 計算
         # 100 から減算する  
@@ -56,8 +56,12 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
         execute on attacker if entity @s[type=minecraft:armor_stand] as @p if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
 
     # 職業ごとの倍率
-    execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.2f
-    execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.8f
+        # 狂戦士：1.25x
+        execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.25f
+        
+        # 天球・魔術師；0.7x
+        execute on attacker if score @s occupation matches 1 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.7f
+        execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.7f
 
 # 実行
 execute at @p run function km_solver:solve
