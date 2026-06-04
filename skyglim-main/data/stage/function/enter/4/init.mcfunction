@@ -32,9 +32,9 @@ function entity:spawner/set {id: 'stage/4/3', xyz: '9874 0 -130'}
 function entity:spawner/set {id: 'stage/4/1', xyz: '9874 0 -145'}
 
 # チェスト配置
-data modify block 9651 40 -85 LootTable set value "entity:mob_drop/4/chest"
 data modify block 9882 60 -149 LootTable set value "entity:mob_drop/4/chest"
 data modify block 9872 36 -145 LootTable set value "entity:mob_drop/4/chest"
+data modify block 9875 18 -129 LootTable set value "entity:mob_drop/4/chest"
 
 # ボス召喚設置
 setblock 9882 -28 -138 minecraft:command_block{Command: "function stage:boss/4/summon"}
