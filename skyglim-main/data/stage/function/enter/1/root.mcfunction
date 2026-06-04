@@ -8,7 +8,7 @@
 execute unless score _ stage.1 matches 1.. run function stage:enter/1/init
 
 # tp
-tp @s 9943 44 1 90 0
+tp @s 9863 30 20 0 0
 
 # title
 title @s times 10 50 20

@@ -156,7 +156,7 @@
                                     {
                                         "id": "item.weapon",
                                         "type": "minecraft:attack_speed",
-                                        "amount": -3.2,
+                                        "amount": -3.5,
                                         "operation": "add_value",
                                         "slot": "mainhand"
                                     }

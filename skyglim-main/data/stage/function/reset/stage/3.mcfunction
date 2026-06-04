@@ -82,4 +82,4 @@ scoreboard players set _ stage.3 -1
 #bossbar remove minecraft:stage2.boss
 
 #! debug
-#tellraw @a {text: '[!] プレイヤーがいないため、「Stage 3」をリセットしました。', color: "gray"}
+tellraw @a {text: '[!] Stage 3 をリセットしました。', color: "gray"}

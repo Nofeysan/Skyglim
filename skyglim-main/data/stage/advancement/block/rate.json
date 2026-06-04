@@ -11,7 +11,8 @@
             "color": "#6bc3fd"
         },
         "description": {
-            "translate": "stage.rate_damage.lore"
+            "translate": "stage.rate_damage.lore",
+            "color": "#fff6fe"
         },
         "announce_to_chat": false,
         "show_toast": true,
@@ -23,5 +24,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "stage:block/root"
+    "parent": "stage:block/damage"
 }

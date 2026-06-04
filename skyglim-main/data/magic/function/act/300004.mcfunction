@@ -3,7 +3,7 @@
 # id: 300004
 # MP: 75
 # type: buff
-# value: 魔法攻撃力 x1.5
+# value: 魔法攻撃力 x1.2
 # 
 
 ###? MP 減らす
@@ -11,7 +11,7 @@ scoreboard players operation @s CurrentMP -= req_mp _
 
 ###? 実行部分
 # effect
-effect give @s minecraft:hero_of_the_village 60 100 true
+effect give @s minecraft:hero_of_the_village 60 0 true
 
 # 演出
 playsound minecraft:block.brewing_stand.brew voice @a ~ ~ ~ 0.7 1

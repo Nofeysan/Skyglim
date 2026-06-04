@@ -15,7 +15,7 @@ setblock ~ ~ ~ minecraft:spawner\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
-    RequiredPlayerRange: 12,\
+    RequiredPlayerRange: 10,\
     \
     SpawnPotentials: [\
         {\
@@ -49,8 +49,8 @@ setblock ~ ~ ~ minecraft:spawner\
                             CustomName: {translate: "entity.stage.2.3.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 6000,\
-                                    "current_hp": 6000,\
+                                    "max_hp": 4800,\
+                                    "current_hp": 4800,\
                                     \
                                     "dmg": 7,\
                                     "str": 18,\

@@ -17,7 +17,9 @@ data modify storage km_solver: inputs append value {f:{mul: [{v: "H"}, {add: [{n
 data modify storage km_solver: vars set value {P: 1.0f, H:0.0f}
 
 # プレイヤー数を取得
-execute store result storage km_solver: vars.P float 1 if entity @a
+# 道中は近くのプレイヤー依存・ボスは全体のプレイヤー依存
+execute unless entity @s[tag=boss] store result storage km_solver: vars.P float 1 if entity @a[distance=..30]
+execute if entity @s[tag=boss] store result storage km_solver: vars.P float 1 if entity @a
 
 # 体力保存
 data modify storage km_solver: vars.H set from entity @s data.status.max_hp

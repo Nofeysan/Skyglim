@@ -58,7 +58,7 @@
                                         "color": "gray"
                                     },
                                     {
-                                        "text": "2L",
+                                        "text": "1L",
                                         "color": "#3755bd"
                                     }
                                 ],
@@ -90,7 +90,7 @@
                         },
                         {
                             "function": "minecraft:set_count",
-                            "count": 16
+                            "count": 1
                         }
                     ],
                     "conditions": []

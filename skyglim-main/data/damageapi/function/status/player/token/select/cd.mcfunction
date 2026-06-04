@@ -18,7 +18,7 @@ scoreboard players add @s CritDamage 2
 function damageapi:status/player/check
 
 # tell
-tellraw @s [{text: "\ue010 ", color: "#fff6fe"}, {text: "LUCK", color: "#bfe493"}, {"translate": "token.selected"}, {translate: "token.selected.remain"}, {score: {name: "@s", objective: "token"}, color: "gold"}, {text: ")"}]
+tellraw @s [{text: "\ue010 ", color: "#fff6fe"}, {text: "CD", color: "#66a5b8"}, {"translate": "token.selected"}, {translate: "token.selected.remain"}, {score: {name: "@s", objective: "token"}, color: "gold"}, {text: ")"}]
 
 # sound
 execute at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 0.7 2

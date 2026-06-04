@@ -1,7 +1,7 @@
 ###* 一旦ガラスに置き換える
 loot replace block ~ ~-1 ~ container.0 loot modify:enchantment/armor-c/face2face
 loot replace block ~ ~-1 ~ container.1 loot modify:white_glass
-loot replace block ~ ~-1 ~ container.2 loot modify:enchantment/armor-c/additional
+loot replace block ~ ~-1 ~ container.2 loot modify:orange_glass
 loot replace block ~ ~-1 ~ container.3 loot modify:green_glass
 loot replace block ~ ~-1 ~ container.4 loot modify:green_glass
 loot replace block ~ ~-1 ~ container.5 loot modify:green_glass

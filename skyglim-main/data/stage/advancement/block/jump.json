@@ -8,7 +8,8 @@
             "color": "#92f3a4"
         },
         "description": {
-            "translate": "stage.gimmick.jump.lore"
+            "translate": "stage.gimmick.jump.lore",
+            "color": "#fff6fe"
         },
         "announce_to_chat": false,
         "show_toast": true,

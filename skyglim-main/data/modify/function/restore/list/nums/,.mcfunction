@@ -70,7 +70,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" se
 #data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
 
 # 振り速度設定
-# 剣: -2.4d / 短剣: -1.2d / 斧: -3.2d
+# 剣: -2.4d / 短剣: -1.2d / 斧: -3.5d
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[{id: "minecraft:item.weapon"}].amount set value 
 
 # 見た目の設定
@@ -78,6 +78,9 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" se
 
 # エンチャント追加
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {}
+
+# 弓の連射制限
+#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:use_cooldown" set value {seconds: 0.25, cooldown_group: "minecraft:bow"}
 
 # もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true

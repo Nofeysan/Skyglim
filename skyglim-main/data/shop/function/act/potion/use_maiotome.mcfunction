@@ -9,7 +9,7 @@ effect clear @s minecraft:luck
 
 # 回復処理
 scoreboard players operation _ Temp = @s MaxMP
-scoreboard players operation _ Temp *= #30 num
+scoreboard players operation _ Temp *= #20 num
 scoreboard players operation _ Temp /= #100 num
 
 scoreboard players operation @s CurrentMP += _ Temp

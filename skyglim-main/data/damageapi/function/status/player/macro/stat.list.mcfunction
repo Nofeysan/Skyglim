@@ -4,7 +4,7 @@
 # 
 # 
 
-$item replace entity @s player.crafting.0 with minecraft:book[\
+$item replace entity @s player.crafting.1 with minecraft:book[\
 minecraft:custom_name=[\
     {\
         text: "◆◇◆ ",\

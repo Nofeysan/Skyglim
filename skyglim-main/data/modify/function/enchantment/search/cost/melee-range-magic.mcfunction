@@ -6,3 +6,5 @@ execute if items entity @s player.cursor *[repair_cost=40004] run function modif
 execute if items entity @s player.cursor *[repair_cost=40005] run function modify:enchantment/search/cost/id/8
 execute if items entity @s player.cursor *[repair_cost=41005] run function modify:enchantment/search/cost/id/10
 execute if items entity @s player.cursor *[repair_cost=42005] run function modify:enchantment/search/cost/id/12
+
+execute if items entity @s player.cursor *[repair_cost=44003] run function modify:enchantment/search/cost/id/10

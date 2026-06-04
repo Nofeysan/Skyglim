@@ -7,7 +7,7 @@
 ###* 一旦ガラスに置き換える
 loot replace block ~ ~-1 ~ container.0 loot magic:shop/270001
 loot replace block ~ ~-1 ~ container.1 loot magic:shop/270002
-loot replace block ~ ~-1 ~ container.2 loot modify:gray_glass
+loot replace block ~ ~-1 ~ container.2 loot magic:shop/270005
 loot replace block ~ ~-1 ~ container.3 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.4 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.5 loot modify:gray_glass

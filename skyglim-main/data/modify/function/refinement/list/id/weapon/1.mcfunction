@@ -25,11 +25,11 @@ data modify storage modify: temp.ref set value {}
 
 #+ 未変更の場合、0 を入力すること
 # 1: normal / 2: rare / 3: epic / 4: legendary / 5: mythic
-execute if score rarity Temp matches 1 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 2, cc: 0, cd: 0, def: 0, spd: 2, mp: 0, luck: 0}
-execute if score rarity Temp matches 2 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 3, cc: 0, cd: 0, def: 0, spd: 3, mp: 0, luck: 0}
-execute if score rarity Temp matches 3 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 4, cc: 0, cd: 0, def: 0, spd: 4, mp: 0, luck: 0}
-execute if score rarity Temp matches 4 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 5, cc: 0, cd: 0, def: 0, spd: 5, mp: 0, luck: 0}
-execute if score rarity Temp matches 5 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 6, cc: 0, cd: 0, def: 0, spd: 6, mp: 0, luck: 0}
+execute if score rarity Temp matches 1 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str:  4, cc: 0, cd: 0, def: 0, spd:  2, mp: 0, luck: 0}
+execute if score rarity Temp matches 2 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str:  8, cc: 0, cd: 0, def: 0, spd:  3, mp: 0, luck: 0}
+execute if score rarity Temp matches 3 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 12, cc: 0, cd: 0, def: 0, spd:  5, mp: 0, luck: 0}
+execute if score rarity Temp matches 4 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 18, cc: 0, cd: 0, def: 0, spd:  7, mp: 0, luck: 0}
+execute if score rarity Temp matches 5 run data modify storage modify: temp.ref set value {damage: 0, hp: 0, str: 24, cc: 0, cd: 0, def: 0, spd: 10, mp: 0, luck: 0}
 
 # データをアイテムにコピー
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.refinement.damage set from storage modify: temp.ref.damage

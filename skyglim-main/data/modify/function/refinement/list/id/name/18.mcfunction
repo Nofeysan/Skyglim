@@ -12,8 +12,8 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append v
 {text: "n",color: "#d2e4ff"},\
 {text: "t",color: "#cde6ff"},\
 {text: " \uE010 ",color: "gray"},\
-{text: "Normal",color: "#fff6fe"}]
+{text: "Coward",color: "#6c6c93"}]
 
 ###* あとtellraw
 execute if score act.ref Temp matches 1.. run tellraw @s \
-[{text: "\uE010 ",color: "gray"},{text: "Normal",color: "#fff6fe"},{text: " の Refinement を付与しました！",color: "#fff6fe"}]
+[{text: "\uE010 ",color: "gray"},{text: "Coward",color: "#6c6c93"},{text: " の Refinement を付与しました！",color: "#fff6fe"}]

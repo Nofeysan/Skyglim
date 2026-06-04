@@ -23,7 +23,7 @@ loot replace block ~ ~-1 ~ container.20 loot modify:enchantment/melee/collecter
 loot replace block ~ ~-1 ~ container.21 loot modify:green_glass
 loot replace block ~ ~-1 ~ container.22 loot modify:green_glass
 loot replace block ~ ~-1 ~ container.23 loot modify:green_glass
-loot replace block ~ ~-1 ~ container.24 loot modify:enchantment/melee/levitation
+loot replace block ~ ~-1 ~ container.24 loot modify:enchantment/armor-c/additional
 loot replace block ~ ~-1 ~ container.25 loot modify:white_glass
 loot replace block ~ ~-1 ~ container.26 loot modify:white_glass
 

@@ -167,7 +167,9 @@
                                         "slot": "mainhand"
                                     }
                                 ],
-                                "minecraft:enchantments": {},
+                                "minecraft:enchantments": {
+                                    "shop:no_ammo": 1
+                                },
                                 "minecraft:unbreakable": {},
                                 "minecraft:tooltip_display": {
                                     "hidden_components": [
@@ -175,7 +177,12 @@
                                         "minecraft:enchantments",
                                         "minecraft:unbreakable"
                                     ]
-                                }
+                                },
+                                "minecraft:use_cooldown": {
+                                    "seconds": 0.25,
+                                    "cooldown_group": "bow"
+                                },
+                                "minecraft:enchantment_glint_override": false
                             }
                         }
                     ]

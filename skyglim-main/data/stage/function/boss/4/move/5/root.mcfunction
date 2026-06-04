@@ -13,4 +13,4 @@ particle minecraft:dragon_breath ~ ~ ~ 0.7 1.4 0.7 0.1 180 force @a
 effect give @a[distance=..3] minecraft:blindness 2 0
 
 # score
-scoreboard players set s4 BossMoves 100
+scoreboard players set s4 BossMoves 120
