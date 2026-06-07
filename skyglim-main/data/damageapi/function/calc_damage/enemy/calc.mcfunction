@@ -34,7 +34,7 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
     execute if score chargerate Temp matches ..89 store result storage km_solver: vars.R float 0.01 run random value 10..30
     execute if score chargerate Temp matches 110.. run data modify storage km_solver: vars.R set value 1.10f
     execute if entity @s[tag=additional_low] run data modify storage km_solver: vars.R set value 0.20f
-    execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.67f
+    execute if entity @s[tag=additional_normal] run data modify storage km_solver: vars.R set value 0.72f
 
     #% cc 計算
         # 100 から減算する  
