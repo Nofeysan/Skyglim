@@ -204,7 +204,8 @@
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
                                         "minecraft:enchantments",
-                                        "minecraft:unbreakable"
+                                        "minecraft:unbreakable",
+                                        "minecraft:charged_projectiles"
                                     ]
                                 },
                                 "minecraft:repair_cost": 1103004,

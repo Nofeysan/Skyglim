@@ -177,7 +177,8 @@
                                     "hidden_components": [
                                         "minecraft:attribute_modifiers",
                                         "minecraft:unbreakable",
-                                        "minecraft:enchantments"
+                                        "minecraft:enchantments",
+                                        "minecraft:charged_projectiles"
                                     ]
                                 },
                                 "minecraft:enchantment_glint_override": false
