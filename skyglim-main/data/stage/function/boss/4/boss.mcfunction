@@ -30,11 +30,11 @@ summon minecraft:skeleton ~ ~ ~ \
                             CustomName: {translate: "entity.stage.4.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 370000,\
-                                    "current_hp": 370000,\
+                                    "max_hp": 342000,\
+                                    "current_hp": 342000,\
                                     \
-                                    "dmg": 54,\
-                                    "str": 26,\
+                                    "dmg": 29,\
+                                    "str": 36,\
                                     "def": 45,\
                                     \
                                     "xp": 525,\
