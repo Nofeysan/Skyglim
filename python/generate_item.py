@@ -191,7 +191,7 @@ for stage, data_list in item_database.items():
                             "function": "minecraft:set_name",
                             "name": [
                                 { "translate": "restore.not-restored", "color": "gray", "italic": False },
-                                { "translate": "stage." + stage + "." + item_path + "." + __count__ + ".name" }
+                                { "translate": "stage." + stage + "." + item_path + ".name" }
                             ]
                         },
                         {
