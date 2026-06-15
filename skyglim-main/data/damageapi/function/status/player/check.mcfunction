@@ -30,5 +30,8 @@ execute if predicate damageapi:has_status_item run function damageapi:status/pla
 # enchantment - 倍率
 function modify:enchantment/calc/root
 
+#* 瑞祥 
+execute if entity @s[scores={occupation=5}] run function damageapi:status/player/calc/occupation
+
 #! debug
 #-tellraw @s {text: "\uE010 Status Checked!"}
