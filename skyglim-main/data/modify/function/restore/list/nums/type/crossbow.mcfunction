@@ -12,7 +12,7 @@
 data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:crossbow"
 
 # エンチャント追加
-$data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"minecraft:piercing": $(p), "shop:no_ammo": 1, "minecraft:quick_charge": $(q), "shop:multi_charge": $(m)}
+$data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"minecraft:piercing": $(p), "shop:no_ammo": 1, "shop:charge_spd": $(q), "shop:multi_charge": $(m)}
 
 # 弓の連射制限
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:use_cooldown" set value {seconds: 0.25, cooldown_group: "minecraft:bow"}

@@ -64,7 +64,7 @@ data modify storage modify: restore.name set value 'stage.2.r-head.name'
 
 ##* 武器種ごとの共通設定
 #% sword/s.sword/axe: wooden/stone/iron/gold/diamond/netherite
-#% crossbow: p= piercing/q= quick_charge/m= multishot
+#% crossbow: p= piercing/q= charge_spd/m= multishot
 #% shard: item_id
     #function modify:restore/list/nums/type/sword {id: ""}
     #function modify:restore/list/nums/type/s.sword {id: ""}

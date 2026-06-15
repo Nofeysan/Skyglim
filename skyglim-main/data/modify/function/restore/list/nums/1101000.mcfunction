@@ -60,7 +60,7 @@ scoreboard players operation rolls_total Temp /= rolls Temp
 
 ##* 武器種ごとの共通設定
 #% sword/s.sword/axe: wooden/stone/iron/gold/diamond/netherite
-#% crossbow: p= piercing/q= quick_charge/m= multishot
+#% crossbow: p= piercing/q= charge_spd/m= multishot
 #% shard: item_id
     function modify:restore/list/nums/type/sword {id: "wooden"}
     #function modify:restore/list/nums/type/s.sword {id: ""}

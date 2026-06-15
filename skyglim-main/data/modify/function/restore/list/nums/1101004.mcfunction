@@ -64,13 +64,13 @@ data modify storage modify: restore.name set value 'stage.1.old-crossbow.name'
 
 ##* 武器種ごとの共通設定
 #% sword/s.sword/axe: wooden/stone/iron/gold/diamond/netherite
-#% crossbow: p= piercing/q= quick_charge/m= multishot
+#% crossbow: p= piercing/q= charge_spd/m= multishot
 #% shard: item_id
     #function modify:restore/list/nums/type/sword {id: ""}
     #function modify:restore/list/nums/type/s.sword {id: ""}
     #function modify:restore/list/nums/type/axe {id: ""}
     #function modify:restore/list/nums/type/bow
-    function modify:restore/list/nums/type/crossbow {p: 1, q: 3, m: 1}
+    function modify:restore/list/nums/type/crossbow {p: 1, q: 15, m: 1}
     #function modify:restore/list/nums/type/shard {id: }
     #function modify:restore/list/nums/type/armor {id: ""}
 
