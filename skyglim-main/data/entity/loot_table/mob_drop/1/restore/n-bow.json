@@ -188,7 +188,7 @@
                                 },
                                 "minecraft:enchantment_glint_override": false,
                                 "minecraft:use_cooldown": {
-                                    "seconds": 0.25,
+                                    "seconds": 0.30,
                                     "cooldown_group": "bow"
                                 }
                             }
