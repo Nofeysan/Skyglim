@@ -27,7 +27,7 @@ scoreboard players set rolls Temp 0
 scoreboard players set rolls_total Temp 0
 
 # 基礎値を設定して共通ファイルを実行する
-scoreboard players set base Temp 43
+scoreboard players set base Temp 38
 function modify:restore/list/status/dmg
 
 #scoreboard players set base Temp 
