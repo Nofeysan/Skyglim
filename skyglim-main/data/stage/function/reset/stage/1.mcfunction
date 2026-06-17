@@ -16,6 +16,9 @@ setblock 9905 16 36 minecraft:air
 setblock 9922 17 28 minecraft:air
 setblock 9926 17 33 minecraft:air
 
+# ブロック擬態に置き換える場合、この一行のみに変更
+#execute positioned 9849 4 -8 run kill @e[dx=102, dy=52, dz=139, type=minecraft:spawner_minecart]
+
 # foeceload remove
 forceload remove 9849 -8 9951 131
 
