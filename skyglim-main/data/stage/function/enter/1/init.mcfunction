@@ -32,12 +32,12 @@ setblock 9919 44 1 minecraft:spawner\
     MaxNearbyEntities: 1\
 }
 
-function entity:spawner/set {id: 'stage/1/1', xyz: '9879 13 27'}
-function entity:spawner/set {id: 'stage/1/1', xyz: '9889 12 14'}
-function entity:spawner/set {id: 'stage/1/1', xyz: '9903 15 23'}
-function entity:spawner/set {id: 'stage/1/1', xyz: '9905 16 36'}
-function entity:spawner/set {id: 'stage/1/1', xyz: '9922 17 28'}
-function entity:spawner/set {id: 'stage/1/1', xyz: '9926 17 33'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9879 13 27', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9889 12 14', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9903 15 23', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9905 16 36', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9922 17 28', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9926 17 33', block: 'iron_block'}
 
 # チェスト配置
 data modify block 9894 16 5 LootTable set value "entity:mob_drop/1/chest"
