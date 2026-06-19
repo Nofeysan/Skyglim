@@ -1,3 +1,16 @@
+#   json用
+#
+#   <type> sword: 1, s.sword: 2, axe: 3, bow: -1, crossbow: -2, armor: 4/5/6/7, shard: 9
+#   <rarity> 1: Normal, 2: Rare, 3: Epic, 4: Legendary, 5: Mythic
+#   <id> repair_cost (スプシ参照)
+#   <status> ["dmg", "hp", "str", "cc", "cd", "def", "spd", "mp", "luck"], 設定なしなら 0 を記入
+#   <has_ability> 特殊効果の行数 [0, 1, 2]
+#   <count> 同一ステージ内での同レアリティのシリーズ数
+#   <shop> token ショップに追加する場合の json を出力するかどうか [boolean]
+# 
+# 命名規則: stage.<stage>.<rarity>-<type>.<count>.name/lore.1/2 (e.g.) stage.6.e-shard.12.name
+# 
+
 import json
 import os
 
@@ -13,8 +26,8 @@ with open('item_database.json', encoding='utf-8') as f:
 
 # datapack空間内への相対パス
 #namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
-namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
-#namespace_path = 'C:\\Skyglim-dev\\py\\generated\\' # テスト用
+#namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
+namespace_path = 'C:\\Skyglim-dev\\py\\generated\\' # テスト用
 
 # 実行回数を初期化
 i = 0
@@ -148,7 +161,7 @@ def lore_color(l, ability):
 # 特殊data
 def addData(type, rarity):
     sell_value = [8, 64, 256, 8192, 32768]
-    
+
     if (type == 1):
         return {
             "rarity": rarity,
@@ -167,39 +180,40 @@ def addData(type, rarity):
             "mainhand": 1
         }
         
-    if (type == 2, 4, 5, 6, 7):
-            return {
-                "rarity": rarity,
-                "refinement": {
-                    "ref": -1, "type": type_num,
-                    "damage": 0, "hp": 0, "str": 0, "cc": 0, "cd": 0,
-                    "def": 0, "spd": 0, "mp": 0, "luck": 0
-                },
-                "roll": {
-                    "damage": -1, "hp": -1, "str": -1, "cc": -1, "cd": -1,
-                    "def": -1, "spd": -1, "mp": -1, "luck": -1
-                },
-                "restore": -1,
-                "sell": sell_value[rarity -1],
-                "enchantment": -1
-            }
+    elif (type == 2) or (4 <= type <= 7):
+        return {
+            "rarity": rarity,
+            "refinement": {
+                "ref": -1, "type": type_num,
+                "damage": 0, "hp": 0, "str": 0, "cc": 0, "cd": 0,
+                "def": 0, "spd": 0, "mp": 0, "luck": 0
+            },
+            "roll": {
+                "damage": -1, "hp": -1, "str": -1, "cc": -1, "cd": -1,
+                "def": -1, "spd": -1, "mp": -1, "luck": -1
+            },
+            "restore": -1,
+            "sell": sell_value[rarity -1],
+            "enchantment": -1
+        }
         
-    if (type == 9):
-            return {
-                "rarity": rarity,
-                "refinement": {
-                    "ref": -1, "type": type_num,
-                    "damage": 0, "hp": 0, "str": 0, "cc": 0, "cd": 0,
-                    "def": 0, "spd": 0, "mp": 0, "luck": 0
-                },
-                "roll": {
-                    "damage": -1, "hp": -1, "str": -1, "cc": -1, "cd": -1,
-                    "def": -1, "spd": -1, "mp": -1, "luck": -1
-                },
-                "restore": -1,
-                "sell": sell_value[rarity -1],
-                "shard": -1
-            }
+    elif (type == 9):
+        return {
+            "rarity": rarity,
+            "refinement": {
+                "ref": -1, "type": type_num,
+                "damage": 0, "hp": 0, "str": 0, "cc": 0, "cd": 0,
+                "def": 0, "spd": 0, "mp": 0, "luck": 0
+            },
+            "roll": {
+                "damage": -1, "hp": -1, "str": -1, "cc": -1, "cd": -1,
+                "def": -1, "spd": -1, "mp": -1, "luck": -1
+            },
+            "restore": -1,
+            "sell": sell_value[rarity -1],
+            "enchantment": -255,
+            "shard": -1
+        }
 
 # 各武器への処理
 for stage, data_list in item_database.items():
