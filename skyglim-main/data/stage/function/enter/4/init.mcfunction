@@ -8,28 +8,28 @@
 forceload add 9868 -152 9896 -124
 
 # スポナー設置
-function entity:spawner/set {id: 'stage/4/1', xyz: '9882 72 -149'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9893 72 -138'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9882 72 -127'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9893 60 -138'}
-function entity:spawner/set {id: 'stage/4/3', xyz: '9874 48 -131'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9874 42 -131'}
-function entity:spawner/set {id: 'stage/4/3', xyz: '9874 36 -130'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9871 36 -138'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9890 48 -131'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9890 48 -146'}
-function entity:spawner/set {id: 'stage/4/3', xyz: '9890 42 -146'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9889 36 -146'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9890 30 -145'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9875 30 -146'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9875 24 -147'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9874 18 -145'}
-function entity:spawner/set {id: 'stage/4/3', xyz: '9890 18 -145'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9889 12 -146'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9889 12 -130'}
-function entity:spawner/set {id: 'stage/4/2', xyz: '9890 0 -130'}
-function entity:spawner/set {id: 'stage/4/3', xyz: '9874 0 -130'}
-function entity:spawner/set {id: 'stage/4/1', xyz: '9874 0 -145'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9882 72 -149', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9893 72 -138', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9882 72 -127', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9893 60 -138', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/13', xyz: '9874 48 -131', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9874 42 -131', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/13', xyz: '9874 36 -130', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9871 36 -138', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9890 48 -131', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9890 48 -146', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/13', xyz: '9890 42 -146', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9889 36 -146', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9890 30 -145', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9875 30 -146', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9875 24 -147', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9874 18 -145', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/13', xyz: '9890 18 -145', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9889 12 -146', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9889 12 -130', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/12', xyz: '9890 0 -130', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/13', xyz: '9874 0 -130', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/4/11', xyz: '9874 0 -145', block: 'iron_block'}
 
 # チェスト配置
 data modify block 9882 60 -149 LootTable set value "entity:mob_drop/4/chest"

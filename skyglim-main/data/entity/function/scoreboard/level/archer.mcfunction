@@ -1,15 +1,31 @@
-# ステータス伸びたら通知してあげましょうか
-scoreboard players add @s Health 3
-tellraw @s [{text: "[ MAX HP +3 ]",color: "gray"}]
+#> entity:scoreboard/level/archer
+# 
+#% 偶数: hp +3, str +2, cd +1, def +2, mp +1, luck +1
+#% 奇数: hp +3, str +2, cd +2, def +1, luck +2
+# 
 
-scoreboard players add @s Strength 3
-tellraw @s [{text: "[ STR +2 ]",color: "gray"}]
-
-scoreboard players add @s Defence 1
-tellraw @s [{text: "[ DEF +1 ]",color: "gray"}]
-
-# %4 = 2 なら SPD+1
+# lv の偶奇取得
 scoreboard players operation _ Temp = @s CurrentLv
-scoreboard players operation _ Temp %= #4 num
-execute if score _ Temp matches 3 run scoreboard players add @s Speed 1
-execute if score _ Temp matches 3 run tellraw @s [{text: "[ SPD +1 ]",color: "gray"}]
+scoreboard players operation _ Temp %= #2 num
+
+# 偶数
+    execute if score _ Temp matches 0 run scoreboard players add @s Health 3
+    execute if score _ Temp matches 0 run scoreboard players add @s Strength 2
+    execute if score _ Temp matches 0 run scoreboard players add @s CritDamage 1
+    execute if score _ Temp matches 0 run scoreboard players add @s Defence 2
+    execute if score _ Temp matches 0 run scoreboard players add @s MagicPoint 1
+    execute if score _ Temp matches 0 run scoreboard players add @s Luck 1
+
+    execute if score _ Temp matches 0 run tellraw @s [{text: "[ MAX HP +3 ] [ STR +2 ] [ CD +1 ]",color: "gray"}]
+    execute if score _ Temp matches 0 run tellraw @s [{text: "[ DEF +2 ] [ MP +1 ] [ LUCK +1 ]",color: "gray"}]
+
+# 奇数
+    execute if score _ Temp matches 1 run scoreboard players add @s Health 3
+    execute if score _ Temp matches 1 run scoreboard players add @s Strength 2
+    execute if score _ Temp matches 1 run scoreboard players add @s CritDamage 2
+    execute if score _ Temp matches 1 run scoreboard players add @s Defence 1
+    #execute if score _ Temp matches 1 run scoreboard players add @s MagicPoint 1
+    execute if score _ Temp matches 1 run scoreboard players add @s Luck 2
+
+    execute if score _ Temp matches 1 run tellraw @s [{text: "[ MAX HP +3 ] [ STR +2 ] [ CD +2 ]",color: "gray"}]
+    execute if score _ Temp matches 1 run tellraw @s [{text: "[ DEF +1 ] [ LUCK +2 ]",color: "gray"}]

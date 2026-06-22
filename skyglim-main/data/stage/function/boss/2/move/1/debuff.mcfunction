@@ -10,14 +10,14 @@ playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.5 1
 particle minecraft:ash ~ ~ ~ 3 2 3 0.07 900
 
 # 盲目は全員に
-effect give @a[distance=..30] minecraft:blindness 1 0
-effect give @a[distance=..9] minecraft:blindness 4 0
-effect give @a[distance=..5] minecraft:blindness 7 0
+effect give @a[distance=..20] minecraft:blindness 1 0
+effect give @a[distance=..6] minecraft:blindness 4 0
+effect give @a[distance=..3] minecraft:blindness 7 0
 
 # 鈍足は近い人だけ
-effect give @a[distance=..9] minecraft:slowness 4 1
-effect give @a[distance=..5] minecraft:slowness 7 2
+effect give @a[distance=..6] minecraft:slowness 4 1
+effect give @a[distance=..3] minecraft:slowness 7 2
 
 # wither は近い人ほど長く
-effect give @a[distance=..9] minecraft:wither 3 0
-effect give @a[distance=..5] minecraft:wither 7 0
+effect give @a[distance=..6] minecraft:wither 3 0
+effect give @a[distance=..3] minecraft:wither 7 0

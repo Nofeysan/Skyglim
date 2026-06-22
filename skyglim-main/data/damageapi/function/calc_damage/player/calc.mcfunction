@@ -69,11 +69,11 @@ data modify storage km_solver: vars.G set from storage damageapi: damage.value
 
 
 #* 職業
-# 狂戦士
-execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 1.20f
+    # 狂戦士
+    execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 1.08f
 
-# 護神
-execute if score @s occupation matches 3 run data modify storage km_solver: vars.M set value 0.90f
+    # 護神
+    execute if score @s occupation matches 3 run data modify storage km_solver: vars.M set value 0.87f
 
 
 # 乱数でちょっと変える (*0.90-1.10)

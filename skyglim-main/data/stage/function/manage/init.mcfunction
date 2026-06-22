@@ -87,3 +87,14 @@ forceload remove 60 168 138 202
 # 進行度
 scoreboard players set $stage_progress _ 1
 scoreboard players set $magic_progress story.progress 1
+
+# gamerule
+gamerule sendCommandFeedback false
+gamerule pvp false
+
+# status reset
+scoreboard objectives remove StatusRegister
+scoreboard objectives add StatusRegister dummy "初期設定用"
+
+# attribute
+execute as @a run attribute @s minecraft:safe_fall_distance base reset

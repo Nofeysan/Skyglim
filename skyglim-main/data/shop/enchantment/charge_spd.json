@@ -1,0 +1,30 @@
+{
+    "description": "",
+    "supported_items": [
+        "minecraft:crossbow"
+    ],
+    "weight": 1,
+    "max_level": 30,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:crossbow_charge_time": {
+            "type": "minecraft:set",
+            "value": {
+                "type": "minecraft:linear",
+                "base": 0.05,
+                "per_level_above_first": 0.05
+            }
+        }
+    }
+}

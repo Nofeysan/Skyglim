@@ -9,19 +9,19 @@
 forceload add 9862 -100 9894 -68
 
 # スポナー設置
-function entity:spawner/set {id: 'stage/2/1', xyz: '9867 -49 -80'}
-function entity:spawner/set {id: 'stage/2/1', xyz: '9878 -49 -72'}
-function entity:spawner/set {id: 'stage/2/2', xyz: '9890 -46 -89'}
-function entity:spawner/set {id: 'stage/2/1', xyz: '9877 -46 -97'}
-function entity:spawner/set {id: 'stage/2/2', xyz: '9869 -36 -92'}
-function entity:spawner/set {id: 'stage/2/3', xyz: '9877 -28 -96'}
-function entity:spawner/set {id: 'stage/2/1', xyz: '9886 -35 -86'}
-function entity:spawner/set {id: 'stage/2/3', xyz: '9886 -36 -77'}
-function entity:spawner/set {id: 'stage/2/2', xyz: '9872 -36 -77'}
-function entity:spawner/set {id: 'stage/2/1', xyz: '9881 -20 -75'}
-function entity:spawner/set {id: 'stage/2/2', xyz: '9881 -20 -85'}
-function entity:spawner/set {id: 'stage/2/3', xyz: '9889 -19 -79'}
-function entity:spawner/set {id: 'stage/2/2', xyz: '9874 0 -82'}
+function entity:spawner/set {id: 'stage/2/11', xyz: '9867 -49 -80', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/11', xyz: '9878 -49 -72', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/12', xyz: '9890 -46 -89', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/11', xyz: '9877 -46 -97', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/12', xyz: '9869 -36 -92', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/13', xyz: '9877 -28 -96', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/11', xyz: '9886 -35 -86', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/13', xyz: '9886 -36 -77', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/12', xyz: '9872 -36 -77', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/11', xyz: '9881 -20 -75', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/12', xyz: '9881 -20 -85', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/13', xyz: '9889 -19 -79', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/2/12', xyz: '9874 0 -82', block: 'iron_block'}
 
 # チェスト配置
 data modify block 9882 -53 -84 LootTable set value "entity:mob_drop/2/chest"

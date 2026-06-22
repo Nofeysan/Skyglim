@@ -1,0 +1,16 @@
+{
+    "6": [
+        { "type": 1, "rarity": 3, "id": 1104001, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 2, "rarity": 3, "id": 1104002, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 3, "rarity": 3, "id": 1104003, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": -1, "rarity": 3, "id": 1104004, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": -2, "rarity": 3, "id": 1104005, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 4, "rarity": 3, "id": 1104006, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 5, "rarity": 3, "id": 1104007, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 6, "rarity": 3, "id": 1104008, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 7, "rarity": 3, "id": 1104009, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 1, "shop": true },
+        { "type": 9, "rarity": 3, "id": 1104010, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 10, "shop": true },
+        { "type": 9, "rarity": 3, "id": 1104011, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 11, "shop": true },
+        { "type": 9, "rarity": 3, "id": 1104012, "status": [9, 0, 40, 2, 0, 0, 7, 0, 0], "has_ability": 0, "count": 12, "shop": true }
+    ]
+}

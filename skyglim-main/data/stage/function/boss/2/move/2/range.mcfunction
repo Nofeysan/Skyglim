@@ -30,8 +30,8 @@ summon minecraft:skeleton ~ ~ ~ \
                             CustomName: {translate: "entity.stage.2.2.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 5200,\
-                                    "current_hp": 5200,\
+                                    "max_hp": 3900,\
+                                    "current_hp": 3900,\
                                     \
                                     "dmg": 8,\
                                     "str": 18,\

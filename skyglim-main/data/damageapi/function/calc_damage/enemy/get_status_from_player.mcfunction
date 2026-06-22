@@ -16,8 +16,6 @@ execute store result score cd Temp run scoreboard players get @s act_CritDamage
 scoreboard players add cd Temp 100
 execute store result score luck Temp run scoreboard players get @s act_Luck
 
-# チャージ量, 遠距離武器の場合常に100% (天弓なら130%)
+# チャージ量, 遠距離武器の場合常に100%
 execute store result score chargerate Temp run scoreboard players get @s ChargeRate
-
-execute if predicate damageapi:has_projectile unless score @s occupation matches 1 run scoreboard players set chargerate Temp 100
-execute if predicate damageapi:has_projectile if score @s occupation matches 1 run scoreboard players set chargerate Temp 120
+execute if predicate damageapi:has_projectile run scoreboard players set chargerate Temp 100

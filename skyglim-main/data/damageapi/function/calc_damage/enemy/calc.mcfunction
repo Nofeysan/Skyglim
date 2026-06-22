@@ -56,12 +56,14 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
         execute on attacker if entity @s[type=minecraft:armor_stand] as @p if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
 
     # 職業ごとの倍率
-        # 狂戦士：1.25x
-        execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.25f
+        # 1: 天弓 / 2: 狂戦士 / 3: 護神 / 4: 魔術師 / 5: 瑞祥
+        # 近接：狂戦士 x1.2 / 天弓・魔術師 x0.7
+            execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.20f
+            execute on attacker if score @s occupation matches 1 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.70f
+            execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.70f
         
-        # 天球・魔術師；0.7x
-        execute on attacker if score @s occupation matches 1 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.7f
-        execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.7f
+        # 遠距離：天弓 x1.1
+            execute on attacker if score @s occupation matches 1 if predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.10f
 
 # 実行
 execute at @p run function km_solver:solve

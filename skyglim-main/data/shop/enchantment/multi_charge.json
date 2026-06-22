@@ -2,7 +2,7 @@
     "description": "",
     "supported_items": "minecraft:crossbow",
     "weight": 1,
-    "max_level": 10,
+    "max_level": 255,
     "min_cost": {
         "base": 0,
         "per_level_above_first": 0
@@ -34,7 +34,7 @@
                     "type": "minecraft:add",
                     "value": {
                         "type": "minecraft:linear",
-                        "base": 2,
+                        "base": 0,
                         "per_level_above_first": 2
                     }
                 }
