@@ -51,3 +51,4 @@ execute unless score type Temp matches 9 if score e.check Temp matches 1.. run f
 ###* リセット
 scoreboard players reset act.ref Temp
 scoreboard players reset act.enc Temp
+scoreboard players reset type Temp
