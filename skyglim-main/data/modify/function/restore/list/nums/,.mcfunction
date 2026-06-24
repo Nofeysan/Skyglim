@@ -69,7 +69,7 @@ data modify storage modify: restore.name set value 'path'
     #function modify:restore/list/nums/type/sword {id: ""}
     #function modify:restore/list/nums/type/s.sword {id: ""}
     #function modify:restore/list/nums/type/axe {id: ""}
-    #function modify:restore/list/nums/type/bow
+    #function modify:restore/list/nums/type/bow {s: }
     #function modify:restore/list/nums/type/crossbow {p: , q: , m: }
     #function modify:restore/list/nums/type/armor {id: ""}
     #function modify:restore/list/nums/type/shard {id: }

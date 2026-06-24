@@ -40,7 +40,7 @@ def getItemId(rarity, type, count, stage):
 #+#################
 
 ###% generate ###
-def createLines(id, stats, rarity, type, count):
+def createLines(id, stats, rarity, type, count, macro, model, trim):
     lines = []
     
     # header
@@ -82,30 +82,36 @@ def createLines(id, stats, rarity, type, count):
     
     # 武器種ごとの設定
     lines.append('\n\n##* 武器種ごとの共通設定')
+    
     type_list = [
         '',
-        '\nfunction modify:restore/list/nums/type/sword {id: }',
-        '\nfunction modify:restore/list/nums/type/s.sword {id: }',
-        '\nfunction modify:restore/list/nums/type/axe {id: }',
-        '\nfunction modify:restore/list/nums/type/armor {id: }',
-        '\nfunction modify:restore/list/nums/type/armor {id: }',
-        '\nfunction modify:restore/list/nums/type/armor {id: }',
-        '\nfunction modify:restore/list/nums/type/armor {id: }',
+        f'\nfunction modify:restore/list/nums/type/sword {macro}',
+        f'\nfunction modify:restore/list/nums/type/s.sword {macro}',
+        f'\nfunction modify:restore/list/nums/type/axe {macro}',
+        f'\nfunction modify:restore/list/nums/type/armor {macro}',
+        f'\nfunction modify:restore/list/nums/type/armor {macro}',
+        f'\nfunction modify:restore/list/nums/type/armor {macro}',
+        f'\nfunction modify:restore/list/nums/type/armor {macro}',
         '',
-        '\nfunction modify:restore/list/nums/type/shard {id: }',
-        '\nfunction modify:restore/list/nums/type/crossbow {p: , q: , m: }',
-        '\nfunction modify:restore/list/nums/type/bow',
+        f'\nfunction modify:restore/list/nums/type/shard {macro}',
+        f'\nfunction modify:restore/list/nums/type/crossbow {macro}',
+        f'\nfunction modify:restore/list/nums/type/bow {macro}',
     ]
     
     lines.append(type_list[type])
     
-    lines.append('\n\n# custom_model_data')
-    lines.append('\n#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value [""]')
-    lines.append('\n\n# trim')
-    lines.append('\n#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:trim" merge value {material: , pattern: }')
+    # custom_model_data
+    if not(model == False):
+        lines.append('\n\n# custom_model_data')
+        lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:custom_model_data".strings set value ["{model}"]')
+    
+    # trim
+    if not(trim == False):
+        lines.append('\n\n# trim')
+        lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:trim" merge value {trim}')
     
     lines.append('\n\n#* もし avg. が 80 以上なら glint 付与')
-    lines.append('\nexecute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true')
+    lines.append('\nexecute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true')
     lines.append('\n\nfunction modify:restore/list/macro/set_name with storage modify: restore')
     
     # 残りの lore 処理
@@ -117,7 +123,7 @@ def createLines(id, stats, rarity, type, count):
     # others
     lines.append('\n\n##* その他')
     lines.append('\n# 鑑定済みにする')
-    lines.append('\ndata modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_data".data.restore set value 2')
+    lines.append('\ndata modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:custom_data".data.restore set value 2')
     lines.append('\n\n# 演出とか')
     lines.append('\nfunction modify:restore/list/nums/restore-done\n')    
     
@@ -135,6 +141,9 @@ for stage, data_list in item_database.items():
         __status__ = data["status"]
         __has_ability__ = data["has_ability"]
         __count__ = str(data["count"])
+        __macro__ = data["macro"]
+        __model__ = data.get("model", False)
+        __trim__ = data.get("trim", False)
     
         # path
         path = namespace_path + str(__id__) + ".mcfunction"
@@ -143,7 +152,7 @@ for stage, data_list in item_database.items():
         createdir(path)
         
         # output
-        output = createLines(__id__, __status__, __rarity__, __type__, __count__)
+        output = createLines(__id__, __status__, __rarity__, __type__, __count__, __macro__, __model__, __trim__)
         
         # 書き込み
         with open(path, 'w', encoding= 'utf-8') as f:
