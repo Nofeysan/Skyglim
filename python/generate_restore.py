@@ -142,18 +142,8 @@ for stage, data_list in item_database.items():
         __has_ability__ = data["has_ability"]
         __count__ = str(data["count"])
         __macro__ = data["macro"]
-        
-        # model はあったら
-        try:
-            __model__ = data["model"]
-        except:
-            __model__ = False
-        
-        # trim もあったら
-        try:
-            __trim__ = data["trim"]
-        except:
-            __trim__ = False
+        __model__ = data.get("model", False)
+        __trim__ = data.get("trim", False)
     
         # path
         path = namespace_path + str(__id__) + ".mcfunction"
