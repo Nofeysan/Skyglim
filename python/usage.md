@@ -42,15 +42,19 @@ armor, shard: {id: ""} | item_id ('minecraft:' 接頭辞は不要)
 
 * model (任意)
 custom_model_data を指定する（必要時のみ）。
-false なら指定せず、あるなら str を指定する
+false なら指定せず、あるなら str を指定する。
 記述例： `"model": "short_1"`
 
 * trim (任意)
 armor_trim を指定する（必要時のみ）。
 記述例： `"trim": "{material: \"\", pattern: \"\"}"`
 
+* color (任意)
+革装備用の染色値（int）を記入する。カラーコードを10進法にしたものを入れる。
+記述例： `"color": 15357190` (#ea5506 = 15357190)
 
 
-## ファイル生成
+
+### ファイル生成
 pythonファイルを実行すると生成されます。
 ただし、ディレクトリの指定を忘れずに

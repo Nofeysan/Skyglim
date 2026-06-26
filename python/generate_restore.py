@@ -40,7 +40,7 @@ def getItemId(rarity, type, count, stage):
 #+#################
 
 ###% generate ###
-def createLines(id, stats, rarity, type, count, macro, model, trim):
+def createLines(id, stats, rarity, type, count, macro, model, trim, dyedcolor):
     lines = []
     
     # header
@@ -110,6 +110,11 @@ def createLines(id, stats, rarity, type, count, macro, model, trim):
         lines.append('\n\n# trim')
         lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:trim" merge value {trim}')
     
+    # dyed color (leather only)
+    if not(dyedcolor == False):
+        lines.append('\n\n# dyed color')
+        lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:dyed_color" merge value {dyedcolor}')
+    
     lines.append('\n\n#* もし avg. が 80 以上なら glint 付与')
     lines.append('\nexecute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true')
     lines.append('\n\nfunction modify:restore/list/macro/set_name with storage modify: restore')
@@ -144,6 +149,7 @@ for stage, data_list in item_database.items():
         __macro__ = data["macro"]
         __model__ = data.get("model", False)
         __trim__ = data.get("trim", False)
+        __dyedcolor__ = data.get("color", False)
     
         # path
         path = namespace_path + str(__id__) + ".mcfunction"
