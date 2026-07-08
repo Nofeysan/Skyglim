@@ -1,5 +1,11 @@
 ## python を用いたファイル生成のやり方
 
+### 概要
+jsonでデータベースを作成し、それを読み込んでpythonを用いてファイルの生成を行います。
+実行する際にはpythonの実行環境が必要です。
+
+loot_table(.json) と mcf(.mcfunction) の二つを作成します。
+
 ### .json の書き方
 
 ```
@@ -29,6 +35,7 @@ repair_cost (スプシ参照)
 
 * count
 同一ステージ内での同レアリティのシリーズ数
+輝石についてはシリーズ数+通し番号（10, 11, ...）
 
 * shop (boolean)
 token ショップに追加する場合の json を出力するかどうか
@@ -58,3 +65,41 @@ armor_trim を指定する（必要時のみ）。
 ### ファイル生成
 pythonファイルを実行すると生成されます。
 ただし、ディレクトリの指定を忘れずに
+
+`~` の部分は各自の環境に合わせてください。
+また、pythonコード内ではバックスラッシュをエスケープしてください。
+
+* run_item.bat: 宝箱状態のアイテムと、任意でショップ用のアイテムを作成します。
+指定するべきディレクトリ
+`~\skyglim-main\data\entity\loot_table\mob_drop\`
+
+* run_restore.bat: 鑑定する際の実行ファイルを生成します。
+指定するべきディレクトリ
+`~\skyglim-main\data\modify\function\restore\list\nums\`
+
+
+## resources における翻訳キーを用いた実装のやり方
+アイテム作成時の翻訳キーの作成規則は以下の通りです。
+
+$ stage.<stage>.<rarity>-<type>.<count>.<name/lore> $
+
+\<> の各パラメータの説明は以下の通りです。
+* stage: 該当ステージ。1階層目のほう。
+* rarity: レアリティ。数字ではなく英語表記での接頭辞である。
+(1: n, 2: r, 3: e, 4: l, 5: m)
+* type: 装備タイプ。同様に英語表記を乗せる。
+(1: sword, 2: s.sword, 3: axe, \-1: bow, \-2: crossbow, 4: head, 5: chest, 6: legs, 7: boots, 9: shard)
+* count: シリーズ数。int
+* name/lore: name ならその名前、lore なら説明文を指定する。
+loreの場合、さらに lore.1/lore.2 の二つを指定し、ぴったり二行の説明を入れる。（json 内なので改行は不可）
+
+
+## カスタムモデルの設定
+各アイテムには任意で独自のモデルを設定できる。
+また、各アイテムは `item_model` を用いているのでその元アイテムに対して追加をすればよい。
+
+* sword/s.sword/axe: `minecraft:feather`
+* bow: `minecraft:bow`
+* crossbow: `minecraft:crossbow`
+* armor: 各種部位のまま
+* shard: `minecraft:clock`

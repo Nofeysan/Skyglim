@@ -158,7 +158,7 @@ for stage, data_list in item_database.items():
         createdir(path)
         
         # output
-        output = createLines(__id__, __status__, __rarity__, __type__, __count__, __macro__, __model__, __trim__)
+        output = createLines(__id__, __status__, __rarity__, __type__, __count__, __macro__, __model__, __trim__, __dyedcolor__)
         
         # 書き込み
         with open(path, 'w', encoding= 'utf-8') as f:
