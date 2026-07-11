@@ -44,7 +44,7 @@ token ショップに追加する場合の json を出力するかどうか
 各武器種の必要データを記入する
 sword/s.sword/axe: {id: ""} | wooden/stone/iron/gold/diamond/netherite
 bow: {s: } | s= second(cool_down), default: 0.25
-crossbow: {p: , q: , m: } | p= piercing / q= charge_spd (0.0\5*lvl sec.) / m= multishot (lvl\*1 本)
+crossbow: {p: , q: , m: } | p= piercing / q= charge_spd (0.05\*lvl sec.) / m= multishot (lvl\*1 本)
 armor, shard: {id: ""} | item_id ('minecraft:' 接頭辞は不要)
 
 * model (任意)
