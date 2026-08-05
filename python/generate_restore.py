@@ -68,6 +68,11 @@ def createLines(id, stats, rarity, type, count, macro, model, trim, dyedcolor):
     
     for s in stats:
         name_count += 1
+        
+        # int 以外の数値の例外処理
+        if type(s) == float:
+            s = int(s)
+        
         if s == 0:
             lines.append(f'\n\n#scoreboard players set base Temp \n#function modify:restore/list/status/{stat_name[name_count]}')
         else:
