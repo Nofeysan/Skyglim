@@ -3,12 +3,12 @@
 # sword 用の設定
 # 
 # @input
-#   id: wooden/stone/iron/gold/diamond/netherite
+#   id: wooden/stone/iron/gold/diamond/netherite _sword / feather(custom_model)
 # 
 
 # id, item_model
 data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:feather"
-$data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" set value "minecraft:$(id)_axe"
+$data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" set value "minecraft:$(id)"
 
 # 攻撃速度設定
 data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
