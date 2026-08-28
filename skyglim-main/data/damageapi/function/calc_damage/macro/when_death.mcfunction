@@ -38,4 +38,7 @@ execute unless entity @s[tag=boss] at @s if entity @a[distance=..20] run functio
 execute if entity @s[tag=boss] run function stage:boss/perform
 
 # 死亡処理
+# スライム系ならサイズを一番小さくする
+execute if predicate entity:entity_enemy_cube run data modify entity @s Size set value 0
+
 kill @s

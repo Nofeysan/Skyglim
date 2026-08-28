@@ -6,4 +6,7 @@
 # e.g.) function entity:spawner/set_2 {xyz: "", id: "stage/1/11", block: "iron_block"}
 # 
 
+# ブロック設置
+$setblock $(xyz) minecraft:$(block)
+
 $execute positioned $(xyz) run function entity:spawner/$(id) {block: "$(block)"}
