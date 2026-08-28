@@ -69,8 +69,8 @@ def createLines(id, stats, rarity, type, count, macro, model, trim, dyedcolor):
     for s in stats:
         name_count += 1
         
-        # int 以外の数値の例外処理
-        if type(s) == float:
+        # int 以外の数値の例外処理        
+        if isinstance(s, float):
             s = int(s)
         
         if s == 0:
