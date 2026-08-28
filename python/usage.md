@@ -47,7 +47,7 @@ token ショップに追加する場合の json を出力するかどうか
 
 * macro\
 各武器種の必要データを記入する\
-`sword/s.sword/axe: {id: ""}` | `wooden/stone/iron/gold/diamond/netherite`\
+`sword/s.sword/axe: {id: ""}` | `item_id` ('minecraft:' 接頭辞は不要)\
 `bow: {s: }` | `s= second(cool_down)`, default: 0.25\
 `crossbow: {p: , q: , m: }` | `p= piercing` / `q= charge_spd` (0.05\*lvl sec.) / `m= multishot` (lvl\*1 本)\
 `armor, shard: {id: ""}` | `item_id` ('minecraft:' 接頭辞は不要)\
@@ -55,6 +55,7 @@ token ショップに追加する場合の json を出力するかどうか
 * model (任意)\
 custom_model_data を指定する（必要時のみ）。\
 false なら指定せず、あるなら str を指定する。\
+`macro` には、武器なら `feather`，輝石なら `clock` を指定する。\
 記述例： `"model": "short_1"`
 
 * trim (任意)\
