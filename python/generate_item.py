@@ -25,9 +25,9 @@ with open('item_database.json', encoding='utf-8') as f:
     item_database = json.load(f)
 
 # datapack空間内への相対パス
-#namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
+namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
 #namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
-namespace_path = 'C:\\Skyglim-dev\\py\\generated\\' # テスト用
+#namespace_path = 'C:\\Skyglim-dev\\py\\generated\\' # テスト用
 
 # 実行回数を初期化
 i = 0
@@ -38,7 +38,7 @@ i = 0
 def getType(type):
     restore_type = ["sword", "short-sword", "axe", "head", "chest", "legs", "boots", "", "shard", "crossbow", "bow", ""]
     item_type = ["sword", "s.sword", "axe", "head", "chest", "legs", "boots", "", "shard", "crossbow", "bow", ""]
-    item_type_num = [1, 1, 1, 4, 5, 6, 7, 0, 9, 2, 2]
+    item_type_num = [1, 1, 1, 4, 5, 6, 7, 0, 9, 2, 2, 0]
     return restore_type[type -1], item_type[type -1], item_type_num[type -1]
 
 # path
@@ -48,11 +48,16 @@ def setPath(rarity, type, count):
 
 # Rarity num -> str 
 def getRarity(rarity):
-    rarity_name = ["Normal", "Rare", "Epic", "Legendary", "Epic"]
+    rarity_name = ["Normal", "Rare", "Epic", "Legendary", "Mythic"]
     rarity_color = ["#ffffff", "#2f7bea", "#92f3a4", "#ffd728", "#bf69f4"]
     return rarity_name[rarity-1], rarity_color[rarity-1]
 
 def setStats(stat_list, rarity_name, rarity_color):
+    # mythic 処理
+    rarity_name_use = rarity_name
+    if rarity_name_use == "Mythic":
+        rarity_name_use = "§ka §rMythic §ka"
+            
     # 前後の設定
     lores = [
                 { "translate": "restore.item.type." + type_restore , "italic": False, "color": "#f5de84" },
@@ -92,13 +97,18 @@ def setStats(stat_list, rarity_name, rarity_color):
         { "translate": "stage." + stage + "." + item_path + ".lore.1", "color": lore_color(1, __has_ability__), "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.2", "color": lore_color(2, __has_ability__), "italic": False },
         { "text": "" },
-        { "text": rarity_name, "color": rarity_color, "italic": False, "bold": True },
+        { "text": rarity_name_use, "color": rarity_color, "italic": False, "bold": True },
         { "translate": "common.lore.line.2", "color": "dark_gray", "italic": False }]
     )
     
     return lores
 
 def setStats_shop(stat_list, rarity_name, rarity_color, stage):
+    # mythic 処理
+    rarity_name_use = rarity_name
+    if rarity_name_use == "Mythic":
+        rarity_name_use = "§ka §rMythic §ka"
+    
     # 前後の設定
     lores_ = [
                 { "translate": "restore.item.type." + type_restore , "italic": False, "color": "#f5de84" },
@@ -138,7 +148,7 @@ def setStats_shop(stat_list, rarity_name, rarity_color, stage):
         { "translate": "stage." + stage + "." + item_path + ".lore.1", "color": lore_color(1, __has_ability__), "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.2", "color": lore_color(2, __has_ability__), "italic": False },
         { "text": "" },
-        { "text": rarity_name, "color": rarity_color, "italic": False, "bold": True },
+        { "text": rarity_name_use, "color": rarity_color, "italic": False, "bold": True },
         { "translate": "common.lore.line.2", "color": "dark_gray", "italic": False },
         [ 
             { "translate": "shop.item.value", "color": "#bfe493", "italic": False},
@@ -162,7 +172,7 @@ def lore_color(l, ability):
 def addData(type, rarity):
     sell_value = [8, 64, 256, 8192, 32768]
 
-    if (type == 1):
+    if (type == 1) or (type == 2):
         return {
             "rarity": rarity,
             "refinement": {
@@ -180,7 +190,7 @@ def addData(type, rarity):
             "mainhand": 1
         }
         
-    elif (type == 2) or (4 <= type <= 7):
+    elif (4 <= type <= 7):
         return {
             "rarity": rarity,
             "refinement": {
@@ -311,7 +321,8 @@ for stage, data_list in item_database.items():
                                                 "minecraft:enchantments",
                                                 "minecraft:unbreakable",
                                                 "minecraft:charged_projectiles",
-                                                "minecraft:trim"
+                                                "minecraft:trim",
+                                                "minecraft:dyed_color"
                                             ]
                                         },
                                         "minecraft:repair_cost": __id__,

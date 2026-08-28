@@ -23,9 +23,9 @@ with open('item_database.json', encoding='utf-8') as f:
     item_database = json.load(f)
 
 # datapack空間内への相対パス
-#namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\modify\\function\\restore\\list\\nums\\' # 本番環境
+namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\modify\\function\\restore\\list\\nums\\' # 本番環境
 #namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\modify\\function\\restore\\list\\nums\\' # 本番環境
-namespace_path = 'C:\\Skyglim-dev\\py\\generated\\restore\\' # テスト用
+#namespace_path = 'C:\\Skyglim-dev\\py\\generated\\restore\\' # テスト用
 
 # 実行回数を初期化
 i = 0
@@ -118,7 +118,7 @@ def createLines(id, stats, rarity, type, count, macro, model, trim, dyedcolor):
     # dyed color (leather only)
     if not(dyedcolor == False):
         lines.append('\n\n# dyed color')
-        lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:dyed_color" merge value {dyedcolor}')
+        lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components merge value {{"minecraft:dyed_color": {dyedcolor}}}')
     
     lines.append('\n\n#* もし avg. が 80 以上なら glint 付与')
     lines.append('\nexecute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true')
@@ -127,7 +127,7 @@ def createLines(id, stats, rarity, type, count, macro, model, trim, dyedcolor):
     # 残りの lore 処理
     lines.append('\n\n##? 残りの Lore 付与')
     
-    for l in [-1, -2, -3, -4, -5, -6]:
+    for l in [-6, -5, -4, -3, -2, -1]:
         lines.append(f'\ndata modify block ~ ~-1 ~ Items[{{Slot: 13b}}].components."minecraft:lore" append from storage modify: lore.{l}')
     
     # others
