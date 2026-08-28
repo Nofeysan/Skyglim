@@ -4,8 +4,6 @@
 # equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
 # 
 
-$setblock ~ ~ ~ minecraft:$(block)
-
 summon minecraft:spawner_minecart ~ ~ ~ \
 {\
     Delay: 0,\
