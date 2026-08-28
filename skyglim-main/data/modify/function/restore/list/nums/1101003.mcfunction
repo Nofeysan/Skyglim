@@ -69,7 +69,7 @@ data modify storage modify: restore.name set value 'stage.1.old-bow.name'
     #function modify:restore/list/nums/type/sword {id: ""}
     #function modify:restore/list/nums/type/s.sword {id: ""}
     #function modify:restore/list/nums/type/axe {id: ""}
-    function modify:restore/list/nums/type/bow
+    function modify:restore/list/nums/type/bow {s: 0.25}
     #function modify:restore/list/nums/type/crossbow {p: , q: , m: }
     #function modify:restore/list/nums/type/shard {id: }
     #function modify:restore/list/nums/type/armor {id: ""}

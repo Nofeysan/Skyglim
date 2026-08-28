@@ -13,4 +13,4 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].id set value "minecraft:bow"
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"shop:no_ammo": 1}
 
 # 弓の連射制限
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:use_cooldown" set value {seconds: 0.25, cooldown_group: "minecraft:bow"}
+$data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:use_cooldown" set value {seconds: $(s), cooldown_group: "minecraft:bow"}
