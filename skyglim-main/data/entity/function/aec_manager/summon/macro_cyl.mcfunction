@@ -12,12 +12,12 @@
 #  
 
 # ダメージ処理用 armor_stand
-$summon minecraft:armor_stand ~ ~ ~ {Small: true, Invulnerable: true, NoGravity: true, Invisible: true, data: {status: {dmg: $(dmg), str: $(str)}, r: $(r), half_r: $(half_r)}, PortalCooldown: $(t_2), Tags: ["aec", "aec_sq"], DisabledSlots: $(id)}
+$summon minecraft:armor_stand ~ ~ ~ {Small: true, Invulnerable: true, NoGravity: true, Invisible: true, data: {status: {dmg: $(dmg), str: $(str)}, r: $(r), half_r: $(half_r)}, PortalCooldown: $(t_2), Tags: ["aec", "aec_ci"], DisabledSlots: $(id)}
 
 # 事前に表示するやつ
 $execute positioned ~ ~ ~ run summon minecraft:block_display ~ ~ ~ \
 {\
-    block_state: {Name: "minecraft:test_block"},\
+    block_state: {Name: "minecraft:resin_bricks"},\
     brightness: {block: 12, sky: 12},\
     view_range: 12f,\
     \
@@ -33,7 +33,7 @@ $execute positioned ~ ~ ~ run summon minecraft:block_display ~ ~ ~ \
 # 拡大させる用
 $execute positioned ~ ~ ~ run summon minecraft:block_display ~ ~ ~ \
 {\
-    block_state: {Name: "minecraft:test_instance_block"},\
+    block_state: {Name: "minecraft:chiseled_resin_bricks"},\
     brightness: {block: 12, sky: 12},\
     view_range: 12f,\
     \

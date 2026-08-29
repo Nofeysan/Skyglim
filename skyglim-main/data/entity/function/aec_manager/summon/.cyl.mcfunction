@@ -1,4 +1,4 @@
-#> entity:aec_manager/summon/.square
+#> entity:aec_manager/summon/.cyl
 # 
 # 実行位置で召喚されるため、召喚したい場所で呼び出すこと
 # align である必要はなし
@@ -23,4 +23,4 @@ execute store result score _ _ run data get storage enemy: aec.list.t
 execute store result storage enemy: aec.list.t_2 float 1 run scoreboard players operation _ _ += #2 num
 
 # macro で実行
-function entity:aec_manager/summon/macro_square with storage enemy: aec.list
+function entity:aec_manager/summon/macro_cyl with storage enemy: aec.list

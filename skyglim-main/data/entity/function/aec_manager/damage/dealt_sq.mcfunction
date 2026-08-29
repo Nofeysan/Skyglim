@@ -1,4 +1,4 @@
-#> entity:aec_manager/damage/dealt
+#> entity:aec_manager/damage/dealt_sq
 # 
 # ライブラリを用いて範囲内のプレイヤーにダメージを与える
 # 
