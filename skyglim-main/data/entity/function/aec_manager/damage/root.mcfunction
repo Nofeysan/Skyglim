@@ -16,11 +16,18 @@
 data modify storage enemy: aec.damage set from entity @s data
 
 # effect
-#! 物によって変更できるようにする
-particle minecraft:cloud ~ ~ ~ 1 1 1 0.1 200 force @a
+    # id の取得
+    data modify storage temp: aec.id set from entity @s DisabledSlots
+
+    # macro で処理実行
+    function entity:aec_manager/perform/.root with storage temp: aec
 
 # damage
-function entity:aec_manager/damage/dealt with storage enemy: aec.damage
+    # square
+    execute if entity @s[tag=aec_sq] run function entity:aec_manager/damage/dealt_sq with storage enemy: aec.damage
+
+    # circle
+    execute if entity @s[tag=aec_ci] run function entity:aec_manager/damage/dealt_ci with storage enemy: aec.damage
 
 # kill
-kill @e[distance=..0.1, type=minecraft:block_display]
+kill @e[distance=..0.02, type=minecraft:block_display]

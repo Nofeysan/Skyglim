@@ -12,7 +12,7 @@
 
 # data セット
 # {r: <radius>, t: <tick>, dmg: <damage>, str: <strength>}
-$data modify storage enemy: aec.list set value {r: $(r), t: $(t), dmg: $(dmg), str: $(str)}
+$data modify storage enemy: aec.list set value {r: $(r), t: $(t), dmg: $(dmg), str: $(str), id: $(id)}
 
 # radius 調整
 execute store result score _ _ run data get storage enemy: aec.list.r 100
