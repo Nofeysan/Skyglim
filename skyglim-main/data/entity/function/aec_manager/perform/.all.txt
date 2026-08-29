@@ -1,0 +1,10 @@
+# 
+# entity:aec_manager/summon/.square | entity:aec_manager/summon/.cyl
+# 演出 id の対応表
+# 
+
+10: s1 boss - ボス中心の巨大AEC
+11: s1 boss - 各プレイヤー中心のAEC
+20: s2 boss - 近づくとダメなAEC
+21: s2 boss - 3連続AEC
+41: s4 boss - 5連続AEC

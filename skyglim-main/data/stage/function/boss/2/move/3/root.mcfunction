@@ -1,13 +1,13 @@
-#> stage:boss/1/move/3/root
+#> stage:boss/2/move/3/root
 # 
 # 移動速度上昇
 # 
 # 
 
 # AoE
-execute if score s2 BossMoves matches 200 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18}
-execute if score s2 BossMoves matches 220 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18}
-execute if score s2 BossMoves matches 240 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18}
+execute if score s2 BossMoves matches 200 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18, id: 21}
+execute if score s2 BossMoves matches 220 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18, id: 21}
+execute if score s2 BossMoves matches 240 at @a[distance=..30] positioned ~ 22 ~ run function entity:aec_manager/summon/.square {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 
 execute if score s2 BossMoves matches 200 at @a[distance=..30] run playsound minecraft:entity.firework_rocket.launch voice @a ~ ~ ~ 0.3 1.7
 execute if score s2 BossMoves matches 220 at @a[distance=..30] run playsound minecraft:entity.firework_rocket.launch voice @a ~ ~ ~ 0.3 1.7
