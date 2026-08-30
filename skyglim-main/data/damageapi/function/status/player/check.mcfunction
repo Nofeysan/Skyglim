@@ -28,7 +28,7 @@
         execute if data entity @s Inventory[{Slot: 11b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-3
 
     # mainhand 武器
-        execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand-2
+        execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand
 
 
 #+ 倍率処理
