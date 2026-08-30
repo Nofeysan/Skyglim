@@ -121,20 +121,17 @@ execute on attacker if entity @s[type=minecraft:player] run function damageapi:c
 execute on attacker if entity @s[type=minecraft:armor_stand] as @p run function damageapi:calc_damage/enemy/armor/when_damage
 
 ###* 与ダメージ表示
-    # int float に分ける
-    scoreboard players operation @s Damage.int = DealtDamage Temp
-    scoreboard players operation @s Damage.int /= #100 num
-
-    scoreboard players operation @s Damage.float = DealtDamage Temp
-    scoreboard players operation @s Damage.float %= #100 num
-    scoreboard players operation @s Damage.float /= #10 num
-
+    # damage 値取得（小数第１位まで）
+    data modify storage damageapi: rotation.dmg set from storage km_solver: outputs[0]
+    execute store result storage damageapi: rotation.dmg float 0.1 run data get storage damageapi: rotation.dmg 10
+    data modify storage damageapi: rotation.dmgstr set string storage damageapi: rotation.dmg 0 -1
+    
     # macro で -179..180 で rotate に代入して召喚
     execute store result storage damageapi: rotation.xy int 1 run random value -179..180
     execute store result storage damageapi: rotation.z int 1 run random value -50..50
-    function damageapi:calc_damage/macro/summon_damage with storage damageapi: rotation
 
-    execute as @n[predicate=damageapi:is_stick,tag=!modified] run function damageapi:calc_damage/enemy/damage_modify
+    # 召喚
+    function damageapi:calc_damage/macro/summon_damage_enemy with storage damageapi: rotation
 
 # リセット
 data modify entity @s Health set value 1024

@@ -97,22 +97,17 @@ execute store result score DealtDamage Temp run data get storage km_solver: outp
 execute if score DealtDamage Temp matches ..-1 run scoreboard players set DealtDamage Temp 0
 
 ###* 与ダメージ表示
-# int float に分ける
-scoreboard players operation @s Damage.int = DealtDamage Temp
-scoreboard players operation @s Damage.int /= #100 num
+    # damage 値取得（小数第１位まで）
+    data modify storage damageapi: rotation.dmg set from storage km_solver: outputs[0]
+    execute store result storage damageapi: rotation.dmg float 0.1 run data get storage damageapi: rotation.dmg 10
+    data modify storage damageapi: rotation.dmgstr set string storage damageapi: rotation.dmg 0 -1
+    
+    # macro で -179..180 で rotate に代入して召喚
+    execute store result storage damageapi: rotation.xy int 1 run random value -179..180
+    execute store result storage damageapi: rotation.z int 1 run random value -50..50
 
-scoreboard players operation @s Damage.float = DealtDamage Temp
-scoreboard players operation @s Damage.float %= #100 num
-scoreboard players operation @s Damage.float /= #10 num
-
-execute at @s positioned ~ ~1.2 ~ run loot spawn ^ ^ ^1 loot damageapi:damage_text_player
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s CustomName set from entity @s Item.components."minecraft:custom_name"
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s CustomNameVisible set value true
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s PickupDelay set value 32767
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s PortalCooldown set value 110
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s NoGravity set value true
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run data modify entity @s Motion set value [0.0d, 0.0d, 0.0d]
-execute as @n[predicate=damageapi:is_stick,tag=!modified] run tag @s add modified
+    # 召喚
+    function damageapi:calc_damage/macro/summon_damage_player with storage damageapi: rotation
 
 ###* ダメージを付与
 scoreboard players operation @s DamageScore = DealtDamage Temp
