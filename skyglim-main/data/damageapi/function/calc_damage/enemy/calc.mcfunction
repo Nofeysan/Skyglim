@@ -55,15 +55,33 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
         execute on attacker if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
         execute on attacker if entity @s[type=minecraft:armor_stand] as @p if predicate modify:enchantment/armor.c/additional unless score additional_done Temp matches 1.. if score random Temp matches 1..25 run function damageapi:calc_damage/enemy/armor/additional
 
-    # 職業ごとの倍率
-        # 1: 天弓 / 2: 狂戦士 / 3: 護神 / 4: 魔術師 / 5: 瑞祥
-        # 近接：狂戦士 x1.2 / 天弓・魔術師 x0.7
-            execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.20f
-            execute on attacker if score @s occupation matches 1 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.70f
-            execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 0.70f
-        
-        # 遠距離：天弓 x1.1
-            execute on attacker if score @s occupation matches 1 if predicate damageapi:has_projectile run data modify storage km_solver: vars.M set value 1.10f
+    # 職業・アイテムの倍率
+        # 初期値
+            scoreboard players set _ _ 100
+
+            # 1: 天弓 / 2: 狂戦士 / 3: 護神 / 4: 魔術師 / 5: 瑞祥
+                # 近接：狂戦士 +20% / 天弓・魔術師 -30%
+                    execute on attacker if score @s occupation matches 2 unless predicate damageapi:has_projectile run scoreboard players add _ _ 20
+                    execute on attacker if score @s occupation matches 1 unless predicate damageapi:has_projectile run scoreboard players remove _ _ 30
+                    execute on attacker if score @s occupation matches 4 unless predicate damageapi:has_projectile run scoreboard players remove _ _ 30
+
+                # 遠距離：天弓 +10%
+                    execute on attacker if score @s occupation matches 1 if predicate damageapi:has_projectile run scoreboard players add _ _ 10
+
+            # アイテム
+                # ロマン砲: +50% (1%)
+                    execute store result score randomItemChance _ run random value 0..99
+                    execute if predicate damageapi:item/has_1111009 if score randomItemChance _ matches 0 run scoreboard players add _ _ 50
+
+                # 一撃必殺: +200% (0.7%)
+                    execute store result score randomItemChance _ run random value 0..999
+                    execute if predicate damageapi:item/has_1112009 if score randomItemChance _ matches 0..69 run scoreboard players add _ _ 200
+
+                # 狂乱の矢: +3%
+                    execute if predicate damageapi:item/has_1114009 run scoreboard players add _ _ 3
+
+        # 代入
+            execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _
 
 # 実行
 execute at @p run function km_solver:solve
@@ -119,6 +137,8 @@ execute if score DealtDamage Temp matches ..-1 run scoreboard players set DealtD
 # 防具効果：攻撃時のやつ
 execute on attacker if entity @s[type=minecraft:player] run function damageapi:calc_damage/enemy/armor/when_damage
 execute on attacker if entity @s[type=minecraft:armor_stand] as @p run function damageapi:calc_damage/enemy/armor/when_damage
+
+
 
 ###* 与ダメージ表示
     # damage 値取得（小数第１位まで）

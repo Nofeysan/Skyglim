@@ -7,8 +7,14 @@
 # 保存
     scoreboard players operation _ _ = xp Temp
 
-## 乱数でちょっと変える (*0.90-1.10)
-    execute store result score randint Temp run random value 80..120
+# 乱数でちょっと変える (*0.90-1.10)
+    # 経験値加算
+        # デフォ
+        execute store result score randint Temp run random value 80..120
+
+        # 経験値のしおり (xp +5%)
+        execute if predicate damageapi:item/has_1110110 store result score randint Temp run random value 85..125
+
     scoreboard players operation _ _ *= randint Temp
     scoreboard players operation _ _ /= #100 num
 

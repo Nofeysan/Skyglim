@@ -51,6 +51,7 @@ data modify storage damageapi: damage.value set from storage km_solver: outputs[
 #- D = def
 #- M = Multiplier
 #- E = Error
+#- V = item
 
 # リセット
 data remove storage km_solver: inputs
@@ -60,21 +61,30 @@ data remove storage km_solver: vars
 data modify storage km_solver: inputs append value {f:{mul:[{mul:[{v:"M"},{v:"G"}]},{mul:[{sub:[{n:1.0f},{div:[{v:"D"},{add:[{v:"D"},{n:100.0f}]}]}]},{v:"E"}]}]}}
 
 # 初期値を代入
-data modify storage km_solver: vars set value {G:0.0f, D:0.0f, M:1.0f, E:1.0f}
+data modify storage km_solver: vars set value {G:0.0f, D:0.0f, M:1.0f, E:1.0f, V:1.0f}
 
 # ステータス保存
 execute store result storage km_solver: vars.D float 1 run scoreboard players get @s act_Defence
 
 data modify storage km_solver: vars.G set from storage damageapi: damage.value
 
+# 職業・アイテム効果など
+    # 初期値設定
+        scoreboard players set _ _ 100
 
-#* 職業
-    # 狂戦士
-    execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 1.08f
+    # 効果
+        # 職業
+            # 狂戦士 (+8%)
+                execute if score @s occupation matches 2 run scoreboard players add _ _ 8
 
-    # 護神
-    execute if score @s occupation matches 3 run data modify storage km_solver: vars.M set value 0.87f
+            # 護神 (-13%)
+                execute if score @s occupation matches 3 run scoreboard players remove _ _ 13
 
+        # 鉛板 (-2%)
+            execute if predicate damageapi:item/has_1110010 run scoreboard players remove _ _ 2
+
+    # 代入
+        execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _
 
 # 乱数でちょっと変える (*0.90-1.10)
 execute store result storage km_solver: vars.E float 0.001 run random value 900..1100
@@ -85,6 +95,7 @@ execute at @p run function km_solver:solve
 # 特殊ダメージ処理
     # もし敵がいない = 落下ダメージとか  なら MaxHP*5% を与える
     execute if score exist Temp matches 0 store result storage km_solver: outputs[0] float 0.0005 run scoreboard players get @s MaxHealth
+    execute if score exist Temp matches 0 if predicate damageapi:item/has_1112008 run data modify storage km_solver: outputs[0] set value 0.0f
 
     # 炎上ダメージは MaxHP*2%
     execute if predicate damageapi:is_on_fire store result storage km_solver: outputs[0] float 0.0002 run scoreboard players get @s MaxHealth

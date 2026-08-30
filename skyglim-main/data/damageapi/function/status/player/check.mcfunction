@@ -50,6 +50,11 @@
         # enchantment - 倍率
             function modify:enchantment/calc/root
 
+        # 防具
+        #! 全部揃ったらひとまとめにして負荷を減らす（どれかに一致→別function）
+            # 翠風セット (SPD +5%)
+                execute if predicate damageapi:item/fullset/set_1114005- run scoreboard players add spd multi 5
+
     #* 倍率計算
         scoreboard players operation @s act_Health *= hp multi
         scoreboard players operation @s act_Health /= #100 num

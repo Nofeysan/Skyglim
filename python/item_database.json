@@ -174,7 +174,7 @@
         { "type":  5, "rarity": 3, "id": 1114006, "status": [ 0, 80,  0,  0,  0, 50,  9,  7,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_chestplate\"}", "color": 5102200, "trim": "{material: \"emerald\", pattern: \"ward\"}" },
         { "type":  6, "rarity": 3, "id": 1114007, "status": [ 0, 59,  0,  0,  0, 42,  6,  8,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_leggings\"}", "color": 5361784, "trim": "{material: \"emerald\", pattern: \"ward\"}" },
         { "type":  7, "rarity": 3, "id": 1114008, "status": [ 0, 40,  0,  0,  0, 20,  3,  6,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_boots\"}", "color": 4766571, "trim": "{material: \"emerald\", pattern: \"ward\"}" },
-        { "type":  9, "rarity": 3, "id": 1114009, "status": [ 0,  0, 15,  3, 17, -16,  5,  0,  0], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"clock\"}", "model": "1114009" },
+        { "type":  9, "rarity": 3, "id": 1114009, "status": [ 0,  0, 15,  3, 17, -16,  5,  0,  0], "has_ability": 1, "count": 10, "shop": true, "macro": "{id: \"clock\"}", "model": "1114009" },
         { "type":  9, "rarity": 3, "id": 1114010, "status": [ 0,  0,  0,  0,  0,   0,  0, 45,  0], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1114010" },
         { "type":  9, "rarity": 3, "id": 1114011, "status": [ 0,  0,  0,  0,  0,   0,  4,  0, 32], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"light_weighted_pressure_plate\"}" },
 
