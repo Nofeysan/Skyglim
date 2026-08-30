@@ -5,9 +5,7 @@
 # 
 
 # cc
-scoreboard players operation @s act_CritChance *= #11 num
-scoreboard players operation @s act_CritChance /= #10 num
+scoreboard players add cc multi 10
 
 # luck
-scoreboard players operation @s act_Luck *= #11 num
-scoreboard players operation @s act_Luck /= #10 num
+scoreboard players add luck multi 10

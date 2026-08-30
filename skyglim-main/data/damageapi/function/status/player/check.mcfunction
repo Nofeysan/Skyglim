@@ -30,12 +30,47 @@
     # mainhand 武器
         execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand-2
 
-# enchantment - 倍率
-    function modify:enchantment/calc/root
 
-#* 職業倍率・瑞祥 (CC, LUCK x1.1)
-    execute if entity @s[scores={occupation=5}] run function damageapi:status/player/calc/occupation
+#+ 倍率処理
+    #* 倍率基礎値設定
+    scoreboard players set hp multi 100
+    scoreboard players set str multi 100
+    scoreboard players set cc multi 100
+    scoreboard players set cd multi 100
+    scoreboard players set def multi 100
+    scoreboard players set spd multi 100
+    scoreboard players set mp multi 100
+    scoreboard players set luck multi 100
+    scoreboard players set dmg multi 100
 
+    #* 倍率加算
+        # 職業・瑞祥（CC, LUCK +10%）
+            execute if entity @s[scores={occupation = 5}] run function damageapi:status/player/calc/occupation
+
+        # enchantment - 倍率
+            function modify:enchantment/calc/root
+
+    #* 倍率計算
+        scoreboard players operation @s act_Health *= hp multi
+        scoreboard players operation @s act_Health /= #100 num
+        scoreboard players operation @s act_Strength *= str multi
+        scoreboard players operation @s act_Strength /= #100 num
+        scoreboard players operation @s act_CritChance *= cc multi
+        scoreboard players operation @s act_CritChance /= #100 num
+        scoreboard players operation @s act_CritDamage *= cd multi
+        scoreboard players operation @s act_CritDamage /= #100 num
+        scoreboard players operation @s act_Defence *= def multi
+        scoreboard players operation @s act_Defence /= #100 num
+        scoreboard players operation @s act_Speed *= spd multi
+        scoreboard players operation @s act_Speed /= #100 num
+        scoreboard players operation @s act_MagicPoint *= mp multi
+        scoreboard players operation @s act_MagicPoint /= #100 num
+        scoreboard players operation @s act_Luck *= luck multi
+        scoreboard players operation @s act_Luck /= #100 num
+        scoreboard players operation @s act_Damage *= dmg multi
+        scoreboard players operation @s act_Damage /= #100 num
+
+#
 
 #* マイナス処理
     # HP, MP <= 100 なら 10 にそろえる
