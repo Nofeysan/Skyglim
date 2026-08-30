@@ -17,20 +17,23 @@ execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cool
 execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] as @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] at @s run function entity:aec_manager/damage/root
 
 #* すべてのモブに対してダメージを受けた時の処理
-# 防御貫通ダメージ処理
-execute as @e if predicate entity:is_wind_charged run damage @s 0.0001
+    # 防御貫通ダメージ処理
+    execute as @e if predicate entity:is_wind_charged run damage @s 0.0001
 
-# levitated
-#execute as @e[predicate=entity:entity_enemy, tag=levitated, predicate=damageapi:is_on_ground] run tag @s remove levitated
+    # levitated
+    #execute as @e[predicate=entity:entity_enemy, tag=levitated, predicate=damageapi:is_on_ground] run tag @s remove levitated
 
-execute as @a[predicate=entity:get_damage_10] if predicate entity:is_poison run function damageapi:calc_damage/player/calc
-execute as @e[predicate=entity:get_damage] run function damageapi:calc_damage/root
-scoreboard players remove additional_done Temp 1
-execute as @a[scores={UnbreakingCoolDown=1..}] run scoreboard players remove @a UnbreakingCoolDown 1
+    # posion, 魔法CD処理
+    execute as @a[predicate=entity:get_damage_10] if predicate entity:is_poison run function damageapi:calc_damage/player/calc
+    execute as @e[predicate=entity:get_damage] run function damageapi:calc_damage/root
+    scoreboard players remove additional_done Temp 1
+    execute as @a[scores={UnbreakingCoolDown=1..}] run scoreboard players remove @a UnbreakingCoolDown 1
 
 #+ ダメージテキスト・魔法用消す
-kill @e[predicate=damageapi:old_stick]
-execute as @e[predicate=damageapi:old_armorstand] run function magic:kill_armorstand
+    execute as @e[type=minecraft:text_display, tag=damage_text] run scoreboard players add @s DamageTemp 1
+    execute as @e[type=minecraft:text_display, tag=damage_text] if score @s DamageTemp matches 30.. run kill @s
+    
+    execute as @e[predicate=damageapi:old_armorstand] run function magic:kill_armorstand
 
 # 選択用アイテムを消す
 kill @e[predicate=damageapi:is_not_item]
