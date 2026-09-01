@@ -25,7 +25,7 @@
         { "type":  7, "rarity": 2, "id": 1106008, "status": [ 0, 20,  0,  0,  5,  8,  0, 15,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"leather_boots\"}", "color": 6499249 },
         { "type":  9, "rarity": 2, "id": 1106009, "status": [ 0,  0,  0,  0,  9,  0,  0,  0, 18], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"decorated_pot\"}" },
         { "type":  9, "rarity": 2, "id": 1106010, "status": [ 0, -2,  2,  0,  0, -2,  2,  0,  0], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1106010" },
-        { "type":  9, "rarity": 2, "id": 1106011, "status": [ 0,  0,  6,  0,  0,  2,  0,  0,  0], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"blackstone\"}" },
+        { "type":  9, "rarity": 2, "id": 1106011, "status": [ 0,  0,  6,  0,  0,  2,  0,  0,  0], "has_ability": 1, "count": 12, "shop": true, "macro": "{id: \"blackstone\"}" },
 
         { "type":  1, "rarity": 2, "id": 1106100, "status": [21,  0, 35,  6, 12,  0,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"stone_sword\"}" },
         { "type":  2, "rarity": 2, "id": 1106101, "status": [ 9,  0, 39,  4, 12,  0,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"feather\"}", "model": "s.s.stone" },
@@ -118,8 +118,8 @@
         { "type":  5, "rarity": 3, "id": 1111106, "status": [ 0, 74,  0,  0,  7, 46,  0,  7,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_chestplate\"}", "trim": "{material: \"resin\", pattern: \"dune\"}" },
         { "type":  6, "rarity": 3, "id": 1111107, "status": [ 0, 55,  8,  0,  0, 34,  4,  0,  6], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_leggings\"}", "trim": "{material: \"resin\", pattern: \"dune\"}" },
         { "type":  7, "rarity": 3, "id": 1111108, "status": [ 0, 36,  0,  0,  0, 18,  4,  7,  6], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_boots\"}", "trim": "{material: \"resin\", pattern: \"dune\"}" },
-        { "type":  9, "rarity": 3, "id": 1111109, "status": [ 0,  0, 18,  0,  0,  0,  3,  0,  0], "has_ability": 0, "count": 20, "shop": true, "macro": "{id: \"wolf_spawn_egg\"}" },
-        { "type":  9, "rarity": 3, "id": 1111110, "status": [ 0, 17,  0,  0,  0,  0,  5,  0,  0], "has_ability": 0, "count": 21, "shop": true, "macro": "{id: \"ocelot_spawn_egg\"}" },
+        { "type":  9, "rarity": 3, "id": 1111109, "status": [ 0,  0, 18,  0,  0,  0,  3,  0,  0], "has_ability": 1, "count": 20, "shop": true, "macro": "{id: \"wolf_spawn_egg\"}" },
+        { "type":  9, "rarity": 3, "id": 1111110, "status": [ 0, 17,  0,  0,  0,  0,  5,  0,  0], "has_ability": 1, "count": 21, "shop": true, "macro": "{id: \"ocelot_spawn_egg\"}" },
         { "type":  9, "rarity": 3, "id": 1111111, "status": [ 0,  0, 20,  0,  0,  8,  0,  0,  0], "has_ability": 0, "count": 22, "shop": true, "macro": "{id: \"minecart\"}" }
     ],
     "12": [
@@ -187,8 +187,8 @@
         { "type":  5, "rarity": 3, "id": 1114106, "status": [ 0, 80, 13,  3,  0, 50,  0,  0,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_chestplate\"}", "color": 13901085, "trim": "{material: \"copper\", pattern: \"wayfinder\"}" },
         { "type":  6, "rarity": 3, "id": 1114107, "status": [ 0, 59,  8,  3,  0, 42,  0,  0,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_leggings\"}", "color": 13048860, "trim": "{material: \"copper\", pattern: \"wayfinder\"}" },
         { "type":  7, "rarity": 3, "id": 1114108, "status": [ 0, 40,  5,  0, 12, 20,  0,  0,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_boots\"}", "color": 11869726, "trim": "{material: \"copper\", pattern: \"wayfinder\"}" },
-        { "type":  9, "rarity": 3, "id": 1114109, "status": [ 0,  0, 16,  4, 24,  0,  7,  0,   0], "has_ability": 1, "count": 20, "shop": true, "macro": "{id: \"clock\"}", "model": "1114109" },
-        { "type":  9, "rarity": 3, "id": 1114110, "status": [-8,  0, 60,  0,  0,  0,  0,  0,   0], "has_ability": 0, "count": 21, "shop": true, "macro": "{id: \"redstone\"}" },
+        { "type":  9, "rarity": 3, "id": 1114109, "status": [ 0,  0, 16,  4, 24,  0,  7,  0,   0], "has_ability": 0, "count": 20, "shop": true, "macro": "{id: \"clock\"}", "model": "1114109" },
+        { "type":  9, "rarity": 3, "id": 1114110, "status": [-8,  0, 60,  0,  0,  0,  0,  0,   0], "has_ability": 1, "count": 21, "shop": true, "macro": "{id: \"redstone\"}" },
         { "type":  9, "rarity": 3, "id": 1114111, "status": [ 0,  0,  0,  0,  0,  0,  0,  0, 100], "has_ability": 0, "count": 22, "shop": true, "macro": "{id: \"clock\"}", "model": "1114111" }
     ],
     "15": [
@@ -229,7 +229,7 @@
         { "type":  7, "rarity": 4, "id": 1115208, "status": [ 0, 47,  4,  2,  0, 26,  0, 12,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"netherite_boots\"}", "trim": "{material: \"gold\", pattern: \"tide\"}" },
         { "type":  9, "rarity": 4, "id": 1115209, "status": [ 2,  0,   0,   0,   0,  0,  0,   0,   0], "has_ability": 0, "count": 30, "shop": true, "macro": "{id: \"clock\"}", "model": "1115209" },
         { "type":  9, "rarity": 4, "id": 1115210, "status": [ 0,  0, -22, -13, -31, 25, -9, -24, 175], "has_ability": 0, "count": 31, "shop": true, "macro": "{id: \"slime_block\"}" },
-        { "type":  9, "rarity": 4, "id": 1115211, "status": [ 0,  0,  28,   0,   0, 28,  0,   0,   0], "has_ability": 0, "count": 32, "shop": true, "macro": "{id: \"bowl\"}" }
+        { "type":  9, "rarity": 4, "id": 1115211, "status": [ 0,  0,  28,   0,   0, 28,  0,   0,   0], "has_ability": 1, "count": 32, "shop": true, "macro": "{id: \"bowl\"}" }
     ],
     "ex1": [
         { "type":  1, "rarity": 2, "id": 1201000, "status": [33,  0, 53,  0,  0,  0,  0,  0, 18], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"iron_sword\"}" },
@@ -237,12 +237,12 @@
         { "type":  3, "rarity": 2, "id": 1201002, "status": [65,  0, 53,  0,  0,  0,  0,  0, 18], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"iron_axe\"}" },
         { "type": -1, "rarity": 2, "id": 1201003, "status": [31,  0, 50,  3, 18,  0,  0,  0, 23], "has_ability": 0, "count":  1, "shop": true, "macro": "{s: 0.25}" },
         { "type": -2, "rarity": 2, "id": 1201004, "status": [29,  0, 50,  3, 18,  0,  0,  0, 23], "has_ability": 1, "count":  1, "shop": true, "macro": "{p: 2, q: 15, m: 1}" },
-        { "type":  4, "rarity": 2, "id": 1201005, "status": [ 0, 39,  0,  0,  0, 10,  0, 45,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_helmet\"}", "color": 11481769 },
-        { "type":  5, "rarity": 2, "id": 1201006, "status": [ 0, 78,  0,  0,  0, 24,  0, 50,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_chestplate\"}" ,"color": 10694557 },
-        { "type":  6, "rarity": 2, "id": 1201007, "status": [ 0, 63,  0,  0,  0, 19,  0, 48,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_leggings\"}","color": 9710479 },
-        { "type":  7, "rarity": 2, "id": 1201008, "status": [ 0, 33,  0,  0,  0,  9,  0, 45,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_boots\"}","color": 8463484 },
+        { "type":  4, "rarity": 2, "id": 1201005, "status": [ 0, 39,  0,  0,  0, 10,  0, 45,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_helmet\"}", "color": 11481769, "trim": "{material: \"resin\", pattern: \"flow\"}" },
+        { "type":  5, "rarity": 2, "id": 1201006, "status": [ 0, 78,  0,  0,  0, 24,  0, 50,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_chestplate\"}" ,"color": 10694557, "trim": "{material: \"resin\", pattern: \"flow\"}" },
+        { "type":  6, "rarity": 2, "id": 1201007, "status": [ 0, 63,  0,  0,  0, 19,  0, 48,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_leggings\"}","color": 9710479, "trim": "{material: \"resin\", pattern: \"flow\"}" },
+        { "type":  7, "rarity": 2, "id": 1201008, "status": [ 0, 33,  0,  0,  0,  9,  0, 45,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"leather_boots\"}","color": 8463484, "trim": "{material: \"resin\", pattern: \"flow\"}" },
         { "type":  9, "rarity": 2, "id": 1201009, "status": [ 0,  0,  8,  0,  0,  0,  0, 12, 16], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"clock\"}", "model": "1201009" },
-        { "type":  9, "rarity": 2, "id": 1201010, "status": [ 0,  0,  9,  0,  9,  0,  0,  0,  9], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1201010" },
+        { "type":  9, "rarity": 2, "id": 1201010, "status": [ 0,  0,  9,  0,  9,  0,  0,  0,  9], "has_ability": 1, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1201010" },
         { "type":  9, "rarity": 2, "id": 1201011, "status": [ 0,  0,  0,  2, 16,  0,  4,  0, 32], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"clock\"}", "model": "1201011" },
 
         { "type":  1, "rarity": 2, "id": 1201100, "status": [35,  0, 53,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_sword\"}" },
@@ -254,7 +254,7 @@
         { "type":  5, "rarity": 2, "id": 1201106, "status": [ 0, 78,  0,  0,  0, 45,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_chestplate\"}" },
         { "type":  6, "rarity": 2, "id": 1201107, "status": [ 0, 63,  0,  0,  0, 36,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_leggings\"}" },
         { "type":  7, "rarity": 2, "id": 1201108, "status": [ 0, 33,  0,  0,  0, 16,  0,  0,  0], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"iron_boots\"}" },
-        { "type":  9, "rarity": 2, "id": 1201109, "status": [ 0,  0, 15,  0,  0,  6,  0,  0,  0], "has_ability": 0, "count": 20, "shop": true, "macro": "{id: \"stick\"}" },
+        { "type":  9, "rarity": 2, "id": 1201109, "status": [ 0,  0, 15,  0,  0,  6,  0,  0,  0], "has_ability": 1, "count": 20, "shop": true, "macro": "{id: \"stick\"}" },
         { "type":  9, "rarity": 2, "id": 1201110, "status": [ 0,  0,  0,  0, 52,  0,  0,  0,  0], "has_ability": 0, "count": 21, "shop": true, "macro": "{id: \"stone_button\"}" },
         { "type":  9, "rarity": 2, "id": 1201111, "status": [ 0, 24,  0,  0,  0,  7,  3,  0, 11], "has_ability": 0, "count": 22, "shop": true, "macro": "{id: \"music_disc_precipice\"}" }
     ],
@@ -269,7 +269,7 @@
         { "type":  6, "rarity": 3, "id": 1202007, "status": [ 0, 63, 14,  0,  0, 47,  0,  0, 48], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"diamond_leggings\"}", "trim": "{material: \"emerald\", pattern: \"dune\"}" },
         { "type":  7, "rarity": 3, "id": 1202008, "status": [ 0, 43,  7,  0,  0, 24,  0,  0, 22], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"diamond_boots\"}", "trim": "{material: \"emerald\", pattern: \"dune\"}" },
         { "type":  9, "rarity": 3, "id": 1202009, "status": [ 0,  0, 19,  0, 24,  0,  4,  0,     11], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"clock\"}", "model": "1202009" },
-        { "type":  9, "rarity": 3, "id": 1202010, "status": [ 0,  0, -8,  0,  0, 27,  0,  0,      0], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1202010" },
+        { "type":  9, "rarity": 3, "id": 1202010, "status": [ 0,  0, -8,  0,  0, 27,  0,  0,      0], "has_ability": 1, "count": 11, "shop": true, "macro": "{id: \"clock\"}", "model": "1202010" },
         { "type":  9, "rarity": 3, "id": 1202011, "status": [ 0,  0,  0,  1,  6,  0,  1,  8,  161.8], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"clock\"}", "model": "1202011" },
 
         { "type":  1, "rarity": 3, "id": 1202100, "status": [45,  0, 74,  2, 13, -3,  0,  0, 27], "has_ability": 0, "count":  2, "shop": true, "macro": "{id: \"feather\"}", "model": "1202100" },
@@ -291,12 +291,12 @@
         { "type":  3, "rarity": 5, "id": 1203002, "status": [117, 16, 96,  0,  0, 12,  0,  0, 126], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_axe\"}" },
         { "type": -1, "rarity": 5, "id": 1203003, "status": [ 60,  0, 96,  2, 26,  3,  4,  0, 105], "has_ability": 1, "count":  1, "shop": true, "macro": "{s: 0.25}" },
         { "type": -2, "rarity": 5, "id": 1203004, "status": [ 58,  0, 96,  5, 25, -5,  5,  0,  71], "has_ability": 1, "count":  1, "shop": true, "macro": "{p: 5, q: 12, m: 1}" },
-        { "type":  4, "rarity": 5, "id": 1203005, "status": [ 0,  78, 15,  0,  0, 45,  4,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_helmet\"}" },
-        { "type":  5, "rarity": 5, "id": 1203006, "status": [ 0, 132, 26,  0,  0, 82,  8,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_chestplate\"}" },
-        { "type":  6, "rarity": 5, "id": 1203007, "status": [ 0,  95, 20,  0,  0, 69,  6,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_leggings\"}" },
-        { "type":  7, "rarity": 5, "id": 1203008, "status": [ 0,  64, 14,  0,  0, 37,  3,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_boots\"}" },
+        { "type":  4, "rarity": 5, "id": 1203005, "status": [ 0,  78, 15,  0,  0, 45,  4,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_helmet\"}", "trim": "{material: \"emerald\", pattern: \"raiser\"}" },
+        { "type":  5, "rarity": 5, "id": 1203006, "status": [ 0, 132, 26,  0,  0, 82,  8,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_chestplate\"}", "trim": "{material: \"redstone\", pattern: \"raiser\"}" },
+        { "type":  6, "rarity": 5, "id": 1203007, "status": [ 0,  95, 20,  0,  0, 69,  6,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_leggings\"}", "trim": "{material: \"quartz\", pattern: \"raiser\"}" },
+        { "type":  7, "rarity": 5, "id": 1203008, "status": [ 0,  64, 14,  0,  0, 37,  3,  0,  0], "has_ability": 1, "count":  1, "shop": true, "macro": "{id: \"netherite_boots\"}", "trim": "{material: \"quartz\", pattern: \"raiser\"}" },
         { "type":  9, "rarity": 5, "id": 1203009, "status": [-1,  90, -40,  0,  0, 16,  0,  0,  0], "has_ability": 1, "count": 10, "shop": true, "macro": "{id: \"clock\"}", "model": "1203009" },
-        { "type":  9, "rarity": 5, "id": 1203010, "status": [ 0, -40,  72,  0, 81,  0,  5,  0,  0], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"arms_up_pottery_sherd\"}" },
+        { "type":  9, "rarity": 5, "id": 1203010, "status": [ 0, -40,  72,  0, 81,  0,  5,  0,  0], "has_ability": 1, "count": 11, "shop": true, "macro": "{id: \"arms_up_pottery_sherd\"}" },
         { "type":  9, "rarity": 5, "id": 1203011, "status": [ 0,  24,   0,  0,  0,  4,  0,  0,  0], "has_ability": 1, "count": 12, "shop": true, "macro": "{id: \"ghast_tear\"}" },
         
         { "type":  1, "rarity": 5, "id": 1203100, "status": [ 84,  0,  -1,  0,   41,   0,  0,  0, 103], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"netherite_sword\"}" },
@@ -304,10 +304,10 @@
         { "type":  3, "rarity": 5, "id": 1203102, "status": [117,  0,  96,  8,   79, -65,  0,  0, 137], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"feather\"}", "model": "1203102" },
         { "type": -1, "rarity": 5, "id": 1203103, "status": [  2,  0, 616,  2,   24,   0,  0,  0, 126], "has_ability": 1, "count":  2, "shop": true, "macro": "{s: 0.25}" },
         { "type": -2, "rarity": 5, "id": 1203104, "status": [ 60,  0,  96,  0,    0,   0, 12,  0, 123], "has_ability": 1, "count":  2, "shop": true, "macro": "{p: 1, q: 4, m: 1}" },
-        { "type":  4, "rarity": 5, "id": 1203105, "status": [ 0,  78,  0,  2, 19, 45,  0, 65,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_helmet\"}", "color": 5052057 },
-        { "type":  5, "rarity": 5, "id": 1203106, "status": [ 0, 132,  0,  4, 32, 82,  0, 80,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_chestplate\"}", "color": 4527496 },
-        { "type":  6, "rarity": 5, "id": 1203107, "status": [ 0,  95,  0,  3, 25, 69,  0, 70,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_leggings\"}", "color": 4002679 },
-        { "type":  7, "rarity": 5, "id": 1203108, "status": [ 0,  64,  0,  2, 17, 37,  0, 60,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_boots\"}", "color": 3017821 },
+        { "type":  4, "rarity": 5, "id": 1203105, "status": [ 0,  78,  0,  2, 19, 45,  0, 65,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_helmet\"}", "color": 5052057, "trim": "{material: \"diamond\", pattern: \"flow\"}" },
+        { "type":  5, "rarity": 5, "id": 1203106, "status": [ 0, 132,  0,  4, 32, 82,  0, 80,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_chestplate\"}", "color": 4527496, "trim": "{material: \"diamond\", pattern: \"flow\"}" },
+        { "type":  6, "rarity": 5, "id": 1203107, "status": [ 0,  95,  0,  3, 25, 69,  0, 70,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_leggings\"}", "color": 4002679, "trim": "{material: \"diamond\", pattern: \"wayfinder\"}" },
+        { "type":  7, "rarity": 5, "id": 1203108, "status": [ 0,  64,  0,  2, 17, 37,  0, 60,  0], "has_ability": 1, "count":  2, "shop": true, "macro": "{id: \"leather_boots\"}", "color": 3017821, "trim": "{material: \"diamond\", pattern: \"bolt\"}" },
         { "type":  9, "rarity": 5, "id": 1203109, "status": [ 2,   0, -120, 40, -220,  0,  0,  0,   0], "has_ability": 1, "count": 20, "shop": true, "macro": "{id: \"clock\"}", "model": "1203109" },
         { "type":  9, "rarity": 5, "id": 1203110, "status": [ 0,   0,    0,  0,    0,  0,  0,  0, 320], "has_ability": 0, "count": 21, "shop": true, "macro": "{id: \"clock\"}", "model": "1203110" },
         { "type":  9, "rarity": 5, "id": 1203111, "status": [ 0, -32,    0,  0,    0,  0,  0, 80,   0], "has_ability": 0, "count": 22, "shop": true, "macro": "{id: \"clock\"}", "model": "1203111" },
@@ -316,11 +316,11 @@
         { "type":  2, "rarity": 5, "id": 1203201, "status": [ 25, 16,  51,     0,     0,   7,  22,  0, 136], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"feather\"}", "model": "s.s.diamond" },
         { "type":  3, "rarity": 5, "id": 1203202, "status": [117,  0,  96,     0,     0,  28, -25,  0,  94], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"iron_axe\"}" },
         { "type": -1, "rarity": 5, "id": 1203203, "status": [ 60,  0,  96,     9,    32,   0,   0,  0, 149], "has_ability": 1, "count":  3, "shop": true, "macro": "{s: 0.2}" },
-        { "type": -2, "rarity": 5, "id": 1203204, "status": [ 63,  0, 101, -1024, -2048,   0,   3,  0,  81], "has_ability": 1, "count":  3, "shop": true, "macro": "{p: 2, q: 12, m: 3}" },
-        { "type":  4, "rarity": 5, "id": 1203205, "status": [ 1,  78,  3, 19, 45,  0,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_helmet\"}", "trim": "{material: \"emerald\", pattern: \"flow\"}" },
-        { "type":  5, "rarity": 5, "id": 1203206, "status": [ 3, 132,  6, 32, 82,  0,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_chestplate\"}", "trim": "{material: \"emerald\", pattern: \"flow\"}" },
-        { "type":  6, "rarity": 5, "id": 1203207, "status": [ 2,  95,  5, 25, 69,  0,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_leggings\"}", "trim": "{material: \"emerald\", pattern: \"flow\"}" },
-        { "type":  7, "rarity": 5, "id": 1203208, "status": [ 1,  64,  3, 17, 37,  0,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_boots\"}", "trim": "{material: \"emerald\", pattern: \"flow\"}" },
+        { "type": -2, "rarity": 5, "id": 1203204, "status": [ 63,  0, 101, -1024, -2048,   0,   3,  0,  81], "has_ability": 2, "count":  3, "shop": true, "macro": "{p: 2, q: 12, m: 3}" },
+        { "type":  4, "rarity": 5, "id": 1203205, "status": [ 1,  78, 15,  3, 19, 45,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_helmet\"}", "trim": "{material: \"gold\", pattern: \"bolt\"}" },
+        { "type":  5, "rarity": 5, "id": 1203206, "status": [ 3, 132, 26,  6, 32, 82,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_chestplate\"}", "trim": "{material: \"gold\", pattern: \"bolt\"}" },
+        { "type":  6, "rarity": 5, "id": 1203207, "status": [ 2,  95, 20,  5, 25, 69,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_leggings\"}", "trim": "{material: \"gold\", pattern: \"bolt\"}" },
+        { "type":  7, "rarity": 5, "id": 1203208, "status": [ 1,  64, 14,  3, 17, 37,  0,  0,  0], "has_ability": 1, "count":  3, "shop": true, "macro": "{id: \"diamond_boots\"}", "trim": "{material: \"gold\", pattern: \"bolt\"}" },
         { "type":  9, "rarity": 5, "id": 1203209, "status": [ 3,  0, -45,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count": 30, "shop": true, "macro": "{id: \"clock\"}", "model": "1203209" }
     ]
 }

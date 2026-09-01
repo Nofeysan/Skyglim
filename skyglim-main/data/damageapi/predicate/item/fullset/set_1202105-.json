@@ -1,0 +1,33 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{equipment: {head: {components: {\"minecraft:repair_cost\": 1202105}}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{equipment: {chest: {components: {\"minecraft:repair_cost\": 1202106}}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{equipment: {legs: {components: {\"minecraft:repair_cost\": 1202107}}}}"
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "nbt": "{equipment: {feet: {components: {\"minecraft:repair_cost\": 1202108}}}}"
+            }
+        }
+    ]
+}

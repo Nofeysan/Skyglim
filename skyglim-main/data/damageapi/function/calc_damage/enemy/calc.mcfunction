@@ -69,16 +69,31 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
                     execute on attacker if score @s occupation matches 1 if predicate damageapi:has_projectile run scoreboard players add _ _ 10
 
             # アイテム
+                # 硬い石: +2%
+                    execute if predicate damageapi:item/has_1106011 run scoreboard players add _ _ 2
+
                 # ロマン砲: +50% (1%)
                     execute store result score randomItemChance _ run random value 0..99
                     execute if predicate damageapi:item/has_1111009 if score randomItemChance _ matches 0 run scoreboard players add _ _ 50
+
+                # オオカミの加護: +5%
+                    execute if predicate damageapi:item/has_1111109 run scoreboard players add _ _ 5
 
                 # 一撃必殺: +200% (0.7%)
                     execute store result score randomItemChance _ run random value 0..999
                     execute if predicate damageapi:item/has_1112009 if score randomItemChance _ matches 0..69 run scoreboard players add _ _ 200
 
-                # 狂乱の矢: +3%
-                    execute if predicate damageapi:item/has_1114009 run scoreboard players add _ _ 3
+                # 狂乱の矢: +5%
+                    execute if predicate damageapi:item/has_1114009 run scoreboard players add _ _ 5
+
+                # 熱い赤粉: +5%
+                    execute if predicate damageapi:item/has_1114110 run scoreboard players add _ _ 5
+
+                # 頑丈な棒: +3%
+                    execute if predicate damageapi:item/has_1201109 run scoreboard players add _ _ 3
+
+                # 戦神の加護: +12%
+                    execute if predicate damageapi:item/has_1203010 run scoreboard players add _ _ 12
 
         # 代入
             execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _

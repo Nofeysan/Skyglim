@@ -64,6 +64,9 @@ data modify storage modify: restore.name set value 'stage.ex3.m-boots.2.name'
 ##* 武器種ごとの共通設定
 function modify:restore/list/nums/type/armor {id: "leather_boots"}
 
+# trim
+data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:trim" merge value {material: "diamond", pattern: "bolt"}
+
 # dyed color
 data modify block ~ ~-1 ~ Items[{Slot: 13b}].components merge value {"minecraft:dyed_color": 3017821}
 

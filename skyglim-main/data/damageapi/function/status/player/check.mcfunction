@@ -47,13 +47,45 @@
         # 職業・瑞祥（CC, LUCK +10%）
             execute if entity @s[scores={occupation = 5}] run function damageapi:status/player/calc/occupation
 
-        # enchantment - 倍率
-            function modify:enchantment/calc/root
-
         # 防具
         #! 全部揃ったらひとまとめにして負荷を減らす（どれかに一致→別function）
             # 翠風セット (SPD +5%)
                 execute if predicate damageapi:item/fullset/set_1114005- run scoreboard players add spd multi 5
+
+            # 獄炎セット (STR +5%)
+                execute if predicate damageapi:item/fullset/set_1114105- run scoreboard players add str multi 5
+
+            # 紅蓮セット (STR +10%)
+                execute if predicate damageapi:item/fullset/set_1115005- run scoreboard players add str multi 10
+
+            # 氷結晶セット (DEF +10%)
+                execute if predicate damageapi:item/fullset/set_1115105- run scoreboard players add def multi 10
+
+            # 冥府セット (DMG +3)
+                execute if predicate damageapi:item/fullset/set_1115205- run scoreboard players add @s act_Damage 3
+
+            # 大魔女セット (MP +5%)
+                execute if predicate damageapi:item/fullset/set_1201005- run scoreboard players add mp multi 5
+
+            # 万物流転セット (LUCK +20%)
+                execute if predicate damageapi:item/fullset/set_1202005- run scoreboard players add luck multi 20
+
+            # 竜神セット (CD +15%)
+                execute if predicate damageapi:item/fullset/set_1202105- run scoreboard players add cd multi 15
+
+            # ドラゴンセット (HP +10%, DEF +15%)
+                execute if predicate damageapi:item/fullset/set_1203005- run scoreboard players add hp multi 10
+                execute if predicate damageapi:item/fullset/set_1203005- run scoreboard players add def multi 15
+
+            # 賢者セット (MP +5%)
+                execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add mp multi 5
+
+            # 星辰セット (CC +5%, CD +30%)
+                execute if predicate damageapi:item/fullset/set_1203205- run scoreboard players add cc multi 5
+                execute if predicate damageapi:item/fullset/set_1203205- run scoreboard players add cd multi 30
+
+        # enchantment - 倍率
+            function modify:enchantment/calc/root
 
     #* 倍率計算
         scoreboard players operation @s act_Health *= hp multi

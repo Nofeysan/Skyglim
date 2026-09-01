@@ -46,6 +46,12 @@ execute if score @s occupation matches 4 run data modify storage km_solver: vars
             # 魔女シリーズ (+10%)
                 execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 10
 
+            # 大魔女シリーズ (+20%)
+                execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 20
+
+            # 賢者シリーズ (+40%)
+                execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add _ _ 40
+
     # 倍率代入
     execute store result storage km_solver: vars.B float 0.01 run scoreboard players get _ _
 

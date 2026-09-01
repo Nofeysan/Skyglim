@@ -83,6 +83,21 @@ data modify storage km_solver: vars.G set from storage damageapi: damage.value
         # 鉛板 (-2%)
             execute if predicate damageapi:item/has_1110010 run scoreboard players remove _ _ 2
 
+        # ヤマネコの加護 (-3%)
+            execute if predicate damageapi:item/has_1111110 run scoreboard players remove _ _ 3
+
+        # おなべのふた (-4%)
+            execute if predicate damageapi:item/has_1115211 run scoreboard players remove _ _ 4
+
+        # 三次元グリル (-2%)
+            execute if predicate damageapi:item/has_1201010 run scoreboard players remove _ _ 2
+
+        # 簡易保管庫 (-3%)
+            execute if predicate damageapi:item/has_1202010 run scoreboard players remove _ _ 3
+
+        # 生命の加護 (-7%)
+            execute if predicate damageapi:item/has_1203009 run scoreboard players remove _ _ 7
+
     # 代入
         execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _
 

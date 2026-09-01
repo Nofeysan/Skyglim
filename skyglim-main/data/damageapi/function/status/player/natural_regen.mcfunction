@@ -20,6 +20,9 @@
         # 活力の矢 (+1)
             execute if predicate damageapi:item/has_1112011 run scoreboard players set _ _ 100
 
+        # 女神の涙 (+3)
+            execute if predicate damageapi:item/has_1203011 run scoreboard players set _ _ 300
+
         # 加算
             scoreboard players operation @s CurrentHealth += _ _
 

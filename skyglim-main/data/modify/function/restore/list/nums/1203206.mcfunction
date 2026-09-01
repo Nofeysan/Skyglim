@@ -32,17 +32,17 @@ function modify:restore/list/status/dmg
 scoreboard players set base Temp 132
 function modify:restore/list/status/hp
 
-scoreboard players set base Temp 6
+scoreboard players set base Temp 26
 function modify:restore/list/status/str
 
-scoreboard players set base Temp 32
+scoreboard players set base Temp 6
 function modify:restore/list/status/cc
 
-scoreboard players set base Temp 82
+scoreboard players set base Temp 32
 function modify:restore/list/status/cd
 
-#scoreboard players set base Temp 
-#function modify:restore/list/status/def
+scoreboard players set base Temp 82
+function modify:restore/list/status/def
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/spd
@@ -65,7 +65,7 @@ data modify storage modify: restore.name set value 'stage.ex3.m-chest.3.name'
 function modify:restore/list/nums/type/armor {id: "diamond_chestplate"}
 
 # trim
-data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:trim" merge value {material: "emerald", pattern: "flow"}
+data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:trim" merge value {material: "gold", pattern: "bolt"}
 
 #* もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true

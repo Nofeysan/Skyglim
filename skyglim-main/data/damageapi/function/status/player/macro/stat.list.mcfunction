@@ -104,7 +104,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(hp)",\
+            text: "$(hp) $(hpp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -123,7 +123,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(str)",\
+            text: "$(str) $(strp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -142,7 +142,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(cc)%",\
+            text: "$(cc)% $(ccp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -161,7 +161,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "+$(cd)%",\
+            text: "+$(cd)% $(cdp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -180,7 +180,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(def)",\
+            text: "$(def) $(defp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -199,7 +199,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(spd)",\
+            text: "$(spd) $(spdp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -218,7 +218,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(mp)",\
+            text: "$(mp) $(mpp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -237,7 +237,7 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(luck)",\
+            text: "$(luck) $(luckp)",\
             color: "#ffffff"\
         }\
     ],\
@@ -256,7 +256,74 @@ minecraft:lore=[\
             color: "gray"\
         },\
         {\
-            text: "$(dmg)",\
+            text: "$(dmg) $(dmgp)",\
+            color: "#ffffff"\
+        }\
+    ],\
+    [\
+        {\
+            text: "------------------------",\
+            color: "dark_gray",\
+            italic: false\
+        }\
+    ],\
+    [\
+        {\
+            translate: "status-book.exp.rate",\
+            color: "#92f3a4",\
+            italic: false\
+        },\
+        {\
+            text: " \uE010 ",\
+            color: "gray"\
+        },\
+        {\
+            text: "+$(xpp)%",\
+            color: "#ffffff"\
+        }\
+    ],\
+    [\
+        {\
+            translate: "status-book.attack",\
+            color: "#d94262",\
+            italic: false\
+        },\
+        {\
+            text: " \uE010 ",\
+            color: "gray"\
+        },\
+        {\
+            text: "+$(attack)%",\
+            color: "#ffffff"\
+        }\
+    ],\
+    [\
+        {\
+            translate: "status-book.guard",\
+            color: "#5dccab",\
+            italic: false\
+        },\
+        {\
+            text: " \uE010 ",\
+            color: "gray"\
+        },\
+        {\
+            text: "$(pm_guard)$(guard)%",\
+            color: "#ffffff"\
+        }\
+    ],\
+    [\
+        {\
+            translate: "status-book.magic",\
+            color: "#9279d3",\
+            italic: false\
+        },\
+        {\
+            text: " \uE010 ",\
+            color: "gray"\
+        },\
+        {\
+            text: "+$(magic)%",\
             color: "#ffffff"\
         }\
     ],\

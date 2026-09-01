@@ -5,7 +5,7 @@
 # 
 
 # cc
-scoreboard players add cc multi 10
+scoreboard players add cc multi 5
 
 # luck
 scoreboard players add luck multi 10
