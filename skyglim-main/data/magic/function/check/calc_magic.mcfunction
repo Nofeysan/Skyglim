@@ -31,7 +31,29 @@ execute store result storage km_solver: vars.I int 1 run scoreboard players get 
 execute if score @s occupation matches 2 run data modify storage km_solver: vars.M set value 0.7f
 execute if score @s occupation matches 4 run data modify storage km_solver: vars.M set value 1.30f
 
-execute if predicate magic:is_magic_boost.1 run data modify storage km_solver: vars.B set value 1.2f
+# B: アイテム含む倍率
+    # リセット
+    scoreboard players set _ _ 100
+
+    # 各種倍率
+        # 魔法・ブースト (+20%)
+            execute if predicate magic:is_magic_boost.1 run scoreboard players add _ _ 20
+
+        # 魔術書 (+2%)
+            execute if predicate damageapi:item/has_1110009 run scoreboard players add _ _ 4
+
+        # 防具
+            # 魔女シリーズ (+10%)
+                execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 10
+
+            # 大魔女シリーズ (+20%)
+                execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 20
+
+            # 賢者シリーズ (+40%)
+                execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add _ _ 40
+
+    # 倍率代入
+    execute store result storage km_solver: vars.B float 0.01 run scoreboard players get _ _
 
 # 計算
 execute at @s run function km_solver:solve

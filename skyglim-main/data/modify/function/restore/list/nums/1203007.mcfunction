@@ -64,6 +64,9 @@ data modify storage modify: restore.name set value 'stage.ex3.m-legs.1.name'
 ##* 武器種ごとの共通設定
 function modify:restore/list/nums/type/armor {id: "netherite_leggings"}
 
+# trim
+data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:trim" merge value {material: "quartz", pattern: "raiser"}
+
 #* もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true
 

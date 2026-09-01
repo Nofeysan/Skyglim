@@ -87,7 +87,7 @@
 										"color": "gray"
 									},
 									{
-										"text": "+6...?",
+										"text": "+26...?",
 										"color": "#aaaaaa"
 									}
 								],
@@ -106,7 +106,7 @@
 										"color": "gray"
 									},
 									{
-										"text": "+32...?",
+										"text": "+6...?",
 										"color": "#aaaaaa"
 									}
 								],
@@ -119,6 +119,25 @@
 									{
 										"translate": "common.status.cd",
 										"color": "#66a5b8"
+									},
+									{
+										"text": "  ",
+										"color": "gray"
+									},
+									{
+										"text": "+32...?",
+										"color": "#aaaaaa"
+									}
+								],
+								[
+									{
+										"text": " ",
+										"color": "#ffffff",
+										"italic": false
+									},
+									{
+										"translate": "common.status.def",
+										"color": "#5dccab"
 									},
 									{
 										"text": "  ",

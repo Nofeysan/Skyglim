@@ -1,18 +1,58 @@
-##? data get entity @s SelectedItem.components.minecraft:custom_data.status.<id> で取得
-# 初期化
-scoreboard players operation @s act_Health = @s equip_Health
-scoreboard players operation @s act_Strength = @s equip_Strength
-scoreboard players operation @s act_CritChance = @s equip_CritChance
-scoreboard players operation @s act_CritDamage = @s equip_CritDamage
-scoreboard players operation @s act_Defence = @s equip_Defence
-scoreboard players operation @s act_Speed = @s equip_Speed
-scoreboard players operation @s act_MagicPoint = @s equip_MagicPoint
-scoreboard players operation @s act_Luck = @s equip_Luck
-scoreboard players operation @s act_Damage = @s equip_Damage
+##? data get entity @s Inventory[{Slot:103b}].components.minecraft:custom_data.status.<id> で取得
+data modify storage calc_stats: temp set from entity @s SelectedItem.components.minecraft:custom_data
 
-##? data が存在したら計算する
-execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand-2
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.hp
+scoreboard players operation @s act_Health += _ DamageTemp
 
-##? 倍率
-function modify:enchantment/calc/root
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.str
+scoreboard players operation @s act_Strength += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.cc
+scoreboard players operation @s act_CritChance += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.cd
+scoreboard players operation @s act_CritDamage += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.def
+scoreboard players operation @s act_Defence += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.spd
+scoreboard players operation @s act_Speed += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.mp
+scoreboard players operation @s act_MagicPoint += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.luck
+scoreboard players operation @s act_Luck += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.status.damage
+scoreboard players operation @s act_Damage += _ DamageTemp
+
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.hp
+scoreboard players operation @s act_Health += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.str
+scoreboard players operation @s act_Strength += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.cc
+scoreboard players operation @s act_CritChance += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.cd
+scoreboard players operation @s act_CritDamage += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.def
+scoreboard players operation @s act_Defence += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.spd
+scoreboard players operation @s act_Speed += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.mp
+scoreboard players operation @s act_MagicPoint += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.luck
+scoreboard players operation @s act_Luck += _ DamageTemp
+
+execute store result score _ DamageTemp run data get storage calc_stats: temp.data.refinement.damage
+scoreboard players operation @s act_Damage += _ DamageTemp
 

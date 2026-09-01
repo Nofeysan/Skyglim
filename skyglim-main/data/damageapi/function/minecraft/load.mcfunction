@@ -20,6 +20,8 @@ scoreboard objectives add act_Speed dummy "移動速度(防具・オフハンド
 scoreboard objectives add act_MagicPoint dummy "魔力(防具・オフハンド)"
 scoreboard objectives add act_Luck dummy "運(防具・オフハンド)"
 
+scoreboard objectives add multi dummy "倍率"
+
 scoreboard objectives add DamageTemp dummy "計算用"
 scoreboard objectives add IsChangedStatus dummy "メインハンド検知用"
 
