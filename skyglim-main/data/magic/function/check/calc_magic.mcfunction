@@ -39,18 +39,33 @@ execute if score @s occupation matches 4 run data modify storage km_solver: vars
         # 魔法・ブースト (+20%)
             execute if predicate magic:is_magic_boost.1 run scoreboard players add _ _ 20
 
-        # 魔術書 (+2%)
-            execute if predicate damageapi:item/has_1110009 run scoreboard players add _ _ 4
+        # アイテム
+            # reset
+                scoreboard players set $shard_id_calc _ 0
+            
+            # 取得
+                data modify storage damageapi: calc.shard set from entity @s Inventory
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 9b}].components."minecraft:repair_cost"
+                function magic:check/search/item/root
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 10b}].components."minecraft:repair_cost"
+                function magic:check/search/item/root
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 11b}].components."minecraft:repair_cost"
+                function magic:check/search/item/root
+
 
         # 防具
-            # 魔女シリーズ (+10%)
-                execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 10
-
-            # 大魔女シリーズ (+20%)
-                execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add _ _ 20
-
-            # 賢者シリーズ (+40%)
-                execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add _ _ 40
+            # reset
+                scoreboard players set $armor_id_head _ 0
+            
+            # 代表して頭の id をスコアに保存
+                data modify storage damageapi: armor set from entity @s equipment
+                execute store result score $armor_id_head _ run data get storage damageapi: armor.head.components."minecraft:repair_cost"
+            
+            # 0 じゃなければ探索開始
+                execute unless score $armor_id_head _ matches ..1113004 run function magic:check/search/armor/root
 
     # 倍率代入
     execute store result storage km_solver: vars.B float 0.01 run scoreboard players get _ _

@@ -13,7 +13,7 @@ execute as @e[predicate=entity:entity_enemy, predicate=entity:is_req_multiplier]
 
 # AEC処理
 execute if entity @e[type=minecraft:block_display, tag=req_trans] as @e[type=minecraft:block_display, tag=req_trans] run function entity:aec_manager/transport/root
-execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_0] as @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_0] run kill @s
+execute as @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_0] run kill @s
 execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] as @e[type=minecraft:armor_stand, predicate=entity:is_portal_cooldown_2] at @s run function entity:aec_manager/damage/root
 
 #* すべてのモブに対してダメージを受けた時の処理
@@ -27,7 +27,7 @@ execute if entity @e[type=minecraft:armor_stand, predicate=entity:is_portal_cool
     execute as @a[predicate=entity:get_damage_10] if predicate entity:is_poison run function damageapi:calc_damage/player/calc
     execute as @e[predicate=entity:get_damage] run function damageapi:calc_damage/root
     scoreboard players remove additional_done Temp 1
-    execute as @a[scores={UnbreakingCoolDown=1..}] run scoreboard players remove @a UnbreakingCoolDown 1
+    execute as @a[scores={UnbreakingCoolDown=1..}] run scoreboard players remove @s UnbreakingCoolDown 1
 
 #+ ダメージテキスト・魔法用消す
     execute as @e[type=minecraft:text_display, tag=damage_text] run scoreboard players add @s DamageTemp 1

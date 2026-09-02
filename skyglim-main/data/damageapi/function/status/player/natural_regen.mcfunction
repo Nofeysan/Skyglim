@@ -14,17 +14,6 @@
 
     scoreboard players reset @s Temp
 
-    # item(重複不可)
-    scoreboard players set _ _ 0
-
-        # 活力の矢 (+1)
-            execute if predicate damageapi:item/has_1112011 run scoreboard players set _ _ 100
-
-        # 女神の涙 (+3)
-            execute if predicate damageapi:item/has_1203011 run scoreboard players set _ _ 300
-
-        # 加算
-            scoreboard players operation @s CurrentHealth += _ _
 
 #* MP: 1% を回復
     scoreboard players operation @s Temp = @s MaxMP
@@ -34,11 +23,25 @@
 
     scoreboard players reset @s Temp
 
-    # item(重複不可)
-    scoreboard players set _ _ 0
-    
-        # 活力の天使の羽 (+1)
-            execute if predicate damageapi:item/has_1112012 run scoreboard players set _ _ 100
+
+#* アイテム効果
+    # reset
+        scoreboard players set $shard_id_calc _ 0
+        scoreboard players set $health_regen _ 0
+        scoreboard players set $mp_regen _ 0
+
+    # 取得・検知
+        data modify storage damageapi: calc.shard set from entity @s Inventory
+
+        execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 9b}].components."minecraft:repair_cost"
+        function damageapi:status/player/search/regen
+
+        execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 10b}].components."minecraft:repair_cost"
+        function damageapi:status/player/search/regen
+
+        execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 11b}].components."minecraft:repair_cost"
+        function damageapi:status/player/search/regen
 
         # 加算
-            scoreboard players operation @s CurrentMP += _ _
+            scoreboard players operation @s CurrentHealth += $health_regen _
+            scoreboard players operation @s CurrentMP += $mp_regen _

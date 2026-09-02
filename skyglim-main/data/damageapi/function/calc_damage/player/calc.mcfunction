@@ -73,30 +73,28 @@ data modify storage km_solver: vars.G set from storage damageapi: damage.value
         scoreboard players set _ _ 100
 
     # 効果
+        # アイテム
+            # reset
+                scoreboard players set $shard_id_calc _ 0
+            
+            # 取得
+                data modify storage damageapi: calc.shard set from entity @s Inventory
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 9b}].components."minecraft:repair_cost"
+                function damageapi:calc_damage/player/search/.root
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 10b}].components."minecraft:repair_cost"
+                function damageapi:calc_damage/player/search/.root
+
+                execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 11b}].components."minecraft:repair_cost"
+                function damageapi:calc_damage/player/search/.root
+
         # 職業
             # 狂戦士 (+8%)
                 execute if score @s occupation matches 2 run scoreboard players add _ _ 8
 
             # 護神 (-13%)
                 execute if score @s occupation matches 3 run scoreboard players remove _ _ 13
-
-        # 鉛板 (-2%)
-            execute if predicate damageapi:item/has_1110010 run scoreboard players remove _ _ 2
-
-        # ヤマネコの加護 (-3%)
-            execute if predicate damageapi:item/has_1111110 run scoreboard players remove _ _ 3
-
-        # おなべのふた (-4%)
-            execute if predicate damageapi:item/has_1115211 run scoreboard players remove _ _ 4
-
-        # 三次元グリル (-2%)
-            execute if predicate damageapi:item/has_1201010 run scoreboard players remove _ _ 2
-
-        # 簡易保管庫 (-3%)
-            execute if predicate damageapi:item/has_1202010 run scoreboard players remove _ _ 3
-
-        # 生命の加護 (-7%)
-            execute if predicate damageapi:item/has_1203009 run scoreboard players remove _ _ 7
 
     # 代入
         execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _
