@@ -17,6 +17,10 @@
         "minecraft:drowned",
         "minecraft:blaze",
         "minecraft:bogged",
+        "minecraft:vindicator",
+        "minecraft:slime",
+        "minecraft:magma_cube",
+        "minecraft:ravager",
         "minecraft:vindicator"
     ]
     }

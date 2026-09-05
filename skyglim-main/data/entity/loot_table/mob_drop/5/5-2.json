@@ -57,7 +57,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/6/restore/.all",
+                    "value": "entity:mob_drop/7/restore/.all",
                     "weight": 10
                 }
             ],
