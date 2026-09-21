@@ -30,4 +30,4 @@ execute if entity @e[type=minecraft:armor_stand, tag=token-1] at @n[type=minecra
 execute if entity @e[type=minecraft:armor_stand, tag=token-2] at @n[type=minecraft:armor_stand,tag=token-2] run function shop:system/token/2/search
 execute if entity @e[type=minecraft:armor_stand, tag=token-3] at @n[type=minecraft:armor_stand,tag=token-3] run function shop:system/token/3/search
 execute if entity @e[type=minecraft:armor_stand, tag=token-4] at @n[type=minecraft:armor_stand,tag=token-4] run function shop:system/token/4/search
-
+execute if entity @e[type=minecraft:armor_stand, tag=token-6] at @n[type=minecraft:armor_stand,tag=token-6] run function shop:system/token/6/search

@@ -9,35 +9,12 @@
 forceload add 9849 -8 9951 131
 
 # スポナー設置
-setblock 9919 44 1 minecraft:spawner\
-{id: "minecraft:mob_spawner", \
-    SpawnData: {\
-        entity: {\
-            id: "minecraft:area_effect_cloud", \
-            Radius: 3, \
-            RadiusOnUse: -3, \
-            Duration: 40, \
-            potion_contents: {\
-                custom_color: 4511703, \
-                custom_effects: [\
-                    {id: "minecraft:speed", duration: 60, amplifier: 1}\
-                ]\
-            }\
-        }\
-    }, \
-    Delay:-1, \
-    MinSpawnDelay: 40, MaxSpawnDelay: 40, \
-    SpawnCount: 1, SpawnRange: 5, \
-    RequiredPlayerRange: 6, \
-    MaxNearbyEntities: 1\
-}
-
-function entity:spawner/set {id: 'stage/1/11', xyz: '9879 13 27', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/1/11', xyz: '9889 12 14', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/1/11', xyz: '9903 15 23', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/1/11', xyz: '9905 16 36', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/1/11', xyz: '9922 17 28', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/1/11', xyz: '9926 17 33', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9879 13 27', block: 'deepslate_gold_ore'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9889 12 14', block: 'deepslate_gold_ore'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9903 15 23', block: 'deepslate_gold_ore'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9905 16 36', block: 'raw_gold_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9922 17 28', block: 'raw_gold_block'}
+function entity:spawner/set {id: 'stage/1/11', xyz: '9926 17 33', block: 'raw_gold_block'}
 
 # チェスト配置
 data modify block 9894 16 5 LootTable set value "entity:mob_drop/1/chest"

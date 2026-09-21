@@ -26,5 +26,7 @@ execute at @s if entity @e[type=minecraft:armor_stand,tag=token-1,distance=..7] 
 execute at @s if entity @e[type=minecraft:armor_stand,tag=token-2,distance=..7] as @n[type=minecraft:armor_stand,tag=token-2,distance=..7] at @s run function shop:system/token/2/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=token-3,distance=..7] as @n[type=minecraft:armor_stand,tag=token-3,distance=..7] at @s run function shop:system/token/3/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=token-4,distance=..7] as @n[type=minecraft:armor_stand,tag=token-4,distance=..7] at @s run function shop:system/token/4/inv_change
+execute at @s if entity @e[type=minecraft:armor_stand,tag=token-6,distance=..7] as @n[type=minecraft:armor_stand,tag=token-6,distance=..7] at @s run function shop:system/token/6/inv_change
+
 # 進捗削除
 advancement revoke @s only damageapi:inventory_change

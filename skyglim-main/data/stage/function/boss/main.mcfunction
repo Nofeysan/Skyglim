@@ -8,3 +8,4 @@
 execute if entity @n[predicate=entity:entity_enemy, tag=boss, tag=s1] run function stage:boss/1/tick
 execute if entity @n[predicate=entity:entity_enemy, tag=boss, tag=s2] run function stage:boss/2/tick
 execute if entity @n[predicate=entity:entity_enemy, tag=boss, tag=s4] run function stage:boss/4/tick
+execute if entity @n[predicate=entity:entity_enemy, tag=boss, tag=s6] run function stage:boss/6/tick

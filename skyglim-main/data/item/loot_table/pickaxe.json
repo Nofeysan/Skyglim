@@ -111,7 +111,12 @@
                                 "minecraft:enchantment_glint_override": false,
                                 "minecraft:can_break": {
                                     "blocks": [
-                                        "minecraft:spawner"
+                                        "minecraft:deepslate_gold_ore",
+                                        "minecraft:raw_gold_block",
+                                        "minecraft:iron_block",
+                                        "minecraft:obsidian",
+                                        "minecraft:netherite_block",
+                                        "minecraft:beacon"
                                     ]
                                 }
                             }
