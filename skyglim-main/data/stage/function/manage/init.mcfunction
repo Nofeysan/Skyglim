@@ -62,8 +62,8 @@ scoreboard players set _ stage.ex.8 1
 scoreboard objectives add stage.enter dummy
 
 scoreboard objectives add s4.updown dummy
-
 scoreboard objectives add s5.gimmick dummy
+scoreboard objectives add s7.gimmick dummy
 
 
 # ついでに街の初期設定

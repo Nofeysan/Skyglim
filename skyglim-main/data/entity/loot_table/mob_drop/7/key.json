@@ -1,0 +1,94 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:heavy_weighted_pressure_plate",
+					"functions": [
+						{
+							"function": "minecraft:set_name",
+							"name": [
+								{
+									"translate": "stage.7.gimmick.glass.open.name",
+									"color": "#f5de84",
+									"italic": false
+								}
+							]
+						},
+						{
+							"function": "minecraft:set_lore",
+							"lore": [
+								{
+									"translate": "common.lore.line.1",
+									"color": "dark_gray",
+									"italic": false
+								},
+                                {
+									"translate": "stage.7.gimmick.glass.open.lore.1",
+									"italic": false,
+									"color": "#ffffff"
+								},
+                                {
+									"translate": "stage.7.gimmick.glass.open.lore.2",
+									"italic": false,
+									"color": "#f5de84"
+								}
+							],
+							"mode": "replace_all"
+						},
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:attribute_modifiers": [
+									{
+										"id": "item.all.def",
+										"type": "minecraft:armor",
+										"amount": -1024,
+										"operation": "add_value",
+										"slot": "any"
+									},
+									{
+										"id": "item.weapon",
+										"type": "minecraft:attack_speed",
+										"amount": 0,
+										"operation": "add_value",
+										"slot": "mainhand"
+									},
+									{
+										"id": "item.weapon.notweapon",
+										"type": "minecraft:attack_damage",
+										"amount": -1024,
+										"operation": "add_value",
+										"slot": "mainhand"
+									}
+								],
+								"minecraft:unbreakable": {},
+								"minecraft:enchantments": {},
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:attribute_modifiers",
+										"minecraft:enchantments",
+										"minecraft:unbreakable",
+										"minecraft:charged_projectiles",
+										"minecraft:trim",
+										"minecraft:dyed_color"
+									]
+								},
+								"minecraft:repair_cost": 300501,
+								"minecraft:enchantment_glint_override": true,
+								"minecraft:can_place_on": {
+									"blocks": [
+										"minecraft:light_blue_concrete_powder"
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

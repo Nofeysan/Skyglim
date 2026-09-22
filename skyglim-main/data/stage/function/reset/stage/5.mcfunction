@@ -20,4 +20,4 @@ scoreboard players set _ stage.5 -1
 #bossbar remove minecraft:stage4.boss
 
 #! debug
-tellraw @a {text: '[!] Stage 5 をリセットしました。', color: "gray"}
+tellraw @a {text: '[!] Stage 5 がリセットされた。', color: "gray"}

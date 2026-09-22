@@ -1,38 +1,18 @@
-#> entity:spawner/stage/5/1
+#> stage:boss/1/move/4/*
 # 
-# {"xyz": "~ ~ ~"} で場所を指定する
-# equipment: head, chest, legs, feet, mainhand, offhand, saddle, (body)
+# S1 眷属
+# 
 # 
 
-summon minecraft:spawner_minecart ~ ~ ~ \
-{\
-    Delay: 0,\
-    \
-    MinSpawnDelay: 250,\
-    MaxSpawnDelay: 400,\
-    SpawnCount: 4,\
-    SpawnRange: 4,\
-    \
-    MaxNearbyEntities: 4,\
-    RequiredPlayerRange: 8,\
-    \
-    SpawnPotentials: [\
-        {\
-            data: {\
-                entity: {\
-                    id: "minecraft:villager", Health: -1, DeathTime: 20,\
-                    attributes: [{id: "minecraft:scale", base: 0}],\
-                    Passengers: [\
+summon minecraft:magma_cube ~ ~ ~ \
                         {\
-                            id: "minecraft:silverfish",\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
                                 {id: "minecraft:max_health", base: 1024},\
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
-                                {id: "minecraft:scale", base: 1.2},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.24}\
+                                {id:"minecraft:movement_speed", base: 0.22}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -49,29 +29,24 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             CustomName: {translate: "entity.stage.7.2.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 18500,\
-                                    "current_hp": 18500,\
+                                    "max_hp": 16000,\
+                                    "current_hp": 16000,\
                                     \
-                                    "dmg": 30,\
-                                    "str": 25,\
-                                    "def": 18,\
+                                    "dmg": 32,\
+                                    "str": 29,\
+                                    "def": 17,\
                                     \
-                                    "xp": 74,\
+                                    "xp": 73,\
                                     \
-                                    "lore": "entity.stage.7.3.lore",\
+                                    "lore": "entity.stage.7.2.lore",\
                                     \
-                                    "loot": "7/7-3"\
+                                    "loot": "7/7-2"\
                                 }\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy"\
-                        }\
-                    ]\
-                }\
-            },\
-            weight: 1\
-        }\
-    ], Tags: ["Spawner"], Invulnerable: true, NoGravity: true\
-}
+                            Team: "enemy", Size: 2,\
+                            Tags: ["gimmick", "gimmick.enemy.s7"]\
+                        }
+
