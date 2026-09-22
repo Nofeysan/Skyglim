@@ -24,10 +24,10 @@ data modify storage enemy: aec.damage set from entity @s data
 
 # damage
     # square
-    execute if entity @s[tag=aec_sq] run function entity:aec_manager/damage/dealt_sq with storage enemy: aec.damage
+    #execute if entity @s[tag=aec_sq] run function entity:aec_manager/damage/dealt_sq with storage enemy: aec.damage
 
     # circle
-    execute if entity @s[tag=aec_ci] run function entity:aec_manager/damage/dealt_ci with storage enemy: aec.damage
+    #execute if entity @s[tag=aec_ci] run function entity:aec_manager/damage/dealt_ci with storage enemy: aec.damage
 
 # kill
-kill @e[distance=..0.02, type=minecraft:block_display]
+kill @e[distance=..0.02, type=minecraft:block_display,sort=arbitrary, limit=2]

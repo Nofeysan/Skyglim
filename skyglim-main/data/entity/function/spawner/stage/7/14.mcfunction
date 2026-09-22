@@ -66,7 +66,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy", Tags: ['effector'], Size: 3\
+                            Team: "enemy", Tags: ['effector', 'effector.s7'], Size: 3\
                         }\
                     ]\
                 }\

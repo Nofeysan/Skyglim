@@ -5,10 +5,8 @@
 # 
 
 # effect
-    particle minecraft:block{block_state: {Name: "minecraft:blackstone"}} ~ ~ ~ 8 0.2 8 0.2 300 force @a
-    particle minecraft:ash ~ ~ ~ 8 0.2 8 0.1 300 force @a
-    playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.5 1.5
-    playsound minecraft:block.anvil.place voice @a ~ ~ ~ 0.5 1.5
+    particle minecraft:sweep_attack ~ ~ ~ 4 1 4 0.1 160 force @a
+    playsound minecraft:entity.wither.shoot voice @a ~ ~ ~ 0.5 1.5
 
 # damage
     # square
