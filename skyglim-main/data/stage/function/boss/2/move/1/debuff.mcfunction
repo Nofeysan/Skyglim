@@ -11,7 +11,7 @@ particle minecraft:ash ~ ~ ~ 3 2 3 0.07 900
 
 # 盲目は全員に
 effect give @a[distance=..20] minecraft:blindness 1 0
-effect give @a[distance=..6] minecraft:blindness 4 0
+effect give @a[distance=..6] minecraft:blindness 3 0
 effect give @a[distance=..3] minecraft:blindness 7 0
 
 # 鈍足は近い人だけ

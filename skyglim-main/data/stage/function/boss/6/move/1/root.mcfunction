@@ -14,7 +14,7 @@
     execute if score s6 BossMoves matches 201..505 positioned 10012 42 -178 as @e[distance=..20, type=minecraft:item, nbt={Item: {id: "minecraft:nether_star"}}] at @s run function stage:boss/6/move/1/remove_aoe
 
 # 制限時間
-    execute if score s6 BossMoves matches 503 run function stage:boss/6/move/1/limit
+    execute if score s6 BossMoves matches 501 run effect give @e[tag=gimmick.aoe.enemy.s6] minecraft:wind_charged 1 100
 
 # reset
     execute if score s6 BossMoves matches 505.. run scoreboard players set s6 BossMoves 40

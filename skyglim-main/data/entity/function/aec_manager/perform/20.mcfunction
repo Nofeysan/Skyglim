@@ -5,7 +5,7 @@
 # 
 
 # effect
-    particle minecraft:crit ~ ~ ~ 2 1 2 0.1 250 force @a
+    particle minecraft:witch ~ ~ ~ 1 1 1 0.1 240 force @a
 
 # damage
     # square

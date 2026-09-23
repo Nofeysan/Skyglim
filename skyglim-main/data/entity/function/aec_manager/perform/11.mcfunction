@@ -5,7 +5,8 @@
 # 
 
 # effect
-    particle minecraft:crit ~ ~ ~ 2 1 2 0.1 250 force @a
+    particle minecraft:cloud ~ ~ ~ 4 0.3 4 0.2 200 force @a
+    particle minecraft:wax_off ~ ~ ~ 0.8 15 0.8 0.2 300 force @a
 
 # damage
     # square
