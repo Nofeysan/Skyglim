@@ -7,6 +7,7 @@ Skyglimのdatapack。<br>
 - [KMSolver-main](https://github.com/Nofeysan/Skyglim/tree/main/KMSolver-main) ー [MIT License](https://github.com/Nofeysan/Skyglim/blob/main/KMSolver-main/LICENSE), Copyright by コマ
 - [KMFloatOp-main](https://github.com/Nofeysan/Skyglim/tree/main/KMFloatOp-main) ー [MIT License](https://github.com/Nofeysan/Skyglim/blob/main/KMFloatOp-main/LICENSE), Copyright by コマ
 - [km-bounding-master](https://github.com/Nofeysan/Skyglim/tree/main/km-bounding-master) ー [MIT License](https://github.com/Nofeysan/Skyglim/blob/main/km-bounding-master/LICENSE), Copyright by コマ
+- [aj](https://github.com/Nofeysan/Skyglim/tree/main/aj) ー [Apache License 2.0](https://github.com/Nofeysan/Skyglim/blob/main/aj/LICENSE)
 <br><br>
 ## 謝辞
 このデータパックでは以下のライブラリを使用させていただいています。<br><br>
