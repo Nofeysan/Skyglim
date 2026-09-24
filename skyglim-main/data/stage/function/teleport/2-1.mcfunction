@@ -21,7 +21,8 @@ forceload remove 102 248 104 250
 tellraw @a {translate: "tp.open", color: "#f5de84"}
 
 # story
-scoreboard players set _ CanTalkWithMe 1
-scoreboard players set $avelian_talks story.progress 3
+schedule function story:avelian/3/-2 40t
+#scoreboard players set _ CanTalkWithMe 1
+#scoreboard players set $avelian_talks story.progress 3
 
 scoreboard players set $magic_progress story.progress 2

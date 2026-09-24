@@ -63,25 +63,10 @@ execute store result storage modify: restore.average int 1 run scoreboard player
 data modify storage modify: restore.name set value 'stage.1.destractor.name'
 
 ##* 武器種ごとの共通設定
-#% sword/s.sword/axe: wooden/stone/iron/gold/diamond/netherite
-#% crossbow: p= piercing/q= charge_spd/m= multishot
-#% shard: item_id
-    #function modify:restore/list/nums/type/sword {id: ""}
-    #function modify:restore/list/nums/type/s.sword {id: ""}
-    function modify:restore/list/nums/type/axe {id: "stone"}
-    #function modify:restore/list/nums/type/bow
-    #function modify:restore/list/nums/type/crossbow {p: , q: , m: }
-    #function modify:restore/list/nums/type/armor {id: ""}
-    #function modify:restore/list/nums/type/shard {id: }
-
-# custom_model_data
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value [""]
-
-# trim
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:trim" merge value {material: , pattern: }
+function modify:restore/list/nums/type/axe {id: "stone_axe"}
 
 #* もし avg. が 80 以上なら glint 付与
-execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantment_glint_override" set value true
+execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true
 
 function modify:restore/list/macro/set_name with storage modify: restore
 

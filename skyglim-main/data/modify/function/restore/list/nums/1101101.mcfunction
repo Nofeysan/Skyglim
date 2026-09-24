@@ -67,7 +67,7 @@ data modify storage modify: restore.name set value 'stage.1.fragarach.name'
 #% crossbow: p= piercing/q= charge_spd/m= multishot
 #% shard: item_id
     #function modify:restore/list/nums/type/sword {id: ""}
-    function modify:restore/list/nums/type/s.sword {id: "stone"}
+    function modify:restore/list/nums/type/s.sword {id: "feather"}
     #function modify:restore/list/nums/type/axe {id: ""}
     #function modify:restore/list/nums/type/bow
     #function modify:restore/list/nums/type/crossbow {p: , q: , m: }
@@ -75,7 +75,7 @@ data modify storage modify: restore.name set value 'stage.1.fragarach.name'
     #function modify:restore/list/nums/type/shard {id: }
 
 # custom_model_data
-#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value [""]
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:custom_model_data".strings set value ["s.s.stone"]
 
 # trim
 #data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:trim" merge value {material: , pattern: }

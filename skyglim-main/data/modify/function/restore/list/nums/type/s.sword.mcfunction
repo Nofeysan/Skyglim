@@ -13,3 +13,6 @@ $data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:item_model" s
 # 攻撃速度設定
 data remove block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[-1]
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:attribute_modifiers"[{id: "minecraft:item.weapon"}].amount set value 256d
+
+# エンチャント追加
+#data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:enchantments" merge value {"sword_recab": 2}
