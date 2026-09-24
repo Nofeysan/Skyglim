@@ -14,4 +14,4 @@ schedule function story:avelian/3/2 60t
 execute at @n[type=minecraft:villager, predicate=story:is_avelian] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
 # scorereset
-scoreboard players set _ CanTalkWithMe 0
+#scoreboard players set _ CanTalkWithMe 0
