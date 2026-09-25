@@ -11,4 +11,4 @@ execute if entity @e[type=minecraft:item, predicate=story:is_stone] run function
 execute if score $progress story.progress = $all story.progress run function story:0-tutorial/cmd-39
 
 # allay particle
-execute at @n[type=minecraft:allay, tag=kalmia] run particle minecraft:wax_off ~ ~0.1 ~ 0.5 0.5 0.5 0.3 1
+execute at @n[tag=aj.skyglim.kalmia.root] run particle minecraft:wax_off ~ ~0.1 ~ 0.5 0.5 0.5 0.3 1

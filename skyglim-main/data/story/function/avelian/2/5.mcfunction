@@ -14,4 +14,4 @@ schedule function story:avelian/2/6 80t
 execute as @a at @s run function item:currency/summon {l: 0, lb: 2, el: 0, elb: 0, pos: "~ ~ ~"}
 
 # playsound
-execute at @n[type=minecraft:villager, predicate=story:is_avelian] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
+execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5

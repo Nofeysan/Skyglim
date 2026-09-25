@@ -5,13 +5,7 @@
 # 
 
 # tellraw
-tellraw @a [{translate: "story.avelian"}, {translate: "story.avelian.2-1"}]
-
-# 自動進行
-schedule function story:avelian/2/2 60t
+tellraw @a [{translate: "story.avelian"}, {translate: "story.avelian.4-8"}]
 
 # playsound
 execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
-
-# scorereset
-scoreboard players set _ CanTalkWithMe 0

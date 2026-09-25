@@ -18,4 +18,7 @@ clone 100 47 253 102 48 255 100 54 253
 forceload remove 100 253 102 255
 
 # tell
-tellraw @a {translate: "tp.open", color: "#f5de84"}
+tellraw @a {translate: "sub.tp.open", color: "#f5de84"}
+
+# story
+schedule function story:avelian/4/-2 40t

@@ -11,7 +11,7 @@ tellraw @a [{translate: "story.avelian"}, {translate: "story.avelian.3-1"}]
 schedule function story:avelian/3/2 60t
 
 # playsound
-execute at @n[type=minecraft:villager, predicate=story:is_avelian] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
+execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
 # scorereset
 #scoreboard players set _ CanTalkWithMe 0

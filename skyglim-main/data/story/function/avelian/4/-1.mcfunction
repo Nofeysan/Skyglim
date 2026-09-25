@@ -8,4 +8,4 @@
 effect give @a minecraft:blindness 4 0 true
 
 # 自動進行
-schedule function story:avelian/3/0 20t
+schedule function story:avelian/4/0 20t

@@ -44,6 +44,6 @@ scoreboard players set @s stage.enter -1
 
 # spawnpoint
 setworldspawn 100 62 -350 0.0 0.0
-tp 100 62 -350
+tp @s 102 96 -311 0 0
 
 tellraw @s [{text:"\uE010 ステータスの初期設定が完了しました。",color:"#9279d3"}]

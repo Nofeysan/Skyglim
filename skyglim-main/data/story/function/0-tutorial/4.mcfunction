@@ -11,4 +11,4 @@ tellraw @a [{translate: "story.???"}, {translate: "story.tutorial.4"}]
 schedule function story:0-tutorial/5 40t
 
 # playsound
-execute at @n[type=minecraft:allay, tag=kalmia] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5
+execute at @n[tag=aj.skyglim.kalmia.root] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5
