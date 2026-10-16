@@ -18,8 +18,7 @@
 execute store result score _ _ run random value 0..1
 
 # summon
-execute if score _ _ matches 0 run function stage:boss/4/move/4/melee
-execute if score _ _ matches 1 run function stage:boss/4/move/4/range
+execute if score _ _ matches 0 run function stage:boss/6/move/4/red
 
 # sound
 playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.3 1

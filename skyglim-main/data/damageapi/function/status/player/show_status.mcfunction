@@ -141,40 +141,34 @@ title @s actionbar [\
                 execute if score @s occupation matches 5 run data modify storage status: book.luckp set value '§3(+10%)'
 
         # 防具
-            execute if predicate damageapi:item/fullset/set_1113005- run scoreboard players add magic Temp 10
-            execute if predicate damageapi:item/fullset/set_1114005- run data modify storage status: book.spdp set value '§b(+5%)'
-            execute if predicate damageapi:item/fullset/set_1114105- run data modify storage status: book.strp set value '§b(+5%)'
-            execute if predicate damageapi:item/fullset/set_1115005- run data modify storage status: book.strp set value '§b(+10%)'
-            execute if predicate damageapi:item/fullset/set_1115105- run data modify storage status: book.defp set value '§b(+10%)'
-            execute if predicate damageapi:item/fullset/set_1115205- run data modify storage status: book.dmgp set value '§b(+3)'
-            execute if predicate damageapi:item/fullset/set_1201005- run scoreboard players add magic Temp 20
-            execute if predicate damageapi:item/fullset/set_1201005- run data modify storage status: book.mpp set value '§b(+5%)'
-            execute if predicate damageapi:item/fullset/set_1202005- unless score @s occupation matches 5 run data modify storage status: book.luckp set value '§b(+20%)'
-            execute if predicate damageapi:item/fullset/set_1202005- if score @s occupation matches 5 run data modify storage status: book.luckp set value '§b(+30%)'
-            execute if predicate damageapi:item/fullset/set_1202105- run data modify storage status: book.cdp set value '§b(+15%)'
-            execute if predicate damageapi:item/fullset/set_1203005- run data modify storage status: book.hpp set value '§b(+10%)'
-            execute if predicate damageapi:item/fullset/set_1203005- run data modify storage status: book.defp set value '§b(+15%)'
-            execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add magic Temp 40
-            execute if predicate damageapi:item/fullset/set_1203105- run data modify storage status: book.mpp set value '§b(+5%)'
-            execute if predicate damageapi:item/fullset/set_1203205- unless score @s occupation matches 5 run data modify storage status: book.ccp set value '§b(+5%)'
-            execute if predicate damageapi:item/fullset/set_1203205- if score @s occupation matches 5 run data modify storage status: book.ccp set value '§b(+10%)'
-            execute if predicate damageapi:item/fullset/set_1203205- run data modify storage status: book.cdp set value '§b(+30%)'
+            # reset
+                scoreboard players set $armor_id_head _ 0
+            
+            # 代表して頭の id をスコアに保存
+                data modify storage damageapi: armor set from entity @s equipment
+                execute store result score $armor_id_head _ run data get storage damageapi: armor.head.components."minecraft:repair_cost"
+            
+            # 0 じゃなければ探索開始
+                execute unless score $armor_id_head _ matches ..1113004 run function damageapi:status/player/search/armor/.root
 
         # アイテム
-            execute if predicate damageapi:item/has_1106011 run scoreboard players add attack Temp 2
-            execute if predicate damageapi:item/has_1110009 run scoreboard players add magic Temp 4
-            execute if predicate damageapi:item/has_1110010 run scoreboard players remove guard Temp 2
-            execute if predicate damageapi:item/has_1110110 run scoreboard players add xpp Temp 5
-            execute if predicate damageapi:item/has_1111109 run scoreboard players add attack Temp 5
-            execute if predicate damageapi:item/has_1111110 run scoreboard players remove guard Temp 3
-            execute if predicate damageapi:item/has_1114009 run scoreboard players add attack Temp 5
-            execute if predicate damageapi:item/has_1114110 run scoreboard players add attack Temp 5
-            execute if predicate damageapi:item/has_1115211 run scoreboard players remove guard Temp 4
-            execute if predicate damageapi:item/has_1201010 run scoreboard players remove guard Temp 2
-            execute if predicate damageapi:item/has_1201109 run scoreboard players add attack Temp 3
-            execute if predicate damageapi:item/has_1202010 run scoreboard players remove guard Temp 3
-            execute if predicate damageapi:item/has_1203009 run scoreboard players remove guard Temp 7
-            execute if predicate damageapi:item/has_1203010 run scoreboard players add attack Temp 12
+            # reset
+                scoreboard players set $shard_id_1 _ 0
+                scoreboard players set $shard_id_2 _ 0
+                scoreboard players set $shard_id_3 _ 0
+
+            # データ取得
+                data modify storage damageapi: shard set from entity @s Inventory
+
+            # 各値を取得して実行
+                execute store result score $shard_id _ run data get storage damageapi: shard[{Slot: 9b}].components.minecraft:repair_cost
+                function damageapi:status/player/search/shard/.root
+
+                execute store result score $shard_id _ run data get storage damageapi: shard[{Slot: 10b}].components.minecraft:repair_cost
+                function damageapi:status/player/search/shard/.root
+                
+                execute store result score $shard_id _ run data get storage damageapi: shard[{Slot: 11b}].components.minecraft:repair_cost
+                function damageapi:status/player/search/shard/.root
 
             # 魔法・ブースト (+20%)
                 execute if predicate magic:is_magic_boost.1 run scoreboard players add magic Temp 20

@@ -11,7 +11,7 @@ tellraw @a [{translate: "story.???"}, {translate: "story.tutorial.1"}]
 schedule function story:0-tutorial/2 60t
 
 # summon
-summon minecraft:allay 98 63.5 -303 {Rotation: [-135, 25], Silent: true, NoAI: true, Invulnerable: true, Tags: ["kalmia"]}
+execute positioned 99 98 -271 rotated -167 25 run function aj:skyglim/kalmia/summon {args: {animation: 'hover', start_animation: true}}
 
 # playsound
-execute at @n[type=minecraft:allay, tag=kalmia] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5
+execute at @n[tag=aj.skyglim.kalmia.root] run playsound minecraft:entity.allay.item_given voice @a ~ ~ ~ 0.7 1.5

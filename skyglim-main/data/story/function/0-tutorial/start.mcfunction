@@ -14,7 +14,8 @@ scoreboard players enable @a story.trigger
 scoreboard players set _ story.phase 1
 
 # tp
-tp @a 100 61 -310
+tp @a 102 96 -280
+fill 100 100 -292 104 96 -292 minecraft:air
 
 # effect
 effect give @a minecraft:blindness 12 0 true

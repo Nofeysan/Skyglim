@@ -17,18 +17,24 @@
 
 #* data が存在したら計算する
     # 各装備
-        execute if data entity @s equipment.head run function damageapi:status/player/calc/head
-        execute if data entity @s equipment.chest run function damageapi:status/player/calc/chest
-        execute if data entity @s equipment.legs run function damageapi:status/player/calc/legs
-        execute if data entity @s equipment.feet run function damageapi:status/player/calc/feet
+        data modify storage calc_stats: temp set from entity @s equipment
+
+        execute if data storage calc_stats: temp.head run function damageapi:status/player/calc/head
+        execute if data storage calc_stats: temp.chest run function damageapi:status/player/calc/chest
+        execute if data storage calc_stats: temp.legs run function damageapi:status/player/calc/legs
+        execute if data storage calc_stats: temp.feet run function damageapi:status/player/calc/feet
 
     # shard
-        execute if data entity @s Inventory[{Slot: 9b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-1
-        execute if data entity @s Inventory[{Slot: 10b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-2
-        execute if data entity @s Inventory[{Slot: 11b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-3
+        data modify storage calc_stats: temp set from entity @s Inventory
+
+        execute if data storage calc_stats: temp[{Slot: 9b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-1
+        execute if data storage calc_stats: temp[{Slot: 10b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-2
+        execute if data storage calc_stats: temp[{Slot: 11b}].components."minecraft:custom_data".data.shard run function damageapi:status/player/calc/shard-3
 
     # mainhand 武器
-        execute if predicate damageapi:has_status_item run function damageapi:status/player/calc/mainhand
+        data modify storage calc_stats: temp set from entity @s SelectedItem
+
+        execute if data storage calc_stats: temp.components."minecraft:custom_data".data.mainhand run function damageapi:status/player/calc/mainhand
 
 
 #+ 倍率処理
@@ -48,41 +54,15 @@
             execute if entity @s[scores={occupation = 5}] run function damageapi:status/player/calc/occupation
 
         # 防具
-        #! 全部揃ったらひとまとめにして負荷を減らす（どれかに一致→別function）
-            # 翠風セット (SPD +5%)
-                execute if predicate damageapi:item/fullset/set_1114005- run scoreboard players add spd multi 5
-
-            # 獄炎セット (STR +5%)
-                execute if predicate damageapi:item/fullset/set_1114105- run scoreboard players add str multi 5
-
-            # 紅蓮セット (STR +10%)
-                execute if predicate damageapi:item/fullset/set_1115005- run scoreboard players add str multi 10
-
-            # 氷結晶セット (DEF +10%)
-                execute if predicate damageapi:item/fullset/set_1115105- run scoreboard players add def multi 10
-
-            # 冥府セット (DMG +3)
-                execute if predicate damageapi:item/fullset/set_1115205- run scoreboard players add @s act_Damage 3
-
-            # 大魔女セット (MP +5%)
-                execute if predicate damageapi:item/fullset/set_1201005- run scoreboard players add mp multi 5
-
-            # 万物流転セット (LUCK +20%)
-                execute if predicate damageapi:item/fullset/set_1202005- run scoreboard players add luck multi 20
-
-            # 竜神セット (CD +15%)
-                execute if predicate damageapi:item/fullset/set_1202105- run scoreboard players add cd multi 15
-
-            # ドラゴンセット (HP +10%, DEF +15%)
-                execute if predicate damageapi:item/fullset/set_1203005- run scoreboard players add hp multi 10
-                execute if predicate damageapi:item/fullset/set_1203005- run scoreboard players add def multi 15
-
-            # 賢者セット (MP +5%)
-                execute if predicate damageapi:item/fullset/set_1203105- run scoreboard players add mp multi 5
-
-            # 星辰セット (CC +5%, CD +30%)
-                execute if predicate damageapi:item/fullset/set_1203205- run scoreboard players add cc multi 5
-                execute if predicate damageapi:item/fullset/set_1203205- run scoreboard players add cd multi 30
+            # reset
+                scoreboard players set $armor_id_head _ 0
+            
+            # 代表して頭の id をスコアに保存
+                data modify storage damageapi: armor set from entity @s equipment
+                execute store result score $armor_id_head _ run data get storage damageapi: armor.head.components."minecraft:repair_cost"
+            
+            # 0 じゃなければ探索開始
+                execute unless score $armor_id_head _ matches ..1113004 run function damageapi:status/player/search-2/armor/.root
 
         # enchantment - 倍率
             function modify:enchantment/calc/root

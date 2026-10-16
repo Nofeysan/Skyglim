@@ -1,0 +1,46 @@
+{
+    "description": "",
+    "supported_items": [
+        "minecraft:feather"
+    ],
+    "weight": 1,
+    "max_level": 30,
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "max_cost": {
+        "base": 0,
+        "per_level_above_first": 0
+    },
+    "anvil_cost": 0,
+    "slots": [
+        "mainhand"
+    ],
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "attacker",
+                "effect": {
+                    "type": "minecraft:apply_mob_effect",
+                    "min_amplifier": 9,
+                    "max_amplifier": 9,
+                    "min_duration": {
+                        "type": "minecraft:linear",
+                        "base": 0.05,
+                        "per_level_above_first": 0.05
+                    },
+                    "max_duration": {
+                        "type": "minecraft:linear",
+                        "base": 0.05,
+                        "per_level_above_first": 0.05
+                    },
+                    "to_apply": [
+                        "minecraft:weakness"
+                    ]
+                }
+            }
+        ]
+    }
+}
