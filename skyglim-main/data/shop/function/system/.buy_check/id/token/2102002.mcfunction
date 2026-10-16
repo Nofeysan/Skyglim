@@ -2,10 +2,10 @@
 execute unless score t Currency matches 2.. run return run function shop:system/.buy_check/fail
 
 # 通貨消す
-clear @s *[repair_cost=90002] 2
+clear @s *[repair_cost=90001] 2
 
 # アイテムあげるね～
-loot give @s loot entity:mob_drop/2/restore/r-legs
+loot give @s loot entity:mob_drop/2/restore/r-axe.1
 
 # 通知
-function shop:system/.buy_check/id/.tell {id: "stage.2.r-legs.name"}
+function shop:system/.buy_check/id/.tell {id: "stage.2.r-axe.1.name"}

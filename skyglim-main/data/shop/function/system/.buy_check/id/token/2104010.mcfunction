@@ -5,7 +5,7 @@ execute unless score t Currency matches 4.. run return run function shop:system/
 clear @s *[repair_cost=90003] 4
 
 # アイテムあげるね～
-loot give @s loot entity:mob_drop/4/restore/r-shard.2
+loot give @s loot entity:mob_drop/4/restore/r-shard.11
 
 # 通知
-function shop:system/.buy_check/id/.tell {id: "stage.4.r-shard.2.name"}
+function shop:system/.buy_check/id/.tell {id: "stage.4.r-shard.11.name"}
