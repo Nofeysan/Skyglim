@@ -26,13 +26,13 @@ data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:lore" append 
 scoreboard players set rolls Temp 0
 scoreboard players set rolls_total Temp 0
 
-scoreboard players set base Temp 12
+scoreboard players set base Temp 3
 function modify:restore/list/status/dmg
 
 #scoreboard players set base Temp 
 #function modify:restore/list/status/hp
 
-scoreboard players set base Temp 47
+scoreboard players set base Temp 21
 function modify:restore/list/status/str
 
 #scoreboard players set base Temp 

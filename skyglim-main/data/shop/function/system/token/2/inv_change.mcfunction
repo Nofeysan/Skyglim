@@ -11,11 +11,11 @@ loot replace block ~ ~-1 ~ container.8 loot modify:gray_glass
 
 loot replace block ~ ~-1 ~ container.9 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.10 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.11 loot entity:mob_drop/2/shop/r-head
-loot replace block ~ ~-1 ~ container.12 loot entity:mob_drop/2/shop/r-chest
+loot replace block ~ ~-1 ~ container.11 loot entity:mob_drop/2/shop/r-head.1
+loot replace block ~ ~-1 ~ container.12 loot entity:mob_drop/2/shop/r-chest.1
 loot replace block ~ ~-1 ~ container.13 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.14 loot entity:mob_drop/2/shop/r-legs
-loot replace block ~ ~-1 ~ container.15 loot entity:mob_drop/2/shop/r-boots
+loot replace block ~ ~-1 ~ container.14 loot entity:mob_drop/2/shop/r-legs.1
+loot replace block ~ ~-1 ~ container.15 loot entity:mob_drop/2/shop/r-boots.1
 loot replace block ~ ~-1 ~ container.16 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.17 loot modify:gray_glass
 

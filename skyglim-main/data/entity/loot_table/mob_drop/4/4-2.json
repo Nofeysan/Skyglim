@@ -34,7 +34,7 @@
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/4/restore/.all-r",
+                    "value": "entity:mob_drop/4/restore/.all-rare",
                     "weight": 50
                 }
             ],

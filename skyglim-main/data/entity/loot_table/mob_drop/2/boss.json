@@ -42,7 +42,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "entity:mob_drop/2/restore/.boss",
+                    "value": "entity:mob_drop/2/restore/.all-armor",
                     "conditions": [
                         {
                             "condition": "minecraft:random_chance",

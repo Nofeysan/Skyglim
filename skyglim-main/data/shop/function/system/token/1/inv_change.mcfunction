@@ -11,11 +11,11 @@ loot replace block ~ ~-1 ~ container.8 loot modify:gray_glass
 
 loot replace block ~ ~-1 ~ container.9 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.10 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.11 loot entity:mob_drop/1/shop/r-sword
-loot replace block ~ ~-1 ~ container.12 loot entity:mob_drop/1/shop/r-s-sword
-loot replace block ~ ~-1 ~ container.13 loot entity:mob_drop/1/shop/r-axe
-loot replace block ~ ~-1 ~ container.14 loot entity:mob_drop/1/shop/r-bow
-loot replace block ~ ~-1 ~ container.15 loot entity:mob_drop/1/shop/r-crossbow
+loot replace block ~ ~-1 ~ container.11 loot entity:mob_drop/2/shop/r-sword.1
+loot replace block ~ ~-1 ~ container.12 loot entity:mob_drop/2/shop/r-axe.1
+loot replace block ~ ~-1 ~ container.13 loot modify:gray_glass
+loot replace block ~ ~-1 ~ container.14 loot entity:mob_drop/2/shop/r-bow.1
+loot replace block ~ ~-1 ~ container.15 loot entity:mob_drop/2/shop/r-crossbow.1
 loot replace block ~ ~-1 ~ container.16 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.17 loot modify:gray_glass
 
