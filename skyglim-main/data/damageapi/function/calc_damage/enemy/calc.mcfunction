@@ -69,31 +69,20 @@ data modify storage km_solver: vars set value {D:0.0f, S:0.0f, C:1.0f, M:1.0f, R
                     execute on attacker if score @s occupation matches 1 if predicate damageapi:has_projectile run scoreboard players add _ _ 10
 
             # アイテム
-                # 硬い石: +2%
-                    execute if predicate damageapi:item/has_1106011 run scoreboard players add _ _ 2
+                # reset
+                    scoreboard players set $shard_id_calc _ 0
+                
+                # 取得
+                    execute on attacker run data modify storage damageapi: calc.shard set from entity @s Inventory
 
-                # ロマン砲: +50% (1%)
-                    execute store result score randomItemChance _ run random value 0..99
-                    execute if predicate damageapi:item/has_1111009 if score randomItemChance _ matches 0 run scoreboard players add _ _ 50
+                    execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 9b}].components."minecraft:repair_cost"
+                    function damageapi:calc_damage/enemy/search/.root
 
-                # オオカミの加護: +5%
-                    execute if predicate damageapi:item/has_1111109 run scoreboard players add _ _ 5
+                    execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 10b}].components."minecraft:repair_cost"
+                    function damageapi:calc_damage/enemy/search/.root
 
-                # 一撃必殺: +200% (0.7%)
-                    execute store result score randomItemChance _ run random value 0..999
-                    execute if predicate damageapi:item/has_1112009 if score randomItemChance _ matches 0..69 run scoreboard players add _ _ 200
-
-                # 狂乱の矢: +5%
-                    execute if predicate damageapi:item/has_1114009 run scoreboard players add _ _ 5
-
-                # 熱い赤粉: +5%
-                    execute if predicate damageapi:item/has_1114110 run scoreboard players add _ _ 5
-
-                # 頑丈な棒: +3%
-                    execute if predicate damageapi:item/has_1201109 run scoreboard players add _ _ 3
-
-                # 戦神の加護: +12%
-                    execute if predicate damageapi:item/has_1203010 run scoreboard players add _ _ 12
+                    execute store result score $shard_id_calc _ run data get storage damageapi: calc.shard[{Slot: 11b}].components."minecraft:repair_cost"
+                    function damageapi:calc_damage/enemy/search/.root
 
         # 代入
             execute store result storage km_solver: vars.M float 0.01 run scoreboard players get _ _
@@ -105,7 +94,7 @@ execute at @p run function km_solver:solve
 data modify storage damageapi: damage.value set from storage km_solver: outputs[0]
 
 #! debug
-#-tellraw @a [{text:"\ue010 与ダメージ(軽減前) : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
+#-tellraw @a [{text:"\n\ue010 与ダメージ(軽減前) : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
 #-tellraw @a [{text:"\ue010 vars : ",color: "#44ddf4"},{"storage": "km_solver:","nbt": "vars"}]
 
 

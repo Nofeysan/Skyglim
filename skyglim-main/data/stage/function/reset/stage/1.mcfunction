@@ -29,4 +29,4 @@ scoreboard players set _ stage.1 -1
 bossbar remove minecraft:stage1.boss
 
 #! debug
-tellraw @a {text: '[!] Stage 1 をリセットしました。', color: "gray"}
+tellraw @a {text: '[!] Stage 1 がリセットされた。', color: "gray"}

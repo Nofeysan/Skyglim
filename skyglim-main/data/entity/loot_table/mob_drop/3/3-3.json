@@ -80,6 +80,22 @@
                     ]
                 }
             ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/light",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.0085
+                }
+            ]
         }
     ]
 }

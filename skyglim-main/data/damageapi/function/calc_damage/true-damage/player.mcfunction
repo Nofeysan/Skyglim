@@ -22,4 +22,5 @@ effect clear @s minecraft:wind_charged
 
 # effect
 effect give @s minecraft:blindness 1 0 true
+playsound minecraft:entity.blaze.hurt voice @s ~ ~ ~ 0.8 1.2
 advancement grant @s only stage:block/rate

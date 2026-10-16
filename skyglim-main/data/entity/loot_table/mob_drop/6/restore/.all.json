@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/6/restore/.all-1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/6/restore/.all-2"
+                }
+            ]
+        }
+    ]
+}

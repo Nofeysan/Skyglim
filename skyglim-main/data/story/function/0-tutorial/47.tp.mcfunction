@@ -16,7 +16,7 @@ scoreboard players set _ story.phase -1
 spawnpoint @a 89 51 183
 
 # 途中参加者用
-setblock 100 61 -222 minecraft:end_gateway{exit_portal: [90, 33, 80], ExactTeleport: true}
+fill 115 99 -185 113 96 -185 minecraft:end_gateway{exit_portal: [90, 33, 80], ExactTeleport: true}
 
-# allay
-kill @n[type=minecraft:allay, tag=kalmia]
+# kalmia
+execute as @n[tag=aj.skyglim.kalmia.root] run function aj:skyglim/kalmia/remove/this

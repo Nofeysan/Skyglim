@@ -31,9 +31,9 @@ fill 9991 67 -25 9987 62 -21 minecraft:air replace minecraft:oak_fence
 forceload remove 9991 -25 9987 -21
 
 # story
-execute unless score $talks_1 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1
-scoreboard players set $talks_1 CanTalkWithMe 1
-scoreboard players set $avelian_talks story.progress 2
+#execute unless score $talks_1 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1
+#scoreboard players set $talks_1 CanTalkWithMe 1
+#scoreboard players set $avelian_talks story.progress 2
 
 # shop
 execute unless score $boss_slain_1 story.progress matches 1 run function shop:token/open/1
