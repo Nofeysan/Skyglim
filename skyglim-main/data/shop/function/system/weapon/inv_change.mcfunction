@@ -6,8 +6,8 @@
 
 ###* 一旦ガラスに置き換える
 loot replace block ~ ~-1 ~ container.0 loot modify:gray_glass
-loot replace block ~ ~-1 ~ container.1 loot shop:weapon/tier1/sword
-loot replace block ~ ~-1 ~ container.2 loot shop:weapon/tier1/short_sword
+loot replace block ~ ~-1 ~ container.1 loot modify:gray_glass
+loot replace block ~ ~-1 ~ container.2 loot shop:weapon/tier1/sword
 loot replace block ~ ~-1 ~ container.3 loot shop:weapon/tier1/axe
 loot replace block ~ ~-1 ~ container.4 loot modify:gray_glass
 loot replace block ~ ~-1 ~ container.5 loot shop:weapon/tier1/bow

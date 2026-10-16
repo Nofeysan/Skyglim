@@ -1,0 +1,42 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-sword.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-axe.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-bow.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-crossbow.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-head.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-chest.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-legs.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/1/restore/n-boots.1"
+                }
+            ]
+        }
+    ]
+}

@@ -32,7 +32,7 @@ function modify:restore/list/status/dmg
 scoreboard players set base Temp 26
 function modify:restore/list/status/hp
 
-scoreboard players set base Temp 80
+scoreboard players set base Temp 103
 function modify:restore/list/status/str
 
 #scoreboard players set base Temp 
