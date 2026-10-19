@@ -1,0 +1,81 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 12,
+                "max": 32
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/l",
+                    "weight": 70
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/el",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 6
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/rotten_flesh",
+                    "weight": 80
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_rotten_flesh",
+                    "weight": 20
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/.all-r",
+                    "weight": 65
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/11/restore/.all-e",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/12/restore/.all-l",
+                    "weight": 5
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.5
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "stage:token/s6"
+                }
+            ]
+        }
+    ]
+}
