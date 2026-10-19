@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-sword.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-s.sword.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-axe.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-bow.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-crossbow.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-head.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-chest.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-legs.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-boots.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-shard.20"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-shard.21"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/m-shard.22"
+                }
+            ]
+        }
+    ]
+}

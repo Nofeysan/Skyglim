@@ -1,0 +1,58 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-sword.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-s.sword.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-axe.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-bow.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-crossbow.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-head.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-chest.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-legs.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-boots.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-shard.20"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-shard.21"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/10/restore/r-shard.22"
+                }
+            ]
+        }
+    ]
+}
