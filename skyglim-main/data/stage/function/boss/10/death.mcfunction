@@ -21,6 +21,7 @@ execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~
 
 # 出口開放
 fill 9778 4 -357 9778 1 -359 minecraft:air
+clone 10136 -2 -351 10159 -2 -328 10136 5 -351
 
 # 次の道
 forceload add 10015 -323 10019 -323

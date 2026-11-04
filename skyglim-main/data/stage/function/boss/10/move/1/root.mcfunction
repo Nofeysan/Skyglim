@@ -1,26 +1,22 @@
 #> stage:boss/1/move/1/root
 # 
-# 飛び上がってダメージ（割合 50%）
-# 200 start
+# 1x1 に召喚
+# 200 → 260, 300, 360
 # 
 
+# boss tp
+execute if score s10 BossMoves matches 200..400 run tp @n[tag=boss, tag=s10] 10148.0 11 -339.0
+
 # 200: 召喚
-execute if score s7 BossMoves matches 200 run function stage:boss/7/move/1/summon
-execute if score s7 BossMoves matches 204 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawn, distance=..100]
+# 50% 以上（13, 14, 14）
+execute if score s10 BossMoves matches 200 unless score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=12] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
+execute if score s10 BossMoves matches 200 unless score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=13] run function entity:aec_manager/summon/.square {r: 5, t: 100, dmg: 16, str: 18, id: 101}
+execute if score s10 BossMoves matches 200 unless score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=14] run function entity:aec_manager/summon/.square {r: 5, t: 140, dmg: 16, str: 18, id: 101}
 
-# 220, 240, 260: countdown
-execute if score s7 BossMoves matches 220 run function stage:boss/7/move/1/count-3
-execute if score s7 BossMoves matches 240 run function stage:boss/7/move/1/count-2
-execute if score s7 BossMoves matches 260 run function stage:boss/7/move/1/count-1
-
-# 280: bomb
-execute if score s7 BossMoves matches 280 run function stage:boss/7/move/1/bomb
-
-# AoE (200~ 20tick おき)
-execute if score s7 BossMoves matches 200 as @a[distance=..35] at @s positioned ~ 0 ~ run function entity:aec_manager/summon/.square {r: 13, t: 80, dmg: 16, str: 18, id: 71}
-execute if score s7 BossMoves matches 220 as @a[distance=..35] at @s positioned ~ 0 ~ run function entity:aec_manager/summon/.square {r: 13, t: 80, dmg: 16, str: 18, id: 71}
-execute if score s7 BossMoves matches 240 as @a[distance=..35] at @s positioned ~ 0 ~ run function entity:aec_manager/summon/.square {r: 13, t: 80, dmg: 16, str: 18, id: 71}
-execute if score s7 BossMoves matches 260 as @a[distance=..35] at @s positioned ~ 0 ~ run function entity:aec_manager/summon/.square {r: 13, t: 80, dmg: 16, str: 18, id: 71}
+# 50% 以下 (14, 14, 15)
+execute if score s10 BossMoves matches 200 if score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=14] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
+execute if score s10 BossMoves matches 200 if score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=14] run function entity:aec_manager/summon/.square {r: 5, t: 100, dmg: 16, str: 18, id: 101}
+execute if score s10 BossMoves matches 200 if score $s10.boss.half _ matches 1 at @e[tag=1x1, sort=random, limit=15] run function entity:aec_manager/summon/.square {r: 5, t: 160, dmg: 16, str: 18, id: 101}
 
 # reset
-execute if score s7 BossMoves matches 280.. run scoreboard players set s7 BossMoves 60
+execute if score s10 BossMoves matches 361.. run scoreboard players set s10 BossMoves 60

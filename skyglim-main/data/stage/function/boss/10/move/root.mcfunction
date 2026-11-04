@@ -5,7 +5,7 @@
 # 
 
 # random
-execute store result score s10-type BossMoves run random value 1..4
+execute store result score s10-type BossMoves run random value 1..5
 
 # 1: 上下移動
 #execute if score s6-type BossMoves matches 1 run function stage:boss/4/move/1/root
