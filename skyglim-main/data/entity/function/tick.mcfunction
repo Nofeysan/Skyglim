@@ -9,10 +9,10 @@ scoreboard players add _ Timer 1
 execute if score _ Timer matches 20.. run function damageapi:status/every_1sec
 
 # entity_type かつ tag 付いてたら設定する
-execute as @e[predicate=entity:entity_enemy, predicate=entity:is_req_multiplier] at @s run function entity:set_data/root
+execute as @e[predicate=entity:is_req_multiplier] at @s run function entity:set_data/root
 
 # effector: Mob に行動させる
-    execute as @e[predicate=entity:entity_enemy, tag=effector] at @s run function entity:effector/root
+    execute as @e[tag=effector] at @s run function entity:effector/root
 
 # AEC処理
 execute if entity @e[type=minecraft:block_display, tag=req_trans] as @e[type=minecraft:block_display, tag=req_trans] run function entity:aec_manager/transport/root

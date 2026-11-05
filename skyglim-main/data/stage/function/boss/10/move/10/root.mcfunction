@@ -17,17 +17,10 @@
 
 # 本格的な攻撃 (300..)
     # line (per 20tick)
-        execute if score s10 BossMoves matches 300 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 320 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 340 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 360 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 380 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 400 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 420 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 440 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 460 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 480 run function stage:boss/10/move/10/summon_line
-        execute if score s10 BossMoves matches 500 run function stage:boss/10/move/10/summon_line
+        scoreboard players operation _ _ = s10 BossMoves
+        scoreboard players operation _ _ %= #20 num
+        
+        execute if score s10 BossMoves matches 300..500 if score _ _ matches 0 run function stage:boss/10/move/10/summon_line
 
     # line 進める + ダメージ
         execute if score s10 BossMoves matches 300..500 run function stage:boss/10/move/10/line_dealt
@@ -38,14 +31,10 @@
             execute if score s10 BossMoves matches 480 at @a[distance=..30] run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 103}
         
         # random place
-            execute if score s10 BossMoves matches 420 at @e[tag=1x1, sort=random, limit=12] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
-            execute if score s10 BossMoves matches 480 at @e[tag=1x1, sort=random, limit=12] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
-
-
-# AoE
-    execute if score s10 BossMoves matches 200 run function entity:aec_manager/summon/.cyl {r: 31, t: 140, dmg: 16, str: 18, id: 73}
-    execute if score s10 BossMoves matches 200 run playsound minecraft:entity.wither.spawn voice @a ~ ~ ~ 0.5 1.5
+            execute if score s10 BossMoves matches 420 at @e[tag=1x1, tag=center, sort=random, limit=5] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
+            execute if score s10 BossMoves matches 480 at @e[tag=1x1, tag=center, sort=random, limit=6] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 16, str: 18, id: 101}
 
 # reset
     execute if score s10 BossMoves matches 600.. run scoreboard players set s10 BossMoves 80
     execute if score s10 BossMoves matches 600.. run clone 10136 -2 -351 10159 -2 -328 10136 5 -351
+    execute if score s10 BossMoves matches 600.. run particle minecraft:cloud 15215.5 5 -339.5 3 0.2 3 0.12 1200

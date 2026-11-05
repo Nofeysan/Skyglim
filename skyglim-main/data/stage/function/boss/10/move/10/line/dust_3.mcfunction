@@ -5,7 +5,7 @@
 # 
 
 #\ +0.5 blocks
-    particle minecraft:dust{color: [0.745098039215686, 0.129411764705882, 0.32156862745098], scale: 1.2} ~ ~ ~ 0.0 0.0 0.0 0 1
+    particle minecraft:dust{color: [0.745098039215686, 0.129411764705882, 0.32156862745098], scale: 1.2} ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
 
 # damage
     effect give @a[distance=..1] minecraft:wind_charged 1 7
