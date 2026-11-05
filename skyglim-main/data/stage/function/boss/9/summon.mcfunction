@@ -11,6 +11,7 @@ setblock ~ ~ ~ minecraft:stone_bricks
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/9/boss
 scoreboard players set s9 BossMoves 120
+scoreboard players set $s9.boss.half _ 0
 
 # title
 title @a[distance=..30] times 10 40 20

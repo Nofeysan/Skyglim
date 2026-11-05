@@ -47,6 +47,7 @@ execute if score s10 BossMoves matches 200 at @n[tag=boss, tag=s10] run function
 execute if score s10 BossMoves matches 200.. if score s10-type BossMoves matches 1 at @n[tag=boss, tag=s10] run function stage:boss/10/move/1/root
 execute if score s10 BossMoves matches 200.. if score s10-type BossMoves matches 2 at @n[tag=boss, tag=s10] run function stage:boss/10/move/2/root
 execute if score s10 BossMoves matches 200.. if score s10-type BossMoves matches 3 as @n[tag=boss, tag=s10] at @s run function stage:boss/10/move/3/root
+execute if score s10 BossMoves matches 200.. if score s10-type BossMoves matches 10 as @n[tag=boss, tag=s10] at @s run function stage:boss/10/move/10/root
 
 #* 
 #* [1x1]

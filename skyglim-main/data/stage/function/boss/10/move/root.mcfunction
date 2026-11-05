@@ -5,7 +5,11 @@
 # 
 
 # random
-execute store result score s10-type BossMoves run random value 1..5
+execute store result score s10-type BossMoves run random value 1..4
+
+# 半分以下になった次の行動は特殊
+execute if score $s10.boss.half _ matches 1 unless score $s10.boss.half.moved _ matches 1 run scoreboard players set s10-type BossMoves 10
+execute if score $s10.boss.half _ matches 1 unless score $s10.boss.half.moved _ matches 1 run scoreboard players set $s10.boss.half.moved _ 1
 
 # 1: 上下移動
 #execute if score s6-type BossMoves matches 1 run function stage:boss/4/move/1/root
