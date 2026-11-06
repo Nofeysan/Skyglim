@@ -14,7 +14,7 @@ execute positioned 9746 -5 -532 run kill @e[dx=233, dy=52, dz=257, type=minecraf
 forceload remove 9746 -532 9979 -275
 
 # スコアのリセット
-scoreboard players set _ stage.7 -1
+scoreboard players set _ stage.10 -1
 
 # boss 用
 bossbar remove minecraft:stage7.boss

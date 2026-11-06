@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:magma_cube ~ ~ ~ \
+summon minecraft:slime ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
@@ -26,7 +26,7 @@ summon minecraft:magma_cube ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.7.2.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.10.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 16000,\
@@ -38,7 +38,7 @@ summon minecraft:magma_cube ~ ~ ~ \
                                     \
                                     "xp": 73,\
                                     \
-                                    "lore": "entity.stage.7.2.lore",\
+                                    "lore": "entity.stage.10.boss.friend.lore",\
                                     \
                                     "loot": "7/7-2"\
                                 }\
@@ -47,6 +47,6 @@ summon minecraft:magma_cube ~ ~ ~ \
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
                             Team: "enemy", Size: 2,\
-                            Tags: ["gimmick", "gimmick.enemy.s7"]\
+                            Tags: ["gimmick", "gimmick.enemy.s10"]\
                         }
 

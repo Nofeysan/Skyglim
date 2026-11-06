@@ -9,3 +9,7 @@ execute if entity @s[tag=s2] at @s run function stage:boss/2/death
 execute if entity @s[tag=s4] at @s run function stage:boss/4/death
 execute if entity @s[tag=s6] at @s run function stage:boss/6/death
 execute if entity @s[tag=s7] at @s run function stage:boss/7/death
+
+execute if entity @s[tag=s9] at @s run function stage:boss/9/death
+
+execute if entity @s[tag=s10] at @s run function stage:boss/10/death

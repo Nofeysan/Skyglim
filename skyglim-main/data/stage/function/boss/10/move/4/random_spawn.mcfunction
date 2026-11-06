@@ -15,11 +15,11 @@
     execute if score $players _ matches 4.. if score $enemy_count _ matches 10.. run return fail
 
 # random
-execute store result score _ _ run random value 0..1
+execute store result score _ _ run random value 0..9
 
 # summon
-execute if score _ _ matches 0 run function stage:boss/7/move/4/red
-execute if score _ _ matches 1 run function stage:boss/7/move/4/green
+execute if score _ _ matches 0..7 run function stage:boss/10/move/4/normal
+execute if score _ _ matches 8..9 run function stage:boss/10/move/4/elite
 
 # sound
 playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.3 1

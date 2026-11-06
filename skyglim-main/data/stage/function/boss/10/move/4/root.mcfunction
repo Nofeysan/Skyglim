@@ -18,4 +18,4 @@ execute if score $players _ matches 4.. positioned 9791 1 -351 run function stag
 execute if score $players _ matches 4.. positioned 9805 1 -365 run function stage:boss/10/move/4/random_spawn
 
 # score
-scoreboard players set s10 BossMoves 0
+scoreboard players set s10 BossMoves -20

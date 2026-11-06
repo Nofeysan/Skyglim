@@ -26,27 +26,27 @@ summon minecraft:magma_cube ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.7.1.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.10.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 16000,\
                                     "current_hp": 16000,\
                                     \
-                                    "dmg": 31,\
-                                    "str": 23,\
-                                    "def": 19,\
+                                    "dmg": 32,\
+                                    "str": 29,\
+                                    "def": 17,\
                                     \
                                     "xp": 73,\
                                     \
-                                    "lore": "entity.stage.7.1.lore",\
+                                    "lore": "entity.stage.10.boss.friend.lore",\
                                     \
-                                    "loot": "7/7-1"\
+                                    "loot": "7/7-2"\
                                 }\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
                             Team: "enemy", Size: 2,\
-                            Tags: ["gimmick", "gimmick.enemy.s7"]\
+                            Tags: ["gimmick", "gimmick.enemy.s10", "effector", "effector.s10"]\
                         }
 
