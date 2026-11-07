@@ -262,7 +262,7 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "------------------------",\
+            text: "common.lore.line.2",\
             color: "dark_gray",\
             italic: false\
         }\
@@ -329,7 +329,7 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "------------------------",\
+            text: "common.lore.line.2",\
             color: "dark_gray",\
             italic: false\
         }\

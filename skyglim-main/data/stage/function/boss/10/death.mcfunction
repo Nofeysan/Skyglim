@@ -27,17 +27,3 @@ clone 10136 -2 -351 10159 -2 -328 10136 5 -351
 forceload add 10015 -323 10019 -323
 fill 10015 16 -323 10019 13 -323 minecraft:air replace minecraft:iron_bars
 forceload remove 10015 -323 10019 -323
-
-# story
-#execute unless score $talks_4 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1
-#scoreboard players set $talks_4 CanTalkWithMe 1
-#scoreboard players set $avelian_talks story.progress 4
-
-# ここではまだやらない
-
-# 進行度
-#scoreboard players set $stage_progress _ 3
-
-# shop
-#execute unless score $boss_slain_6 story.progress matches 1 run function shop:token/open/6
-#scoreboard players set $boss_slain_6 story.progress 1

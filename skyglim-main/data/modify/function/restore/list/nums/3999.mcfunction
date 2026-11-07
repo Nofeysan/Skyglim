@@ -50,12 +50,12 @@ data modify storage modify: restore.name set value '騎士の鎧'
 function modify:restore/list/macro/set_name with storage modify: restore
 
 ###? 残りの Lore 付与
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "common.lore.line.2", color: "dark_gray", italic: false}
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "遺跡から出土した鎧。", color: "#ffffff", italic: false}
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "現役の鎧としてまだまだ使えそう。", color: "#ffffff", italic: false}
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: ""}
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "Normal", color: "#ffffff", italic: false, bold: true}
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "------------------------", color: "dark_gray", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "common.lore.line.2", color: "dark_gray", italic: false}
 
 ###* その他
 # 鑑定済みにする

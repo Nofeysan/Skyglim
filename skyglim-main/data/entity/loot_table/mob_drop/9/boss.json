@@ -27,18 +27,18 @@
         {
             "rolls": {
                 "min": 1,
-                "max": 6
+                "max": 7
             },
             "entries": [
                 {
                     "type": "minecraft:loot_table",
                     "value": "crafting:ingredients/mob/rotten_flesh",
-                    "weight": 80
+                    "weight": 75
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "crafting:ingredients/mob/e_rotten_flesh",
-                    "weight": 20
+                    "weight": 25
                 }
             ]
         },
@@ -73,7 +73,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "stage:token/s6"
+                    "value": "stage:token/s9"
                 }
             ]
         }

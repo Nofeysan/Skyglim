@@ -6,7 +6,8 @@
 
 # ボタンとかを削除
 fill ~ ~ ~ ~ ~2 ~ minecraft:air
-setblock ~ ~ ~ minecraft:stone_bricks
+setblock ~ ~ ~ minecraft:birch_planks
+setblock ~ ~1 ~ minecraft:barrier
 
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/10/boss

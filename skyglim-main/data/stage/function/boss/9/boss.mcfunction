@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:skeleton ~ ~ ~ \
+summon minecraft:zombie ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
@@ -17,17 +17,17 @@ summon minecraft:skeleton ~ ~ ~ \
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:leather_helmet", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 12665509, "minecraft:enchantment_glint_override": true}},\
-                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 11221394, "minecraft:enchantment_glint_override": true}},\
-                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 8400494, "minecraft:enchantment_glint_override": true}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5840972, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:stick", components: {"minecraft:enchantment_glint_override": false}},\
-                                offhand: {id: "minecraft:heavy_core", components: {"minecraft:enchantment_glint_override": true}}\
+                                head: {id: "minecraft:iron_block", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                chest: {id: "minecraft:iron_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 3027767, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:netherite_boots", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:lever", components: {"minecraft:enchantment_glint_override": false}},\
+                                offhand: {id: "minecraft:tripwire_hook", components: {"minecraft:enchantment_glint_override": true}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.7.boss.name", color: "#be2152", italic: false},\
+                            CustomName: {translate: "entity.stage.9.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 420000,\
@@ -39,7 +39,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                     \
                                     "xp": 1500,\
                                     \
-                                    "lore": "entity.stage.7.boss.lore",\
+                                    "lore": "entity.stage.9.boss.lore",\
                                     \
                                     "loot": "tutorial"\
                                 }\
@@ -47,6 +47,6 @@ summon minecraft:skeleton ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            Tags: ["boss", "s7"]\
+                            Tags: ["boss", "s9"]\
                         }
 

@@ -13,7 +13,7 @@ $tellraw @s [{text: "\uE000\uf101\uf101HP",color: "#e094d7"},{text: " : ",color:
 
 $tellraw @s [{translate: "$(lore)",color: "#ffffff"}]
 
-tellraw @s {text: "--------------------------------", color: "#bce2e8"}
+tellraw @s {text: "common.lore.line.2--------", color: "#bce2e8"}
 
 # 音とか
 execute at @s run playsound minecraft:block.enchantment_table.use voice @s ~ ~ ~ 1 2

@@ -45,7 +45,7 @@ kill @e[predicate=damageapi:is_not_item]
 execute as @e[type=minecraft:armor_stand, tag=sell] at @s if entity @e[type=minecraft:item, distance=..1] run function shop:sell/check
 
 # spawner
-execute as @e[type=minecraft:spawner_minecart] at @s if block ~ ~ ~ minecraft:air run function entity:spawner/remove
+execute as @e[type=minecraft:spawner_minecart, tag=Spawner] at @s if block ~ ~ ~ minecraft:air run function entity:spawner/remove
 
 # 魔法用
 #function magic:tick_buff

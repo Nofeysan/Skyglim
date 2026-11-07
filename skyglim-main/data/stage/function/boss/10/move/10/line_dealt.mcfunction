@@ -11,3 +11,6 @@
 
 # line
     execute as @e[tag=s10.line] at @s run function stage:boss/10/move/10/line/root
+
+# kill
+    execute as @e[tag=s10.line] at @s if block ~ ~-1 ~ minecraft:reinforced_deepslate run kill @s

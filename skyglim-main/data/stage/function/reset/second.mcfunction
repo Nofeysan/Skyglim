@@ -13,7 +13,10 @@ execute if score _ stage.5 matches 1.. positioned 9744 63 -467 unless entity @a[
 execute if score _ stage.6 matches 1.. positioned 9958 35 -233 unless entity @a[dx=117, dy=85, dz=89] run function stage:reset/stage/6
 execute if score _ stage.7 matches 1.. positioned 9746 -5 -532 unless entity @a[dx=233, dy=52, dz=257] run function stage:reset/stage/7
 
+execute if score _ stage.9 matches 1.. positioned 10152 -38 49 unless entity @a[dx=284, dy=90, dz=284] run function stage:reset/stage/9
+execute if score _ stage.10 matches 1.. positioned 10098 2 -359 unless entity @a[dx=73, dy=27, dz=217] run function stage:reset/stage/10
+
 # S3 専用水にいたら毒
-execute as @a at @s positioned 9378 20 -121 if entity @s[dx=370, dy=40, dz=390] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:poison 1 1
+execute as @a at @s positioned 9378 20 -121 if entity @s[dx=370, dy=40, dz=217] at @s if block ~ ~ ~ minecraft:water run effect give @s minecraft:poison 1 1
 
 #clear @a minecraft:stick[minecraft:repair_cost=1]

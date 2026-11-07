@@ -93,12 +93,12 @@ def setStats(stat_list, rarity_name, rarity_color):
             lores.append(lore)
             
     lores.extend(
-        [{ "translate": "common.lore.line.2", "color": "dark_gray", "italic": False },
+        [{ translate: "common.lore.line.2", "color": "dark_gray", "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.1", "color": lore_color(1, __has_ability__), "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.2", "color": lore_color(2, __has_ability__), "italic": False },
         { "text": "" },
         { "text": rarity_name_use, "color": rarity_color, "italic": False, "bold": True },
-        { "translate": "common.lore.line.2", "color": "dark_gray", "italic": False }]
+        { translate: "common.lore.line.2", "color": "dark_gray", "italic": False }]
     )
     
     return lores
@@ -144,19 +144,19 @@ def setStats_shop(stat_list, rarity_name, rarity_color, stage):
             lores_.append(lore)
             
     lores_.extend(
-        [{ "translate": "common.lore.line.2", "color": "dark_gray", "italic": False },
+        [{ translate: "common.lore.line.2", "color": "dark_gray", "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.1", "color": lore_color(1, __has_ability__), "italic": False },
         { "translate": "stage." + stage + "." + item_path + ".lore.2", "color": lore_color(2, __has_ability__), "italic": False },
         { "text": "" },
         { "text": rarity_name_use, "color": rarity_color, "italic": False, "bold": True },
-        { "translate": "common.lore.line.2", "color": "dark_gray", "italic": False },
+        { translate: "common.lore.line.2", "color": "dark_gray", "italic": False },
         [ 
             { "translate": "shop.item.value", "color": "#bfe493", "italic": False},
             { "text": " \uE010 ", "color": "gray" },
             { "translate": "token." + stage + ".name", "color": "#c5edff" },
             { "text": " x3", "color": "#fab80d" }
         ],
-        { "translate": "common.lore.line.2", "color": "dark_gray", "italic": False }]
+        { translate: "common.lore.line.2", "color": "dark_gray", "italic": False }]
     )
     
     return lores_

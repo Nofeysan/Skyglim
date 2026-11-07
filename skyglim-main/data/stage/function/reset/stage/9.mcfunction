@@ -5,13 +5,15 @@
 # 
 
 # forceload add
-forceload add 9746 -532 9979 -275
+forceload add 10152 49 10327 330
+forceload add 10386 290 10424 325
 
 # スポナーの破壊
-execute positioned 9746 -5 -532 run kill @e[dx=233, dy=52, dz=257, type=minecraft:spawner_minecart]
+execute positioned 10152 -38 49 run kill @e[dx=284, dy=90, dz=284, type=minecraft:spawner_minecart]
 
 # foeceload remove
-forceload remove 9746 -532 9979 -275
+forceload remove 10152 49 10327 330
+forceload remove 10386 290 10424 325
 
 # スコアのリセット
 scoreboard players set _ stage.9 -1
@@ -20,4 +22,4 @@ scoreboard players set _ stage.9 -1
 bossbar remove minecraft:stage7.boss
 
 #! debug
-tellraw @a {text: '[!] Stage 7 がリセットされた。', color: "gray"}
+tellraw @a {text: '[!] Stage 9 がリセットされた。', color: "gray"}
