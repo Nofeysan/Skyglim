@@ -1,0 +1,90 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "translate": "stage.6.gate.item.beta.name",
+                                    "color": "#fab80d",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "stage.6.gate.item.alpha.lore.1",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "stage.6.gate.item.alpha.lore.2",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "translate": "stage.6.gate.item.alpha.lore.3",
+                                        "color": "#aaaaaa",
+                                        "italic": false
+                                    }
+                                ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {}
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:breeze_rod",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.anarise",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers"
+                                    ]
+                                },
+                                "minecraft:repair_cost": 300602
+                            }
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

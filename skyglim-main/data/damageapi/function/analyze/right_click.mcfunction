@@ -12,6 +12,12 @@
         #execute if predicate damageapi:has_analyze at @s run function damageapi:analyze/act/root
         execute if score _ _ matches 300000 at @s run function damageapi:analyze/act/root
 
+    # ender_eye / 300400
+        execute if score _ _ matches 300400 at @s run function stage:teleport/importants/4/check
+
+    # お菓子の国の門の鍵 / 300603
+        execute if score _ _ matches 300603 at @s run function stage:teleport/importants/6/check
+
     # fire_stick / 300900
         execute if score _ _ matches 300900 at @s run function stage:teleport/importants/9/check
 
