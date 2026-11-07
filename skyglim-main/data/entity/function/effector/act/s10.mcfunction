@@ -11,8 +11,8 @@
     execute if score _ _ matches 0..69 run return fail
 
 #+ act
-    execute at @a[distance=..20] run function entity:aec_manager/summon/.square {r: 9, t: 60, dmg: 16, str: 18, id: 11001}
-    playsound minecraft:item.trident.throw voice @a ~ ~ ~ 1.2 1.5
+    execute at @a[distance=..20] run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 11001}
+    playsound minecraft:item.shears.snip voice @a ~ ~ ~ 1.2 1.5
 
 # reset
     scoreboard players set @s EffectorCount 0

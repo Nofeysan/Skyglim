@@ -48,15 +48,10 @@
                                 [
                                     {
                                         "translate": "stage.9.icegate.item.lore.3",
-                                        "color": "#ffffff",
+                                        "color": "#aaaaaa",
                                         "italic": false
                                     }
-                                ],
-                                {
-                                    "translate": "common.lore.line.2",
-                                    "color": "dark_gray",
-                                    "italic": false
-                                }
+                                ]
                             ],
                             "mode": "replace_all"
                         },
