@@ -5,7 +5,7 @@
 # 
 
 # data get
-data modify storage boss: stage.10 set from entity @n[tag=boss, tag=s10] data
+    data modify storage boss: stage.10 set from entity @n[tag=boss, tag=s10] data
 
 #* 割合取得
     # 初期化

@@ -37,10 +37,9 @@
                                     {"text": "+10", "color": "#55ff55"}
                                 ],
                                 {
-                                    "text": "",
-                                    "color": "#ffffff",
-                                    "italic": false,
-                                    "bold": false
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
                                 },
                                 [
                                     {

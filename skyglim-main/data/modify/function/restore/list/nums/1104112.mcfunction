@@ -62,7 +62,7 @@ execute store result storage modify: restore.average int 1 run scoreboard player
 data modify storage modify: restore.name set value 'stage.4.e-shard.13.name'
 
 ##* 武器種ごとの共通設定
-function modify:restore/list/nums/type/shard {id: "bell"}
+function modify:restore/list/nums/type/shard {id: "popped_chorus_fruit"}
 
 #* もし avg. が 80 以上なら glint 付与
 execute if score rolls_total Temp matches 80.. run data modify block ~ ~-1 ~ Items[{Slot: 13b}].components."minecraft:enchantment_glint_override" set value true

@@ -23,7 +23,7 @@ minecraft:custom_name=[\
 minecraft:lore=[\
     [\
         {\
-            text: "************************************",\
+            text: "",\
             color: "dark_gray",\
             italic: false\
         }\

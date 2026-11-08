@@ -11,4 +11,4 @@ execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~
 tellraw @a {translate: 'stage.5.button.open', color: "#fff6fe"}
 
 # open
-fill 9794 99 -356 9798 95 -356 minecraft:air destroy
+fill 9794 99 -401 9798 95 -401 minecraft:air destroy

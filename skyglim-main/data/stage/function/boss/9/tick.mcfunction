@@ -7,10 +7,6 @@
 # data get
     data modify storage boss: stage.9 set from entity @n[predicate=entity:entity_enemy, tag=boss, tag=s9] data
 
-# HP 表示
-    execute store result bossbar minecraft:stage9.boss max run data get storage boss: stage.9.status.max_hp
-    execute store result bossbar minecraft:stage9.boss value run data get storage boss: stage.9.status.current_hp
-
 #* 割合取得
     # 初期化
         data remove storage km_solver: inputs
@@ -31,15 +27,19 @@
         data modify storage km_solver: vars.M set from storage boss: stage.9.status.max_hp
 
     # 実行
-        execute at @s run function km_solver:solve
+        execute at @p run function km_solver:solve
     
     # 割合取得
         execute store result score $s9.boss.rate _ run data get storage km_solver: outputs[0]
 
     # 半分取得
-        execute unless score $s9.boss.half _ matches 1 if score $s9.boss.rate _ matches ..50 run function stage:boss/9/half
+        execute unless score $s9.boss.half _ matches 1 if score $s9.boss.rate _ matches ..50 as @n[tag=boss, tag=s9] run function stage:boss/9/half
 
 #
+
+# HP 表示
+    execute store result bossbar minecraft:stage9.boss max run data get storage boss: stage.9.status.max_hp
+    execute store result bossbar minecraft:stage9.boss value run data get storage boss: stage.9.status.current_hp
 
 # 行動
     # increment

@@ -39,8 +39,8 @@ forceload remove 9842 -276 9744 -467
 
 # スコアの設定
 scoreboard players set _ stage.5 1
-scoreboard players set $token_1 s5.gimmick 0
-scoreboard players set $token_2 s5.gimmick 0
+scoreboard players set $total_gold s5.gimmick 0
+scoreboard players set $total_silver s5.gimmick 0
 scoreboard players set $button s5.gimmick 0
 
 #! debug
