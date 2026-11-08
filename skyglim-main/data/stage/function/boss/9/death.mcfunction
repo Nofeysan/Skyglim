@@ -12,7 +12,7 @@ effect give @e[predicate=entity:entity_enemy, distance=..30] minecraft:wind_char
 kill @e[tag=gimmick, distance=..30]
 
 # bossbar
-bossbar remove minecraft:stage7.boss
+bossbar remove minecraft:stage9.boss
 
 # tell
 tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.9.boss.name", color: "#be2152"}, {translate: "stage.boss.slain"}]

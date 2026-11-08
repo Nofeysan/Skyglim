@@ -26,7 +26,7 @@ summon minecraft:skeleton ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.7.boss.name", color: "#be2152", italic: false},\
+                            CustomName: {translate: "entity.stage.10.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 420000,\

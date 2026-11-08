@@ -27,6 +27,9 @@ playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.8 1
 particle minecraft:cloud ~ ~ ~ 1 2 1 0.1 300
 particle minecraft:ash ~ ~ ~ 2 2 2 0.07 400
 
+# kill line
+kill @e[tag=gimmick.s10]
+
 # bossbar
 bossbar add minecraft:stage10.boss {translate: "entity.stage.10.boss.name", color: "#be2152"}
 bossbar set minecraft:stage10.boss color green

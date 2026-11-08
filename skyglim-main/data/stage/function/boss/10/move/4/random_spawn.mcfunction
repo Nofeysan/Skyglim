@@ -4,6 +4,10 @@
 # 
 # 
 
+# playsound
+    execute as @a[distance=..20] at @s run playsound minecraft:item.wolf_armor.damage voice @s ~ ~ ~ 0.7 1
+    execute as @a[distance=..20] at @s run playsound minecraft:item.firecharge.use voice @s ~ ~ ~ 0.7 1
+
 # 一定数居たら召喚しない
     # 数を取得
     execute store result score $enemy_count _ if entity @e[tag= gimmick.enemy.s10, distance=..30, predicate=entity:entity_enemy]

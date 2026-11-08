@@ -4,6 +4,10 @@
 # 200 → 260, 300, 360
 # 
 
+# sound
+execute if score s10 BossMoves matches 200 as @a[distance=..30] at @s run playsound minecraft:entity.bat.death voice @s ~ ~ ~ 0.6 1
+execute if score s10 BossMoves matches 200 as @a[distance=..30] at @s run playsound minecraft:entity.allay.item_thrown voice @s ~ ~ ~ 0.6 1
+
 # boss tp
 execute if score s10 BossMoves matches 200..400 run tp @n[tag=boss, tag=s10] 10148.0 11 -339.0
 

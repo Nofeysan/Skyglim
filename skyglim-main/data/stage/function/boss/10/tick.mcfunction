@@ -19,7 +19,7 @@ data modify storage boss: stage.10 set from entity @n[tag=boss, tag=s10] data
     # M = 最大体力
 
     # 式・初期値
-        data modify storage km_solver: inputs append value {f:{mul: [{div: [{v: "C"}, {v: "M"}]}, {n: 100.0f}]}}
+        data modify storage km_solver: inputs append value {f: {mul: [{div: [{v: "C"}, {v: "M"}]}, {n: 100.0f}]} }
         data modify storage km_solver: vars set value {C: 1.0f, M: 1.0f}
 
     # 変数代入
@@ -27,13 +27,13 @@ data modify storage boss: stage.10 set from entity @n[tag=boss, tag=s10] data
         data modify storage km_solver: vars.M set from storage boss: stage.10.status.max_hp
 
     # 実行
-        execute at @s run function km_solver:solve
+        execute at @p run function km_solver:solve
     
     # 割合取得
         execute store result score $s10.boss.rate _ run data get storage km_solver: outputs[0]
 
     # 半分取得
-        execute unless score $s10.boss.half _ matches 1 if score $s10.boss.rate _ matches ..50 run function stage:boss/10/half
+        execute unless score $s10.boss.half _ matches 1 if score $s10.boss.rate _ matches ..50 as @n[tag=boss, tag=s10] at @s run function stage:boss/10/half
 
 #
 
