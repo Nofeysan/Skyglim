@@ -52,7 +52,11 @@
                                         "italic": false
                                     }
                                 ],
-                                "",
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
                                 [
                                     {
                                         "translate": "magic.cooldown",
