@@ -22,7 +22,7 @@ data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append v
 
 #* 説明 (絶対に1行で！！！！)
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value \
-[{text: "攻撃時、緩衝体力を得る(上限100)",color: "gray",italic: false}]
+[{text: "攻撃時、緩衝体力を得る",color: "gray",italic: false}]
 
 
 #* 通知
