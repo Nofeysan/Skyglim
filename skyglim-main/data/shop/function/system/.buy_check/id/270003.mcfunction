@@ -5,7 +5,7 @@ execute unless score lb Currency matches 8.. run return run function shop:system
 clear @s *[repair_cost=1002] 8
 
 # アイテムあげるね～
-loot give @s loot magic:300003
+loot give @s loot magic:400003
 
 # 通知
 function shop:system/.buy_check/id/.tell {id: "magic.haste.1.name"}

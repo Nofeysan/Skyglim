@@ -6,6 +6,7 @@
 #   l, lb, el, elb: 通貨の量、0~64 [int]
 #   pos: 召喚する座標
 # 
+# e.g.) function item:currency/summon {pos: "~ ~ ~", l: 12, lb: 0, el: 0, elb: 0}
 
 # scoreboard に保存
 $scoreboard players set l _ $(l)

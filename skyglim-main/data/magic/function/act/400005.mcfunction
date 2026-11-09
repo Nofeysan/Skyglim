@@ -12,7 +12,7 @@ scoreboard players operation @s[tag=!failed] CurrentMP -= req_mp _
 function magic:check/calc_magic
 
 # id 設定
-data modify storage damageapi: magic_damage.id set value 300005
+data modify storage damageapi: magic_damage.id set value 400005
 execute store result storage damageapi: magic_damage.luck int 1 run scoreboard players get @s act_Luck
 
 

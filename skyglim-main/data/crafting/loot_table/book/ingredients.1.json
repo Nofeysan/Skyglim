@@ -1,0 +1,106 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:written_book",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "book.ingredients.1.name",
+                                "color": "#94d3e6",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "book.ingredients.1.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "book.ingredients.1.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:written_book_content": {
+                                    "title": {
+                                        "raw": "素材"
+                                    },
+                                    "author": "§k@@@@@",
+                                    "pages": [
+                                        {
+                                            "raw": [
+                                                {"translate": "book.ingredients.1.recipe.1.1", "color": "#746aac"},
+                                                {"translate": "book.ingredients.1.recipe.1.2"},
+                                                {"translate": "book.ingredients.1.recipe.1.3"},
+                                                {"translate": "book.ingredients.1.recipe.1.4"},
+                                                {"translate": "book.ingredients.1.recipe.1.5"}
+                                            ]
+                                        },
+                                        {
+                                            "raw": [
+                                                {"translate": "book.ingredients.1.recipe.2.1", "color": "#746aac"},
+                                                {"translate": "book.ingredients.1.recipe.2.2"},
+                                                {"translate": "book.ingredients.1.recipe.2.3"},
+                                                {"translate": "book.ingredients.1.recipe.2.4"},
+                                                {"translate": "book.ingredients.1.recipe.2.5"}
+                                            ]
+                                        },{
+                                            "raw": [
+                                                {"translate": "book.ingredients.1.recipe.3.1", "color": "#746aac"},
+                                                {"translate": "book.ingredients.1.recipe.3.2"},
+                                                {"translate": "book.ingredients.1.recipe.3.3"},
+                                                {"translate": "book.ingredients.1.recipe.3.4"},
+                                                {"translate": "book.ingredients.1.recipe.3.5"}
+                                            ]
+                                        },
+                                        {
+                                            "raw": [
+                                                {"translate": "book.ingredients.1.recipe.4.1", "color": "#746aac"},
+                                                {"translate": "book.ingredients.1.recipe.4.2"},
+                                                {"translate": "book.ingredients.1.recipe.4.3"},
+                                                {"translate": "book.ingredients.1.recipe.4.4"},
+                                                {"translate": "book.ingredients.1.recipe.4.5"}
+                                            ]
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "data": {
+                                    "sell": 10
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
