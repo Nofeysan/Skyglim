@@ -17,6 +17,9 @@ function magic:check/calc_magic
 # id 設定
 data modify storage damageapi: magic_damage.id set value 400002
 
+# stats 保存（cc, cd, luck）
+function magic:check/save_stats
+
 # armor_stand 召喚
 function magic:macro/summon_armorstand with storage damageapi: magic_damage
 
