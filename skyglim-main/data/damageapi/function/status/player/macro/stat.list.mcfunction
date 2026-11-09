@@ -23,7 +23,7 @@ minecraft:custom_name=[\
 minecraft:lore=[\
     [\
         {\
-            text: "************************************",\
+            text: "",\
             color: "dark_gray",\
             italic: false\
         }\
@@ -262,7 +262,7 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "------------------------",\
+            translate: "common.lore.line.2",\
             color: "dark_gray",\
             italic: false\
         }\
@@ -329,7 +329,7 @@ minecraft:lore=[\
     ],\
     [\
         {\
-            text: "------------------------",\
+            translate: "common.lore.line.2",\
             color: "dark_gray",\
             italic: false\
         }\

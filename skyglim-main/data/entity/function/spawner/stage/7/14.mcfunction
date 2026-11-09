@@ -14,7 +14,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
     SpawnRange: 6,\
     \
     MaxNearbyEntities: 1,\
-    RequiredPlayerRange: 12,\
+    RequiredPlayerRange: 16,\
     \
     SpawnPotentials: [\
         {\

@@ -41,11 +41,11 @@
         { "type":  5, "rarity": 2, "id": 1104006, "status": [ 0, 42,  6,  0,  0, 17,  0,  0, 10], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"chainmail_chestplate\"}" },
         { "type":  6, "rarity": 2, "id": 1104007, "status": [ 0, 34,  0,  0,  0, 15,  0, 15,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"chainmail_leggings\"}" },
         { "type":  7, "rarity": 2, "id": 1104008, "status": [ 0, 18,  0,  3,  6,  7,  0,  0,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"chainmail_boots\"}" },
-        { "type":  9, "rarity": 2, "id": 1104009, "status": [ 0, 12,  0,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"compass\"}" },
-        { "type":  9, "rarity": 2, "id": 1104010, "status": [ 0,  0,  0,  0,  0,  0,  1,  0, 10], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"bell\"}" },
-        { "type":  9, "rarity": 2, "id": 1104011, "status": [ 0,  8,  0,  0,  0,  5,  0,  0,  0], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"bell\"}" },
+        { "type":  9, "rarity": 2, "id": 1104009, "status": [ 0, 12,  0,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"apple\"}" },
+        { "type":  9, "rarity": 2, "id": 1104010, "status": [ 0,  0,  0,  0,  0,  0,  1,  0, 10], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"gray_bundle\"}" },
+        { "type":  9, "rarity": 2, "id": 1104011, "status": [ 0,  8,  0,  0,  0,  5,  0,  0,  0], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"prismarine_crystals\"}" },
         { "type":  9, "rarity": 2, "id": 1104012, "status": [ 0,  0,  0,  6, 12,  0,  0,  0,  0], "has_ability": 0, "count": 13, "shop": true, "macro": "{id: \"ender_eye\"}" },
-        { "type":  9, "rarity": 2, "id": 1104013, "status": [ 0,  0,  0,  0,  0,  0,  0, 12,  0], "has_ability": 0, "count": 14, "shop": true, "macro": "{id: \"bell\"}" },
+        { "type":  9, "rarity": 2, "id": 1104013, "status": [ 0,  0,  0,  0,  0,  0,  0, 12,  0], "has_ability": 0, "count": 14, "shop": true, "macro": "{id: \"large_amethyst_bud\"}" },
 
         { "type":  1, "rarity": 3, "id": 1104100, "status": [21,  0, 38,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"iron_sword\"}" },
         { "type":  2, "rarity": 3, "id": 1104101, "status": [ 2,  0, 14,  0,  0,  0,  7,  0,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"feather\"}", "model": "s.s.iron" },
@@ -57,9 +57,9 @@
         { "type":  6, "rarity": 3, "id": 1104107, "status": [ 0, 52,  0,  2,  4, 20,  0, 25,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"iron_leggings\"}" },
         { "type":  7, "rarity": 3, "id": 1104108, "status": [ 0, 24,  0,  2,  3, 11,  7,  0,  0], "has_ability": 0, "count":  1, "shop": true, "macro": "{id: \"iron_boots\"}" },
         { "type":  9, "rarity": 3, "id": 1104109, "status": [ 0, 30,  0,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count": 10, "shop": true, "macro": "{id: \"golden_apple\"}" },
-        { "type":  9, "rarity": 3, "id": 1104110, "status": [ 0,  5,  3,  2,  4,  2,  2,  5,  3], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"bell\"}" },
-        { "type":  9, "rarity": 3, "id": 1104111, "status": [ 0, 10,  0,  0,  0, 10,  2,  0,  0], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"bell\"}" },
-        { "type":  9, "rarity": 3, "id": 1104112, "status": [ 0,  0,  0,  0,  0,  0,  0, 25,  0], "has_ability": 0, "count": 13, "shop": true, "macro": "{id: \"bell\"}" }
+        { "type":  9, "rarity": 3, "id": 1104110, "status": [ 0,  5,  3,  2,  4,  2,  2,  5,  3], "has_ability": 0, "count": 11, "shop": true, "macro": "{id: \"resin_clump\"}" },
+        { "type":  9, "rarity": 3, "id": 1104111, "status": [ 0, 10,  0,  0,  0, 10,  2,  0,  0], "has_ability": 0, "count": 12, "shop": true, "macro": "{id: \"tube_coral\"}" },
+        { "type":  9, "rarity": 3, "id": 1104112, "status": [ 0,  0,  0,  0,  0,  0,  0, 25,  0], "has_ability": 0, "count": 13, "shop": true, "macro": "{id: \"popped_chorus_fruit\"}" }
     ],
     "5": [
         { "type":  1, "rarity": 1, "id": 1105000, "status": [15,  0, 20,  0,  0,  0,  0,  0,  0], "has_ability": 0, "count":  1, "shop": false, "macro": "{id: \"stone_sword\"}" },

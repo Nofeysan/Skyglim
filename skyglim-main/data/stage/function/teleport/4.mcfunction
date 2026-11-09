@@ -1,0 +1,26 @@
+#> stage:teleport/2
+# 
+# 次の TP 開放
+# 
+# 
+
+# block
+fill ~ ~ ~ ~ ~2 ~ minecraft:air
+setblock ~ ~ ~ minecraft:white_stained_glass
+
+# sound
+execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 0.8
+particle minecraft:dust{color: [0.87843137254902, 0.580392156862745, 0.843137254901961], scale: 0.9} 9906 102 -35 1.5 2 1.5 0.1 480
+
+# fill
+forceload add 108 240 75 258
+clone 91 47 257 93 48 259 91 54 257
+forceload remove 108 240 75 258
+
+# tell
+tellraw @a {translate: "tp.open", color: "#f5de84"}
+
+# story
+schedule function story:avelian/6/-2 40t
+scoreboard players set $magic_progress story.progress 4
+scoreboard players set $stage_progress story.progress 4

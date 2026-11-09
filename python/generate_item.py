@@ -25,8 +25,8 @@ with open('item_database.json', encoding='utf-8') as f:
     item_database = json.load(f)
 
 # datapack空間内への相対パス
-namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
-#namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
+#namespace_path = 'C:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
+namespace_path = 'E:\\Skyglim-dev\\Skyglim\\skyglim-main\\data\\entity\\loot_table\\mob_drop\\' # 本番環境
 #namespace_path = 'C:\\Skyglim-dev\\py\\generated\\' # テスト用
 
 # 実行回数を初期化

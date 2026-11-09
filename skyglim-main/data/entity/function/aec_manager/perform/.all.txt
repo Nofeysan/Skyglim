@@ -18,8 +18,17 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 72: s7 boss - スライム爆弾
 [o] 73: s7 boss - 巨大範囲攻撃
 
+[o] 91: s9 boss - tnt AoE
+[o] 92: s9 boss - dripstone lava
+[o] 101: s10 boss - ランダム床AEC
+[o] 102: s10 boss - 即死床に変わるやつ
+[o] 103: s10 boss - player aoe
+[o] 104: s10 boss - random place aoe (shares の音)
+
+
 # フィールド行動
 [o] 10701: s7 中ボス
+[o] 11001: s10 ボス眷属
 
 
 

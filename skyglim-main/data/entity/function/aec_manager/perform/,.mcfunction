@@ -5,7 +5,7 @@
 # 
 
 # effect
-    particle minecraft:damage_indicator ~ ~ ~ 1.5 1 1.5 0.1 120 force @a
+    particle minecraft:damage_indicator ~ ~ ~ 1.5 1 1.5 0.1 120
     playsound minecraft:entity.evoker.cast_spell voice @a ~ ~ ~ 0.7 1
 
 # damage

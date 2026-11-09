@@ -11,7 +11,7 @@ data modify storage modify: lore.-6 set from block ~ ~-1 ~ Items[{Slot:13b}].com
 data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" set value []
 
 # 一行目を追加
-data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "************************************", color: "dark_gray", italic: false}
+data modify block ~ ~-1 ~ Items[{Slot:13b}].components."minecraft:lore" append value {text: "", color: "dark_gray", italic: false}
 
 ###? ステータス計算
 ###? 順番は、[DMG > HP > STR > CC > CD > DEF > SPD > MP > LUCK] の順番

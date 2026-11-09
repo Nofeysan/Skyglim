@@ -5,7 +5,7 @@
 # 
 
 # 予告・ボス中央tp
-execute if score s7 BossMoves matches 200 run function stage:boss/7/move/1/summon
+execute if score s7 BossMoves matches 200 run function stage:boss/7/move/2/summon
 execute if score s7 BossMoves matches 203 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawn, distance=..100]
 execute if score s7 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1.2 2
 
