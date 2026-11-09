@@ -28,10 +28,13 @@
 
     # AoE
         # player
+            execute if score s10 BossMoves matches 360 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 0.5
             execute if score s10 BossMoves matches 360 at @a[distance=..30] positioned ~ 6 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 48, str: 56, id: 103}
+            execute if score s10 BossMoves matches 480 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 0.5
             execute if score s10 BossMoves matches 480 at @a[distance=..30] positioned ~ 6 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 48, str: 56, id: 103}
         
         # random place
+            execute if score s10 BossMoves matches 420 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 0.5
             execute if score s10 BossMoves matches 420 at @e[tag=1x1, tag=center, sort=random, limit=5] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 48, str: 56, id: 101}
             execute if score s10 BossMoves matches 480 at @e[tag=1x1, tag=center, sort=random, limit=6] run function entity:aec_manager/summon/.square {r: 5, t: 60, dmg: 48, str: 56, id: 101}
 
