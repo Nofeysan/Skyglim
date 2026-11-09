@@ -42,6 +42,6 @@ summon minecraft:slime ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            Tags: ["boss", "s6"], Size: 3\
+                            Tags: ["boss", "s6"], Size: 4\
                         }
 
