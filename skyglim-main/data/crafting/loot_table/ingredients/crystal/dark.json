@@ -38,11 +38,6 @@
                                     "translate": "crafting.ingredients.crystal.dark.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
-                                },
-                                {
-                                    "translate": "common.lore.line.2",
-                                    "color": "dark_gray",
-                                    "italic": false
                                 }
                             ],
                             "mode": "replace_all"

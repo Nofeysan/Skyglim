@@ -39,12 +39,7 @@
                                         "translate": "item.currency.lore.2",
                                         "color": "#ffffff"
                                     }
-                                ],
-                                {
-                                    "translate": "common.lore.line.2",
-                                    "color": "dark_gray",
-                                    "italic": false
-                                }
+                                ]
                             ],
                             "mode": "replace_all"
                         },
