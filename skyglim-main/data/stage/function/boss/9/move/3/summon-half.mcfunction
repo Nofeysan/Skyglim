@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:spawner_minecart 10012 50 -178 \
+summon minecraft:spawner_minecart 10407 0 306 \
 {\
     Delay: 0,\
     \
@@ -30,5 +30,5 @@ summon minecraft:spawner_minecart 10012 50 -178 \
                 }\
             }, weight: 1\
         }\
-    ], Tags: ['gimmick', 'gimmick.spawner.s6'], Invulnerable: true, NoGravity: true\
+    ], Tags: ['gimmick', 'gimmick.spawner.s9'], Invulnerable: true, NoGravity: true\
 }

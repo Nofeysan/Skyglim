@@ -44,7 +44,7 @@ summon minecraft:zombie ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy", Silent: true,\
+                            Team: "enemy", Silent: false,\
                             Tags: ["gimmick", "gimmick.enemy.s9"]\
                         }
 

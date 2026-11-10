@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:spawner_minecart 9798 3 -358 \
+summon minecraft:spawner_minecart 10407 0 306 \
 {\
     SpawnCount: 120, Delay: 0, MinSpawnDelay: 1000, MaxSpawnDelay: 1000, MaxNearbyEntities: 1000, \
     SpawnRange: 20, \

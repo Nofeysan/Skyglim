@@ -7,6 +7,7 @@
 # item summon & modify
     execute if score s9 BossMoves matches 200 if score $s9.boss.half _ matches 0 run function stage:boss/9/move/3/summon
     execute if score s9 BossMoves matches 200 if score $s9.boss.half _ matches 1 run function stage:boss/9/move/3/summon-half
+    execute if score s9 BossMoves matches 200 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 1
 
     execute if score s9 BossMoves matches 200..320 run execute as @e[type=minecraft:item, distance=..40, tag=gimmick.item.s9] run data modify entity @s Motion set value [0.0d, -0.15d, 0.0d]
 

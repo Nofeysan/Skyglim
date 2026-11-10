@@ -5,8 +5,8 @@
 # 
 
 # effect
-    particle minecraft:lava ~ ~ ~ 0.3 1.5 0.3 0.1 40 force @a
-    playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.7 1.5
+    particle minecraft:lava ~ ~ ~ 0.3 1.5 0.3 0.1 10
+    playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.2 1.5
 
 # damage
     # normal

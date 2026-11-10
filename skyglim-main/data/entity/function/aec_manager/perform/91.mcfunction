@@ -6,7 +6,7 @@
 
 # effect
     particle minecraft:cloud ~ ~ ~ 1 1 1 0.02 180 force @a
-    playsound minecraft:entity.phantom.hurt voice @a ~ ~ ~ 0.7 1
+    playsound minecraft:entity.phantom.hurt voice @a ~ ~ ~ 0.1 1
 
 # damage
     # normal
