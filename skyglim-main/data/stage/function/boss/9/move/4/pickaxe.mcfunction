@@ -12,7 +12,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.22}\
+                                {id:"minecraft:movement_speed", base: 0.24}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -24,21 +24,21 @@ summon minecraft:skeleton ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.7.2.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.9.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 16000,\
-                                    "current_hp": 16000,\
+                                    "max_hp": 28400,\
+                                    "current_hp": 28400,\
                                     \
-                                    "dmg": 32,\
-                                    "str": 29,\
+                                    "dmg": 30,\
+                                    "str": 24,\
                                     "def": 17,\
                                     \
                                     "xp": 73,\
                                     \
-                                    "lore": "entity.stage.7.2.lore",\
+                                    "lore": "entity.stage.9.boss.friend.lore",\
                                     \
-                                    "loot": "7/7-2"\
+                                    "loot": "9/9-3"\
                                 }\
                             },\
                             active_effects: [\

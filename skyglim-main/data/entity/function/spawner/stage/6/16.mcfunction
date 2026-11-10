@@ -47,8 +47,8 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             CustomName: {translate: "entity.stage.6.6.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 28300,\
-                                    "current_hp": 28300,\
+                                    "max_hp": 64500,\
+                                    "current_hp": 64500,\
                                     \
                                     "dmg": 25,\
                                     "str": 26,\

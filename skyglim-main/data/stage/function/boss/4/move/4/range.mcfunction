@@ -12,7 +12,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base:0.265}\
+                                {id:"minecraft:movement_speed", base:0.26}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -27,11 +27,11 @@ summon minecraft:skeleton ~ ~ ~ \
                             CustomName: {translate: "entity.stage.4.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 12000,\
-                                    "current_hp": 12000,\
+                                    "max_hp": 18200,\
+                                    "current_hp": 18200,\
                                     \
-                                    "dmg": 0,\
-                                    "str": 0,\
+                                    "dmg": 19,\
+                                    "str": 25,\
                                     "def": 12,\
                                     \
                                     "xp": 12,\

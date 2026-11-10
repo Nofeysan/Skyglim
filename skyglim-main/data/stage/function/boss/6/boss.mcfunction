@@ -25,11 +25,11 @@ summon minecraft:slime ~ ~ ~ \
                             CustomName: {translate: "entity.stage.6.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 420000,\
-                                    "current_hp": 420000,\
+                                    "max_hp": 582000,\
+                                    "current_hp": 582000,\
                                     \
-                                    "dmg": 38,\
-                                    "str": 12,\
+                                    "dmg": 27,\
+                                    "str": 31,\
                                     "def": 56,\
                                     \
                                     "xp": 1500,\

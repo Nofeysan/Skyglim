@@ -10,7 +10,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
     \
     MinSpawnDelay: 300,\
     MaxSpawnDelay: 500,\
-    SpawnCount: 4,\
+    SpawnCount: 3,\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
@@ -44,11 +44,11 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             CustomName: {translate: "entity.stage.4.2.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 11000,\
-                                    "current_hp": 11000,\
+                                    "max_hp": 16200,\
+                                    "current_hp": 16200,\
                                     \
-                                    "dmg": 26,\
-                                    "str": 25,\
+                                    "dmg": 23,\
+                                    "str": 22,\
                                     "def": 10,\
                                     \
                                     "xp": 36,\

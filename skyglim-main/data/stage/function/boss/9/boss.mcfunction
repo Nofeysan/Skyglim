@@ -30,12 +30,12 @@ summon minecraft:zombie ~ ~ ~ \
                             CustomName: {translate: "entity.stage.9.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 420000,\
-                                    "current_hp": 420000,\
+                                    "max_hp": 725000,\
+                                    "current_hp": 725000,\
                                     \
-                                    "dmg": 38,\
-                                    "str": 12,\
-                                    "def": 56,\
+                                    "dmg": 32,\
+                                    "str": 26,\
+                                    "def": 67,\
                                     \
                                     "xp": 1500,\
                                     \

@@ -49,14 +49,14 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             CustomName: {translate: "entity.stage.7.4.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 120000,\
-                                    "current_hp": 120000,\
+                                    "max_hp": 350000,\
+                                    "current_hp": 350000,\
                                     \
                                     "dmg": 30,\
-                                    "str": 25,\
-                                    "def": 18,\
+                                    "str": 22,\
+                                    "def": 39,\
                                     \
-                                    "xp": 74,\
+                                    "xp": 320,\
                                     \
                                     "lore": "entity.stage.7.4.lore",\
                                     \
@@ -66,7 +66,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy", Tags: ['effector', 'effector.s7'], Size: 3\
+                            Team: "enemy", Tags: ['effector', 'effector.s7'], Size: 4\
                         }\
                     ]\
                 }\
