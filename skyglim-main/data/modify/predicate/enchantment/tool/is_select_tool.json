@@ -2,6 +2,6 @@
     "condition": "minecraft:entity_properties",
     "entity": "this",
     "predicate": {
-        "nbt": "{SelectedItem:{id: \"minecraft:golden_pickaxe\"}"
+        "nbt": "{SelectedItem:{id: \"minecraft:golden_pickaxe\"}}"
     }
 }
