@@ -1,0 +1,98 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/l",
+                    "weight": 500
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 450
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 50
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/rotten_flesh",
+                    "weight": 925
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_rotten_flesh",
+                    "weight": 75
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/13/restore/.all-r",
+                    "weight": 650
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/14/restore/.all-e",
+                    "weight": 300
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/15/restore/.all-l",
+                    "weight": 49
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/.all-m",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.08
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/wind",
+                    "weight": 975
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/e-wind",
+                    "weight": 25
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.02
+                }
+            ]
+        }
+    ]
+}

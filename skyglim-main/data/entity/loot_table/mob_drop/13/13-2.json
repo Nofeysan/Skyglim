@@ -1,0 +1,114 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/l",
+                    "weight": 500
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 450
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 50
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/glass_bottle",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/bowl",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/stick",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/normal/tripwire_hook",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.25
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/13/restore/.all-r",
+                    "weight": 650
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/14/restore/.all-e",
+                    "weight": 300
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/15/restore/.all-l",
+                    "weight": 49
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/.all-m",
+                    "weight": 1
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.08
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/light",
+                    "weight": 975
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/e-light",
+                    "weight": 25
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.02
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/l",
+                    "weight": 200
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 680
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/lb",
+                    "weight": 110
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "item:currency/elb",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/string",
+                    "weight": 9
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_string",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/spider_eye",
+                    "weight": 9
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_spider_eye",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex1/restore/.all-r",
+                    "weight": 4575
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex2/restore/.all-e",
+                    "weight": 4000
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/15/restore/.all-l",
+                    "weight": 1250
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "entity:mob_drop/ex3/restore/.all-m",
+                    "weight": 175
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.08
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/light",
+                    "weight": 935
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/crystal/e-light",
+                    "weight": 65
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:random_chance",
+                    "chance": 0.032
+                }
+            ]
+        }
+    ]
+}

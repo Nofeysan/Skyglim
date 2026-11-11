@@ -43,6 +43,24 @@
             ]
         },
         {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/spider_eye",
+                    "weight": 975
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_spider_eye",
+                    "weight": 25
+                }
+            ]
+        },
+        {
             "rolls": 1,
             "entries": [
                 {
