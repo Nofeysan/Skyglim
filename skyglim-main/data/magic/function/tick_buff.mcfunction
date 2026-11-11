@@ -7,5 +7,5 @@
 # buff
 #execute if entity @a[scores={magic.buff.1=1..}] as @a[scores={magic.buff.1=1..}] run function magic:buff/buff.1
 
-# 300005: リトルメテオ
-execute if entity @e[type=minecraft:item, tag=300005] as @e[type=minecraft:item, tag=300005] at @s run function magic:act/tick/300005/root
+# 400005: リトルメテオ
+execute if entity @e[type=minecraft:item, tag=400005] as @e[type=minecraft:item, tag=400005] at @s run function magic:act/tick/400005/root

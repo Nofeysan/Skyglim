@@ -30,9 +30,10 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 {id: "minecraft:max_health", base: 1024},\
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
-                                {id: "minecraft:scale", base: 0.8},\
+                                {id: "minecraft:scale", base: 0.7},\
+                                {id: "minecraft:entity_interaction_range", base: 3.0},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.225}\
+                                {id:"minecraft:movement_speed", base: 0.22}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\

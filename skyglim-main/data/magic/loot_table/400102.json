@@ -11,8 +11,8 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "magic.heal.1.name",
-                                "color": "#92f3a4",
+                                "translate": "magic.fire.2.name",
+                                "color": "#c10e49",
                                 "italic": false
                             }
                         },
@@ -26,39 +26,20 @@
                     },
                     [
                         {
-                            "text": "\uf102\uE004 ",
+                            "text": "\uf102\uE008 ",
                             "color": "#ffffff",
                             "italic": false
                         },
                         {
-                            "translate": "common.status.def",
-                            "color": "#5dccab"
+                            "translate": "common.status.dmg",
+                            "color": "#ff4141"
                         },
                         {
                             "text": " \uE010 ",
                             "color": "gray"
                         },
                         {
-                            "text": "+3",
-                            "color": "#55ff55"
-                        }
-                    ],
-                    [
-                        {
-                            "text": "\uf102\uE005 ",
-                            "color": "#ffffff",
-                            "italic": false
-                        },
-                        {
-                            "translate": "common.status.spd",
-                            "color": "#94d3e6"
-                        },
-                        {
-                            "text": " \uE010 ",
-                            "color": "gray"
-                        },
-                        {
-                            "text": "+5",
+                            "text": "+18",
                             "color": "#55ff55"
                         }
                     ],
@@ -77,7 +58,7 @@
                             "color": "gray"
                         },
                         {
-                            "text": "+10",
+                            "text": "+32",
                             "color": "#55ff55"
                         }
                     ],
@@ -93,13 +74,13 @@
                             "italic": false
                         },
                         {
-                            "translate": "magic.heal.1.magic",
+                            "translate": "magic.fire.2.magic",
                             "color": "#92f3a4"
                         }
                     ],
                     [
                         {
-                            "translate": "magic.heal.1.description",
+                            "translate": "magic.fire.2.description",
                             "color": "gray",
                             "italic": false
                         }
@@ -116,7 +97,7 @@
                             "italic": false
                         },
                         {
-                            "text": "5m",
+                            "text": "12m",
                             "color": "#bce2e8"
                         }
                     ],
@@ -127,7 +108,7 @@
                             "italic": false
                         },
                         {
-                            "text": "20",
+                            "text": "30",
                             "color": "#bce2e8"
                         }
                     ],
@@ -138,7 +119,7 @@
                             "italic": false
                         },
                         {
-                            "text": "7.50 sec.",
+                            "text": "2.00 sec.",
                             "color": "#bce2e8"
                         }
                     ],
@@ -148,12 +129,12 @@
                         "italic": false
                     },
                     {
-                        "translate": "magic.heal.1.lore.1",
+                        "translate": "magic.fire.2.lore.1",
                         "color": "#ffffff",
                         "italic": false
                     },
                     {
-                        "translate": "magic.heal.1.lore.2",
+                        "translate": "magic.fire.2.lore.2",
                         "color": "#ffffff",
                         "italic": false
                     },
@@ -161,8 +142,8 @@
                         "text": ""
                     },
                     {
-                        "text": "Normal",
-                        "color": "#ffffff",
+                        "text": "Rare",
+                        "color": "#2f7bea",
                         "italic": false,
                         "bold": true
                     },
@@ -178,18 +159,18 @@
                             "function": "minecraft:set_custom_data",
                             "tag": {
                                 "status": {
-                                    "damage": 0,
+                                    "damage": 18,
                                     "hp": 0,
                                     "str": 0,
                                     "cc": 0,
                                     "cd": 0,
-                                    "def": 3,
-                                    "spd": 5,
-                                    "mp": 10,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 32,
                                     "luck": 0
                                 },
                                 "data": {
-                                    "rarity": 1,
+                                    "rarity": 2,
                                     "refinement": {
                                         "ref": -255, 
                                         "type": 3, 
@@ -203,7 +184,7 @@
                                         "mp": 0,
                                         "luck": 0
                                     },
-                                    "req_mp": {"i": 20},
+                                    "req_mp": {"i": 30},
                                     "mainhand": 1,
                                     "restore": -255,
                                     "enchantment": -255, 
@@ -233,9 +214,10 @@
                                 "minecraft:enchantments": {
                                     "minecraft:unbreaking": 1
                                 },
-                                "minecraft:repair_cost": 300001,
+                                
+                                "minecraft:repair_cost": 400102,
                                 "minecraft:custom_model_data": {
-                                    "strings": ["heal_rod"]
+                                    "strings": ["fire_rod_2"]
                                 },
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:tooltip_display": {
@@ -246,8 +228,8 @@
                                 },
                                 
                                 "minecraft:use_cooldown": {
-                                    "seconds": 7.50,
-                                    "cooldown_group": "heal"
+                                    "seconds": 2.00,
+                                    "cooldown_group": "fire"
                                 },
 
                                 "minecraft:consumable": {
@@ -261,22 +243,22 @@
                                     "components": {
                                         "minecraft:custom_name": "",
                                         "minecraft:custom_model_data": {
-                                            "strings": ["heal_rod"]
+                                            "strings": ["fire_rod_2"]
                                         },
                                         "minecraft:enchantments": {
                                             "minecraft:remainder_item": 1
                                         },
-                                        "minecraft:repair_cost": 300001,
+                                        "minecraft:repair_cost": 400102,
                                         "minecraft:custom_data": {
                                             "status": {
-                                                "damage": 0,
+                                                "damage": 18,
                                                 "hp": 0,
                                                 "str": 0,
                                                 "cc": 0,
                                                 "cd": 0,
-                                                "def": 3,
-                                                "spd": 5,
-                                                "mp": 10,
+                                                "def": 0,
+                                                "spd": 0,
+                                                "mp": 32,
                                                 "luck": 0
                                             },
                                             "data": {

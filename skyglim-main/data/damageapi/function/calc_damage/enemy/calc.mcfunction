@@ -171,6 +171,8 @@ execute at @s if score current Temp matches ..0 run function damageapi:calc_dama
 
 # 数値のリセット
 execute on attacker run scoreboard players reset @s UseBow
+scoreboard players set cc_r Temp 0
+scoreboard players set cd Temp 0
 scoreboard players reset c_did Temp
 execute on attacker run scoreboard players reset @s ChargeRate
 

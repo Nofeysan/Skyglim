@@ -25,11 +25,11 @@ summon minecraft:slime ~ ~ ~ \
                             CustomName: {translate: "entity.stage.6.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 420000,\
-                                    "current_hp": 420000,\
+                                    "max_hp": 582000,\
+                                    "current_hp": 582000,\
                                     \
-                                    "dmg": 38,\
-                                    "str": 12,\
+                                    "dmg": 27,\
+                                    "str": 31,\
                                     "def": 56,\
                                     \
                                     "xp": 1500,\
@@ -42,6 +42,6 @@ summon minecraft:slime ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            Tags: ["boss", "s6"], Size: 3\
+                            Tags: ["boss", "s6"], Size: 4\
                         }
 

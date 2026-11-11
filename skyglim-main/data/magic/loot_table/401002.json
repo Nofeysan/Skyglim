@@ -11,8 +11,8 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "magic.boost.1.name",
-                                "color": "#e9b530",
+                                "translate": "magic.conversion.1.name",
+                                "color": "#ea5506",
                                 "italic": false
                             }
                         },
@@ -20,108 +20,108 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                        "translate": "common.lore.line.1",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    [
-                        {
-                            "text": "\uf102\uE005 ",
-                            "color": "#ffffff",
-                            "italic": false
-                        },
-                        {
-                            "translate": "common.status.spd",
-                            "color": "#44ddf4"
-                        },
-                        {
-                            "text": " \uE010 ",
-                            "color": "gray"
-                        },
-                        {
-                            "text": "+7",
-                            "color": "#55ff55"
-                        }
-                    ],
-                    {
-                        "translate": "common.lore.line.2",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    [
-                        {
-                            "translate": "magic.name.introduce",
-                            "color": "#086776",
-                            "italic": false
-                        },
-                        {
-                            "translate": "magic.boost.1.magic",
-                            "color": "#92f3a4"
-                        }
-                    ],
-                    [
-                        {
-                            "translate": "magic.boost.1.description",
-                            "color": "gray",
-                            "italic": false
-                        }
-                    ],
-                    [
-                        {
-                            "text": ""
-                        }
-                    ],
-                    [
-                        {
-                            "translate": "magic.cost",
-                            "color": "gray",
-                            "italic": false
-                        },
-                        {
-                            "text": "75",
-                            "color": "#bce2e8"
-                        }
-                    ],
-                    [
-                        {
-                            "translate": "magic.cooldown",
-                            "color": "gray",
-                            "italic": false
-                        },
-                        {
-                            "text": "60.00 sec.",
-                            "color": "#bce2e8"
-                        }
-                    ],
-                    {
-                        "translate": "common.lore.line.2",
-                        "color": "dark_gray",
-                        "italic": false
-                    },
-                    {
-                        "translate": "magic.boost.1.lore.1",
-                        "color": "#ffffff",
-                        "italic": false
-                    },
-                    {
-                        "translate": "magic.boost.1.lore.2",
-                        "color": "#ffffff",
-                        "italic": false
-                    },
-                    {
-                        "text": ""
-                    },
-                    {
-                        "text": "Rare",
-                        "color": "#2f7bea",
-                        "italic": false,
-                        "bold": true
-                    },
-                    {
-                        "translate": "common.lore.line.2",
-                        "color": "dark_gray",
-                        "italic": false
-                    }
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {"text": "\uf102\uE005 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.spd", "color": "#44ddf4"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "-8", "color": "#d94262"}
+                                ],
+                                [
+                                    {"text": "\uf102\uE006 ", "color": "#ffffff", "italic": false},
+                                    {"translate": "common.status.mp", "color": "#9279d3"},
+                                    {"text": " \uE010 ","color": "gray"},
+                                    {"text": "+20", "color": "#55ff55"}
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "magic.name.introduce",
+                                        "color": "#086776",
+                                        "italic": false
+                                    },
+                                    {
+                                        "translate": "magic.conversion.1.magic",
+                                        "color": "#92f3a4"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.conversion.1.description.1",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.conversion.1.description.2",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "text": ""
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.cost",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "2",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "magic.cooldown",
+                                        "color": "gray",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "0.50 sec.",
+                                        "color": "#bce2e8"
+                                    }
+                                ],
+                                            {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "magic.conversion.1.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "magic.conversion.1.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "Rare",
+                                    "color": "#2f7bea",
+                                    "italic": false,
+                                    "bold": true
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
                             ],
                             "mode": "replace_all"
                         },
@@ -135,8 +135,8 @@
                                     "cc": 0,
                                     "cd": 0,
                                     "def": 0,
-                                    "spd": 7,
-                                    "mp": 0,
+                                    "spd": -8,
+                                    "mp": 20,
                                     "luck": 0
                                 },
                                 "data": {
@@ -154,11 +154,11 @@
                                         "mp": 0,
                                         "luck": 0
                                     },
-                                    "req_mp": {"i": 75},
+                                    "req_mp": {"i": 2},
                                     "mainhand": 1,
                                     "restore": -255,
                                     "enchantment": -255, 
-                                    "sell": 128
+                                    "sell": 64
                                 }
                             }
                         },
@@ -185,7 +185,7 @@
                                     "minecraft:unbreaking": 1
                                 },
                                 
-                                "minecraft:repair_cost": 300004,
+                                "minecraft:repair_cost": 401002,
                                 "minecraft:custom_model_data": {
                                     "strings": [""]
                                 },
@@ -197,14 +197,11 @@
                                         "minecraft:potion_contents"
                                     ]
                                 },
-                                "minecraft:item_model": "minecraft:tipped_arrow",
-                                "minecraft:potion_contents": {
-                                    "custom_color": 8540359
-                                },
+                                "minecraft:item_model": "minecraft:wild_armor_trim_smithing_template",
                                 
                                 "minecraft:use_cooldown": {
-                                    "seconds": 60.0,
-                                    "cooldown_group": "boost"
+                                    "seconds": 0.5,
+                                    "cooldown_group": "conversion"
                                 },
 
                                 "minecraft:consumable": {
@@ -214,7 +211,7 @@
                                 },
 
                                 "minecraft:use_remainder": {
-                                    "id": "minecraft:stick",
+                                    "id": "minecraft:wild_armor_trim_smithing_template",
                                     "components": {
                                         "minecraft:custom_name": "",
                                         "minecraft:custom_model_data": {
@@ -223,7 +220,7 @@
                                         "minecraft:enchantments": {
                                             "minecraft:remainder_item": 1
                                         },
-                                        "minecraft:repair_cost": 300004,
+                                        "minecraft:repair_cost": 401002,
                                         "minecraft:custom_data": {
                                             "status": {
                                                 "damage": 0,
@@ -232,8 +229,8 @@
                                                 "cc": 0,
                                                 "cd": 0,
                                                 "def": 0,
-                                                "spd": 7,
-                                                "mp": 0,
+                                                "spd": -8,
+                                                "mp": 20,
                                                 "luck": 0
                                             },
                                             "data": {
@@ -241,10 +238,7 @@
                                                 "enchantment": -1
                                             }
                                         },
-                                        "minecraft:item_model": "minecraft:tipped_arrow",
-                                        "minecraft:potion_contents": {
-                                            "custom_color": 8540359
-                                        },
+                                        "minecraft:item_model": "minecraft:wild_armor_trim_smithing_template",
                                         "minecraft:enchantment_glint_override": true
                                     }
                                 },

@@ -27,6 +27,15 @@ scoreboard players operation float XpRate %= #100 num
 scoreboard players remove @s[scores={ShowXpTime=0..}] ShowXpTime 1
 execute if score @s ShowXpTime matches -1 run scoreboard players set @s ShowXp 0
 
+# Absorption check (max 25%)
+    # 最大体力取得, 最大値設定
+        scoreboard players operation $absorption_max _ = @s MaxHealth
+        scoreboard players operation $absorption_max _ *= #25 num
+        scoreboard players operation $absorption_max _ /= #100 num
+
+    # 調整  
+        scoreboard players operation @s Absorption < $absorption_max _
+
 #+ 各状況に応じて要素を代入
 # 体力
 data modify storage status: show.hp set value [{text: "\uE000\uf101"},{"score": {"name": "@s", "objective": "ShowCurrentHealth"}, color: "#ffffff", font: "hp"},{text: "/", color: "#ffffff", font: "hp"},{"score": {"name":"@s", "objective": "ShowMaxHealth"}, color: "#ffffff", font: "hp"}]

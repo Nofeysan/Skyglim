@@ -7,6 +7,7 @@
 # ボタンとかを削除
 fill ~ ~ ~ ~ ~2 ~ minecraft:air
 setblock ~ ~ ~ minecraft:polished_blackstone_bricks
+setblock ~ ~1 ~ minecraft:honeycomb_block
 
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/6/boss

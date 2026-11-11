@@ -10,7 +10,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
     \
     MinSpawnDelay: 250,\
     MaxSpawnDelay: 400,\
-    SpawnCount: 4,\
+    SpawnCount: 3,\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
@@ -31,7 +31,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.23}\
+                                {id:"minecraft:movement_speed", base: 0.255}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -44,11 +44,11 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             CustomName: {translate: "entity.stage.9.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 22500,\
-                                    "current_hp": 22500,\
+                                    "max_hp": 30000,\
+                                    "current_hp": 30000,\
                                     \
-                                    "dmg": 35,\
-                                    "str": 33,\
+                                    "dmg": 29,\
+                                    "str": 24,\
                                     "def": 21,\
                                     \
                                     "xp": 92,\

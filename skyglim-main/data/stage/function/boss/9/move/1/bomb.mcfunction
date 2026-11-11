@@ -5,7 +5,7 @@
 # 
 
 # sound
-playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.7 2
+execute as @a[distance=..30] at @s run playsound minecraft:entity.generic.explode voice @a ~ ~ ~ 0.7 2
 execute at @e[distance=..30, tag=gimmick.tnt] run particle minecraft:explosion ~ ~ ~ 0.0 0.0 0.0 0 2 force @a
 
 # effect

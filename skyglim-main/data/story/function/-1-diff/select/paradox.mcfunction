@@ -8,4 +8,4 @@
 scoreboard players set _ difficulty 1
 
 # tell
-tellraw @a [{translate: "difficulty.selected.1"}, {text: "Paradox", color: "dark_aqua"}, {translate: "difficulty.selected.2"}]
+tellraw @a [{translate: "difficulty.selected.1"}, {text: "Paradox", color: "dark_purple"}, {translate: "difficulty.selected.2"}]

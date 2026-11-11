@@ -15,14 +15,17 @@ scoreboard players operation @s[tag=!failed] CurrentMP -= req_mp _
 function magic:check/calc_magic
 
 # id 設定
-data modify storage damageapi: magic_damage.id set value 300002
+data modify storage damageapi: magic_damage.id set value 400002
+
+# stats 保存（cc, cd, luck）
+function magic:check/save_stats
 
 # armor_stand 召喚
 function magic:macro/summon_armorstand with storage damageapi: magic_damage
 
 # ダメージ実行
-execute as @n[type=minecraft:armor_stand, tag=300002] at @s as @n[predicate=entity:entity_enemy] run tag @s add target
-execute as @n[type=minecraft:armor_stand, tag=300002] at @s run damage @n[tag=target] 100 minecraft:magic by @s
+execute as @n[type=minecraft:armor_stand, tag=400002] at @s as @n[predicate=entity:entity_enemy] run tag @s add target
+execute as @n[type=minecraft:armor_stand, tag=400002] at @s run damage @n[tag=target] 100 minecraft:magic by @s
 
 # 演出
 execute at @n[tag=target] run playsound minecraft:entity.dragon_fireball.explode voice @a ~ ~ ~ 0.7 2

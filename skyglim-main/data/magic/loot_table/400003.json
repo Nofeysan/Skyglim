@@ -11,8 +11,8 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "magic.fire.1.name",
-                                "color": "#c10e49",
+                                "translate": "magic.haste.1.name",
+                                "color": "#e9b530",
                                 "italic": false
                             }
                         },
@@ -26,13 +26,13 @@
                     },
                     [
                         {
-                            "text": "\uf102\uE008 ",
+                            "text": "\uf102\uE005 ",
                             "color": "#ffffff",
                             "italic": false
                         },
                         {
-                            "translate": "common.status.dmg",
-                            "color": "#ff4141"
+                            "translate": "common.status.spd",
+                            "color": "#44ddf4"
                         },
                         {
                             "text": " \uE010 ",
@@ -40,25 +40,6 @@
                         },
                         {
                             "text": "+8",
-                            "color": "#55ff55"
-                        }
-                    ],
-                    [
-                        {
-                            "text": "\uf102\uE006 ",
-                            "color": "#ffffff",
-                            "italic": false
-                        },
-                        {
-                            "translate": "common.status.mp",
-                            "color": "#9279d3"
-                        },
-                        {
-                            "text": " \uE010 ",
-                            "color": "gray"
-                        },
-                        {
-                            "text": "+10",
                             "color": "#55ff55"
                         }
                     ],
@@ -74,13 +55,13 @@
                             "italic": false
                         },
                         {
-                            "translate": "magic.fire.1.magic",
+                            "translate": "magic.haste.1.magic",
                             "color": "#92f3a4"
                         }
                     ],
                     [
                         {
-                            "translate": "magic.fire.1.description",
+                            "translate": "magic.haste.1.description",
                             "color": "gray",
                             "italic": false
                         }
@@ -92,23 +73,12 @@
                     ],
                     [
                         {
-                            "translate": "magic.range",
-                            "color": "gray",
-                            "italic": false
-                        },
-                        {
-                            "text": "10m",
-                            "color": "#bce2e8"
-                        }
-                    ],
-                    [
-                        {
                             "translate": "magic.cost",
                             "color": "gray",
                             "italic": false
                         },
                         {
-                            "text": "20",
+                            "text": "50",
                             "color": "#bce2e8"
                         }
                     ],
@@ -119,7 +89,7 @@
                             "italic": false
                         },
                         {
-                            "text": "1.50 sec.",
+                            "text": "30.00 sec.",
                             "color": "#bce2e8"
                         }
                     ],
@@ -129,12 +99,12 @@
                         "italic": false
                     },
                     {
-                        "translate": "magic.fire.1.lore.1",
+                        "translate": "magic.haste.1.lore.1",
                         "color": "#ffffff",
                         "italic": false
                     },
                     {
-                        "translate": "magic.fire.1.lore.2",
+                        "translate": "magic.haste.1.lore.2",
                         "color": "#ffffff",
                         "italic": false
                     },
@@ -142,8 +112,8 @@
                         "text": ""
                     },
                     {
-                        "text": "Normal",
-                        "color": "#ffffff",
+                        "text": "Rare",
+                        "color": "#2f7bea",
                         "italic": false,
                         "bold": true
                     },
@@ -165,12 +135,12 @@
                                     "cc": 0,
                                     "cd": 0,
                                     "def": 0,
-                                    "spd": 0,
-                                    "mp": 10,
+                                    "spd": 8,
+                                    "mp": 0,
                                     "luck": 0
                                 },
                                 "data": {
-                                    "rarity": 1,
+                                    "rarity": 2,
                                     "refinement": {
                                         "ref": -255, 
                                         "type": 3, 
@@ -184,11 +154,11 @@
                                         "mp": 0,
                                         "luck": 0
                                     },
-                                    "req_mp": {"i": 20},
+                                    "req_mp": {"i": 50},
                                     "mainhand": 1,
                                     "restore": -255,
                                     "enchantment": -255, 
-                                    "sell": 64
+                                    "sell": 128
                                 }
                             }
                         },
@@ -215,9 +185,9 @@
                                     "minecraft:unbreaking": 1
                                 },
                                 
-                                "minecraft:repair_cost": 300002,
+                                "minecraft:repair_cost": 400003,
                                 "minecraft:custom_model_data": {
-                                    "strings": ["fire_rod"]
+                                    "strings": [""]
                                 },
                                 "minecraft:max_stack_size": 1,
                                 "minecraft:tooltip_display": {
@@ -226,10 +196,11 @@
                                         "minecraft:enchantments"
                                     ]
                                 },
+                                "minecraft:item_model": "minecraft:gold_nugget",
                                 
                                 "minecraft:use_cooldown": {
-                                    "seconds": 1.50,
-                                    "cooldown_group": "fire"
+                                    "seconds": 30.0,
+                                    "cooldown_group": "haste"
                                 },
 
                                 "minecraft:consumable": {
@@ -243,32 +214,34 @@
                                     "components": {
                                         "minecraft:custom_name": "",
                                         "minecraft:custom_model_data": {
-                                            "strings": ["fire_rod"]
+                                            "strings": [""]
                                         },
                                         "minecraft:enchantments": {
                                             "minecraft:remainder_item": 1
                                         },
-                                        "minecraft:repair_cost": 300002,
+                                        "minecraft:repair_cost": 400003,
                                         "minecraft:custom_data": {
                                             "status": {
-                                                "damage": 8,
+                                                "damage": 0,
                                                 "hp": 0,
                                                 "str": 0,
                                                 "cc": 0,
                                                 "cd": 0,
                                                 "def": 0,
-                                                "spd": 0,
-                                                "mp": 10,
+                                                "spd": 8,
+                                                "mp": 0,
                                                 "luck": 0
                                             },
                                             "data": {
                                                 "mainhand": 1,
                                                 "enchantment": -1
                                             }
-                                        }
+                                        },
+                                        "minecraft:item_model": "minecraft:gold_nugget",
+                                        "minecraft:enchantment_glint_override": true
                                     }
                                 },
-                                "minecraft:enchantment_glint_override": false
+                                "minecraft:enchantment_glint_override": true
                             }
                         }
                     ]

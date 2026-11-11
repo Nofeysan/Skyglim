@@ -11,7 +11,7 @@
 
 # 各行動
     # S7 中 ボス; プレイヤーの位置に AoE
-        execute if entity @s[tag=effector.s7] if score @s EffectorCount matches 200.. run function entity:effector/act/s7
+        execute if entity @s[tag=effector.s7] if score @s EffectorCount matches 100.. run function entity:effector/act/s7
 
     # S10 ボス中 眷属; プレイヤーの位置に AoE
-        execute if entity @s[tag=effector.s10] if score @s EffectorCount matches 200.. run function entity:effector/act/s10
+        execute if entity @s[tag=effector.s10] if score @s EffectorCount matches 160.. run function entity:effector/act/s10

@@ -7,6 +7,7 @@
 # 200: 召喚
 execute if score s9 BossMoves matches 200 run function stage:boss/9/move/1/summon
 execute if score s9 BossMoves matches 204 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawn, distance=..100]
+execute if score s9 BossMoves matches 200 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 1
 
 # 220, 240, 260: countdown
 execute if score s9 BossMoves matches 220 if score $s9.boss.half _ matches 0 run function stage:boss/9/move/1/count-3
