@@ -1,0 +1,157 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_pickaxe",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "spawnerbreaker.name",
+                                "color": "#92f3a4",
+                                "italic": false
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "spawnerbreaker.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "spawnerbreaker.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    { "text": "◆ ", "color": "#177480", "italic": false },
+                                    { "text": "採", "color": "#1d8681", "italic": false },
+                                    { "text": "掘", "color": "#299482", "italic": false },
+                                    { "text": "速", "color": "#37a385", "italic": false },
+                                    { "text": "度", "color": "#4bb488", "italic": false },
+                                    { "text": "強", "color": "#59c08b", "italic": false },
+                                    { "text": "化", "color": "#67cc91", "italic": false },
+                                    {
+                                        "text": " \ue010 ",
+                                        "color": "#aaaaaa",
+                                        "italic": false
+                                    },
+                                    {
+                                        "text": "+1",
+                                        "color": "gold",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {
+                                "status": {
+                                    "damage": 0,
+                                    "hp": 0,
+                                    "str": 0,
+                                    "cc": 0,
+                                    "cd": 0,
+                                    "def": 0,
+                                    "spd": 0,
+                                    "mp": 0,
+                                    "luck": 0
+                                },
+                                "data": {
+                                    "rarity": 1,
+                                    "refinement": {
+                                        "ref": -255, 
+                                        "type": 8, 
+                                        "damage": 0,
+                                        "hp": 0,
+                                        "str": 0,
+                                        "cc": 0,
+                                        "cd": 0,
+                                        "def": 0,
+                                        "spd": 0,
+                                        "mp": 0,
+                                        "luck": 0
+                                    },
+                                    "roll": {
+                                        "damage": -1,
+                                        "hp": -1,
+                                        "str": -1,
+                                        "cc": -1,
+                                        "cd": -1,
+                                        "def": -1,
+                                        "spd": -1,
+                                        "mp": -1,
+                                        "luck": -1
+                                    },
+                                    "restore": -255,
+                                    "enchantment": -1
+                                }
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.all.def",
+                                        "type": "minecraft:armor",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "any"
+                                    }
+                                ],
+                                "minecraft:unbreakable": {},
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers",
+                                        "minecraft:unbreakable",
+                                        "minecraft:enchantments"
+                                    ]
+                                },
+                                "minecraft:repair_cost": 100010,
+                                "minecraft:max_stack_size": 1,
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:can_break": {
+                                    "blocks": [
+                                        "minecraft:deepslate_gold_ore",
+                                        "minecraft:raw_gold_block",
+                                        "minecraft:iron_block",
+                                        "minecraft:obsidian",
+                                        "minecraft:netherite_block",
+                                        "minecraft:beacon"
+                                    ]
+                                },
+                                "minecraft:enchantments": {
+                                    "minecraft:efficiency": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

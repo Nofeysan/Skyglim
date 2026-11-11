@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "text": "スポナーブレイカー",
+                                "translate": "spawnerbreaker.name",
                                 "color": "#92f3a4",
                                 "italic": false
                             }
@@ -25,12 +25,12 @@
                         "italic": false
                     },
                     {
-                        "text": "スポナーとそれを保護するブロックを破壊できる。",
+                        "translate": "spawnerbreaker.lore.1",
                         "color": "#ffffff",
                         "italic": false
                     },
                     {
-                        "text": "スポナーを壊すか、敵を倒すか。",
+                        "translate": "spawnerbreaker.lore.2",
                         "color": "#ffffff",
                         "italic": false
                     },
