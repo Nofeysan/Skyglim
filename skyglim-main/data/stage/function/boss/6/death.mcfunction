@@ -5,7 +5,7 @@
 # 
 
 # loot
-loot give @a[distance=..30] loot entity:mob_drop/6/boss
+execute at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/6/boss
 
 # kill
 effect give @e[predicate=entity:entity_enemy, distance=..30] minecraft:wind_charged 1 100
