@@ -26,11 +26,28 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 103: s10 boss - player aoe
 [o] 104: s10 boss - random place aoe (shares の音)
 
+[o] 213: ex1.3 - aoe to aec
+[o] 223: ex2.3 - after rate damage
+[o] 244: ex4.4 - after rate damage
+[o] 275: ex7.5 - after rate damage
+[o] 279: ex7.10 - after rate damage
 
 # フィールド行動
+[o] 10700: s7 紙魚
 [o] 10701: s7 中ボス
 [o] 11001: s10 ボス眷属
-
+[o] 11101: s11-1
+[o] 11202: s12-2
+[o] 11301: s13-1
+[o] 11401: s14-1
+[o] 11501: s15-1
+[o] 11504: s15-4
+[o] 20101: ex1-1
+[o] 20502: ex5-2
+[o] 20602: ex6-2
+[o] 20702: ex7-2
+[o] 20707: ex7-7
+[o] 20801: ex8-1
 
 
 

@@ -1,0 +1,18 @@
+#> entity:effector/act/s7
+#
+# as @s at @s で実行
+#
+# 範囲内のプレイヤーの足元にダメージ
+# 
+# 
+
+# random >> fail check
+    execute store result score _ _ run random value 0..99
+    execute if score _ _ matches 0..69 run return fail
+
+#+ act
+    execute at @a[distance=..20] run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 45, str: 31, id: 11101}
+    playsound minecraft:item.shears.snip voice @a ~ ~ ~ 1.2 1.5
+
+# reset
+    scoreboard players set @s EffectorCount 0

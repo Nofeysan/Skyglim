@@ -21,7 +21,9 @@
         "minecraft:slime",
         "minecraft:magma_cube",
         "minecraft:ravager",
-        "minecraft:vindicator"
+        "minecraft:vindicator",
+        "minecraft:phantom",
+        "minecraft:drowned"
     ]
     }
 }

@@ -32,7 +32,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 {id: "minecraft:scale", base: 1.2},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.24}\
+                                {id:"minecraft:movement_speed", base: 0.0}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -66,7 +66,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy"\
+                            Team: "enemy", Tags: ['effector', 'effector.s7.n']\
                         }\
                     ]\
                 }\

@@ -126,6 +126,9 @@ execute store result storage km_solver: vars.E float 0.001 run random value 900.
 # 実行
 execute at @p run function km_solver:solve
 
+# tag: crit.only の場合、攻撃を無効化
+execute if entity @s[tag=crit.only] unless score c_did Temp matches 1 run data modify storage km_solver: outputs[0] set value 0.01d
+
 ##* true-damage 処理（防御貫通）
 execute if predicate entity:is_wind_charged run function damageapi:calc_damage/true-damage/enemy
 

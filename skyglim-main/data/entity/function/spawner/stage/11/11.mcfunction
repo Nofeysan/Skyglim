@@ -31,41 +31,41 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id:"minecraft:movement_speed", base: 0.235}\
+                                {id:"minecraft:movement_speed", base: 0.24}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:chorus_flower", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
-                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 9802598, "minecraft:enchantment_glint_override": true}},\
-                                legs: {id: "minecraft:iron_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 13940048, "minecraft:enchantment_glint_override": true}},\
-                                feet: {id: "minecraft:diamond_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 15185735, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:iron_axe", components: {"minecraft:enchantment_glint_override": true}},\
+                                head: {id: "minecraft:glass", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                chest: {id: "minecraft:elytra", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 9802598, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 7384001, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:netherite_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 15185735, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:iron_sword", components: {"minecraft:enchantment_glint_override": true}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.10.1.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.11.1.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 25200,\
-                                    "current_hp": 25200,\
+                                    "max_hp": 35000,\
+                                    "current_hp": 35000,\
                                     \
-                                    "dmg": 41,\
-                                    "str": 29,\
-                                    "def": 24,\
+                                    "dmg": 45,\
+                                    "str": 31,\
+                                    "def": 27,\
                                     \
-                                    "xp": 106,\
+                                    "xp": 118,\
                                     \
-                                    "lore": "entity.stage.10.1.lore",\
+                                    "lore": "entity.stage.11.1.lore",\
                                     \
-                                    "loot": "10/10-1"\
+                                    "loot": "11/11-1"\
                                 }\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy"\
+                            Team: "enemy", Tags: ['effector', 'effector.s11.1']\
                         }\
                     ]\
                 }\

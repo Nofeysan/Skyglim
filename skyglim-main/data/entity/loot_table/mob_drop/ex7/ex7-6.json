@@ -32,29 +32,31 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/normal/glass_bottle",
-                    "weight": 1
+                    "value": "crafting:ingredients/mob/string",
+                    "weight": 9
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/normal/bowl",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/normal/stick",
-                    "weight": 1
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/normal/tripwire_hook",
+                    "value": "crafting:ingredients/mob/e_string",
                     "weight": 1
                 }
-            ],
-            "conditions": [
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
                 {
-                    "condition": "minecraft:random_chance",
-                    "chance": 0.3
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/spider_eye",
+                    "weight": 9
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/mob/e_spider_eye",
+                    "weight": 1
                 }
             ]
         },
@@ -94,12 +96,12 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/crystal/ice",
+                    "value": "crafting:ingredients/crystal/light",
                     "weight": 91
                 },
                 {
                     "type": "minecraft:loot_table",
-                    "value": "crafting:ingredients/crystal/e-ice",
+                    "value": "crafting:ingredients/crystal/e-light",
                     "weight": 9
                 }
             ],

@@ -41,7 +41,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 15657077, "minecraft:enchantment_glint_override": true}},\
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 13940048, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 15185735, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:honeycomb", components: {"minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:stone_button", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"entity:rate": 10}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\

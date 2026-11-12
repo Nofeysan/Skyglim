@@ -68,7 +68,72 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false},\
                                 {id: "minecraft:invisibility", duration: -1, amplifier: 0, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy"\
+                            Team: "enemy", \
+                            Passengers: [\
+                                {\
+                                    id: "spawner_minecart", \
+                                    \
+                                    Delay: 20, \
+                                    \
+                                    MinSpawnDelay: 140,\
+                                    MaxSpawnDelay: 200,\
+                                    SpawnCount: 4,\
+                                    SpawnRange: 10,\
+                                    \
+                                    MaxNearbyEntities: 20,\
+                                    RequiredPlayerRange: 12, \
+                                    SpawnPotentials: [\
+                                        {\
+                                            data: { entity: {\
+                                                    id: "minecraft:splash_potion", \
+                                                    Item: {\
+                                                        id: "minecraft:purple_stained_glass", \
+                                                        components: {\
+                                                            "minecraft:potion_contents": {\
+                                                                custom_effects: [\
+                                                                    {id: "minecraft:hunger", amplifier: 51, duration: 200}\
+                                                                ]\
+                                                            }, "minecraft:enchantment_glint_override": true\
+                                                        }\
+                                                    }, Glowing: true\
+                                                }\
+                                            }, weight: 1\
+                                        },\
+                                        {\
+                                            data: { entity: {\
+                                                    id: "minecraft:splash_potion", \
+                                                    Item: {\
+                                                        id: "minecraft:purple_stained_glass", \
+                                                        components: {\
+                                                            "minecraft:potion_contents": {\
+                                                                custom_effects: [\
+                                                                    {id: "minecraft:mining_fatigue", amplifier: 0, duration: 200}\
+                                                                ]\
+                                                            }, "minecraft:enchantment_glint_override": true\
+                                                        }\
+                                                    }, Glowing: true\
+                                                }\
+                                            }, weight: 1\
+                                        },\
+                                        {\
+                                            data: { entity: {\
+                                                    id: "minecraft:splash_potion", \
+                                                    Item: {\
+                                                        id: "minecraft:purple_stained_glass", \
+                                                        components: {\
+                                                            "minecraft:potion_contents": {\
+                                                                custom_effects: [\
+                                                                    {id: "minecraft:blindness", amplifier: 0, duration: 200}\
+                                                                ]\
+                                                            }, "minecraft:enchantment_glint_override": true\
+                                                        }\
+                                                    }, Glowing: true\
+                                                }\
+                                            }, weight: 1\
+                                        }\
+                                    ], Invulnerable: true, Tags: ['Passengers']\
+                                }\
+                            ]\
                         }\
                     ]\
                 }\

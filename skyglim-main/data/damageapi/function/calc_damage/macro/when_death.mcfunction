@@ -17,6 +17,13 @@
     execute on attacker if entity @s[type=minecraft:armor_stand] as @p[scores={UseMagicCheck=1..}] run function damageapi:calc_damage/enemy/armor/death
     execute on attacker if entity @s[type=minecraft:armor_stand] unless entity @p[scores={UseMagicCheck=1..}] as @p run function damageapi:calc_damage/enemy/armor/death
 
+#* 置き土産
+    # tag: leave.potion
+        execute if entity @s[tag=leave.potion] run function damageapi:calc_damage/enemy/potion/root
+
+    # tag: leave.aoe
+        execute if entity @s[tag=leave.aoe] run function damageapi:calc_damage/enemy/aoe/root
+
 # 付近にプレイヤーがいたら Item Drop
     execute unless entity @s[tag=boss] at @s if entity @a[distance=..20] run function damageapi:calc_damage/enemy/itemdrop/root
 

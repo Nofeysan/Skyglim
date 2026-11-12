@@ -11,6 +11,9 @@ execute if score _ Timer matches 20.. run function damageapi:status/every_1sec
 # entity_type かつ tag 付いてたら設定する
 execute as @e[predicate=entity:is_req_multiplier, predicate=entity:entity_enemy] at @s run function entity:set_data/root
 
+# mob の弱体化は無効化する
+    effect clear @e[predicate=entity:entity_enemy] minecraft:weakness
+
 # effector: Mob に行動させる
     execute as @e[tag=effector] at @s run function entity:effector/root
 
@@ -46,6 +49,7 @@ execute as @e[type=minecraft:armor_stand, tag=sell] at @s if entity @e[type=mine
 
 # spawner
 execute as @e[type=minecraft:spawner_minecart, tag=Spawner] at @s if block ~ ~ ~ minecraft:air run function entity:spawner/remove
+execute as @e[type=minecraft:spawner_minecart, tag=Passengers] at @s positioned ~ ~-2 ~ unless entity @e[predicate=entity:entity_enemy, distance=..2] run kill @s
 
 # 魔法用
 #function magic:tick_buff
