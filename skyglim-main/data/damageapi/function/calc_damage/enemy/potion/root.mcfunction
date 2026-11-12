@@ -149,3 +149,18 @@
             }\
         }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
 
+# ex7-11
+    execute if entity @s[tag=leave.potion.ex7.11] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:dark_prismarine", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:slowness", amplifier: 10, duration: 80},\
+                        {id: "minecraft:hunger", amplifier: 255, duration: 40},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 60}\
+                    ], \
+                    custom_color: 12444123}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}

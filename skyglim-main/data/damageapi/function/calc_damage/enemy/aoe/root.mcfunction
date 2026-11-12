@@ -18,3 +18,6 @@
 
 # ex7-10
     execute if entity @s[tag=leave.aoe.ex7.10] run function entity:aec_manager/summon/.cyl {r: 17, t: 60, dmg: 132, str: 124, id: 279}
+
+# ex7-12
+    execute if entity @s[tag=leave.aoe.ex7.12] run function entity:aec_manager/summon/.cyl {r: 17, t: 60, dmg: 138, str: 131, id: 2711}

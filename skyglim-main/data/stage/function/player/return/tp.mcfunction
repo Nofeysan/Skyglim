@@ -14,6 +14,7 @@ execute at @s run playsound minecraft:item.firecharge.use voice @a ~ ~ ~ 1 1
 
 # effect
 effect give @s minecraft:blindness 3 0 true
+effect clear @s minecraft:night_vision
 
 # reset
 scoreboard players set @s ReturnPearl -1

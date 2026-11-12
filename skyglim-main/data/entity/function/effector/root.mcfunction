@@ -52,5 +52,8 @@
     # ex7.7; プレイヤーの位置に AoE
         execute if entity @s[tag=effector.ex7.7] if score @s EffectorCount matches 240.. run function entity:effector/act/ex7.7
 
+    # ex7.11; プレイヤーの位置に AoE
+        execute if entity @s[tag=effector.ex7.11] if score @s EffectorCount matches 240.. run function entity:effector/act/ex7.11
+
     # ex8.1; プレイヤーの位置に AoE
         execute if entity @s[tag=effector.ex8.1] if score @s EffectorCount matches 200.. run function entity:effector/act/ex8.1
