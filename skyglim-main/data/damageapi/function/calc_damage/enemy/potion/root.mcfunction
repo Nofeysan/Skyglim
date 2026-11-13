@@ -23,6 +23,21 @@
             }\
         }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
 
+# s111-b
+    execute if entity @s[tag=leave.potion.s11.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:glowstone", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:weakness", amplifier: 99, duration: 100},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 60}\
+                    ], \
+                    custom_color: 4868789}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
 # s13-2
     execute if entity @s[tag=leave.potion.s13.2] run summon minecraft:lingering_potion ~ ~1 ~ \
         {Item: {\

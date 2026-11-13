@@ -23,7 +23,8 @@
         "minecraft:ravager",
         "minecraft:vindicator",
         "minecraft:phantom",
-        "minecraft:drowned"
+        "minecraft:drowned",
+        "minecraft:bat"
     ]
     }
 }

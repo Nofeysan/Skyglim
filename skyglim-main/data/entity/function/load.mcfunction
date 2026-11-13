@@ -16,3 +16,5 @@ team add bomb.2
 team modify bomb.2 color yellow
 team add bomb.3
 team modify bomb.3 color green
+team add bomb.4
+team modify bomb.4 color blue

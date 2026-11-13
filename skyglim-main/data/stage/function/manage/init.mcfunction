@@ -64,7 +64,7 @@ scoreboard objectives add stage.enter dummy
 scoreboard objectives add s4.updown dummy
 scoreboard objectives add s5.gimmick dummy
 scoreboard objectives add s7.gimmick dummy
-
+scoreboard objectives add s11.gimmick dummy
 
 # ついでに街の初期設定
 forceload add 60 168 138 202

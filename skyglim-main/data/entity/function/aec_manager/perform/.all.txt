@@ -25,6 +25,10 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 102: s10 boss - 即死床に変わるやつ
 [o] 103: s10 boss - player aoe
 [o] 104: s10 boss - random place aoe (shares の音)
+[o] 111: s11 boss - with big sword
+[o] 112: s11 boss - with big sword tick (rate)
+[o] 113: s11 boss - half attack (big)
+[x] 121: s12 boss - area 祭り
 
 [o] 213: ex1.3 - aoe to aec
 [o] 223: ex2.3 - after rate damage

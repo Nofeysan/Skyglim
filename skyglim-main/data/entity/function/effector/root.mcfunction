@@ -22,6 +22,9 @@
     # S11-1; プレイヤーの位置に AoE
         execute if entity @s[tag=effector.s11.1] if score @s EffectorCount matches 130.. run function entity:effector/act/s11.1
 
+    # S11-1; プレイヤーの位置に AoE
+        execute if entity @s[tag=effector.s11.b] if score @s EffectorCount matches 150.. run function entity:effector/act/s11.1
+
     # S12.2; プレイヤーの位置に AoE
         execute if entity @s[tag=effector.s12.2] if score @s EffectorCount matches 120.. run function entity:effector/act/s12.2
 

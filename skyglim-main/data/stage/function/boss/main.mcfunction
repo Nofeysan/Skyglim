@@ -14,3 +14,4 @@ execute if entity @n[tag=boss, tag=s7] run function stage:boss/7/tick
 execute if entity @n[tag=boss, tag=s9] run function stage:boss/9/tick
 
 execute if entity @n[tag=boss, tag=s10] run function stage:boss/10/tick
+execute if entity @n[tag=boss, tag=s11] run function stage:boss/11/tick
