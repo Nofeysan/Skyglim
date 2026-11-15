@@ -41,3 +41,12 @@ execute if block ~ ~-0.3 ~ minecraft:dead_brain_coral_block run advancement gran
 
 # 帰還用
 execute if score @s ReturnPearl matches 0.. run function stage:player/return/every
+
+# gimmick
+    # S11 落ちたら初期地点に戻る
+
+
+    # SP5: 松明のやつ
+        execute positioned 10240 8 -288 if entity @s[dx=70, dy=48, dz=234] run function stage:player/sp5/root
+
+    # SP7: 落ちたら初期地点に戻る

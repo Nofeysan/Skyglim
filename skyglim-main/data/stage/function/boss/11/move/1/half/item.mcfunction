@@ -16,11 +16,8 @@ $summon minecraft:item ^ ^ ^1 \
         }, Tags: ["gimmick", "gimmick.magma", "$(id)"], NoGravity: true, Glowing: true\
     }
 
-team join bomb.3 @e[distance=..30, tag=gimmick.magma]
+team join bomb.3 @s[distance=..30, tag=gimmick.magma]
 
 # 予測線 particle
 scoreboard players set $count _ 32
 function stage:boss/11/move/1/half/particle-line
-
-# sound
-playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.5 2

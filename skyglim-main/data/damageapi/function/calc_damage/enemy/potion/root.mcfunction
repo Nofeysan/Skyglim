@@ -23,8 +23,23 @@
             }\
         }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
 
-# s111-b
+# s11-b
     execute if entity @s[tag=leave.potion.s11.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:glowstone", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:weakness", amplifier: 99, duration: 100},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 60}\
+                    ], \
+                    custom_color: 4868789}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
+# s12-b
+    execute if entity @s[tag=leave.potion.s12.b] run summon minecraft:lingering_potion ~ ~1 ~ \
         {Item: {\
             id: "minecraft:glowstone", \
             components: {\
@@ -54,6 +69,38 @@
             }\
         }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
 
+# s13-b
+    execute if entity @s[tag=leave.potion.s13.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:tnt", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:mining_fatigue", amplifier: 0, duration: 100},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 60},\
+                        {id: "minecraft:hunger", amplifier: 127, duration: 30}\
+                    ], \
+                    custom_color: 12961279}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
+# s14-b
+    execute if entity @s[tag=leave.potion.s14.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:tnt", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:mining_fatigue", amplifier: 0, duration: 100},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 60},\
+                        {id: "minecraft:hunger", amplifier: 127, duration: 30}\
+                    ], \
+                    custom_color: 12961279}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
 # s15-2
     execute if entity @s[tag=leave.potion.s15.2] run summon minecraft:lingering_potion ~ ~1 ~ \
         {Item: {\
@@ -66,6 +113,52 @@
                         {id: "minecraft:hunger", amplifier: 255, duration: 40}\
                     ], \
                     custom_color: 8593935}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
+# s16-b
+    execute if entity @s[tag=leave.potion.s16.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:copper_block", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:weakness", amplifier: 10, duration: 80},\
+                        {id: "minecraft:hunger", amplifier: 255, duration: 60}\
+                    ], \
+                    custom_color: 8593935}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
+# ex2.b
+    execute if entity @s[tag=leave.potion.ex2.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:verdant_froglight", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:weakness", amplifier: 10, duration: 80},\
+                        {id: "minecraft:hunger", amplifier: 255, duration: 40}\
+                    ], \
+                    custom_color: 12444123}\
+            }\
+        }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
+
+# ex3.b
+    execute if entity @s[tag=leave.potion.ex3.b] run summon minecraft:lingering_potion ~ ~1 ~ \
+        {Item: {\
+            id: "minecraft:verdant_froglight", \
+            components: {\
+                "minecraft:enchantment_glint_override": true, \
+                "minecraft:potion_contents": {\
+                    custom_effects: [ \
+                        {id: "minecraft:weakness", amplifier: 10, duration: 80},\
+                        {id: "minecraft:hunger", amplifier: 255, duration: 40},\
+                        {id: "minecraft:blindness", amplifier: 0, duration: 20}\
+                    ], \
+                    custom_color: 12444123}\
             }\
         }, Motion: [0.0d, 0.45d, 0.0d], Glowing: true}
 

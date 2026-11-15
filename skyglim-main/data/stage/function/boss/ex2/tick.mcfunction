@@ -1,0 +1,53 @@
+#> stage:boss/1/tick
+# 
+# boss 中常に実行するコマンド群
+# 
+# 
+
+# data get
+    data modify storage boss: stage.ex2 set from entity @n[tag=boss, tag=ex2] data
+
+#* 割合取得
+    # 初期化
+        data remove storage km_solver: inputs
+        data remove storage km_solver: vars
+
+
+    # 計算; 割合を小数第2位まで
+    # rate = C / M * 100
+    # C = 現在の体力
+    # M = 最大体力
+
+    # 式・初期値
+        data modify storage km_solver: inputs append value {f: {mul: [{div: [{v: "C"}, {v: "M"}]}, {n: 100.0f}]} }
+        data modify storage km_solver: vars set value {C: 1.0f, M: 1.0f}
+
+    # 変数代入
+        data modify storage km_solver: vars.C set from storage boss: stage.ex2.status.current_hp
+        data modify storage km_solver: vars.M set from storage boss: stage.ex2.status.max_hp
+
+    # 実行
+        execute at @p run function km_solver:solve
+
+    # 割合取得
+        execute store result score $ex2.boss.rate _ run data get storage km_solver: outputs[0]
+
+    # 半分取得
+        execute if score ex2 BossMoves matches ..199 unless score $ex2.boss.half _ matches 1 if score $ex2.boss.rate _ matches ..50 as @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/half
+
+#
+
+# HP 表示
+execute store result bossbar minecraft:stageex2.boss max run data get storage boss: stage.ex2.status.max_hp
+execute store result bossbar minecraft:stageex2.boss value run data get storage boss: stage.ex2.status.current_hp
+
+# 行動
+scoreboard players add ex2 BossMoves 1
+execute if score ex2 BossMoves matches 200 at @n[tag=boss, tag=ex2] run function stage:boss/ex2/move/root
+execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 1 at @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/1/root
+execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 2 at @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/2/root
+execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 3 as @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/3/root
+
+# ↓ tp のところ
+#fill 9473 37 -229 9471 35 -229 minecraft:waxed_copper_grate
+#fill 9461 37 -225 9463 35 -225 minecraft:waxed_copper_grate

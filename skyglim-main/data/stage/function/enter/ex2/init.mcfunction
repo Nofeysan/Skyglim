@@ -35,7 +35,7 @@ setblock 9467 34 -235 minecraft:lapis_block
 setblock 9467 34 -235 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 # ボス部屋出口
-fill 9458 37 -234 9458 35 -236 minecraft:orange_concrete_powder
+fill 9476 38 -236 9476 35 -234 minecraft:orange_concrete_powder
 
 # foeceload remove
 forceload remove 9732 -202 9454 -256

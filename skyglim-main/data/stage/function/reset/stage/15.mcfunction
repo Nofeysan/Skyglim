@@ -18,6 +18,7 @@ scoreboard players set _ stage.15 -1
 
 # boss 用
 bossbar remove minecraft:stage15.boss
+fill 6784 83 9 6746 74 -29 minecraft:air
 
 #! debug
 tellraw @a {text: '[!] Stage 15 がリセットされた。', color: "gray"}

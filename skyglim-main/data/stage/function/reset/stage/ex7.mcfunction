@@ -19,7 +19,7 @@ forceload remove 8032 -544 8239 -305
 scoreboard players set _ stage.ex.7 -1
 
 # boss 用
-bossbar remove minecraft:stageex7.boss
+#bossbar remove minecraft:stageex7.boss
 
 #! debug
 tellraw @a {text: '[!] Special VII がリセットされた。', color: "gray"}

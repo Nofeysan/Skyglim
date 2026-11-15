@@ -4,12 +4,22 @@
 # 
 # 
 
-# AoE + sword
-    execute if score s11 BossMoves matches 200 as @a[distance=..30] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 2
-    execute if score s11 BossMoves matches 200 at @a[distance=..30] run function entity:aec_manager/summon/.cyl {r: 19, t: 60, dmg: 48, str: 56, id: 111}
-    execute at @a[distance=..30] positioned ~ ~5 ~ run function stage:boss/11/move/2/summon_sword
+# warn
+    execute if score s12 BossMoves matches 200 run title @a[distance=..75] subtitle '[!]'
+    execute if score s12 BossMoves matches 200 run title @a[distance=..75] times 0 60 20
 
-# 落下とかは全部剣側で別で動きます
+    execute if score s12 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
+    execute if score s12 BossMoves matches 210 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
+    execute if score s12 BossMoves matches 220 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
+
+    execute if score s12 BossMoves matches 220 run effect give @s minecraft:levitation 1 8 true
+    execute if score s12 BossMoves matches 260 run function stage:boss/12/move/2/ground
+
+    execute if score s12 BossMoves matches 260 run effect give @s minecraft:levitation 1 8 true
+    execute if score s12 BossMoves matches 300 run function stage:boss/12/move/2/ground
+
+    execute if score s12 BossMoves matches 300 run effect give @s minecraft:levitation 1 8 true
+    execute if score s12 BossMoves matches 340 run function stage:boss/12/move/2/ground
 
 # reset
-execute if score s11 BossMoves matches 260.. run scoreboard players set s11 BossMoves 100
+    execute if score s12 BossMoves matches 340.. run scoreboard players set s12 BossMoves 80

@@ -7,6 +7,13 @@
 # effect
 execute if score s11 BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=s11] minecraft:slowness 8 50
 
+# sound
+    scoreboard players operation _ _ = s11 BossMoves
+    scoreboard players operation _ _ %= #5 num
+
+    execute if score s11 BossMoves matches 200..290 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 2
+    execute if score s11 BossMoves matches 240..330 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.wither.shoot voice @s ~ ~ ~ 0.3 2
+
 # 召喚
     # 0 +10n
     execute if score s11 BossMoves matches 200 rotated 0 0 positioned ~ ~1 ~ run function stage:boss/11/move/1/half/item {id: 1}

@@ -23,4 +23,4 @@ scoreboard players set $count _ 32
 function stage:boss/11/move/1/no_half/particle-line_1
 
 # sound
-playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.5 2
+execute as @a[distance=..50] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.5 2

@@ -44,10 +44,10 @@ execute store result bossbar minecraft:stage11.boss value run data get storage b
 # 行動
 scoreboard players add s11 BossMoves 1
 execute if score s11 BossMoves matches 200 at @n[tag=boss, tag=s11] run function stage:boss/11/move/root
-execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 1 unless score $s11.boss.half _ matches 1 at @n[tag=boss, tag=s11] run function stage:boss/11/move/1/no_half/root
-execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 1 if score $s11.boss.half _ matches 1 at @n[tag=boss, tag=s11] run function stage:boss/11/move/1/half/root
-execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 2 at @n[tag=boss, tag=s11] run function stage:boss/11/move/2/root
-execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 3 as @n[tag=boss, tag=s11] at @s run function stage:boss/11/move/3/root
+execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 1 unless score $s11.boss.half _ matches 1 at @n[tag=boss, tag=s11] at @s run function stage:boss/11/move/1/no_half/root
+execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 1 if score $s11.boss.half _ matches 1 at @n[tag=boss, tag=s11] at @s run function stage:boss/11/move/1/half/root
+execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 2 at @n[tag=boss, tag=s11] at @s run function stage:boss/11/move/2/root
+execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 3 as @n[tag=boss, tag=s11] at @s at @s run function stage:boss/11/move/3/root
 execute if score s11 BossMoves matches 200.. if score s11-type BossMoves matches 10 as @n[tag=boss, tag=s11] at @s run function stage:boss/11/move/10/root
 
 execute as @e[type=minecraft:item, tag=gimmick.sword.s11] at @s run function stage:boss/11/move/2/item_tick

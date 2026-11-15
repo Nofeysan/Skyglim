@@ -28,11 +28,27 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 111: s11 boss - with big sword
 [o] 112: s11 boss - with big sword tick (rate)
 [o] 113: s11 boss - half attack (big)
-[x] 121: s12 boss - area 祭り
+[o] 121: s12 boss - area 祭り
+[o] 122: s12 boss - ground break
+[o] 131: s13 boss - AoE
+[o] 141: s14 boss - AoE + break
+[o] 142: s14 boss - AoE to AEC
+[o] 151: s15 boss - AoE
+[o] 161: s16 boss - AoE to AEC
+[o] 162: s16 boss - AoE on item
 
 [o] 213: ex1.3 - aoe to aec
 [o] 223: ex2.3 - after rate damage
+[o] 221: ex2 boss - AoE for Max Damage(50%)
+[o] 222: ex2 boss - AoE for Max Damage(100%)
+[o] 224: ex2 boss - AoE to AEC
+[o] 231: ex3 boss - AoE (50%)
+[o] 232: ex3 boss - AoE (25%)
+[o] 233: ex3 boss - cake break
 [o] 244: ex4.4 - after rate damage
+[o] 251: ex5 boss - ice area
+[o] 252: ex5 boss - slow area + AEC
+[o] 253: ex5 boss - slow area + AEC (half)
 [o] 275: ex7.5 - after rate damage
 [o] 279: ex7.10 - after rate damage
 [o] 2711: ex7.12 - after rate damage + AEC
@@ -47,6 +63,7 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 11401: s14-1
 [o] 11501: s15-1
 [o] 11504: s15-4
+[o] 11601: s16-b
 [o] 20101: ex1-1
 [o] 20502: ex5-2
 [o] 20602: ex6-2

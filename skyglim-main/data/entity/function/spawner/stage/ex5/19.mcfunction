@@ -40,7 +40,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5747395, "minecraft:enchantment_glint_override": true}},\
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5339053, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 4212407, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:iron_axe", components: {"minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:iron_axe", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"entity:remove_torch": 1}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
@@ -95,7 +95,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                 chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5747395, "minecraft:enchantment_glint_override": true}},\
                                 legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5339053, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 4212407, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:snowball", components: {"minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:snowball", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"entity:remove_torch": 1}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\

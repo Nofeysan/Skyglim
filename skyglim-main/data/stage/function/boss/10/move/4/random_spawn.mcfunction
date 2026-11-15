@@ -5,8 +5,8 @@
 # 
 
 # playsound
-    execute as @a[distance=..20] at @s run playsound minecraft:item.wolf_armor.damage voice @s ~ ~ ~ 0.7 1
-    execute as @a[distance=..20] at @s run playsound minecraft:item.firecharge.use voice @s ~ ~ ~ 0.7 1
+    execute as @a[distance=..80] at @s run playsound minecraft:item.wolf_armor.damage voice @s ~ ~ ~ 0.7 1
+    execute as @a[distance=..80] at @s run playsound minecraft:item.firecharge.use voice @s ~ ~ ~ 0.7 1
 
 # 一定数居たら召喚しない
     # 数を取得

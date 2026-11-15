@@ -18,6 +18,7 @@ scoreboard players set _ stage.14 -1
 
 # boss 用
 bossbar remove minecraft:stage14.boss
+clone 7523 70 -98 7565 70 -56 7523 81 -98
 
 #! debug
 tellraw @a {text: '[!] Stage 14 がリセットされた。', color: "gray"}

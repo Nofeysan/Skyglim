@@ -1,0 +1,33 @@
+{
+    "description": "Give Rate Damage",
+    "supported_items": [
+        "minecraft:iron_axe",
+        "minecraft:honey_block",
+        "minecraft:white_banner",
+        "minecraft:snowball"
+    ],
+    "slots": ["mainhand", "offhand"],
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 1,
+    "max_level": 10,
+    "weight": 1,
+    "effects": {
+        "minecraft:post_attack": [
+            {
+                "enchanted": "attacker",
+                "affected": "victim",
+                "effect": {
+                    "type": "minecraft:run_function",
+                    "function": "stage:player/sp5/remove_torch"
+                }
+            }
+        ]
+    }
+}

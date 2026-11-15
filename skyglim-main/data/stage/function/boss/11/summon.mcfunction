@@ -16,9 +16,9 @@ scoreboard players set $s11.boss.half _ 0
 scoreboard players set $s11.boss.half.moved _ 0
 
 # title
-title @a[distance=..30] times 10 40 20
-title @a[distance=..30] title {translate: "entity.stage.11.boss.name", color: "#be2152"}
-title @a[distance=..30] subtitle {"text": "\ue011 Stage 11: Boss \ue010", color: "#746aac"}
+title @a[distance=..50] times 10 40 20
+title @a[distance=..50] title {translate: "entity.stage.11.boss.name", color: "#be2152"}
+title @a[distance=..50] subtitle {"text": "\ue011 Stage 11: Boss \ue010", color: "#746aac"}
 
 # sound
 playsound minecraft:entity.wither.spawn voice @a ~ ~ ~ 0.6 1

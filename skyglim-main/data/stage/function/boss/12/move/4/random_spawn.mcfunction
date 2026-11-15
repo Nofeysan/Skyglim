@@ -5,12 +5,12 @@
 # 
 
 # playsound
-    execute as @a[distance=..20] at @s run playsound minecraft:item.wolf_armor.damage voice @s ~ ~ ~ 0.7 1
-    execute as @a[distance=..20] at @s run playsound minecraft:item.firecharge.use voice @s ~ ~ ~ 0.7 1
+    execute as @a[distance=..80] at @s run playsound minecraft:item.wolf_armor.damage voice @s ~ ~ ~ 0.7 1
+    execute as @a[distance=..80] at @s run playsound minecraft:item.firecharge.use voice @s ~ ~ ~ 0.7 1
 
 # 一定数居たら召喚しない
     # 数を取得
-    execute store result score $enemy_count _ if entity @e[tag= gimmick.enemy.s11, distance=..30, predicate=entity:entity_enemy]
+    execute store result score $enemy_count _ if entity @e[tag= gimmick.enemy.s12, distance=..30, predicate=entity:entity_enemy]
 
     # 人数 x2 +2 まで
     execute if score $players _ matches 1 if score $enemy_count _ matches 4.. run return fail
@@ -22,8 +22,8 @@
 execute store result score _ _ run random value 0..1
 
 # summon
-execute if score _ _ matches 0 run function stage:boss/11/move/4/spider
-execute if score _ _ matches 1 run function stage:boss/11/move/4/bogged
+execute if score _ _ matches 0 run function stage:boss/12/move/4/zombie
+execute if score _ _ matches 1 run function stage:boss/12/move/4/skeleton
 
 # sound
 playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.3 1

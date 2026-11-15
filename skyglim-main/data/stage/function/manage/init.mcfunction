@@ -65,6 +65,13 @@ scoreboard objectives add s4.updown dummy
 scoreboard objectives add s5.gimmick dummy
 scoreboard objectives add s7.gimmick dummy
 scoreboard objectives add s11.gimmick dummy
+scoreboard objectives add s13.updown dummy
+scoreboard objectives add s16.gimmick dummy
+scoreboard objectives add ex2.updown dummy
+scoreboard objectives add ex5.froze.timer dummy
+scoreboard objectives add ex5.froze.count dummy
+scoreboard objectives add ex5.froze.count.all dummy
+scoreboard objectives add ex5.campfire dummy
 
 # ついでに街の初期設定
 forceload add 60 168 138 202

@@ -4,7 +4,9 @@
 # 
 # 
 
-summon minecraft:bogged ~ ~ ~ \
+# ランダムな場所にスポーン
+execute at @e[type=minecraft:marker, tag=gimmick.barrier.can, sort= random, limit= 1] run \
+summon minecraft:wither_skeleton ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\

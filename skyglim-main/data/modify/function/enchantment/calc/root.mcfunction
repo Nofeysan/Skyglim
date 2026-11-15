@@ -17,7 +17,9 @@
 
     # 43001: 水中作業士
         execute if score equip.head Temp matches 43001 run effect give @s minecraft:water_breathing infinite 0 true
-        execute unless score equip.head Temp matches 43001 run effect clear @s minecraft:water_breathing
+        execute if score equip.head Temp matches 43001 run scoreboard players set @s WateraBreathingApplied 1
+        execute unless score equip.head Temp matches 43001 if score @s WateraBreathingApplied matches 1 run effect clear @s minecraft:water_breathing
+        execute unless score equip.head Temp matches 43001 if score @s WateraBreathingApplied matches 1 run scoreboard players set @s WateraBreathingApplied 0
 
     # 43003: かたくなる (HP +10%)
         execute if score equip.head Temp matches 43003 run scoreboard players add hp multi 10

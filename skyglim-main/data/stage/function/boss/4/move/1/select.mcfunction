@@ -47,7 +47,7 @@ title @a[distance=..30] subtitle \
 ]
 
 # sound
-execute as @a at @s run playsound minecraft:entity.wither.ambient voice @s ~ ~ ~ 0.7 1
+execute as @a[distance=..30] at @s run playsound minecraft:entity.wither.ambient voice @s ~ ~ ~ 0.7 1
 
 # boss
 tp @n[predicate=entity:entity_enemy, tag=boss, tag=s4] 9882 -26 -138

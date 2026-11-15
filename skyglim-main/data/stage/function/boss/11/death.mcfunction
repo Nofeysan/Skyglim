@@ -5,11 +5,11 @@
 # 
 
 # loot
-execute at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/11/boss
+execute at @a[distance=..50] run loot spawn ~ ~ ~ loot entity:mob_drop/11/boss
 
 # kill
-effect give @e[predicate=entity:entity_enemy, distance=..30] minecraft:wind_charged 1 100
-kill @e[tag=gimmick, distance=..30]
+effect give @e[predicate=entity:entity_enemy, distance=..50] minecraft:wind_charged 1 100
+kill @e[tag=gimmick, distance=..50]
 
 # bossbar
 bossbar remove minecraft:stage11.boss

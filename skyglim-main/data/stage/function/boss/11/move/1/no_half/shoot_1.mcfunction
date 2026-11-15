@@ -13,4 +13,4 @@ data modify entity @n[type=minecraft:item, tag=gimmick.magma, tag=5] Motion set 
 data modify entity @n[type=minecraft:item, tag=gimmick.magma, tag=6] Motion set value [2.16506, 0.0d, 1.25d]
 
 # sound
-playsound minecraft:entity.wither.shoot voice @a ~ ~ ~ 1 1
+execute as @a[distance=..50] at @s run playsound minecraft:entity.wither.shoot voice @s ~ ~ ~ 1 1

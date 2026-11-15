@@ -21,4 +21,4 @@ execute if score $s11.boss.half _ matches 1 unless score $s11.boss.half.moved _ 
 #execute if score s6-type BossMoves matches 3 run function stage:boss/4/move/3/root
 
 # 4: 眷属召喚
-execute if score s11-type BossMoves matches 4 run function stage:boss/10/move/4/root
+execute if score s11-type BossMoves matches 4 run function stage:boss/11/move/4/root

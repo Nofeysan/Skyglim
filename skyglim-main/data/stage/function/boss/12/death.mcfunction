@@ -5,11 +5,11 @@
 # 
 
 # loot
-execute at @a[distance=..30] run loot spawn ~ ~ ~ loot entity:mob_drop/12/boss
+execute at @a[distance=..100] run loot spawn ~ ~ ~ loot entity:mob_drop/12/boss
 
 # kill
-effect give @e[predicate=entity:entity_enemy, distance=..30] minecraft:wind_charged 1 100
-kill @e[tag=gimmick, distance=..30]
+effect give @e[predicate=entity:entity_enemy, distance=..100] minecraft:wind_charged 1 100
+kill @e[tag=gimmick, distance=..100]
 
 # bossbar
 bossbar remove minecraft:stage12.boss
@@ -21,6 +21,7 @@ execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~
 
 # 出口開放
 fill 11063 230 -68 11056 229 -68 minecraft:air replace minecraft:cracked_deepslate_tiles
+clone 11036 198 -95 11083 198 -67 11036 228 -95
 
 # 次の道
 #forceload add 10050 -19 10076 -33

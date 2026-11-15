@@ -43,12 +43,12 @@ data modify block 8055 74 -378 LootTable set value "entity:mob_drop/ex7/chest"
 data modify block 8158 105 -529 LootTable set value "entity:mob_drop/ex7/chest"
 
 # ボス召喚設置
-setblock 8093 76 -430 minecraft:command_block{Command: "function stage:boss/ex7/summon"}
-setblock 8093 77 -430 minecraft:lapis_block
-setblock 8093 78 -430 minecraft:polished_blackstone_button[face=floor, facing=north]
+#setblock 8093 76 -430 minecraft:command_block{Command: "function stage:boss/ex7/summon"}
+#setblock 8093 77 -430 minecraft:lapis_block
+#setblock 8093 78 -430 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 # ボス部屋出口
-fill 8094 81 -416 8092 79 -416 minecraft:purpur_pillar
+#fill 8094 81 -416 8092 79 -416 minecraft:purpur_pillar
 
 # foeceload remove
 forceload remove 8111 -129 8032 -224
