@@ -4,24 +4,28 @@
 # 
 # 
 
+#! 死亡処理はこちらから
+function stage:teleport/importants/16/act/init
+function stage:teleport/importants/16/act/tick
+
 # loot
-execute at @a[distance=..100] run loot spawn ~ ~ ~ loot entity:mob_drop/15/boss
+#execute at @a[distance=..100] run loot spawn ~ ~ ~ loot entity:mob_drop/15/boss
 
 # kill
-effect give @e[predicate=entity:entity_enemy, distance=..100] minecraft:wind_charged 1 100
-kill @e[tag=gimmick, distance=..100]
+#effect give @e[predicate=entity:entity_enemy, distance=..100] minecraft:wind_charged 1 100
+#kill @e[tag=gimmick, distance=..100]
 
 # bossbar
-bossbar remove minecraft:stage16.boss
+#bossbar remove minecraft:stage16.boss
 
 # tell
-tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.15.boss.name", color: "#be2152"}, {translate: "stage.boss.slain"}]
+#tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.15.boss.name", color: "#be2152"}, {translate: "stage.boss.slain"}]
 
-execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.7 0.5
+#execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.7 0.5
 
 # 出口開放
-fill 6745 77 3 6745 74 1 minecraft:air destroy
-fill 6784 83 9 6746 74 -29 minecraft:air
+#fill 6745 77 3 6745 74 1 minecraft:air destroy
+#fill 6784 83 9 6746 74 -29 minecraft:air
 
 # 次の道
 #forceload add 10050 -19 10076 -33

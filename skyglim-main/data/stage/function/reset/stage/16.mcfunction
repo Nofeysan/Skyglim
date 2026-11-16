@@ -18,6 +18,7 @@ scoreboard players set _ stage.16 -1
 
 # boss 用
 bossbar remove minecraft:stage16.boss
+function aj:skyglim/cecile/remove/all
 
 #! debug
 tellraw @a {text: '[!] Stage 16 がリセットされた。', color: "gray"}

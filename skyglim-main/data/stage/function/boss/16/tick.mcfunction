@@ -4,6 +4,10 @@
 # 
 # 
 
+# aj.tp
+    execute as @n[tag=aj.skyglim.cecile.root] at @s run tp @s @n[predicate=entity:entity_enemy, tag=boss, tag=s16]
+    time set midnight
+
 # data get
     data modify storage boss: stage.16 set from entity @n[tag=boss, tag=s16] data
 
