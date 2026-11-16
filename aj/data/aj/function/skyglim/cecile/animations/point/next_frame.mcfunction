@@ -3,8 +3,8 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute if score @s aj.point.frame matches 41.. run scoreboard players set @s aj.point.frame 1
+execute if score @s aj.skyglim.cecile.point.frame matches 41.. run scoreboard players set @s aj.skyglim.cecile.point.frame 1
 data remove storage animated_java:temp args
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.point.frame
+execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.skyglim.cecile.point.frame
 execute at @s run function aj:skyglim/cecile/animations/point/zzz/apply_frame with storage animated_java:temp args
-scoreboard players add @s aj.point.frame 1
+scoreboard players add @s aj.skyglim.cecile.point.frame 1

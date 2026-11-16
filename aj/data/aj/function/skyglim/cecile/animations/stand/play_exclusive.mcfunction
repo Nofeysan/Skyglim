@@ -5,7 +5,7 @@ execute store result storage animated_java:temp args.id int 1 run scoreboard pla
 function animated_java:global/data_manager/read with storage animated_java:temp args
 function aj:skyglim/cecile/animations/pause_all
 tag @s add aj.skyglim.cecile.animation.stand.playing
-scoreboard players set @s aj.stand.frame 0
+scoreboard players set @s aj.skyglim.cecile.stand.frame 0
 tag @s add aj.transforms_only
 execute at @s run function aj:skyglim/cecile/animations/stand/zzz/set_frame {frame: 0}
 tag @s remove aj.transforms_only

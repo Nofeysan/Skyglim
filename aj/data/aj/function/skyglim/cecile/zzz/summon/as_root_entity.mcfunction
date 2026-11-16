@@ -12,14 +12,14 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:skyglim/cecile"
-data modify storage animated_java:temp entry.data.rig_hash set value "3d453d7e350341159bbf61bfff223dc3eebe014198de9866f2323e48cbae622c"
+data modify storage animated_java:temp entry.data.rig_hash set value "ba91ff559daa7c6b84379e731ea2e126e29329093d98040af2e7d364402cbf91"
 tp @s ~ ~ ~ ~ ~
-execute on passengers if entity @s[tag=aj.skyglim.cecile.node.ahoge] run function aj:skyglim/cecile/zzz/summon/as_node/ahoge
-data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.ahoge set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.cecile.node.head] run function aj:skyglim/cecile/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.head set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.skyglim.cecile.node.ahoge] run function aj:skyglim/cecile/zzz/summon/as_node/ahoge
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.ahoge set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.cecile.node.body] run function aj:skyglim/cecile/zzz/summon/as_node/body
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.body set from storage animated_java:gu out

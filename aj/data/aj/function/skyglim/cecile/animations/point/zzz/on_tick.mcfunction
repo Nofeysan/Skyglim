@@ -2,8 +2,9 @@
 scoreboard players remove @s aj.tween_duration 1
 execute if score @s aj.tween_duration matches 1.. run return 1
 execute if score @s aj.tween_duration matches 0 on passengers run data modify entity @s interpolation_duration set value 1
+execute if score @s aj.tween_duration matches ..0 if entity @s[tag=aj.pause_after_tween] run return run function aj:skyglim/cecile/animations/point/zzz/pause_after_tween
 data remove storage animated_java:temp args
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.point.frame
+execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.skyglim.cecile.point.frame
 function aj:skyglim/cecile/animations/point/zzz/apply_frame with storage animated_java:temp args
-execute if score @s aj.point.frame matches 40.. run return run function aj:skyglim/cecile/animations/point/pause
-scoreboard players add @s aj.point.frame 1
+execute if score @s aj.skyglim.cecile.point.frame matches 40.. run return run function aj:skyglim/cecile/animations/point/pause
+scoreboard players add @s aj.skyglim.cecile.point.frame 1
