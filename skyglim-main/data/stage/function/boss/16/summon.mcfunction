@@ -14,7 +14,7 @@ scoreboard players set s16 BossMoves 140
 scoreboard players set $s16.boss.half _ 0
 scoreboard players set $s16.boss.half.moved _ 0
 
-execute positioned ~ ~3 ~ run function aj:skyglim/cecile/summon
+execute positioned ~ ~3 ~ run function aj:skyglim/cecile/summon {args: {}}
 
 # title
 title @a[distance=..100] times 10 40 20

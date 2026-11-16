@@ -15,5 +15,13 @@ execute if data block ~ ~ ~ {Items: \
     ]\
 } run return run function crafting:craft/ingredient/2/okasi_key
 
+# 浄化純結晶
+execute if data block ~ ~ ~ {Items: \
+    [\
+        {Slot: 3b, components: {"minecraft:repair_cost": 301201}, count: 1},\
+        {Slot: 5b, components: {"minecraft:repair_cost": 301202}, count: 1},\
+    ]\
+} run return run function crafting:craft/ingredient/2/pure_crystal
+
 # どれにも一致しないなら失敗処理
 function crafting:fail

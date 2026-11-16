@@ -1,0 +1,14 @@
+#> story:avelian/1/1
+# 
+# ここから 会話文スタート
+# 
+# 
+
+# tellraw
+tellraw @a [{translate: "villager.name.knight"}, {translate: "story.cloud.village.1-9"}]
+
+# 自動進行
+schedule function story:villager/talk/knight/1/10 60t
+
+# playsound
+execute at @n[type=minecraft:villager, tag=knight_leader] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5

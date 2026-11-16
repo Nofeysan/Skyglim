@@ -7,12 +7,14 @@
 # tick score
     scoreboard players add $s16.boss.slain.perform _ 1
 
-#! armorstarnd summon + aj tp & 仰向けにさせたい
-    execute if score $s16.boss.slain.perform _ matches 0 run summon minecraft:armor_stand 9988 129 -267 {Invisible: true, NoGravity: true, Tags: ['s16.perform.base'], Small: true, Rotation: [-90, 0]}
+# armorstarnd summon + aj tp & 仰向け
+    execute if score $s16.boss.slain.perform _ matches 0 run summon minecraft:armor_stand 9516 144 -506 {Invisible: true, NoGravity: true, Tags: ['s16.perform.base'], Small: true, Rotation: [45, 45]}
+    execute if score $s16.boss.slain.perform _ matches 0 as @n[tag=aj.skyglim.cecile.root] run tp @s 9514 143 -504 -90 0
+    execute if score $s16.boss.slain.perform _ matches 0 as @n[tag=aj.skyglim.cecile.root] run function aj:skyglim/cecile/animations/spreadeagled/play
 
 # spectator
-    execute if score $s16.boss.slain.perform _ matches 0..274 run gamemode spectator @a
-    execute if score $s16.boss.slain.perform _ matches 0..274 as @a run spectate @n[tag=s16.perform.base] @s
+    execute if score $s16.boss.slain.perform _ matches 0..559 run gamemode spectator @a
+    execute if score $s16.boss.slain.perform _ matches 0..559 as @a run spectate @n[tag=s16.perform.base] @s
 
 # story
     execute if score $s16.boss.slain.perform _ matches 40 run function story:cecile/1-after/root {id: '1-after-1'}
@@ -29,23 +31,20 @@
     scoreboard players operation $per10 _ %= #10 num
     scoreboard players operation $per5 _ %= #5 num
 
-    execute if score $per20 _ matches 0 if score $s16.boss.slain.perform _ matches 40..480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:end_rod ~ ~ ~ 0.7 0.3 0.7 0.06 80 force
-    execute if score $per10 _ matches 0 if score $s16.boss.slain.perform _ matches 240..480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:firework ~ ~ ~ 0.7 0.3 0.7 0.06 80 force
+    execute if score $per20 _ matches 0 if score $s16.boss.slain.perform _ matches 40..480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:end_rod ~ ~ ~ 0.7 0.3 0.7 0.06 40 force
+    execute if score $per10 _ matches 0 if score $s16.boss.slain.perform _ matches 240..480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:firework ~ ~ ~ 0.7 0.3 0.7 0.06 60 force
     execute if score $per5 _ matches 0 if score $s16.boss.slain.perform _ matches 460..480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:cloud ~ ~ ~ 0.7 0.3 0.7 0.06 80 force
-    execute if score $s16.boss.slain.perform _ matches 480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:dust{color: 5027246, scale: 2.4} ~ ~ ~ 0.7 0.3 0.7 0.06 360 force
+    execute if score $s16.boss.slain.perform _ matches 480 at @n[tag=aj.skyglim.cecile.root] positioned ~ ~0.5 ~ run particle minecraft:dust{color: 5027246, scale: 2.4} ~ ~ ~ 1.2 1 1.2 0.06 720 force
 
 # aj remove
     execute if score $s16.boss.slain.perform _ matches 480 run function aj:skyglim/cecile/remove/all
 
-
 # 昼にしてアイテム出して終わり
-    # night, item
+    # 480: noon, item
         execute if score $s16.boss.slain.perform _ matches 480 run time set noon
-        execute if score $s16.boss.slain.perform _ matches 480 run function stage:teleport/importants/6/act/summon_key
-
+        #execute if score $s16.boss.slain.perform _ matches 480 run function stage:teleport/importants/6/act/summon_key
 
     # 520: 元に戻す
-
-
-    # 大爆発 & 落下
-        execute if score $s16.boss.slain.perform _ matches 275 run function stage:teleport/importants/6/act/fall
+        execute if score $s16.boss.slain.perform _ matches 560 run kill @n[tag=s16.perform.base]
+        execute if score $s16.boss.slain.perform _ matches 560 run gamemode adventure @a
+        execute if score $s16.boss.slain.perform _ matches 560 run tp @a 9524 143 -504 90 0

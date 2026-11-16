@@ -6,6 +6,7 @@
 
 # aj.tp
     execute as @n[tag=aj.skyglim.cecile.root] at @s run tp @s @n[predicate=entity:entity_enemy, tag=boss, tag=s16]
+    execute as @n[tag=aj.skyglim.cecile.root] at @s facing entity @p eyes rotated ~ 0 run rotate @s ~ ~
     time set midnight
 
 # data get

@@ -19,6 +19,12 @@ gamemode adventure @a
 # fill
 fill 9985 125 -270 9991 125 -264 minecraft:air replace minecraft:oak_planks
 
+fill 9991 126 -268 9985 126 -266 minecraft:air destroy
+fill 9990 126 -265 9986 126 -265 minecraft:air destroy
+fill 9989 126 -264 9987 126 -264 minecraft:air destroy
+fill 9990 126 -269 9986 126 -269 minecraft:air destroy
+fill 9989 126 -270 9987 126 -270 minecraft:air destroy
+
 # score
 scoreboard players reset $s6.gate.effect _
 

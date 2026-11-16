@@ -21,5 +21,8 @@
     # fire_stick / 300900
         execute if score _ _ matches 300900 at @s run function stage:teleport/importants/9/check
 
+    # fire_stick / 301203
+        execute if score _ _ matches 301203 at @s run function stage:teleport/importants/12/check
+
 ###* リセット
 scoreboard players reset @s UseMagic

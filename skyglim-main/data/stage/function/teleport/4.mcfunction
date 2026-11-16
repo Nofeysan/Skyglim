@@ -24,3 +24,4 @@ tellraw @a {translate: "tp.open", color: "#f5de84"}
 schedule function story:avelian/6/-2 40t
 scoreboard players set $magic_progress story.progress 4
 scoreboard players set $stage_progress story.progress 4
+scoreboard players set $has_talks_vanitas CanTalkWithMe 1
