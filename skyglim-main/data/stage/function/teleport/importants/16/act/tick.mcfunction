@@ -48,3 +48,4 @@
         execute if score $s16.boss.slain.perform _ matches 560 run kill @n[tag=s16.perform.base]
         execute if score $s16.boss.slain.perform _ matches 560 run gamemode adventure @a
         execute if score $s16.boss.slain.perform _ matches 560 run tp @a 9524 143 -504 90 0
+        execute if score $s16.boss.slain.perform _ matches 560 run scoreboard players set $s16.boss.slain.perform _ -2

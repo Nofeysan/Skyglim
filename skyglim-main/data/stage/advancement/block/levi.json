@@ -1,0 +1,25 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:white_shulker_box"
+        },
+        "title": {
+            "translate": "stage.gimmick.levi.name",
+            "color": "#c5edff"
+        },
+        "description": {
+            "translate": "stage.gimmick.levi.lore",
+            "color": "#fff6fe"
+        },
+        "announce_to_chat": false,
+        "show_toast": true,
+        "frame": "task",
+        "hidden": true
+    },
+    "criteria": {
+        "main": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "stage:block/not_jump"
+}

@@ -26,3 +26,11 @@ fill 10448 284 -386 10450 284 -388 minecraft:air destroy
 #forceload add 10050 -19 10076 -33
 #clone 10051 -9 -20 10075 7 -32 10049 86 -20
 #forceload remove 10050 -19 10076 -33
+
+# item
+loot spawn 10449 286 -384 loot stage:importants/12/key-alpha
+execute positioned 10449 286 -384 run data modify entity @n[type=minecraft:item] PickupDelay set value 40
+execute positioned 10449 286 -384 run data modify entity @n[type=minecraft:item] Glowing set value true
+execute positioned 10449 286 -384 run data modify entity @n[type=minecraft:item] NoGravity set value true
+execute positioned 10449 286 -384 run data modify entity @n[type=minecraft:item] Motion set value [0.0d, 0.0d, 0.0d]
+

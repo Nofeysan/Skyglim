@@ -39,10 +39,17 @@ execute unless block ~ ~-0.75 ~ minecraft:dead_brain_coral_block if entity @s[ta
 execute if entity @s[tag=cant_jump] run function stage:player/cant_jump/act
 execute if block ~ ~-0.3 ~ minecraft:dead_brain_coral_block run advancement grant @s only stage:block/not_jump
 
+# 浮遊床
+execute if block ~ ~-0.3 ~ minecraft:white_shulker_box run effect give @s minecraft:levitation 1 9
+execute if block ~ ~-0.3 ~ minecraft:white_shulker_box run advancement grant @s only stage:block/levi
+
 # 帰還用
 execute if score @s ReturnPearl matches 0.. run function stage:player/return/every
 
 # gimmick
+    # S10 go to the sky
+        execute if score @s s10.gimmick matches -1.. at @s run function stage:teleport/importants/10/root
+
     # S11 落ちたら初期地点に戻る
 
 

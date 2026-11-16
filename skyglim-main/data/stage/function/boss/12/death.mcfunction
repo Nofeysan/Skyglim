@@ -27,3 +27,16 @@ clone 11036 198 -95 11083 198 -67 11036 228 -95
 #forceload add 10050 -19 10076 -33
 #clone 10051 -9 -20 10075 7 -32 10049 86 -20
 #forceload remove 10050 -19 10076 -33
+
+# item
+loot spawn 11061 230 -70 loot stage:importants/12/key-beta
+execute positioned 11061 230 -70 run data modify entity @n[type=minecraft:item] PickupDelay set value 40
+execute positioned 11061 230 -70 run data modify entity @n[type=minecraft:item] Glowing set value true
+execute positioned 11061 230 -70 run data modify entity @n[type=minecraft:item] NoGravity set value true
+execute positioned 11061 230 -70 run data modify entity @n[type=minecraft:item] Motion set value [0.0d, 0.0d, 0.0d]
+
+loot spawn 11058 230 -70 loot stage:importants/12/book
+execute positioned 11058 230 -70 run data modify entity @n[type=minecraft:item] PickupDelay set value 40
+execute positioned 11058 230 -70 run data modify entity @n[type=minecraft:item] Glowing set value true
+execute positioned 11058 230 -70 run data modify entity @n[type=minecraft:item] NoGravity set value true
+execute positioned 11058 230 -70 run data modify entity @n[type=minecraft:item] Motion set value [0.0d, 0.0d, 0.0d]

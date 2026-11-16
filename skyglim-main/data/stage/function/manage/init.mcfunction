@@ -64,6 +64,7 @@ scoreboard objectives add stage.enter dummy
 scoreboard objectives add s4.updown dummy
 scoreboard objectives add s5.gimmick dummy
 scoreboard objectives add s7.gimmick dummy
+scoreboard objectives add s10.gimmick dummy
 scoreboard objectives add s11.gimmick dummy
 scoreboard objectives add s13.updown dummy
 scoreboard objectives add s16.gimmick dummy
