@@ -15,3 +15,4 @@ execute at @n[type=minecraft:villager, tag=knight_leader] run playsound minecraf
 
 # score
 scoreboard players set $has_talks_knight CanTalkWithMe 2
+scoreboard players set $cant_use_pearl _ 1

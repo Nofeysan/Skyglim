@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:carrot_on_a_stick",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "translate": "stage.16.compass.shard.name",
+                                    "color": "#b54064",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "stage.16.compass.shard.lore.1",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "stage.16.compass.shard.lore.2",
+                                        "color": "#ffffff",
+                                        "italic": false
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "translate": "stage.16.compass.shard.lore.3",
+                                        "color": "#aaaaaa",
+                                        "italic": false
+                                    }
+                                ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {}
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:item_model": "minecraft:compass",
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.anarise",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers"
+                                    ]
+                                },
+                                "minecraft:repair_cost": 301602,
+                                "minecraft:lodestone_tracker": {
+                                    "target": {
+                                        "dimension": "minecraft:overworld",
+                                        "pos": [0, 0, 0]
+                                    },
+                                    "tracked": true
+                                }
+                            }
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

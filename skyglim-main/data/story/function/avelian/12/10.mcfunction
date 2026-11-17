@@ -8,7 +8,9 @@
 tellraw @a [{translate: "story.avelian"}, {translate: "story.avelian.12-10"}]
 
 # 自動進行
-schedule function story:avelian/12/11 100t
+#schedule function story:avelian/12/11 100t
 
 # playsound
 execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
+
+# ストーリー進捗？
