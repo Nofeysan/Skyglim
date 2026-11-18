@@ -9,3 +9,6 @@ tp @a 90.0 54 238
 
 # 自動進行
 schedule function story:avelian/9/1 40t
+
+# pearl
+scoreboard players set $cant_use_pearl _ 0

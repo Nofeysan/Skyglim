@@ -32,6 +32,7 @@ execute if score _ stage.ex.5 matches 1.. positioned 10240 8 -288 unless entity 
 execute if score _ stage.ex.6 matches 1.. positioned 10936 226 273 unless entity @a[dx=172, dy=93, dz=141] run function stage:reset/stage/ex6
 execute if score _ stage.ex.7 matches 1.. positioned 8032 66 -544 unless entity @a[dx=207, dy=56, dz=431] run function stage:reset/stage/ex7
 execute if score _ stage.ex.8 matches 1.. positioned 6864 48 -144 unless entity @a[dx=95, dy=44, dz=63] run function stage:reset/stage/ex8
+execute if score _ stage.ex.x matches 1.. positioned 9259 147 -441 unless entity @a[dx=72, dy=49, dz=72] run function stage:reset/stage/exx
 
 
 # S3 専用水にいたら毒

@@ -24,5 +24,17 @@
     # fire_stick / 301203
         execute if score _ _ matches 301203 at @s run function stage:teleport/importants/12/check
 
+    # 舟形の秘密鍵 / 301301
+        execute if score _ _ matches 301301 at @s run function stage:teleport/importants/13/check
+
+    # 転移魔力源 / 301401
+        execute if score _ _ matches 301401 at @s run function stage:teleport/importants/14/check
+
+    # 終焉のコンパス / 301602
+        execute if score _ _ matches 301602 at @s run function stage:teleport/importants/16/check
+
+    # 宝物庫の鍵 / 301999
+        execute if score _ _ matches 301999 at @s run function stage:teleport/importants/houmotsuko/check
+
 ###* リセット
 scoreboard players reset @s UseMagic

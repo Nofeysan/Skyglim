@@ -30,6 +30,7 @@ scoreboard objectives add stage.ex.5 dummy
 scoreboard objectives add stage.ex.6 dummy
 scoreboard objectives add stage.ex.7 dummy
 scoreboard objectives add stage.ex.8 dummy
+scoreboard objectives add stage.ex.x dummy
 
 # 初期値の設定
 scoreboard players set _ stage.1 1

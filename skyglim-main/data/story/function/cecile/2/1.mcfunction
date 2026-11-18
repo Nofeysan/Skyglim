@@ -5,16 +5,13 @@
 # 
 
 # tellraw
-execute store result score _ _ if entity @a
-
-execute if score _ _ matches 1 run tellraw @a [{translate: "story.???"}, {translate: "story.avelian.1-1.1"}]
-execute if score _ _ matches 2.. run tellraw @a [{translate: "story.???"}, {translate: "story.avelian.1-1.2"}]
+tellraw @a [{translate: "story.cecile"}, {translate: "story.cecile.ex1-1"}]
 
 # 自動進行
-schedule function story:avelian/1/2 80t
+schedule function story:cecile/2/2 80t
 
 # playsound
-execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
+execute at @n[tag=aj.skyglim.cecile.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
 # scorereset
-scoreboard players set _ CanTalkWithMe 0
+scoreboard players set $has_talks_cecile CanTalkWithMe 99

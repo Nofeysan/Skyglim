@@ -27,7 +27,7 @@ summon minecraft:skeleton ~ ~ ~ \
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.ex3.boss.name", color: "#be2152", italic: false},\
+                            CustomName: {translate: "entity.stage.ex5.boss.name", color: "#be2152", italic: false},\
                             data: {\
                                 "status": {\
                                     "max_hp": 2650000,\
@@ -39,7 +39,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                     \
                                     "xp": 16500,\
                                     \
-                                    "lore": "entity.stage.ex3.boss.lore",\
+                                    "lore": "entity.stage.ex5.boss.lore",\
                                     \
                                     "loot": "tutorial"\
                                 }\
@@ -47,6 +47,6 @@ summon minecraft:skeleton ~ ~ ~ \
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ], \
-                            Tags: ["boss", "ex3"]\
+                            Tags: ["boss", "ex5"]\
                         }
 

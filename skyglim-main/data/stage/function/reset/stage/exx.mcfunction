@@ -4,21 +4,30 @@
 # 
 # 
 
-# forceload add
-forceload add 10098 -359 10171 -142
+# 倒したらしない
+execute if score $exx.boss.slain _ matches 1 run return fail
 
-# スポナーの破壊
-execute positioned 10098 2 -359 run kill @e[dx=73, dy=27, dz=217, type=minecraft:spawner_minecart]
+# forceload add
+forceload add 9331 -369 9259 -441
+
+# 帰り道の生成
+fill 9294 151 -422 9296 147 -422 minecraft:air
+fill 9294 147 -422 9296 147 -422 minecraft:smooth_stone_slab
 
 # foeceload remove
-forceload remove 10098 -359 10171 -142
+forceload remove 9331 -369 9259 -441
 
 # スコアのリセット
-scoreboard players set _ stage.10 -1
+scoreboard players set _ stage.ex.x -1
 
 # boss 用
-bossbar remove minecraft:stage10.boss
-clone 10136 -2 -351 10159 -2 -328 10136 5 -351
+bossbar remove minecraft:stageexx.boss
+function aj:skyglim/cecile/remove/all
+execute positioned 9288 147 -405 rotated -90 0 run function aj:skyglim/cecile/summon {args: {}}
+
+setblock 9295 145 -405 minecraft:command_block{Command: "function stage:boss/exx/summon"}
+setblock 9295 146 -405 minecraft:lapis_block
+setblock 9295 147 -405 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 #! debug
-tellraw @a {text: '[!] Stage 10 がリセットされた。', color: "gray"}
+tellraw @a {text: '[!] Special X がリセットされた。', color: "gray"}

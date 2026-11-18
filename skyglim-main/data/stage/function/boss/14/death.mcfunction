@@ -24,6 +24,6 @@ fill 7523 84 -76 7523 82 -78 minecraft:air destroy
 clone 7523 70 -98 7565 70 -56 7523 81 -98
 
 # 次の道
-#forceload add 10050 -19 10076 -33
-#clone 10051 -9 -20 10075 7 -32 10049 86 -20
-#forceload remove 10050 -19 10076 -33
+forceload add 7966 -78 7978 -62
+clone 7967 129 -77 7977 137 -63 7967 84 -77
+forceload remove 7966 -78 7978 -62

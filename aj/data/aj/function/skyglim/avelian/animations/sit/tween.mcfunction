@@ -6,7 +6,7 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 function aj:skyglim/avelian/animations/pause_all
 tag @s add aj.skyglim.avelian.animation.sit.playing
 $scoreboard players set @s aj.tween_duration $(duration)
-$scoreboard players set @s aj.sit.frame $(to_frame)
+$scoreboard players set @s aj.skyglim.avelian.sit.frame $(to_frame)
 scoreboard players operation #this aj.i = @s aj.tween_duration
 tag @s add aj.transforms_only
 execute at @s run function aj:skyglim/avelian/animations/sit/zzz/apply_frame {frame: 0}

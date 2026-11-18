@@ -1,0 +1,97 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tinted_glass",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "entity": "this",
+                            "name": [
+                                {
+                                    "translate": "specila.chromalier.pink.name",
+                                    "color": "#e094d7",
+                                    "italic": false,
+                                    "bold": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "common.lore.line.1",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                [
+                                    {
+                                        "translate": "specila.chromalier.pink.lore.1",
+                                        "color": "#ffffff",
+                                        "italic": true
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "specila.chromalier.pink.lore.2",
+                                        "color": "#ffffff",
+                                        "italic": true
+                                    }
+                                ],
+                                [
+                                    {
+                                        "translate": "specila.chromalier.pink.lore.3",
+                                        "color": "#ffffff",
+                                        "italic": true
+                                    }
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                [
+                                    {
+                                        "translate": "specila.chromalier.common.lore",
+                                        "color": "#aaaaaa",
+                                        "italic": false
+                                    }
+                                ]
+                            ],
+                            "mode": "replace_all"
+                        },
+                        {
+                            "function": "minecraft:set_custom_data",
+                            "tag": {}
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_model": "minecraft:pink_glazed_terracotta",
+                                "minecraft:enchantment_glint_override": true,
+                                "minecraft:attribute_modifiers": [
+                                    {
+                                        "id": "item.anarise",
+                                        "type": "minecraft:attack_damage",
+                                        "amount": -1024,
+                                        "operation": "add_value",
+                                        "slot": "mainhand"
+                                    }
+                                ],
+                                "minecraft:tooltip_display": {
+                                    "hidden_components": [
+                                        "minecraft:attribute_modifiers"
+                                    ]
+                                },
+                                "minecraft:repair_cost": 310906
+                            }
+                        }
+                    ],
+                    "conditions": []
+                }
+            ]
+        }
+    ]
+}

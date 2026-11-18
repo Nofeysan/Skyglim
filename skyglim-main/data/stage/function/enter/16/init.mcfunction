@@ -5,6 +5,7 @@
 # 
 
 #! 倒してたら初期化しない
+execute if score $s16.boss.slain _ matches 1 run return fail
 
 # forceload add
 forceload add 9550 -468 9478 -540

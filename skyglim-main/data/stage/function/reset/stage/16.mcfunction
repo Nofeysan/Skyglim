@@ -13,6 +13,9 @@
 # foeceload remove
 #forceload remove 9550 -468 9478 -540
 
+# 倒したらしない
+execute if score $s16.boss.slain _ matches 1 run return fail
+
 # スコアのリセット
 scoreboard players set _ stage.16 -1
 

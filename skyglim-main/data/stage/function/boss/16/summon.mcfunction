@@ -5,8 +5,8 @@
 # 
 
 # ボタンとかを削除
-#fill ~ ~ ~ ~ ~2 ~ minecraft:air
-#setblock ~ ~ ~ minecraft:gray_stained_glass
+fill ~ ~ ~ ~ ~2 ~ minecraft:air
+setblock ~ ~ ~ minecraft:gray_stained_glass
 
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/16/boss

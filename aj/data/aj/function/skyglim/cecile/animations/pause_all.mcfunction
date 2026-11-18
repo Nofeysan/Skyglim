@@ -2,4 +2,6 @@
 tag @s remove aj.skyglim.cecile.animation.stand.playing
 tag @s remove aj.skyglim.cecile.animation.point.playing
 tag @s remove aj.skyglim.cecile.animation.spreadeagled.playing
+tag @s remove aj.skyglim.cecile.animation.dai.playing
+tag @s remove aj.skyglim.cecile.animation.hang.playing
 tag @s remove aj.pause_after_tween

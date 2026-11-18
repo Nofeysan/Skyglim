@@ -12,12 +12,15 @@
                             "function": "minecraft:set_name",
                             "entity": "this",
                             "name": [
-                                {
-                                    "translate": "stage.16.compass.shard.name",
-                                    "color": "#b54064",
-                                    "italic": false,
-                                    "bold": false
-                                }
+                                { "text": "= ", "color": "#6157aa", "italic": true, "bold": false },
+                                { "text": "終", "color": "#6f66b1" },
+                                { "text": "焉", "color": "#7d73be" },
+                                { "text": "の", "color": "#8980d4" },
+                                { "text": "コ", "color": "#948ce8" },
+                                { "text": "ン", "color": "#9f98f6" },
+                                { "text": "パ", "color": "#aaa3ff" },
+                                { "text": "ス", "color": "#b3aeff" },
+                                { "text": " =", "color": "#bcb7fd" }
                             ]
                         },
                         {
@@ -30,14 +33,14 @@
                                 },
                                 [
                                     {
-                                        "translate": "stage.16.compass.shard.lore.1",
+                                        "translate": "stage.16.compass.lore.1",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "translate": "stage.16.compass.shard.lore.2",
+                                        "translate": "stage.16.compass.lore.2",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
@@ -47,7 +50,7 @@
                                 },
                                 [
                                     {
-                                        "translate": "stage.16.compass.shard.lore.3",
+                                        "translate": "stage.16.compass.lore.3",
                                         "color": "#aaaaaa",
                                         "italic": false
                                     }
@@ -82,7 +85,7 @@
                                 "minecraft:lodestone_tracker": {
                                     "target": {
                                         "dimension": "minecraft:overworld",
-                                        "pos": [0, 0, 0]
+                                        "pos": [9982, 82, -267]
                                     },
                                     "tracked": true
                                 }

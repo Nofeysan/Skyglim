@@ -4,6 +4,9 @@
 ##* II. stats book を作成する
 ##* 
 
+# エンディング中とかは表示しません
+execute if score $not_show_stats _ matches 1 run return fail
+
 ##+ actionbar 表示
 ##* 表示用計算
 scoreboard players operation @s ShowMaxMP = @s MaxMP

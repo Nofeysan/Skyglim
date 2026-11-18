@@ -3,8 +3,8 @@
 execute store result storage animated_java:temp args.id int 1 run scoreboard players get @s aj.id
 # Data Manager: Read
 function animated_java:global/data_manager/read with storage animated_java:temp args
-execute if score @s aj.sit.frame matches 2.. run scoreboard players set @s aj.sit.frame 1
+execute if score @s aj.skyglim.avelian.sit.frame matches 2.. run scoreboard players set @s aj.skyglim.avelian.sit.frame 1
 data remove storage animated_java:temp args
-execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.sit.frame
+execute store result storage animated_java:temp args.frame int 1 run scoreboard players get @s aj.skyglim.avelian.sit.frame
 execute at @s run function aj:skyglim/avelian/animations/sit/zzz/apply_frame with storage animated_java:temp args
-scoreboard players add @s aj.sit.frame 1
+scoreboard players add @s aj.skyglim.avelian.sit.frame 1

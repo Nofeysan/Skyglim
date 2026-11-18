@@ -2,4 +2,6 @@
 execute if entity @s[tag=aj.skyglim.cecile.animation.stand.playing] run function aj:skyglim/cecile/animations/stand/zzz/on_tick
 execute if entity @s[tag=aj.skyglim.cecile.animation.point.playing] run function aj:skyglim/cecile/animations/point/zzz/on_tick
 execute if entity @s[tag=aj.skyglim.cecile.animation.spreadeagled.playing] run function aj:skyglim/cecile/animations/spreadeagled/zzz/on_tick
+execute if entity @s[tag=aj.skyglim.cecile.animation.dai.playing] run function aj:skyglim/cecile/animations/dai/zzz/on_tick
+execute if entity @s[tag=aj.skyglim.cecile.animation.hang.playing] run function aj:skyglim/cecile/animations/hang/zzz/on_tick
 execute on passengers run rotate @s ~ ~

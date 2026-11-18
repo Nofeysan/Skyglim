@@ -2,3 +2,6 @@
 tag @s remove aj.skyglim.avelian.animation.sit.playing
 tag @s remove aj.skyglim.avelian.animation.stand.playing
 tag @s remove aj.skyglim.avelian.animation.punch.playing
+tag @s remove aj.skyglim.avelian.animation.hang.playing
+tag @s remove aj.skyglim.avelian.animation.dai.playing
+tag @s remove aj.pause_after_tween

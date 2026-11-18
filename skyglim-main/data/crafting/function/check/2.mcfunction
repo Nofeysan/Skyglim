@@ -23,5 +23,13 @@ execute if data block ~ ~ ~ {Items: \
     ]\
 } run return run function crafting:craft/ingredient/2/pure_crystal
 
+# コンパス
+execute if data block ~ ~ ~ {Items: \
+    [\
+        {Slot: 3b, components: {"minecraft:repair_cost": 301501}, count: 1},\
+        {Slot: 5b, components: {"minecraft:repair_cost": 301601}, count: 1},\
+    ]\
+} run return run function crafting:craft/ingredient/2/final_compass
+
 # どれにも一致しないなら失敗処理
 function crafting:fail

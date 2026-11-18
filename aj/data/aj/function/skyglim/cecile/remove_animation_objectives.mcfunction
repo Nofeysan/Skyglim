@@ -2,4 +2,6 @@
 scoreboard objectives remove aj.skyglim.cecile.stand.frame
 scoreboard objectives remove aj.skyglim.cecile.point.frame
 scoreboard objectives remove aj.skyglim.cecile.spreadeagled.frame
+scoreboard objectives remove aj.skyglim.cecile.dai.frame
+scoreboard objectives remove aj.skyglim.cecile.hang.frame
 tellraw @a [[{color:gray,text:'\n '},{color:'#00aced',text:'ᴀɴɪᴍᴀᴛᴇᴅ ᴊᴀᴠᴀ'},{color:dark_gray,italic:true,text:'\n (aj:skyglim/cecile)'},'\n → '],[{text:'Successfully uninstalled ',color:green},{text:'aj:skyglim/cecile',color:yellow},{text:'!'},{text:'\n If you have exported multiple times, you may have to remove objectives from previous exports manually, as Animated Java only knows about the objectives from the most recent export.',color:gray,italic:true}],'\n']

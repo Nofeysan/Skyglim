@@ -3,3 +3,5 @@ data modify storage aj:skyglim/cecile rig_hash set value 'ba91ff559daa7c6b84379e
 scoreboard objectives add aj.skyglim.cecile.stand.frame dummy
 scoreboard objectives add aj.skyglim.cecile.point.frame dummy
 scoreboard objectives add aj.skyglim.cecile.spreadeagled.frame dummy
+scoreboard objectives add aj.skyglim.cecile.dai.frame dummy
+scoreboard objectives add aj.skyglim.cecile.hang.frame dummy

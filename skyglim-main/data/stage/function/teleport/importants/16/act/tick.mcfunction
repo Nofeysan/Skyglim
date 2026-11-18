@@ -39,13 +39,14 @@
 # aj remove
     execute if score $s16.boss.slain.perform _ matches 480 run function aj:skyglim/cecile/remove/all
 
-# 昼にしてアイテム出して終わり
-    # 480: noon, item
+# 昼にして終わり
+    # 480: noon
         execute if score $s16.boss.slain.perform _ matches 480 run time set noon
-        #execute if score $s16.boss.slain.perform _ matches 480 run function stage:teleport/importants/6/act/summon_key
 
     # 520: 元に戻す
         execute if score $s16.boss.slain.perform _ matches 560 run kill @n[tag=s16.perform.base]
         execute if score $s16.boss.slain.perform _ matches 560 run gamemode adventure @a
         execute if score $s16.boss.slain.perform _ matches 560 run tp @a 9524 143 -504 90 0
+        execute if score $s16.boss.slain.perform _ matches 560 run scoreboard players set _ CanTalkWithMe 1
+        execute if score $s16.boss.slain.perform _ matches 560 run scoreboard players set $avelian_talks CanTalkWithMe 13
         execute if score $s16.boss.slain.perform _ matches 560 run scoreboard players set $s16.boss.slain.perform _ -2

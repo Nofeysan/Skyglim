@@ -12,20 +12,20 @@ function animated_java:global/data_manager/read with storage animated_java:temp 
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.root_uuid set from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.blueprint_id set value "aj:skyglim/avelian"
-data modify storage animated_java:temp entry.data.rig_hash set value "31c7a3fa3871b2ba9e80cd2c2834b234b0773325a1da43cf1d9166e7a1634848"
+data modify storage animated_java:temp entry.data.rig_hash set value "d89188da57df12fbd6f16284b328a71a4cf5120797a193d8219c30bd52485da1"
 tp @s ~ ~ ~ ~ ~
-execute on passengers if entity @s[tag=aj.skyglim.avelian.node.hair] run function aj:skyglim/avelian/zzz/summon/as_node/hair
-data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.hair set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.avelian.node.head] run function aj:skyglim/avelian/zzz/summon/as_node/head
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.head set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.skyglim.avelian.node.nekutai] run function aj:skyglim/avelian/zzz/summon/as_node/nekutai
+execute on passengers if entity @s[tag=aj.skyglim.avelian.node.hair] run function aj:skyglim/avelian/zzz/summon/as_node/hair
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.nekutai set from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.hair set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.avelian.node.body] run function aj:skyglim/avelian/zzz/summon/as_node/body
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.body set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.skyglim.avelian.node.nekutai] run function aj:skyglim/avelian/zzz/summon/as_node/nekutai
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.nekutai set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.avelian.node.right1] run function aj:skyglim/avelian/zzz/summon/as_node/right1
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.right1 set from storage animated_java:gu out
@@ -41,12 +41,12 @@ data modify storage animated_java:temp entry.data.uuids_by_name.right set from s
 execute on passengers if entity @s[tag=aj.skyglim.avelian.node.cap] run function aj:skyglim/avelian/zzz/summon/as_node/cap
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.cap set from storage animated_java:gu out
-execute on passengers if entity @s[tag=aj.skyglim.avelian.node.line] run function aj:skyglim/avelian/zzz/summon/as_node/line
-data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
-data modify storage animated_java:temp entry.data.uuids_by_name.line set from storage animated_java:gu out
 execute on passengers if entity @s[tag=aj.skyglim.avelian.node.manto] run function aj:skyglim/avelian/zzz/summon/as_node/manto
 data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
 data modify storage animated_java:temp entry.data.uuids_by_name.manto set from storage animated_java:gu out
+execute on passengers if entity @s[tag=aj.skyglim.avelian.node.line] run function aj:skyglim/avelian/zzz/summon/as_node/line
+data modify storage animated_java:temp entry.data.uuids append from storage animated_java:gu out
+data modify storage animated_java:temp entry.data.uuids_by_name.line set from storage animated_java:gu out
 # Data Manager: Write
 function animated_java:global/data_manager/write with storage animated_java:temp args
 function aj:skyglim/avelian/zzz/set_default_pose

@@ -12,7 +12,7 @@ execute if items entity @s weapon.mainhand *[custom_data={"return_pearl": 1b}] r
 execute if items entity @s weapon.offhand *[custom_data={"return_pearl": 1b}] run loot replace entity @s weapon.offhand loot stage:return_ball
 
 # 今使える？
-execute unless score $cant_use_pearl _ matches 1 run return run function stage:player/return/cant_use
+execute if score $cant_use_pearl _ matches 1 run return run function stage:player/return/cant_use
 
 # trigger を引く
 scoreboard players set @s ReturnPearl 0
