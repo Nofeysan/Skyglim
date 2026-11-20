@@ -1,0 +1,32 @@
+{
+    "description": "Fishing Time",
+    "supported_items": [
+        "minecraft:fishing_rod"
+    ],
+    "slots": ["mainhand", "offhand"],
+    "min_cost": {
+        "base": 0,
+        "per_level_above_first": 1
+    },
+    "max_cost": {
+        "base": 1,
+        "per_level_above_first": 1
+    },
+    "anvil_cost": 1,
+    "max_level": 29,
+    "weight": 1,
+    "effects": {
+        "minecraft:fishing_time_reduction": [
+            {
+                "effect": {
+                    "type": "minecraft:set",
+                    "value": {
+                        "type": "minecraft:linear",
+                        "base": 0.0,
+                        "per_level_above_first": 0.1
+                    }
+                }
+            }
+        ]
+    }
+}
