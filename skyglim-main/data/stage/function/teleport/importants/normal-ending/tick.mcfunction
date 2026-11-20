@@ -37,11 +37,11 @@
 
     # 2: お菓子 x
         execute if score $normal_ending _ matches 410..470 run effect give @a minecraft:blindness 2 0 true
-        execute if score $normal_ending _ matches 420 run tp @a 9917 63 -36
-        execute if score $normal_ending _ matches 420 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 9917 63 -36 42 15
+        execute if score $normal_ending _ matches 420 run tp @a 9917 115 -260
+        execute if score $normal_ending _ matches 420 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 9917 115 -260 42 15
         execute if score $normal_ending _ matches 470..720 as @n[type=minecraft:armor_stand, tag=normal.ending] at @s run tp @s ~-0.072 ~-0.016 ~0.068
 
-    # 3: 雪国
+    # 3: 雪国t
         execute if score $normal_ending _ matches 720..780 run effect give @a minecraft:blindness 2 0 true
         execute if score $normal_ending _ matches 730 run tp @a 10077 63 -36
         execute if score $normal_ending _ matches 730 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 10077 63 -36 40 -50
@@ -51,7 +51,7 @@
         execute if score $normal_ending _ matches 1080..1140 run effect give @a minecraft:blindness 2 0 true
         execute if score $normal_ending _ matches 1100 run tp @a 9017 73 28
         execute if score $normal_ending _ matches 1100 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 9017 73 28 -132 -20
-        execute if score $normal_ending _ matches 1140..1600 as @n[type=minecraft:armor_stand, tag=normal.ending] at @s run tp @s ~ ~ ~0.03913043478
+        execute if score $normal_ending _ matches 1140..1600 as @n[type=minecraft:armor_stand, tag=normal.ending] at @s run tp @s ~ ~ ~-0.03913043478
 
     # 5: 研究所 1~3 x
         #% 1
@@ -62,8 +62,8 @@
 
         #% 2
         execute if score $normal_ending _ matches 2080..2140 run effect give @a minecraft:blindness 2 0 true
-        execute if score $normal_ending _ matches 2100 run tp @a 6872 82 -9
-        execute if score $normal_ending _ matches 2100 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 6872 82 -9 -135 0
+        execute if score $normal_ending _ matches 2100 run tp @a 6872 81 -9
+        execute if score $normal_ending _ matches 2100 run tp @n[type=minecraft:armor_stand, tag=normal.ending] 6872 81 -9 -135 0
         execute if score $normal_ending _ matches 2140..2460 as @n[type=minecraft:armor_stand, tag=normal.ending] at @s run tp @s ~ ~ ~-0.05625
 
         #% 3

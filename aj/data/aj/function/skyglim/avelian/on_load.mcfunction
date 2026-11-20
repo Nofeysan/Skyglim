@@ -5,3 +5,4 @@ scoreboard objectives add aj.skyglim.avelian.stand.frame dummy
 scoreboard objectives add aj.skyglim.avelian.punch.frame dummy
 scoreboard objectives add aj.skyglim.avelian.hang.frame dummy
 scoreboard objectives add aj.skyglim.avelian.dai.frame dummy
+scoreboard objectives add aj.skyglim.avelian.endroll.frame dummy

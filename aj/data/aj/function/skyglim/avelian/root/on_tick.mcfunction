@@ -4,4 +4,5 @@ execute if entity @s[tag=aj.skyglim.avelian.animation.stand.playing] run functio
 execute if entity @s[tag=aj.skyglim.avelian.animation.punch.playing] run function aj:skyglim/avelian/animations/punch/zzz/on_tick
 execute if entity @s[tag=aj.skyglim.avelian.animation.hang.playing] run function aj:skyglim/avelian/animations/hang/zzz/on_tick
 execute if entity @s[tag=aj.skyglim.avelian.animation.dai.playing] run function aj:skyglim/avelian/animations/dai/zzz/on_tick
+execute if entity @s[tag=aj.skyglim.avelian.animation.endroll.playing] run function aj:skyglim/avelian/animations/endroll/zzz/on_tick
 execute on passengers run rotate @s ~ ~

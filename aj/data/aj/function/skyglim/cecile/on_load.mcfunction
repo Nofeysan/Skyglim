@@ -5,3 +5,4 @@ scoreboard objectives add aj.skyglim.cecile.point.frame dummy
 scoreboard objectives add aj.skyglim.cecile.spreadeagled.frame dummy
 scoreboard objectives add aj.skyglim.cecile.dai.frame dummy
 scoreboard objectives add aj.skyglim.cecile.hang.frame dummy
+scoreboard objectives add aj.skyglim.cecile.endroll.frame dummy
