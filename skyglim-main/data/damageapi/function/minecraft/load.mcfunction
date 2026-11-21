@@ -58,6 +58,7 @@ scoreboard players set #2 num 2
 scoreboard players set #3 num 3
 scoreboard players set #4 num 4
 scoreboard players set #5 num 5
+scoreboard players set #7 num 7
 scoreboard players set #8 num 8
 scoreboard players set #9 num 9
 scoreboard players set #10 num 10

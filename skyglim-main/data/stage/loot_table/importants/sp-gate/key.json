@@ -6,18 +6,19 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:paper",
+                    "name": "minecraft:carrot_on_a_stick",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "entity": "this",
                             "name": [
-                                {
-                                    "translate": "stage.sp.gate.key.name",
-                                    "color": "#b54064",
-                                    "italic": false,
-                                    "bold": false
-                                }
+                                { "text": "◆ ", "color": "#ffdf7c", "italic": true, "bold": false },
+                                { "text": "ル", "color": "#ffce71" },
+                                { "text": "ー", "color": "#febc71" },
+                                { "text": "ト", "color": "#fbaf74" },
+                                { "text": "キ", "color": "#f7a278" },
+                                { "text": "ー", "color": "#f49b79" },
+                                { "text": " ◆", "color": "#ee8e79" }
                             ]
                         },
                         {
@@ -69,8 +70,8 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_model": "minecraft:amethyst_shard",
                                 "minecraft:enchantment_glint_override": true,
+                                "minecraft:item_model": "minecraft:echo_shard",
                                 "minecraft:attribute_modifiers": [
                                     {
                                         "id": "item.anarise",
@@ -85,7 +86,7 @@
                                         "minecraft:attribute_modifiers"
                                     ]
                                 },
-                                "minecraft:repair_cost": 301601
+                                "minecraft:repair_cost": 310003
                             }
                         }
                     ],

@@ -6,19 +6,18 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:carrot_on_a_stick",
+                    "name": "minecraft:paper",
                     "functions": [
                         {
                             "function": "minecraft:set_name",
                             "entity": "this",
                             "name": [
-                                { "text": "◆ ", "color": "#ffdf7c", "italic": true, "bold": false },
-                                { "text": "ル", "color": "#ffce71" },
-                                { "text": "ー", "color": "#febc71" },
-                                { "text": "ト", "color": "#fbaf74" },
-                                { "text": "キ", "color": "#f7a278" },
-                                { "text": "ー", "color": "#f49b79" },
-                                { "text": " ◆", "color": "#ee8e79" }
+                                {
+                                    "translate": "stage.sp.compass.auth.a.name",
+                                    "color": "#5dccab",
+                                    "italic": false,
+                                    "bold": false
+                                }
                             ]
                         },
                         {
@@ -31,14 +30,14 @@
                                 },
                                 [
                                     {
-                                        "translate": "stage.16.compass.lore.1",
+                                        "translate": "stage.sp.compass.auth.a.lore.1",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
                                 ],
                                 [
                                     {
-                                        "translate": "stage.16.compass.lore.2",
+                                        "translate": "stage.sp.compass.auth.a.lore.2",
                                         "color": "#ffffff",
                                         "italic": false
                                     }
@@ -48,7 +47,7 @@
                                 },
                                 [
                                     {
-                                        "translate": "stage.16.compass.lore.3",
+                                        "translate": "stage.sp.compass.auth.a.lore.3",
                                         "color": "#aaaaaa",
                                         "italic": false
                                     }
@@ -63,8 +62,8 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
+                                "minecraft:item_model": "minecraft:rib_armor_trim_smithing_template",
                                 "minecraft:enchantment_glint_override": true,
-                                "minecraft:item_model": "minecraft:compass",
                                 "minecraft:attribute_modifiers": [
                                     {
                                         "id": "item.anarise",
@@ -79,7 +78,7 @@
                                         "minecraft:attribute_modifiers"
                                     ]
                                 },
-                                "minecraft:repair_cost": 310003
+                                "minecraft:repair_cost": 310001
                             }
                         }
                     ],

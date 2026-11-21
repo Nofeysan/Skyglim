@@ -11,7 +11,8 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "",
+                                "translate": "crafting.quest.1.pink.name",
+                                "color": "#e094d7",
                                 "italic": false
                             }
                         },
@@ -20,6 +21,24 @@
                             "lore": [
                                 {
                                     "text": ""
+                                },
+                                {
+                                    "translate": "crafting.quest.1.pink.lore.1",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.quest.1.pink.lore.2",
+                                    "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "translate": "crafting.quest.common.lore.1",
+                                    "color": "#aaaaaa",
+                                    "italic": false
                                 }
                             ],
                             "mode": "replace_all"

@@ -4,9 +4,13 @@
 ##* 
 ##* 
 
+# luck 取得
+    execute store result score _ _ run data get entity @s active_effects[{id: "minecraft:luck"}].amplifier
+
+
 # food
-execute if predicate shop:food/use_heart_berry run function shop:act/food/use_heart_berry
-execute if predicate shop:food/use_yellow_berry run function shop:act/food/use_yellow_berry
+execute if score _ _ matches 50 run function shop:act/food/use_heart_berry
+execute if score _ _ matches 51 run function shop:act/food/use_yellow_berry
 
 # potion
 execute if predicate shop:potion/use_caramel_tea run function shop:act/potion/use_caramel_tea
@@ -18,6 +22,9 @@ execute if predicate shop:potion/use_mocha run function shop:act/potion/use_moch
 execute if predicate shop:potion/use_misty run function shop:act/potion/use_misty
 execute if predicate shop:potion/use_maiotome run function shop:act/potion/use_maiotome
 execute if predicate shop:potion/use_prelude run function shop:act/potion/use_prelude
+
+# craft
+    execute if score _ _ matches 100 run function crafting:craft/act/item/zouni
 
 # story用
 execute if predicate shop:potion/use_story_star run function story:0-tutorial/use_star
