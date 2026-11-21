@@ -11,7 +11,7 @@
                         {
                             "function": "minecraft:set_name",
                             "name": {
-                                "translate": "crafting.ingredients.fishing.cod.name",
+                                "translate": "crafting.ingredients.fishing.cod.4.name",
                                 "color": "#94d3e6",
                                 "italic": false
                             }
@@ -25,13 +25,23 @@
                                     "italic": false
                                 },
                                 {
-                                    "translate": "crafting.ingredients.fishing.cod.lore.1",
+                                    "translate": "crafting.ingredients.fishing.cod.4.lore.1",
                                     "color": "#ffffff",
                                     "italic": false
                                 },
                                 {
-                                    "translate": "crafting.ingredients.fishing.cod.lore.2",
+                                    "translate": "crafting.ingredients.fishing.cod.4.lore.2",
                                     "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.fishing.rare.common",
+                                    "color": "#aaaaaa",
                                     "italic": false
                                 }
                             ],
@@ -40,8 +50,9 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:repair_cost": 70100,
-                                "minecraft:item_model": "minecraft:cod"
+                                "minecraft:repair_cost": 70103,
+                                "minecraft:item_model": "minecraft:cod",
+                                "minecraft:max_stack_size": 64
                             }
                         },
                         {

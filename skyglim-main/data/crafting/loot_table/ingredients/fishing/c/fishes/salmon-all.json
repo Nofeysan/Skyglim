@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/c/fishes/salmon.1"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/c/fishes/salmon.2"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/c/fishes/salmon.3"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/c/fishes/salmon.4"
+                }
+            ]
+        }
+    ]
+}

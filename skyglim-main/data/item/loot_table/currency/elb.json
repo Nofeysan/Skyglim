@@ -39,7 +39,15 @@
                                         "translate": "item.currency.lore.2",
                                         "color": "#ffffff"
                                     }
-                                ]
+                                ],
+                                {
+                                    "text": ""
+                                },
+                                {
+                                    "text": "[ 通貨 ]",
+                                    "color": "#aaaaaa",
+                                    "italic": false
+                                }
                             ],
                             "mode": "replace_all"
                         },

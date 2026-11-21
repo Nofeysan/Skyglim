@@ -13,7 +13,7 @@
                             "name": [
                                 {
                                     "translate": "crafting.ingredients.crystal.e-all.name",
-                                    "color": "#ffffff",
+                                    "color": "#e1c1cf",
                                     "italic": false,
                                     "obfuscated": false
                                 }
@@ -40,6 +40,16 @@
                                 {
                                     "translate": "crafting.ingredients.crystal.e-all.lore.3",
                                     "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.fishing.epic.common",
+                                    "color": "#aaaaaa",
                                     "italic": false
                                 }
                             ],

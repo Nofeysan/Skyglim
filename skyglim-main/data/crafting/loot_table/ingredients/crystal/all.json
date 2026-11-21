@@ -13,7 +13,7 @@
                             "name": [
                                 {
                                     "translate": "crafting.ingredients.crystal.all.name",
-                                    "color": "#ffffff",
+                                    "color": "#e1c1cf",
                                     "italic": false
                                 }
                             ]
@@ -39,6 +39,16 @@
                                 {
                                     "translate": "crafting.ingredients.crystal.all.lore.3",
                                     "color": "#ffffff",
+                                    "italic": false
+                                },
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.fishing.rare.common",
+                                    "color": "#aaaaaa",
                                     "italic": false
                                 }
                             ],

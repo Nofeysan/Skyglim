@@ -38,6 +38,16 @@
                                     "translate": "crafting.ingredients.crystal.e-light.lore.3",
                                     "color": "#ffffff",
                                     "italic": false
+                                },
+                                {
+                                    "text": "",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
+                                {
+                                    "translate": "crafting.ingredients.fishing.epic.common",
+                                    "color": "#aaaaaa",
+                                    "italic": false
                                 }
                             ],
                             "mode": "replace_all"

@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
-                    "value": "a"
+                    "value": "crafting:ingredients/fishing/fish_loot/void"
                 }
             ],
             "conditions": [
@@ -15,6 +15,101 @@
                     "predicate": {
                         "biomes": [
                             "minecraft:the_void"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/fish_loot/pale"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "biomes": [
+                            "minecraft:pale_garden"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/fish_loot/swamp"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "biomes": [
+                            "minecraft:swamp"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/fish_loot/cold"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "biomes": [
+                            "minecraft:cold_ocean"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/fish_loot/desert"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "biomes": [
+                            "minecraft:desert"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "value": "crafting:ingredients/fishing/fish_loot/end"
+                }
+            ],
+            "conditions": [
+                {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                        "biomes": [
+                            "minecraft:the_end"
                         ]
                     }
                 }
