@@ -17,9 +17,14 @@ execute if items entity @s player.cursor *[repair_cost=270003] run function shop
 execute if items entity @s player.cursor *[repair_cost=270004] run function shop:system/.buy_check/id/270004
 execute if items entity @s player.cursor *[repair_cost=270005] run function shop:system/.buy_check/id/270005
 
+# Tier-2
+execute if items entity @s player.cursor *[repair_cost=270101] run function shop:system/.buy_check/id/270101
+execute if items entity @s player.cursor *[repair_cost=270102] run function shop:system/.buy_check/id/270102
+
 ###* アイテムを消しましょう
 clear @s *[\
-repair_cost=270001 | repair_cost=270002 | repair_cost=270003 | repair_cost=270004 | repair_cost=270005\
+repair_cost=270001 | repair_cost=270002 | repair_cost=270003 | repair_cost=270004 | repair_cost=270005 |\
+repair_cost=270101 | repair_cost=270102 \
 ]
 
 ###* 元に戻す

@@ -26,6 +26,8 @@ scoreboard players set $chromalier_magenta _ 0
 scoreboard players set $chromalier_black _ 0
 scoreboard players set $chromalier_all _ 0
 
+function stage:teleport/importants/sp-gate/init
+
 # clone
 clone 9259 97 -441 9331 116 -369 9259 141 -441
 

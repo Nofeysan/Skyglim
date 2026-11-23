@@ -67,6 +67,8 @@ scoreboard objectives add s5.gimmick dummy
 scoreboard objectives add s7.gimmick dummy
 scoreboard objectives add s10.gimmick dummy
 scoreboard objectives add s11.gimmick dummy
+scoreboard objectives add s13.gimmick dummy
+scoreboard players set $all s13.gimmick 0
 scoreboard objectives add s13.updown dummy
 scoreboard objectives add s16.gimmick dummy
 scoreboard objectives add ex2.updown dummy

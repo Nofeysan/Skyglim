@@ -36,5 +36,8 @@
     # 宝物庫の鍵 / 301999
         execute if score _ _ matches 301999 at @s run function stage:teleport/importants/houmotsuko/check
 
+    # ルートキー / 310003
+        execute if score _ _ matches 310003 at @s run function stage:teleport/importants/sp-gate/root
+
 ###* リセット
 scoreboard players reset @s UseMagic

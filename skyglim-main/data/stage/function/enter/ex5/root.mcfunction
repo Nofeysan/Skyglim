@@ -4,6 +4,9 @@
 # 
 # 
 
+# offhand にアイテムあったらだめだよ～
+    execute if data entity @s equipment.offhand run return run function stage:enter/ex5/fail
+
 # 誰もいなかったら再配置
 execute unless score _ stage.ex.5 matches 1.. run function stage:enter/ex5/init
 

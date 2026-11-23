@@ -89,8 +89,8 @@
         execute if score $happy_ending _ matches 2795 positioned -207 85 149 run particle minecraft:dust{color: 11878500, scale: 2.4} ~ ~0.5 ~ 0.8 1.4 0.8 0 480 force
         execute if score $happy_ending _ matches 2795 positioned -217 85 149 facing -212 87 143 rotated ~ 0 run function aj:skyglim/cecile/summon {args: {animation: 'endroll', start_animation: true}}
         execute if score $happy_ending _ matches 2795 positioned -217 85 149 run particle minecraft:dust{color: 5027246, scale: 2.4} ~ ~0.5 ~ 0.8 1.4 0.8 0 480 force
-        execute if score $happy_ending _ matches 2795 positioned -207 87 151 facing -212 87 143 rotated ~ 0 rotated ~ 15 run function aj:skyglim/kalmia/summon {args: {animation: 'hover', start_animation: false}}
-        execute if score $happy_ending _ matches 2795 positioned -207 87 151 run particle minecraft:dust{color: 15050981, scale: 2.4} ~ ~0.5 ~ 0.8 1.4 0.8 0 480 force
+        execute if score $happy_ending _ matches 2795 positioned -207 88 151 facing -212 87 143 rotated ~ 0 rotated ~ 15 run function aj:skyglim/kalmia/summon {args: {animation: 'hover', start_animation: false}}
+        execute if score $happy_ending _ matches 2795 positioned -207 88 151 run particle minecraft:dust{color: 15050981, scale: 2.4} ~ ~0.5 ~ 0.8 1.4 0.8 0 480 force
 
 #* actionbar
     # stage
