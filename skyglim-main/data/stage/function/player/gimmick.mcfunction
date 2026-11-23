@@ -51,11 +51,11 @@ execute if score @s ReturnPearl matches 0.. run function stage:player/return/eve
         execute if score @s s10.gimmick matches -1.. at @s run function stage:teleport/importants/10/root
 
     # S11 落ちたら初期地点に戻る
-        execute positioned 10494 244 -465 if entity @s[dx=261, dy=75, dz=181] if block ~ ~-0.3 ~ minecraft:light_gray_stained_glass run function stage:player/cant_jump/fall/s11
+        execute positioned 10416 244 -465 if entity @s[dx=261, dy=75, dz=181] at @s if block ~ ~-0.3 ~ minecraft:light_gray_stained_glass run function stage:player/cant_jump/fall/s11
 
     # SP5: 松明のやつ
         execute positioned 10240 8 -288 if entity @s[dx=70, dy=48, dz=234] run function stage:player/sp5/root
         execute positioned 10240 8 -288 unless entity @s[dx=70, dy=48, dz=234] run clear @s *[minecraft:repair_cost=310501]
 
     # SP7: 落ちたら初期地点に戻る
-        execute positioned 10936 226 273 if entity @s[dx=172, dy=93, dz=141] if block ~ ~-0.3 ~ minecraft:light_gray_stained_glass run function stage:player/cant_jump/fall/sp6
+        execute positioned 10936 226 273 if entity @s[dx=172, dy=93, dz=141] at @s if block ~ ~-0.3 ~ minecraft:light_gray_stained_glass run function stage:player/cant_jump/fall/sp6

@@ -11,7 +11,8 @@ $summon minecraft:item ^ ^ ^1 \
         Item: {\
             id: "minecraft:magma_block", \
             components: {\
-                "minecraft:enchantment_glint_override": true\
+                "minecraft:enchantment_glint_override": true,\
+                "minecraft:max_stack_size": 1\
             }\
         }, Tags: ["gimmick", "gimmick.magma", "$(id)"], NoGravity: true, Glowing: true\
     }

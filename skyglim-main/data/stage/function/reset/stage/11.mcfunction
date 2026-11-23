@@ -8,7 +8,7 @@
 forceload add 10749 -323 10419 -444
 
 # スポナーの破壊
-execute positioned 10744 319 -295 run kill @e[dx=339, dy=75, dz=181, type=minecraft:spawner_minecart]
+execute positioned 10416 244 -465 run kill @e[dx=339, dy=75, dz=181, type=minecraft:spawner_minecart]
 
 # foeceload remove
 forceload remove 10749 -323 10419 -444

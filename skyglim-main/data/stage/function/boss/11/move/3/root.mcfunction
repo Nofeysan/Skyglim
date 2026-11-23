@@ -10,7 +10,7 @@
     execute if score s11 BossMoves matches 200 positioned 10456 291 -366 run function stage:boss/11/move/3/summon_bat
 
 # kill
-    function stage:boss/11/move/3/kill
+    execute if score s11 BossMoves matches 400.. run function stage:boss/11/move/3/kill
 
 # reset
     execute if score s11 BossMoves matches 400.. run scoreboard players set s11 BossMoves 160

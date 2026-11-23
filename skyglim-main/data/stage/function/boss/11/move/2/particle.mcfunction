@@ -16,5 +16,5 @@
             rotated as @e[tag=s11_axis, limit=2] positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^7 \
             run particle minecraft:dust{color: $(color), scale: 1.0} ~ ~0.5 ~ 0 0 0 0 10 force
     
-    kill @e[tag=s11]
+    kill @e[tag=s11, type=minecraft:marker]
 

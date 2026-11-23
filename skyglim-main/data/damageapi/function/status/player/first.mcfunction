@@ -39,6 +39,8 @@ function damageapi:status/player/check
 xp set @s 0 points
 xp set @s 0 levels
 
+effect clear @s minecraft:night_vision
+
 # stage 入場用
 scoreboard players set @s stage.enter -1
 
@@ -46,4 +48,6 @@ scoreboard players set @s stage.enter -1
 setworldspawn 100 62 -350 0.0 0.0
 tp @s 102 96 -311 0 0
 
-tellraw @s [{text:"\uE010 ステータスの初期設定が完了しました。",color:"#9279d3"}]
+    tellraw @a [{text: "◆ ", color: '#44ddf4'}, {text: '-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-', color: '#c5edff'}]
+    tellraw @a {text: "\uf104[!] ステータスの初期設定が完了しました。", color: "#92f3a4"}
+    tellraw @a [{text: '-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-\uf200-', color: '#c5edff'}, {text: " ◆", color: '#44ddf4'}]

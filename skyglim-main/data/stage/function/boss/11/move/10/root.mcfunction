@@ -11,7 +11,7 @@ scoreboard players operation _ _ %= #10 num
 
 # barrier
     # 倒されたこと検知
-        execute as @e[predicate=stage:is_barrier_item] run function stage:boss/11/move/10/set_barrier
+        execute as @e[predicate=stage:is_barrier_item] at @s run function stage:boss/11/move/10/set_barrier
     
     # particle
         execute if score _ _ matches 0 as @e[tag=gimmick.barrier.set, type=minecraft:marker] at @s run function stage:boss/11/move/10/show_barrier
@@ -21,7 +21,7 @@ scoreboard players operation _ _ %= #10 num
 
 # 1周目
     # 220: AoE + barrier 素召喚, カウント
-        execute if score s11 BossMoves matches 220 run function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 113}
+        execute if score s11 BossMoves matches 220 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 49, t: 180, dmg: 16, str: 18, id: 113}
         execute if score s11 BossMoves matches 220 run function stage:boss/11/move/10/barrier
         execute if score s11 BossMoves matches 240 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score s11 BossMoves matches 260 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -40,7 +40,7 @@ scoreboard players operation _ _ %= #10 num
 
 # 2周目
     # 440: AoE + barrier 素召喚, カウント
-        execute if score s11 BossMoves matches 440 run function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 113}
+        execute if score s11 BossMoves matches 440 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 49, t: 180, dmg: 16, str: 18, id: 113}
         execute if score s11 BossMoves matches 440 run function stage:boss/11/move/10/barrier
         execute if score s11 BossMoves matches 460 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score s11 BossMoves matches 480 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231

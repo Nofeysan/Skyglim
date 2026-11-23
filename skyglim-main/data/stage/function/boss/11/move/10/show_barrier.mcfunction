@@ -16,7 +16,7 @@
             rotated as @e[tag=s11_axis, limit=2] positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^5 \
             run particle minecraft:end_rod ~ ~0.5 ~ 0 3 0 0 100 force
     
-    kill @e[tag=s11]
+    kill @e[tag=s11, type=minecraft:marker]
 
 # effect
 effect give @a[distance=..5] minecraft:glowing 1 0 false
