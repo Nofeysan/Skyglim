@@ -9,7 +9,7 @@ execute unless score @s StatusRegister matches -2147483648..2147483647 run funct
 
 ##? ショップ, restore, refinement: アイテムピックアップ
 execute store success score @s RepaircostBoolen run clear @s *[minecraft:lock={components:{"minecraft:repair_cost":255}}] 0
-execute if entity @s[scores={RepaircostBoolen=1}] run function modify:modify_playertick
+execute if entity @s[scores={RepaircostBoolen=1}] at @s run function modify:modify_playertick
 
 ##? ステータス関連
 # 経験値

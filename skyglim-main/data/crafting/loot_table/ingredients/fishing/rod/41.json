@@ -41,7 +41,7 @@
                                 },
                                 {
                                     "translate": "common.lore.line.2",
-                                    "color": "#aaaaaa",
+                                    "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
@@ -54,7 +54,7 @@
                                     { "text": "縮", "color": "#e6feff", "italic": false },
                                     {
                                         "text": " \ue010 ",
-                                        "color": "#aaaaaa",
+                                        "color": "dark_gray",
                                         "italic": false
                                     },
                                     {

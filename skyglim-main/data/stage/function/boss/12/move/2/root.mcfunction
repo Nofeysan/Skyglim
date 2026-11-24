@@ -5,12 +5,12 @@
 # 
 
 # warn
-    execute if score s12 BossMoves matches 200 run title @a[distance=..75] subtitle '[!]'
+    execute if score s12 BossMoves matches 200 run title @a[distance=..75] title {text: '[!]', color: '#d94262', bold: true}
     execute if score s12 BossMoves matches 200 run title @a[distance=..75] times 0 60 20
 
-    execute if score s12 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
-    execute if score s12 BossMoves matches 210 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
-    execute if score s12 BossMoves matches 220 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5
+    execute if score s12 BossMoves matches 200 as @a[distance=..75] at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 0.5
+    execute if score s12 BossMoves matches 210 as @a[distance=..75] at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 0.5
+    execute if score s12 BossMoves matches 220 as @a[distance=..75] at @s run playsound minecraft:block.note_block.pling voice @s ~ ~ ~ 1 0.5
 
     execute if score s12 BossMoves matches 220 run effect give @s minecraft:levitation 1 8 true
     execute if score s12 BossMoves matches 260 run function stage:boss/12/move/2/ground

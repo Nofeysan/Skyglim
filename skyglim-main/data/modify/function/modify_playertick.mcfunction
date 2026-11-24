@@ -20,14 +20,15 @@ execute if entity @e[type=minecraft:armor_stand, tag=enchantment] at @n[type=min
 
 ##+ Shop / ショップ
 # 数が多いので(ry
-execute if entity @e[type=minecraft:armor_stand, tag=weapon] at @n[type=minecraft:armor_stand,tag=weapon] run function shop:system/weapon/search
-execute if entity @e[type=minecraft:armor_stand, tag=armor] at @n[type=minecraft:armor_stand,tag=armor] run function shop:system/armor/search
-execute if entity @e[type=minecraft:armor_stand, tag=other] at @n[type=minecraft:armor_stand,tag=other] run function shop:system/other/search
-execute if entity @e[type=minecraft:armor_stand, tag=magic] at @n[type=minecraft:armor_stand,tag=magic] run function shop:system/magic/search
+execute if entity @e[type=minecraft:armor_stand, tag=weapon, distance=..7] at @n[type=minecraft:armor_stand,tag=weapon] run function shop:system/weapon/search
+execute if entity @e[type=minecraft:armor_stand, tag=armor, distance=..7] at @n[type=minecraft:armor_stand,tag=armor] run function shop:system/armor/search
+execute if entity @e[type=minecraft:armor_stand, tag=other, distance=..7] at @n[type=minecraft:armor_stand,tag=other] run function shop:system/other/search
+execute if entity @e[type=minecraft:armor_stand, tag=magic, distance=..7] at @n[type=minecraft:armor_stand,tag=magic] run function shop:system/magic/search
+execute if entity @e[type=minecraft:armor_stand, tag=fishing, distance=..7] at @n[type=minecraft:armor_stand,tag=fishing] run function shop:system/fishing/search
 
 # token
-execute if entity @e[type=minecraft:armor_stand, tag=token-1] at @n[type=minecraft:armor_stand,tag=token-1] run function shop:system/token/1/search
-execute if entity @e[type=minecraft:armor_stand, tag=token-2] at @n[type=minecraft:armor_stand,tag=token-2] run function shop:system/token/2/search
-execute if entity @e[type=minecraft:armor_stand, tag=token-3] at @n[type=minecraft:armor_stand,tag=token-3] run function shop:system/token/3/search
-execute if entity @e[type=minecraft:armor_stand, tag=token-4] at @n[type=minecraft:armor_stand,tag=token-4] run function shop:system/token/4/search
-execute if entity @e[type=minecraft:armor_stand, tag=token-6] at @n[type=minecraft:armor_stand,tag=token-6] run function shop:system/token/6/search
+execute if entity @e[type=minecraft:armor_stand, tag=token-1, distance=..7] at @n[type=minecraft:armor_stand,tag=token-1] run function shop:system/token/1/search
+execute if entity @e[type=minecraft:armor_stand, tag=token-2, distance=..7] at @n[type=minecraft:armor_stand,tag=token-2] run function shop:system/token/2/search
+execute if entity @e[type=minecraft:armor_stand, tag=token-3, distance=..7] at @n[type=minecraft:armor_stand,tag=token-3] run function shop:system/token/3/search
+execute if entity @e[type=minecraft:armor_stand, tag=token-4, distance=..7] at @n[type=minecraft:armor_stand,tag=token-4] run function shop:system/token/4/search
+execute if entity @e[type=minecraft:armor_stand, tag=token-6, distance=..7] at @n[type=minecraft:armor_stand,tag=token-6] run function shop:system/token/6/search

@@ -86,7 +86,7 @@ forceload add 60 168 138 202
     summon minecraft:armor_stand 98 52 198 {Tags: ["shop", "armor"], Invisible: true, Invulnerable: true}
     summon minecraft:armor_stand 96 52 198 {Tags: ["shop", "other"], Invisible: true, Invulnerable: true}
     summon minecraft:armor_stand 75 53 172 {Tags: ["shop", "magic"], Invisible: true, Invulnerable: true}
-    #!summon minecraft:armor_stand 75 53 172 {Tags: ["shop", "fishing"], Invisible: true, Invulnerable: true}
+    summon minecraft:armor_stand 135 52 195 {Tags: ["shop", "fishing"], Invisible: true, Invulnerable: true}
 
     # restore, refinement, enchant
     summon minecraft:armor_stand 98 52 174 {Tags: ["shop", "restore"], Invisible: true, Invulnerable: true}

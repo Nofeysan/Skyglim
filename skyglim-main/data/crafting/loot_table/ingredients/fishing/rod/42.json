@@ -41,7 +41,7 @@
                                 },
                                 {
                                     "translate": "common.lore.line.2",
-                                    "color": "#aaaaaa",
+                                    "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
@@ -72,7 +72,7 @@
                                     { "text": "加", "color": "#6ae993", "italic": false },
                                     {
                                         "text": " \uf103\ue010 ",
-                                        "color": "#aaaaaa",
+                                        "color": "dark_gray",
                                         "italic": false
                                     },
                                     {

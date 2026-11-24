@@ -41,7 +41,7 @@
                                 },
                                 {
                                     "translate": "common.lore.line.2",
-                                    "color": "#aaaaaa",
+                                    "color": "dark_gray",
                                     "italic": false
                                 },
                                 [
@@ -65,7 +65,7 @@
                                 ],
                                 {
                                     "translate": "common.lore.line.2",
-                                    "color": "#aaaaaa",
+                                    "color": "dark_gray",
                                     "italic": false
                                 },
                                 [

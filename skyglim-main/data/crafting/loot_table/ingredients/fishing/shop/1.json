@@ -34,6 +34,11 @@
                                     "color": "#ffffff",
                                     "italic": false
                                 },
+                                {
+                                    "translate": "common.lore.line.2",
+                                    "color": "dark_gray",
+                                    "italic": false
+                                },
                                 [
                                     {
                                         "translate": "shop.item.value",

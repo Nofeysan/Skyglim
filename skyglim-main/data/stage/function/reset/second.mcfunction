@@ -16,7 +16,7 @@ execute if score _ stage.7 matches 1.. positioned 9746 -5 -532 unless entity @a[
 execute if score _ stage.9 matches 1.. positioned 10152 -38 49 unless entity @a[dx=284, dy=90, dz=284] run function stage:reset/stage/9
 execute if score _ stage.10 matches 1.. positioned 10098 2 -359 unless entity @a[dx=73, dy=27, dz=217] run function stage:reset/stage/10
 execute if score _ stage.11 matches 1.. positioned 10416 244 -465 unless entity @a[dx=339, dy=75, dz=181] run function stage:reset/stage/11
-execute if score _ stage.12 matches 1.. positioned 11027 233 -148 unless entity @a[dx=172, dy=32, dz=108] run function stage:reset/stage/12
+execute if score _ stage.12 matches 1.. positioned 11027 223 -148 unless entity @a[dx=172, dy=32, dz=108] run function stage:reset/stage/12
 execute if score _ stage.13 matches 1.. positioned 8992 5 -185 unless entity @a[dx=95, dy=30, dz=213] run function stage:reset/stage/13
 execute if score _ stage.14 matches 1.. positioned 7507 57 -132 unless entity @a[dx=304, dy=57, dz=136] run function stage:reset/stage/14
 execute if score _ stage.15 matches 1.. positioned 6737 53 -37 unless entity @a[dx=186, dy=42, dz=60] run function stage:reset/stage/15

@@ -8,13 +8,13 @@ summon minecraft:spawner_minecart ~ ~ ~ \
 {\
     Delay: 0,\
     \
-    MinSpawnDelay: 250,\
-    MaxSpawnDelay: 400,\
+    MinSpawnDelay: 400,\
+    MaxSpawnDelay: 700,\
     SpawnCount: 3,\
     SpawnRange: 4,\
     \
     MaxNearbyEntities: 4,\
-    RequiredPlayerRange: 16,\
+    RequiredPlayerRange: 8,\
     \
     SpawnPotentials: [\
         {\

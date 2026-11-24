@@ -16,4 +16,4 @@ execute positioned 9024 79 36 run particle minecraft:end_rod ~ ~ ~ 0.2 0.2 0.2 0
 execute positioned 9024 79 36 run playsound minecraft:entity.experience_orb.pickup voice @a ~ ~ ~ 0.4 1.2
 
 # next
-schedule function stage:teleport/importants/12/act/2 40t
+schedule function stage:teleport/importants/14/act/2 40t

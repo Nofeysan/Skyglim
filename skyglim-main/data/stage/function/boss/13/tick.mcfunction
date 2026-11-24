@@ -44,8 +44,8 @@ execute store result bossbar minecraft:stage13.boss value run data get storage b
 # 行動
 scoreboard players add s13 BossMoves 1
 execute if score s13 BossMoves matches 200 at @n[tag=boss, tag=s13] run function stage:boss/13/move/root
-execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 1 at @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/1/root
-execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 2 at @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/2/root
+execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 1 as @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/1/root
+execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 2 as @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/2/root
 execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 3 as @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/3/root
 execute if score s13 BossMoves matches 200.. if score s13-type BossMoves matches 6 as @n[tag=boss, tag=s13] at @s run function stage:boss/13/move/6/root
 

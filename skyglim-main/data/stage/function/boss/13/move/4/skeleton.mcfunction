@@ -45,6 +45,6 @@ summon minecraft:bogged ~ ~ ~ \
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
                             Team: "enemy",\
-                            Tags: ["gimmick", "gimmick.enemy.s13", 'leave.potion', 'leave.potion.13.b']\
+                            Tags: ["gimmick", "gimmick.enemy.s13", 'leave.potion', 'leave.potion.s13.b']\
                         }
 
