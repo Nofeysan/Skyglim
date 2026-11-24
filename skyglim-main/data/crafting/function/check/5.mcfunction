@@ -5,8 +5,27 @@
 # 6 7 8
 # 
 
-# 釣り竿 Tier-II
-execute if data block ~ ~ ~ {Items:[{Slot:2b, components:{"minecraft:repair_cost": 70000}, count:1},{Slot:4b, components:{"minecraft:repair_cost": 70000}, count:1},{Slot:5b, components:{"minecraft:repair_cost": 72002}, count:1},{Slot:6b, components:{"minecraft:repair_cost": 70000}, count:1},{Slot:8b, components:{"minecraft:repair_cost": 70100}, count:32}]} run return run function crafting:craft/fishing/tier-2
+# ちょっといいつりざお
+execute if data block ~ ~ ~ {Items: \
+    [\
+        {Slot: 2b, components: {"minecraft:repair_cost": 70000}, count: 1},\
+        {Slot: 4b, components: {"minecraft:repair_cost": 71001}, count: 2},\
+        {Slot: 5b, components: {"minecraft:repair_cost": 71002}, count: 1},\
+        {Slot: 6b, components: {"minecraft:repair_cost": 70000}, count: 1},\
+        {Slot: 8b, components: {"minecraft:repair_cost": 70120}, count: 1},\
+    ]\
+} run return run function crafting:craft/fishing/t11
+
+# いいつりざお
+execute if data block ~ ~ ~ {Items: \
+    [\
+        {Slot: 2b, components: {"minecraft:repair_cost": 70000}, count: 1},\
+        {Slot: 4b, components: {"minecraft:repair_cost": 72001}, count: 1},\
+        {Slot: 5b, components: {"minecraft:repair_cost": 71002}, count: 16},\
+        {Slot: 6b, components: {"minecraft:repair_cost": 70000}, count: 1},\
+        {Slot: 8b, components: {"minecraft:repair_cost": 70201}, count: 1},\
+    ]\
+} run return run function crafting:craft/fishing/t12
 
 # 収集の知恵
 execute if data block ~ ~ ~ {Items: \

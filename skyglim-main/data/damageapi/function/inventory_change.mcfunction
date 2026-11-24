@@ -21,6 +21,7 @@ execute at @s if entity @e[type=minecraft:armor_stand,tag=weapon,distance=..7] a
 execute at @s if entity @e[type=minecraft:armor_stand,tag=armor,distance=..7] as @n[type=minecraft:armor_stand,tag=armor,distance=..7] at @s run function shop:system/armor/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=other,distance=..7] as @n[type=minecraft:armor_stand,tag=other,distance=..7] at @s run function shop:system/other/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=magic,distance=..7] as @n[type=minecraft:armor_stand,tag=magic,distance=..7] at @s run function shop:system/magic/inv_change
+execute at @s if entity @e[type=minecraft:armor_stand,tag=fishing,distance=..7] as @n[type=minecraft:armor_stand,tag=fishing,distance=..7] at @s run function shop:system/fishing/inv_change
 
 execute at @s if entity @e[type=minecraft:armor_stand,tag=token-1,distance=..7] as @n[type=minecraft:armor_stand,tag=token-1,distance=..7] at @s run function shop:system/token/1/inv_change
 execute at @s if entity @e[type=minecraft:armor_stand,tag=token-2,distance=..7] as @n[type=minecraft:armor_stand,tag=token-2,distance=..7] at @s run function shop:system/token/2/inv_change
