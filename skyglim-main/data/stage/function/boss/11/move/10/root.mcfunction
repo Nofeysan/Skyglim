@@ -33,6 +33,7 @@ scoreboard players operation _ _ %= #10 num
         execute if score s11 BossMoves matches 380 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 1.0
 
     # 400: 極大ダメージ (tag=gimmick.barrier.set から 5m が安全地帯)
+        execute if score s11 BossMoves matches 400 as @a[distance=..50] at @s run playsound minecraft:item.totem.use voice @s ~ ~ ~ 0.5 1
         execute if score s11 BossMoves matches 400 as @a[distance=..50] at @s if entity @e[distance=..5, tag=gimmick.barrier.set] run function stage:boss/11/move/10/barrier_act
         execute if score s11 BossMoves matches 400 as @a[distance=..50] at @s unless entity @e[distance=..5, tag=gimmick.barrier.set] run function stage:boss/11/move/10/damage
         execute if score s11 BossMoves matches 401 run kill @e[tag=gimmick.barrier.s11]

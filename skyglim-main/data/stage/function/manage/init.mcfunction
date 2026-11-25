@@ -105,6 +105,9 @@ scoreboard players set $magic_progress story.progress 1
 # gamerule
 gamerule sendCommandFeedback false
 gamerule pvp false
+gamerule mobGriefing false
+gamerule doDaylightCycle false
+time set midnight
 
 # status reset
 scoreboard objectives remove StatusRegister
