@@ -23,9 +23,9 @@ execute if score s16 BossMoves matches 228 rotated 270 0 positioned ~ ~1 ~ run f
 execute if score s16 BossMoves matches 230 rotated 330 0 positioned ~ ~1 ~ run function stage:boss/16/move/2/no_half/item-2 {id: 16}
 
 # AoE to AEC
-execute if score s16 BossMoves matches 200 at @n[predicate=entity:entity_enemy, tag=boss, tag=s16] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-execute if score s16 BossMoves matches 200 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-execute if score s16 BossMoves matches 240 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 200 at @n[predicate=entity:entity_enemy, tag=boss, tag=s16] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 200 at @a positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 240 at @a positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
 
 # 発射
 execute if score s16 BossMoves matches 240 run function stage:boss/16/move/2/no_half/shoot_1

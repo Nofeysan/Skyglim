@@ -14,4 +14,5 @@ schedule function story:cecile/2/2 80t
 execute at @n[tag=aj.skyglim.cecile.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
 # scorereset
+scoreboard players set $has_talks_cecile story.progress 0
 scoreboard players set $has_talks_cecile CanTalkWithMe 99

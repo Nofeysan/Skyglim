@@ -6,10 +6,10 @@
 
 # damage
 scoreboard players operation _ _ = $3 ex2.updown
-function stage:boss/13/move/6/damage-updown
+function stage:boss/ex2/move/2/damage-updown
 
 # title (3 -> 4)
-title @a[distance=..30] times 0 25 10
+title @a[distance=..30] times 0 40 10
 title @a[distance=..30] title ""
 execute unless score $ex2.boss.half _ matches 1 run title @a[distance=..80] subtitle \
 [\

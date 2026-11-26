@@ -31,8 +31,8 @@ data modify block 9675 25 -221 LootTable set value "entity:mob_drop/ex2/chest"
 
 # ボス召喚設置
 setblock 9467 34 -235 minecraft:command_block{Command: "function stage:boss/ex2/summon"}
-setblock 9467 34 -235 minecraft:lapis_block
-setblock 9467 34 -235 minecraft:polished_blackstone_button[face=floor, facing=north]
+setblock 9467 35 -235 minecraft:lapis_block
+setblock 9467 36 -235 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 # ボス部屋出口
 fill 9476 38 -236 9476 35 -234 minecraft:orange_concrete_powder

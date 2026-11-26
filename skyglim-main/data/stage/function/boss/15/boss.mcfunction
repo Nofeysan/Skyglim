@@ -12,7 +12,7 @@ summon minecraft:drowned ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id: "minecraft:movement_speed", base:0.24}\
+                                {id: "minecraft:movement_speed", base: 0.255}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -21,7 +21,7 @@ summon minecraft:drowned ~ ~ ~ \
                                 chest: {id: "minecraft:iron_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 14187321, "minecraft:enchantment_glint_override": true}},\
                                 legs: {id: "minecraft:chainmail_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 14187321, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 4082844, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:trident", components: {"minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:fishing_rod", components: {"minecraft:enchantment_glint_override": true}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\

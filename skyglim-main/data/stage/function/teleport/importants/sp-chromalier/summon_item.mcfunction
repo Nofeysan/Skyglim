@@ -5,7 +5,7 @@
 # 
 
 # loot
-$loot spawn ~ ~3 ~ loot stage:importants/sp-chromalier/$(id)
+$loot spawn ~ ~2 ~ loot stage:importants/sp-chromalier/$(id)
 execute positioned ~ ~3 ~ run data modify entity @n[type=minecraft:item] PickupDelay set value 40
 execute positioned ~ ~3 ~ run data modify entity @n[type=minecraft:item] Glowing set value true
 execute positioned ~ ~3 ~ run data modify entity @n[type=minecraft:item] NoGravity set value true

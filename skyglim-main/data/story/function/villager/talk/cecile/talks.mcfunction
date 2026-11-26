@@ -9,4 +9,4 @@
 # 
 
 # ex2: talks
-execute if score $has_talks_cecile CanTalkWithMe matches 1 run function story:cecile/2/1
+execute if score $has_talks_cecile story.progress matches 1 run function story:cecile/2/1

@@ -5,7 +5,7 @@
 # 
 
 # item
-loot spawn 9978 85 -267 loot stage:importants/12/key
+loot spawn 9978 85 -267 loot stage:importants/16/compass
 execute positioned 9978 85 -267 run data modify entity @n[type=minecraft:item] PickupDelay set value 4000
 execute positioned 9978 85 -267 run data modify entity @n[type=minecraft:item] Glowing set value true
 execute positioned 9978 85 -267 run data modify entity @n[type=minecraft:item] NoGravity set value true

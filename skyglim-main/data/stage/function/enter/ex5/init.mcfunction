@@ -36,8 +36,8 @@ data modify block 10277 36 -152 LootTable set value "entity:mob_drop/ex5/chest"
 
 # ボス召喚設置
 setblock 10277 23 -93 minecraft:command_block{Command: "function stage:boss/ex5/summon"}
-setblock 10277 23 -93 minecraft:lapis_block
-setblock 10277 23 -93 minecraft:polished_blackstone_button[face=floor, facing=north]
+setblock 10277 24 -93 minecraft:lapis_block
+setblock 10277 25 -93 minecraft:polished_blackstone_button[face=floor, facing=north]
 
 # ボス部屋出口
 fill 10278 26 -70 10276 24 -70 minecraft:end_stone

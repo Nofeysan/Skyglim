@@ -29,8 +29,8 @@ summon minecraft:skeleton ~ ~ ~ \
                             CustomName: {translate: "entity.stage.16.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 59500,\
-                                    "current_hp": 59500,\
+                                    "max_hp": 1000,\
+                                    "current_hp": 1000,\
                                     \
                                     "dmg": 69,\
                                     "str": 48,\
@@ -40,7 +40,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                     \
                                     "lore": "entity.stage.16.boss.friend.lore",\
                                     \
-                                    "loot": "tutorial"\
+                                    "loot": "empty"\
                                 }\
                             },\
                             active_effects: [\

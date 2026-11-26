@@ -43,7 +43,7 @@ summon minecraft:bat ~ ~ ~ \
                                     \
                                     "lore": "entity.stage.16.boss.friend.lore",\
                                     \
-                                    "loot": ""\
+                                    "loot": "empty"\
                                 }\
                             },\
                             active_effects: [\

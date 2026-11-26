@@ -5,7 +5,7 @@
 # 
 
 # already?
-    execute unless score $chromalier_light_blue _ matches 1 run return run function stage:teleport/importants/sp-chromalier/collect/return
+    execute if score $chromalier_light_blue _ matches 1 run return run function stage:teleport/importants/sp-chromalier/collect/return
 
 # place
     setblock 9297 148 -395 minecraft:light_blue_glazed_terracotta
@@ -18,6 +18,9 @@
 # score
     scoreboard players set $chromalier_light_blue _ 1
     scoreboard players add $chromalier_all _ 1
+
+# tell
+    tellraw @a [{text: '\n\ue010 水色のクロマリアを納品した！\n', color: '#44ddf4'}]
 
 # kill
     kill @n[type=minecraft:item]

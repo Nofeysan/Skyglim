@@ -11,13 +11,13 @@
     execute if score _ _ matches 0 if score s16 BossMoves matches 280..300 as @a[distance=..75] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.2 2
 
 # AoE
-    execute if score s16 BossMoves matches 200 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-    execute if score s16 BossMoves matches 210 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-    execute if score s16 BossMoves matches 220 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 200 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 210 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 220 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
 
-    execute if score s16 BossMoves matches 280 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-    execute if score s16 BossMoves matches 290 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
-    execute if score s16 BossMoves matches 300 at @a[distance=..80] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 280 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 290 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+    execute if score s16 BossMoves matches 300 at @a[distance=..80] positioned ~ 143 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
 
 # reset
     execute if score s16 BossMoves matches 300.. run scoreboard players set s16 BossMoves 60

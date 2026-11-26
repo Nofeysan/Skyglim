@@ -5,7 +5,7 @@
 # 
 
 # tp
-tp @s 13 79 593
+tp @s 12 79 585 -180 0
 
 # 表示
 tellraw @s [{"text": "[!] ", color: "gold"}, {translate: "token.get.count"}, {score: {name: "@s", objective: "token"}}]

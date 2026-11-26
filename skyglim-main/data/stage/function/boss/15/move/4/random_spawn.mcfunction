@@ -19,7 +19,10 @@
     execute if score $players _ matches 4.. if score $enemy_count _ matches 10.. run return fail
 
 # summon
-function stage:boss/15/move/4/zombie
+    execute store result score _ _ run random value 0..1
+
+    execute if score _ _ matches 0 run function stage:boss/15/move/4/normal
+    execute if score _ _ matches 1 run function stage:boss/15/move/4/trident
 
 # sound
 playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.3 1

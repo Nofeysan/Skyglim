@@ -5,7 +5,7 @@
 # 
 
 # AoE
-    execute positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 60, dmg: 62, str: 46, id: 151}
+    execute positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 13, t: 60, dmg: 62, str: 46, id: 151}
 
 # tp
     tp @s @a[sort=furthest, limit=1]

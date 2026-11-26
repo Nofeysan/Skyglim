@@ -5,9 +5,10 @@
 # 
 
 # aj.tp
-    execute as @n[tag=aj.skyglim.cecile.root] at @s run tp @s @n[predicate=entity:entity_enemy, tag=boss, tag=s16]
-    execute as @n[tag=aj.skyglim.cecile.root] at @s facing entity @p eyes rotated ~ 0 run rotate @s ~ ~
+    execute as @n[tag=aj.skyglim.cecile.root] at @s positioned as @n[predicate=entity:entity_enemy, tag=boss, tag=s16] run tp @s ~ ~ ~ ~ 0
+    execute as @n[tag=aj.skyglim.cecile.root] at @s facing entity @p eyes run rotate @s ~ 0
     time set midnight
+    effect clear @e[predicate=entity:entity_enemy, tag=boss, tag=s16] minecraft:slowness
 
 # data get
     data modify storage boss: stage.16 set from entity @n[tag=boss, tag=s16] data
@@ -57,3 +58,4 @@ execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches
 execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 unless score $s16.boss.half _ matches 1 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/no_half/root
 execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 if score $s16.boss.half _ matches 1 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/half/root
 execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 5 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/5/root
+execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 6 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/6/root

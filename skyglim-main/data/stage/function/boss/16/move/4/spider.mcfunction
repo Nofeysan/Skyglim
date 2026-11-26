@@ -40,7 +40,7 @@ summon minecraft:spider ~ ~ ~ \
                                     \
                                     "lore": "entity.stage.16.boss.friend.lore",\
                                     \
-                                    "loot": "tutorial"\
+                                    "loot": "empty"\
                                 }\
                             },\
                             active_effects: [\

@@ -24,6 +24,6 @@ fill 6745 77 3 6745 74 1 minecraft:air destroy
 fill 6784 83 9 6746 74 -29 minecraft:air
 
 # 次の道
-#forceload add 10050 -19 10076 -33
-#clone 10051 -9 -20 10075 7 -32 10049 86 -20
-#forceload remove 10050 -19 10076 -33
+execute unless score $s15.boss.slain _ matches 1 run scoreboard players set $avelian_talks story.progress 12
+execute unless score $s15.boss.slain _ matches 1 run scoreboard players set _ CanTalkWithMe 1
+scoreboard players set $s15.boss.slain _ 1

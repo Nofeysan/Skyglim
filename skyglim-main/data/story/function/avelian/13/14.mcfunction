@@ -13,4 +13,4 @@ schedule function story:avelian/13/15 100t
 # playsound
 execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
-#! particle 停止・pickup delay を設定
+scoreboard players set _ CanTalkWithMe 0

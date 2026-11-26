@@ -6,7 +6,7 @@
 
 # what is your repair_cost?
     scoreboard players set _ _ 0
-    execute store result score _ _ if data entity @n[type=minecraft:item] Item.components."minecraft:repair_cost"
+    execute if data entity @n[type=minecraft:item] Item.components."minecraft:repair_cost" store result score _ _ run data get entity @n[type=minecraft:item] Item.components."minecraft:repair_cost"
 
 # not chromelier?
     execute unless score _ _ matches 310901..310908 run return run function stage:teleport/importants/sp-chromalier/collect/return

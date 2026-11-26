@@ -5,7 +5,8 @@
 # 
 
 # warn
-    execute if score s16 BossMoves matches 200 run title @a[distance=..75] subtitle '[!]'
+    execute if score s16 BossMoves matches 200 run title @a[distance=..75] title ''
+    execute if score s16 BossMoves matches 200 run title @a[distance=..75] subtitle {text: '[!]', color: '#be2152'}
     execute if score s16 BossMoves matches 200 run title @a[distance=..75] times 0 60 20
 
     execute if score s16 BossMoves matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 1 0.5

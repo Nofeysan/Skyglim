@@ -15,7 +15,7 @@ forceload add 9550 -468 9478 -540
 #- チェスト配置
 
 # ボス召喚設置
-setblock 9514 142 -504 minecraft:command_block{Command: "function stage:boss/16/summon"}
+setblock 9514 142 -504 minecraft:command_block{Command: "function stage:boss/16/root"}
 setblock 9514 143 -504 minecraft:lapis_block
 setblock 9514 144 -504 minecraft:polished_blackstone_button[face=floor, facing=north]
 

@@ -8,7 +8,7 @@
 forceload add 9732 -202 9454 -256
 
 # スポナーの破壊
-execute positioned 9454 20 -256 run kill @e[dx=278, dy=35, dz=54, type=minecraft:spawner_minecart]
+execute positioned 9454 15 -256 run kill @e[dx=278, dy=40, dz=54, type=minecraft:spawner_minecart]
 
 # foeceload remove
 forceload remove 9732 -202 9454 -256

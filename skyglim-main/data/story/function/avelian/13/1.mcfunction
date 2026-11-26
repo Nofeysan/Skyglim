@@ -15,3 +15,5 @@ execute at @n[tag=aj.skyglim.avelian.root] run playsound minecraft:entity.villag
 
 # もう戻れなく
 scoreboard players set $cant_use_pearl _ 1
+scoreboard players set $avelian_talks story.progress 0
+scoreboard players set _ CanTalkWithMe 99

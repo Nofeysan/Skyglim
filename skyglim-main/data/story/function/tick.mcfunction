@@ -15,7 +15,7 @@
 
 # 会話可能パーティクル
     # avelian 会話可能パーティクル
-        execute if score _ CanTalkWithMe matches 1.. at @n[tag=aj.skyglim.avelian.root] run particle minecraft:dust{color: 9753574, scale: 1.7} ~ ~2.5 ~ 0.1 0.1 0.1 0.1 1
+        execute if score _ CanTalkWithMe matches 1..98 at @n[tag=aj.skyglim.avelian.root] run particle minecraft:dust{color: 9753574, scale: 1.7} ~ ~2.5 ~ 0.1 0.1 0.1 0.1 1
 
     # Knight
         execute if score $has_talks_knight CanTalkWithMe matches 1..98 at @n[type=minecraft:villager, tag=knight_leader] run particle minecraft:dust{color: 9753574, scale: 1.7} ~ ~2.5 ~ 0.1 0.1 0.1 0.1 1
@@ -27,5 +27,5 @@
         execute if score $has_talks_cecile CanTalkWithMe matches 1..98 at @n[type=minecraft:villager, tag=cecile] run particle minecraft:dust{color: 9753574, scale: 1.7} ~ ~2.5 ~ 0.1 0.1 0.1 0.1 1
 
 # sp monument
-    execute as @n[tag=sp.monument.place, type=minecraft:marker] at @s if entity @a[distance=..50] run particle minecraft:dust{color: 16490559, scale: 1.7} ~ ~2 ~1 0.1 0.7 0.1 0.1 2
+    execute as @n[tag=sp.monument.place, type=minecraft:marker] at @s if entity @a[distance=..50] run particle minecraft:dust{color: 16490559, scale: 1.7} ~ ~2 ~ 0.1 0.7 0.1 0.1 2
     execute as @n[tag=sp.monument.place, type=minecraft:marker] at @s run function stage:teleport/importants/sp-chromalier/collect/root

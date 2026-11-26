@@ -10,7 +10,7 @@
     execute if score s15 BossMoves matches 401 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawner.s15]
 
 # item check
-    execute if score s15 BossMoves matches 200..600 as @e[type=minecraft:item, tag=gimmick.item.s15] if entity @a[distance=..15] run function stage:boss/15/move/3/break
+    execute if score s15 BossMoves matches 200..600 as @e[type=minecraft:item, tag=gimmick.item.s15] at @s if entity @a[distance=..1.5] run function stage:boss/15/move/3/break
 
 # reset
     execute if score s15 BossMoves matches 600 run kill @e[type=minecraft:item, tag=gimmick.item.s15]

@@ -24,9 +24,9 @@
 # cecile
     forceload add 9258 -442 9332 -368
 
-    execute positioned 9295 147 -398 rotated 0 0 run function aj:skyglim/cecile/summon {args: {}}
-    execute positioned 9295 147 -398 rotated 0 0 run summon minecraft:villager ~ ~ ~ {Invulnerable: true, Silent: true, Rotation: [0, 0], data: {role: "cecile"}, VillagerData: {profession: "minecraft:mason", type: "minecraft:taiga"}, NoAI: true, Offers: {}, active_effects: [{id: "minecraft:invisibility", duration: -1, amplifier: 1, show_particles: false}], Tags: ['cecile']}
+    execute positioned 9295 147 -398 rotated 180 0 run function aj:skyglim/cecile/summon {args: {}}
+    execute positioned 9295 147 -398 rotated 180 0 run summon minecraft:villager ~ ~ ~ {Invulnerable: true, Silent: true, Rotation: [0, 0], data: {role: "cecile"}, VillagerData: {profession: "minecraft:mason", type: "minecraft:taiga"}, NoAI: true, Offers: {}, active_effects: [{id: "minecraft:invisibility", duration: -1, amplifier: 1, show_particles: false}], Tags: ['cecile']}
 
-    scoreboard players set $has_talks_cecile CanTalkWithMe 1
+    scoreboard players set $has_talks_cecile story.progress 1
 
     forceload remove 9258 -442 9332 -368

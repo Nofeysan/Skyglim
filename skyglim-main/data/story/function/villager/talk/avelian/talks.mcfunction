@@ -19,5 +19,8 @@ execute if score $avelian_talks story.progress matches 3 run function story:avel
 # 4: 空気変わるよ見たいな話（α版エンド）
 execute if score $avelian_talks story.progress matches 4 run function story:avelian/4/1
 
+# 12: ラスト前
+execute if score $avelian_talks story.progress matches 12 run function story:avelian/12/1
+
 # 13: ending
 execute if score $avelian_talks story.progress matches 13 run function story:avelian/13/1

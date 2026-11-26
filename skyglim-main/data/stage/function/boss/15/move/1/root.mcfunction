@@ -13,9 +13,9 @@
 # AoE
     execute if score s15 BossMoves matches 200 positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 25, t: 80, dmg: 62, str: 46, id: 151}
 
-    execute if score s15 BossMoves matches 200 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 80, dmg: 62, str: 46, id: 151}
-    execute if score s15 BossMoves matches 220 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 80, dmg: 62, str: 46, id: 151}
-    execute if score s15 BossMoves matches 240 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 80, dmg: 62, str: 46, id: 151}
+    execute if score s15 BossMoves matches 200 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 17, t: 80, dmg: 62, str: 46, id: 151}
+    execute if score s15 BossMoves matches 220 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 17, t: 80, dmg: 62, str: 46, id: 151}
+    execute if score s15 BossMoves matches 240 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 17, t: 80, dmg: 62, str: 46, id: 151}
     execute if score $s15.boss.half _ matches 1 if score s15 BossMoves matches 260 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 80, dmg: 62, str: 46, id: 151}
     execute if score $s15.boss.half _ matches 1 if score s15 BossMoves matches 280 at @a[distance=..80] positioned ~ 74 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 80, dmg: 62, str: 46, id: 151}
 

@@ -20,5 +20,5 @@ execute if score _ _ matches 1 positioned 9459.9 35 -240.0 positioned ~0.5 ~ ~0.
 execute if score _ _ matches 0 positioned 9459.0 35 -225.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
 execute if score _ _ matches 0 positioned 9459.9 35 -240.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
 
-execute if score _ _ matches 1 positioned 9459.9 35 -240.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
-execute if score _ _ matches 1 positioned 9459.0 35 -225.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 1 positioned 9459.0 35 -225.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+execute if score _ _ matches 1 positioned 9459.9 35 -240.0 positioned ~0.5 ~ ~0.5 as @a[dx=16, dy=7, dz=11] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
