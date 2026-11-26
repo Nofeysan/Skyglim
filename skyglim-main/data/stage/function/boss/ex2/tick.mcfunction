@@ -44,8 +44,8 @@ execute store result bossbar minecraft:stageex2.boss value run data get storage 
 # 行動
 scoreboard players add ex2 BossMoves 1
 execute if score ex2 BossMoves matches 200 at @n[tag=boss, tag=ex2] run function stage:boss/ex2/move/root
-execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 1 at @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/1/root
-execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 2 at @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/2/root
+execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 1 as @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/1/root
+execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 2 as @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/2/root
 execute if score ex2 BossMoves matches 200.. if score ex2-type BossMoves matches 3 as @n[tag=boss, tag=ex2] at @s run function stage:boss/ex2/move/3/root
 
 # ↓ tp のところ

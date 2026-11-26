@@ -14,11 +14,11 @@ execute unless score $s15.boss.init _ matches 1 run scoreboard players set $s15.
 # 1: 上下移動
 #execute if score s6-type BossMoves matches 1 run function stage:boss/4/move/1/root
 
-# 2: 貫通弾
-#execute if score s6-type BossMoves matches 2 run function stage:boss/4/move/2/root
+# 2: tp
+execute if score s15-type BossMoves matches 2 run function stage:boss/15/move/2/root
 
 # 3: AoE
 #execute if score s15-type BossMoves matches 3 run function stage:boss/14/move/3/root
 
 # 4: 眷属召喚
-execute if score s15-type BossMoves matches 4 run function stage:boss/14/move/4/root
+execute if score s15-type BossMoves matches 4 run function stage:boss/15/move/4/root

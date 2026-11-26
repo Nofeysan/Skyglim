@@ -32,6 +32,8 @@ execute if score $6 s13.updown matches 1 run data modify storage stage: s13.updo
 execute if score $7 s13.updown matches 0 run data modify storage stage: s13.updown append value "↑"
 execute if score $7 s13.updown matches 1 run data modify storage stage: s13.updown append value "↓"
 
+data modify storage stage: ? set value "?"
+
 # title
 title @a[distance=..30] times 0 60 10
 title @a[distance=..30] title {text: "[!]", color: "#d94262"}

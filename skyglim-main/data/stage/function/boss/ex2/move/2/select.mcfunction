@@ -17,20 +17,20 @@ execute store result score $7 ex2.updown run random value 0..1
 data remove storage stage: ex2.updown
 data modify storage stage: ex2.updown set value []
 
-execute if score $1 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $1 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $2 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $2 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $3 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $3 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $4 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $4 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $5 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $5 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $6 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $6 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
-execute if score $7 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "↑"
-execute if score $7 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "↓"
+execute if score $1 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $1 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $2 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $2 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $3 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $3 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $4 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $4 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $5 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $5 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $6 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $6 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
+execute if score $7 ex2.updown matches 0 run data modify storage stage: ex2.updown append value "§c■"
+execute if score $7 ex2.updown matches 1 run data modify storage stage: ex2.updown append value "§9■"
 
 # title
 title @a[distance=..30] times 0 60 10

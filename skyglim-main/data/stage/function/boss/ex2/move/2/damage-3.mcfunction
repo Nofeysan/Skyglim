@@ -16,19 +16,19 @@ execute unless score $ex2.boss.half _ matches 1 run title @a[distance=..80] subt
     {storage: "stage:", nbt: "ex2.updown[0]", color: "#aaaaaa"},\
     {storage: "stage:", nbt: "ex2.updown[1]", color: "#aaaaaa"},\
     {storage: "stage:", nbt: "ex2.updown[2]", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "ex2.updown[3]", color: "#e9b530"},\
-    {storage: "stage:", nbt: "ex2.updown[4]", color: "#fff6fe"},\
-    {storage: "stage:", nbt: "ex2.updown[5]", color: "#fff6fe"},\
-    {storage: "stage:", nbt: "ex2.updown[6]", color: "#fff6fe"},\
+    {storage: "stage:", nbt: "ex2.updown[3]"},\
+    {storage: "stage:", nbt: "ex2.updown[4]"},\
+    {storage: "stage:", nbt: "ex2.updown[5]"},\
+    {storage: "stage:", nbt: "ex2.updown[6]"},\
 ]
 
 execute if score $ex2.boss.half _ matches 1 run title @a[distance=..80] subtitle \
 [\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#e9b530"},\
-    {storage: "stage:", nbt: "?", color: "#fff6fe"},\
-    {storage: "stage:", nbt: "?", color: "#fff6fe"},\
-    {storage: "stage:", nbt: "?", color: "#fff6fe"},\
+    {text: "?", color: "#aaaaaa"},\
+    {text: "?", color: "#aaaaaa"},\
+    {text: "?", color: "#aaaaaa"},\
+    {text: "?", color: "#e9b530"},\
+    {text: "?", color: "#ffffff"},\
+    {text: "?", color: "#ffffff"},\
+    {text: "?", color: "#ffffff"},\
 ]

@@ -24,11 +24,11 @@ execute unless score $s13.boss.half _ matches 1 run title @a[distance=..80] subt
 
 execute if score $s13.boss.half _ matches 1 run title @a[distance=..80] subtitle \
 [\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#aaaaaa"},\
-    {storage: "stage:", nbt: "?", color: "#e9b530"},\
-    {storage: "stage:", nbt: "?", color: "#fff6fe"},\
+    {storage: "stage:", nbt: "s13.updown[0]", color: "#aaaaaa"},\
+    {storage: "stage:", nbt: "s13.updown[1]", color: "#aaaaaa"},\
+    {storage: "stage:", nbt: "s13.updown[2]", color: "#aaaaaa"},\
+    {storage: "stage:", nbt: "s13.updown[3]", color: "#aaaaaa"},\
+    {storage: "stage:", nbt: "s13.updown[4]", color: "#aaaaaa"},\
+    {text: "?", color: "#e9b530"},\
+    {text: "?", color: "#fff6fe"},\
 ]

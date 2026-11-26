@@ -50,10 +50,10 @@ execute store result bossbar minecraft:stage16.boss value run data get storage b
 scoreboard players add s16 BossMoves 1
 scoreboard players add @e[type=minecraft:bat, tag=gimmick.bat.s16] s16.gimmick 1
 
-execute if score s16 BossMoves matches 200 at @n[tag=boss, tag=s16] run function stage:boss/16/move/root
+execute if score s16 BossMoves matches 200 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/root
 execute as @e[type=minecraft:bat, tag=gimmick.bat.s16] if score @s s16.gimmick matches 420.. run kill @s
 
-execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 1 at @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/1/root
-execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 unless score $s16.boss.half _ matches 1 at @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/no_half/root
-execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 if score $s16.boss.half _ matches 1 at @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/half/root
+execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 1 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/1/root
+execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 unless score $s16.boss.half _ matches 1 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/no_half/root
+execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 2 if score $s16.boss.half _ matches 1 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/2/half/root
 execute if score s16 BossMoves matches 200.. if score s16-type BossMoves matches 5 as @n[tag=boss, tag=s16] at @s run function stage:boss/16/move/5/root

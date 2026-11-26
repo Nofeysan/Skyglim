@@ -44,8 +44,8 @@ execute store result bossbar minecraft:stageex5.boss value run data get storage 
 # 行動
 scoreboard players add ex5 BossMoves 1
 execute if score ex5 BossMoves matches 200 at @n[tag=boss, tag=ex5] run function stage:boss/ex5/move/root
-execute if score ex5 BossMoves matches 200.. if score ex5-type BossMoves matches 1 at @n[tag=boss, tag=ex5] at @s run function stage:boss/ex5/move/1/root
-execute if score ex5 BossMoves matches 200.. if score ex5-type BossMoves matches 2 at @n[tag=boss, tag=ex5] at @s run function stage:boss/ex5/move/2/root
+execute if score ex5 BossMoves matches 200.. if score ex5-type BossMoves matches 1 as @n[tag=boss, tag=ex5] at @s run function stage:boss/ex5/move/1/root
+execute if score ex5 BossMoves matches 200.. if score ex5-type BossMoves matches 2 as @n[tag=boss, tag=ex5] at @s run function stage:boss/ex5/move/2/root
 execute if score ex5 BossMoves matches 200.. if score ex5-type BossMoves matches 3 as @n[tag=boss, tag=ex5] at @s run function stage:boss/ex5/move/3/root
 
 # fire

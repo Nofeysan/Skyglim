@@ -45,10 +45,9 @@ execute store result bossbar minecraft:stage15.boss value run data get storage b
 scoreboard players add s15 BossMoves 1
 scoreboard players add s15-breath BossMoves 1
 
-execute if score s15 BossMoves matches 200 at @n[tag=boss, tag=s15] run function stage:boss/15/move/root
-execute if score s15-breath BossMoves matches 400.. at @n[tag=boss, tag=s15] run function stage:boss/15/move/breath/root
+execute if score s15 BossMoves matches 200 as @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/root
+execute if score s15-breath BossMoves matches 400.. run function stage:boss/15/move/breath/root
 
-execute if score s15 BossMoves matches 200.. if score s15-type BossMoves matches 1 at @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/1/root
-execute if score s15 BossMoves matches 200.. if score s15-type BossMoves matches 2 at @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/2/root
+execute if score s15 BossMoves matches 200.. if score s15-type BossMoves matches 1 as @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/1/root
 execute if score s15 BossMoves matches 200.. if score s15-type BossMoves matches 3 as @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/3/root
 execute if score s15 BossMoves matches 200.. if score s15-type BossMoves matches 9 as @n[tag=boss, tag=s15] at @s run function stage:boss/15/move/init/root

@@ -44,8 +44,8 @@ execute store result bossbar minecraft:stageex3.boss value run data get storage 
 # 行動
 scoreboard players add ex3 BossMoves 1
 execute if score ex3 BossMoves matches 200 at @n[tag=boss, tag=ex3] run function stage:boss/ex3/move/root
-execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 1 at @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/1/root
-execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 2 at @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/2/root
+execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 1 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/1/root
+execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 2 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/2/root
 execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/no_half/root
 execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/half/root
 

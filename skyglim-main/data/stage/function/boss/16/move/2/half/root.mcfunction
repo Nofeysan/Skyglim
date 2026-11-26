@@ -97,6 +97,15 @@ execute if score s16 BossMoves matches 200 run effect give @n[predicate=entity:e
     execute if score s16 BossMoves matches 325 run data modify entity @n[type=minecraft:item, tag=gimmick.magma, tag=118] Motion set value [0.43412, 0.0, 2.46202]
     execute if score s16 BossMoves matches 330 run data modify entity @n[type=minecraft:item, tag=gimmick.magma, tag=119] Motion set value [0.0, 0.0, 2.5]
 
+# AoE to AEC
+execute if score s16 BossMoves matches 200 at @n[predicate=entity:entity_enemy, tag=boss, tag=s16] positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 200 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 220 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 240 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 260 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 280 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+execute if score s16 BossMoves matches 300 at @a positioned ~ 142 ~ run function entity:aec_manager/summon/.cyl {r: 7, t: 40, dmg: 69, str: 51, id: 161}
+
 # damage 処理
 execute if score s16 BossMoves matches 240..350 as @e[type=item, tag=gimmick.magma] at @s run function stage:boss/16/move/2/half/damage
 
