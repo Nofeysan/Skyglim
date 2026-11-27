@@ -5,7 +5,7 @@
 # 
 
 # ランダムな場所にスポーン
-execute at @e[type=minecraft:marker, tag=gimmick.barrier.can, sort= random, limit= 1] run \
+execute at @e[type=minecraft:marker, tag=gimmick.barrier.can.exx, sort= random, limit= 1] run \
 summon minecraft:wither_skeleton ~ ~ ~ \
                         {\
                             attributes: [\
@@ -45,7 +45,7 @@ summon minecraft:wither_skeleton ~ ~ ~ \
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
                             Team: "enemy",\
-                            Tags: ["gimmick", "gimmick.barrier.s11"], NoAI: true, Glowing: true\
+                            Tags: ["gimmick", "gimmick.barrier.exx"], NoAI: true, Glowing: true\
                         }
 
 

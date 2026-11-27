@@ -32,4 +32,4 @@
     # 13: アステリカ避け [tick]
     # 14: 剣召喚++ [tick]
     # 15: 眷属召喚 + ポーション蝙蝠召喚
-        execute if score exx-type BossMoves matches 15 run function stage:boss/exx/move/4/root
+        execute if score exx-type BossMoves matches 15 run function stage:boss/exx/move/15/root

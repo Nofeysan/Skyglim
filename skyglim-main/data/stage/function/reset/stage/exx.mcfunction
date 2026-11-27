@@ -24,6 +24,7 @@ scoreboard players set _ stage.ex.x -1
 bossbar remove minecraft:stageexx.boss
 function aj:skyglim/cecile/remove/all
 execute positioned 9288 147 -405 rotated -90 0 run function aj:skyglim/cecile/summon {args: {}}
+function stage:boss/exx/move/init/1/remove
 
 setblock 9295 145 -405 minecraft:command_block{Command: "function stage:boss/exx/summon"}
 setblock 9295 146 -405 minecraft:lapis_block

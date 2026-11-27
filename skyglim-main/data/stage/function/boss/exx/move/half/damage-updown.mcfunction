@@ -5,19 +5,63 @@
 # 
 
 # particle
-execute if score _ _ matches 0 positioned 9062 12 -166 run particle minecraft:sweep_attack ~ ~ ~ 10 1.5 10 0.1 1280
-execute if score _ _ matches 0 positioned 9062 12 -166 run particle minecraft:dust{color: 14238306, scale: 2.4} ~ ~ ~ 10 1.5 10 0.1 1680
-execute if score _ _ matches 1 positioned 9062 16 -166 run particle minecraft:sweep_attack ~ ~ ~ 10 1.5 10 0.1 1280
-execute if score _ _ matches 1 positioned 9062 16 -166 run particle minecraft:dust{color: 14238306, scale: 2.4} ~ ~ ~ 10 1.5 10 0.1 1680
+    # 上
+        #execute if score _ _ matches 0 positioned 9295 160 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 1 positioned 9295 160 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 2 positioned 9295 160 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        #execute if score _ _ matches 0 positioned 9295 160 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 1 positioned 9295 160 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 2 positioned 9295 160 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+
+    # 真ん中
+        execute if score _ _ matches 0 positioned 9295 154 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        #execute if score _ _ matches 1 positioned 9295 154 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 2 positioned 9295 154 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 0 positioned 9295 154 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        #execute if score _ _ matches 1 positioned 9295 154 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 2 positioned 9295 154 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+
+    # 下
+        execute if score _ _ matches 0 positioned 9295 148 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 1 positioned 9295 148 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        #execute if score _ _ matches 2 positioned 9295 148 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 0 positioned 9295 148 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        execute if score _ _ matches 1 positioned 9295 148 -405 run particle minecraft:dust{color: 15357190, scale: 4.0} ~ ~ ~ 9 3 9 0 640
+        #execute if score _ _ matches 2 positioned 9295 148 -405 run particle minecraft:dust{color: 12460370, scale: 4.0} ~ ~ ~ 9 3 9 0 640
 
 # effect
-execute if score _ _ matches 0 positioned 9044.0 12 -184.0 run effect give @a[dx=36, dy=3, dz=36] minecraft:wind_charged 1 26 true
-execute if score _ _ matches 1 positioned 9044.0 16 -184.0 run effect give @a[dx=36, dy=3, dz=36] minecraft:wind_charged 1 26 true
+    # 上
+        #execute if score _ _ matches 0 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        execute if score _ _ matches 1 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        execute if score _ _ matches 2 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+
+    # 真ん中
+        execute if score _ _ matches 0 positioned 9276.0 154.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        #execute if score _ _ matches 1 positioned 9276.0 154.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        execute if score _ _ matches 2 positioned 9276.0 154.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+
+    # 下
+        execute if score _ _ matches 0 positioned 9276.0 148.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        execute if score _ _ matches 1 positioned 9276.0 148.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
+        #execute if score _ _ matches 2 positioned 9276.0 148.0 -424.0 positioned ~0.5 ~ ~0.5 run effect give @a[dx=38, dy=9, dz=38] minecraft:wind_charged 1 32
 
 # sound
-# 適切な方にいる人は levelup, 間違ってる人は wither.shoot
-execute if score _ _ matches 0 positioned 9044.0 12 -184.0 as @a[dx=36, dy=3, dz=36] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
-execute if score _ _ matches 0 positioned 9044.0 16 -184.0 as @a[dx=36, dy=3, dz=36] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+    # 上
+        execute if score _ _ matches 0 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 1 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 2 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
 
-execute if score _ _ matches 1 positioned 9044.0 12 -184.0 as @a[dx=36, dy=3, dz=36] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
-execute if score _ _ matches 1 positioned 9044.0 16 -184.0 as @a[dx=36, dy=3, dz=36] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+    # 真ん中
+        execute if score _ _ matches 0 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 1 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 2 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+
+    # 下
+        execute if score _ _ matches 0 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 1 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.wither.break_block voice @s ~ ~ ~ 0.5 1
+        execute if score _ _ matches 2 positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 as @a[dx=38, dy=9, dz=38] at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.5 1
+
+#\ +6
+# 一番下; /execute positioned 9276.0 148.0 -424.0 positioned ~0.5 ~ ~0.5 if entity @s[dx=38, dy=5, dz=38]
+# 真ん中; /execute positioned 9276.0 154.0 -424.0 positioned ~0.5 ~ ~0.5 if entity @s[dx=38, dy=5, dz=38]
+# 一番上; /execute positioned 9276.0 160.0 -424.0 positioned ~0.5 ~ ~0.5 if entity @s[dx=38, dy=9, dz=38]

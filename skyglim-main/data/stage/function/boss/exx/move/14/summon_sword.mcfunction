@@ -27,7 +27,7 @@ summon minecraft:item ~ ~ ~ \
             transformation: {\
                 scale: [12.0f, 12.0f, 1.5f], \
                 translation: [0.0f, 4.5f, 0.0f], \
-                right_rotation: {axis: [-0.7071f, -0.7071f, 0.0f], angle: 1.17809}, \
+                right_rotation: [0.0f, 0.0f, 13.0f, 5.35f], \
                 left_rotation: [0.0f, 0.0f, 0.0f, 1.0f]\
             }, \
             Glowing: true, Tags: ['gimmick']\

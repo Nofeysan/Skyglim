@@ -67,7 +67,7 @@ execute store result bossbar minecraft:stageexx.boss value run data get storage 
 
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 11 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/11/root
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 12 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/12/root
-        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 13 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/3/root
+        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 13 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/13/root
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 14 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/14/root
 
     #+ init, half

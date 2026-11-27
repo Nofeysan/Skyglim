@@ -22,6 +22,7 @@ function entity:spawner/set {id: 'stage/10/12', xyz: '10111 5 -209', block: 'bea
 function entity:spawner/set {id: 'stage/10/12', xyz: '10157 5 -261', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/10/11', xyz: '10157 5 -269', block: 'obsidian'}
 function entity:spawner/set {id: 'stage/10/13', xyz: '10157 5 -277', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/10/13', xyz: '11168 238 -69', block: 'iron_block'}
 
 # チェスト配置
 data modify block 10117 5 -234 LootTable set value "entity:mob_drop/10/chest"

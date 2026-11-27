@@ -8,8 +8,7 @@
 forceload add 10749 -323 10419 -444
 
 # スポナー設置
-function entity:spawner/set {id: 'stage/11/11', xyz: '10716 266 -346', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/11/11', xyz: '10722 266 -346', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/11/11', xyz: '10719 265 -346', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/11/12', xyz: '10716 266 -361', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/11/14', xyz: '10722 266 -361', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/11/13', xyz: '10719 265 -385', block: 'iron_block'}

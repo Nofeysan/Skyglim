@@ -26,6 +26,7 @@ function entity:spawner/set {id: 'stage/3/13', xyz: '9585 25 215', block: 'iron_
 function entity:spawner/set {id: 'stage/3/12', xyz: '9574 26 224', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/3/13', xyz: '9558 25 216', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/3/11', xyz: '9585 25 127', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/3/11', xyz: '9585 25 147', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/3/14', xyz: '9573 24 139', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/3/12', xyz: '9570 26 156', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/3/13', xyz: '9530 27 115', block: 'iron_block'}

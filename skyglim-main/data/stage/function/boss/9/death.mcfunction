@@ -23,7 +23,9 @@ execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~
 fill 10428 -3 305 10428 -6 307 minecraft:air destroy
 
 # 次の道
+forceload add 10044 -7 10044 -14
 fill 10044 95 -7 10044 89 -14 minecraft:air destroy
+forceload remove 10044 -7 10044 -14
 
 # story
 #execute unless score $talks_4 CanTalkWithMe matches 1 run scoreboard players set _ CanTalkWithMe 1

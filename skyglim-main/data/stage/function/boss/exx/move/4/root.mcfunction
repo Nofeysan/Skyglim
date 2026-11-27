@@ -8,14 +8,14 @@
 # 2 + (players - 1)* 2 (n <= 4)
 execute store result score $players _ if entity @a[distance=..75]
 
-execute positioned 10277 24 -76 run function stage:boss/exx/move/4/random_spawn
-execute positioned 10277 24 -110 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 2.. positioned 10294 24 -93 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 2.. positioned 10260 24 -93 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 3.. positioned 10291 24 -105 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 3.. positioned 10265 24 -81 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 4.. positioned 10265 24 -105 run function stage:boss/exx/move/4/random_spawn
-execute if score $players _ matches 4.. positioned 10291 24 -81 run function stage:boss/exx/move/4/random_spawn
+execute positioned 9305 147 -405 run function stage:boss/exx/move/4/random_spawn
+execute positioned 9285 147 -405 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 2.. positioned 9295 147 -395 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 2.. positioned 9295 147 -415 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 3.. positioned 9303 147 -397 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 3.. positioned 9287 147 -413 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 4.. positioned 9287 147 -397 run function stage:boss/exx/move/4/random_spawn
+execute if score $players _ matches 4.. positioned 9303 147 -413 run function stage:boss/exx/move/4/random_spawn
 
 # score
 scoreboard players set exx BossMoves 0

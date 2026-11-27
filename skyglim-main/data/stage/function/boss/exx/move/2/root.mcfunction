@@ -43,10 +43,10 @@ execute if score exx BossMoves matches 280 run function stage:boss/exx/move/2/sh
 execute if score exx BossMoves matches 300 run function stage:boss/exx/move/2/shoot_4
 
 # AoE
-execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
-execute if score exx BossMoves matches 220 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
-execute if score exx BossMoves matches 240 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
-execute if score exx BossMoves matches 260 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 220 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 240 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 260 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
 
 # damage 処理
 execute if score exx BossMoves matches 240..320 as @e[type=item, tag=gimmick.magma] at @s run function stage:boss/exx/move/2/damage

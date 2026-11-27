@@ -18,7 +18,7 @@
     execute if score @s exx.gimmick matches 50 run data modify entity @s NoGravity set value false
 
 # 80~: ダメージ 1
-    execute if score @s exx.gimmick matches 80 run function entity:aec_manager/summon/.cyl {r: 15, t: 60, dmg: 48, str: 56, id: 112}
+    execute if score @s exx.gimmick matches 80 run function entity:aec_manager/summon/.cyl {r: 15, t: 60, dmg: 48, str: 56, id: 294}
     execute if score @s exx.gimmick matches 80 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 0.5
     execute if score @s exx.gimmick matches 80 run function stage:boss/exx/move/5/particle {color: 3301326}
 
@@ -29,7 +29,7 @@
     execute if score @s exx.gimmick matches 120 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 2.0
 
 # 180~: ダメージ 1
-    execute if score @s exx.gimmick matches 180 run function entity:aec_manager/summon/.cyl {r: 15, t: 60, dmg: 48, str: 56, id: 112}
+    execute if score @s exx.gimmick matches 180 run function entity:aec_manager/summon/.cyl {r: 15, t: 60, dmg: 48, str: 56, id: 294}
     execute if score @s exx.gimmick matches 180 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 0.5
     execute if score @s exx.gimmick matches 180 run function stage:boss/exx/move/5/particle {color: 3301326}
 

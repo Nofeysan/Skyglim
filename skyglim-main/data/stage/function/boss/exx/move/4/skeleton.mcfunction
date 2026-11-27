@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:stray ~ ~ ~ \
+summon minecraft:skeleton ~ ~ ~ \
                         {\
                             attributes: [\
                                 {id: "minecraft:armor", base: -1024},\
@@ -17,35 +17,36 @@ summon minecraft:stray ~ ~ ~ \
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
                             equipment: {\
-                                head: {id: "minecraft:packed_ice", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
-                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5747395, "minecraft:enchantment_glint_override": true}},\
-                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 5339053, "minecraft:enchantment_glint_override": true}},\
-                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 4212407, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:iron_axe", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"entity:remove_torch": 1}}},\
+                                head: {id: "minecraft:purple_stained_glass", components: {"minecraft:unbreakable": {}, "minecraft:enchantment_glint_override": true}},\
+                                chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 8882055, "minecraft:enchantment_glint_override": true}},\
+                                legs: {id: "minecraft:leather_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 11645361, "minecraft:enchantment_glint_override": true}},\
+                                feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 16777215, "minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:nether_star", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"minecraft:knockback": 1}}},\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\
                             },\
-                            CustomName: {translate: "entity.stage.ex5.1.name", color: "#ffffff", italic: false},\
+                            CustomName: {translate: "entity.stage.16.boss.friend.name", color: "#ffffff", italic: false},\
                             data: {\
                                 "status": {\
-                                    "max_hp": 7600,\
-                                    "current_hp": 7600,\
+                                    "max_hp": 1000,\
+                                    "current_hp": 1000,\
                                     \
-                                    "dmg": 86,\
-                                    "str": 81,\
-                                    "def": 2048,\
+                                    "dmg": 69,\
+                                    "str": 48,\
+                                    "def": 44,\
                                     \
-                                    "xp": 243,\
+                                    "xp": 170,\
                                     \
-                                    "lore": "entity.stage.ex5.1.lore",\
+                                    "lore": "entity.stage.16.boss.friend.lore",\
                                     \
-                                    "loot": "ex5/ex5-1"\
+                                    "loot": "empty"\
                                 }\
                             },\
                             active_effects: [\
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
-                            Team: "enemy", Tags: ['leave.potion', 'leave.potion.ex5.1']\
-                        }\
+                            Team: "enemy",\
+                            Tags: ["gimmick", "gimmick.enemy.s16", "crit.only"]\
+                        }
 

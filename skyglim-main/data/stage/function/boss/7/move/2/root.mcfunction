@@ -12,7 +12,7 @@ execute if score s7 BossMoves matches 200 run playsound minecraft:block.note_blo
 # AoE
 execute if score s7 BossMoves matches 220 run playsound minecraft:block.brewing_stand.brew voice @a ~ ~ ~ 1.5 1
 execute if score s7 BossMoves matches 220 run playsound minecraft:block.brewing_stand.brew voice @a ~ ~ ~ 1.5 1.5
-execute if score s7 BossMoves matches 220 as @e[type=minecraft:item, distance=..40, tag=gimmick.slime] at @s positioned ~ 0 ~ run function entity:aec_manager/summon/.square {r: 13, t: 40, dmg: 16, str: 18, id: 72}
+execute if score s7 BossMoves matches 220 as @e[type=minecraft:item, distance=..40, tag=gimmick.slime] at @s positioned ~ 1 ~ run function entity:aec_manager/summon/.square {r: 13, t: 40, dmg: 16, str: 18, id: 72}
 
 # 300 で消去
 execute if score s7 BossMoves matches 300 run kill @e[type=minecraft:item, distance=..40, tag=gimmick.slime]

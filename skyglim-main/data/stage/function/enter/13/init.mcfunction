@@ -15,8 +15,6 @@ function entity:spawner/set {id: 'stage/13/12', xyz: '9019 26 -24', block: 'beac
 function entity:spawner/set {id: 'stage/13/13', xyz: '9017 25 -45', block: 'obsidian'}
 
 function entity:spawner/set {id: 'stage/13/12', xyz: '9019 19 -56', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/13/13', xyz: '9018 19 -68', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/13/13', xyz: '9019 19 -68', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/13/11', xyz: '9011 19 -73', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/13/11', xyz: '9026 19 -73', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/13/12', xyz: '9012 19 -92', block: 'obsidian'}
@@ -40,6 +38,7 @@ function entity:spawner/set {id: 'stage/13/13', xyz: '9001 19 -92', block: 'iron
 # チェスト配置
 data modify block 9013 28 -43 LootTable set value "entity:mob_drop/13/chest"
 data modify block 9012 25 -112 LootTable set value "entity:mob_drop/13/chest"
+data modify block 9017 20 -57 LootTable set value "entity:mob_drop/13/chest"
 
 # ボス召喚設置
 setblock 9062 11 -166 minecraft:command_block{Command: "function stage:boss/13/summon"}

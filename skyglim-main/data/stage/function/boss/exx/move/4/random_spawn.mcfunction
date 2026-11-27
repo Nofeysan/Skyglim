@@ -22,8 +22,9 @@
 execute store result score _ _ run random value 0..1
 
 # summon
-execute if score _ _ matches 0 run function stage:boss/ex5/move/4/skeleton
-execute if score _ _ matches 1 run function stage:boss/ex5/move/4/slime
+execute if score _ _ matches 0 run function stage:boss/exx/move/4/skeleton
+execute if score _ _ matches 1 run function stage:boss/exx/move/4/spider
+execute if score _ _ matches 2 run function stage:boss/exx/move/4/stray
 
 # sound
 playsound minecraft:entity.wither.ambient voice @a ~ ~ ~ 0.3 1

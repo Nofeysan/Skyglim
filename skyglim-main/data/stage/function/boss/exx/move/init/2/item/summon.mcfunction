@@ -4,7 +4,7 @@
 # 
 # 
 
-summon minecraft:spawner_minecart 9514 154 -504 \
+summon minecraft:spawner_minecart 9295 154 -405 \
 {\
     Delay: 0,\
     \
