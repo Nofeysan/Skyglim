@@ -1,17 +1,36 @@
-#> stage:boss/4/move/2/root
+#> stage:boss/6/move/2/root
 # 
-# プレイヤーのいた場所に貫通弾
+# スポナーからランダムに浮かせてAoE
 # 
 # 
 
-# 予告
-execute if score ex5 BossMoves matches 200 run function stage:boss/ex5/move/1/pre
-execute if score ex5 BossMoves matches 220 run function stage:boss/ex5/move/1/pre
-execute if score ex5 BossMoves matches 240 run function stage:boss/ex5/move/1/pre
+# 各プレイヤーの場所に tnt
+    execute if score exx BossMoves matches 200 at @a[distance=..80] run summon minecraft:item ~ ~1 ~ {Invulnerable: true, NoGravity: true, PickupDelay: -1, Item: {id: "minecraft:tnt", components: {"minecraft:enchantment_glint_override": true}}, Tags: ['gimmick', 'gimmick.tnt.exx'], Glowing: true}
 
-# shoot
-execute if score ex5 BossMoves matches 260 as @e[distance=..80, tag=gimmick.beam, type=minecraft:item] at @s run function stage:boss/ex5/move/1/shoot
-execute if score ex5 BossMoves matches 261 run function stage:boss/ex5/move/1/kill
+    execute if score exx BossMoves matches 200 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.5
+    execute if score exx BossMoves matches 210 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.5
+
+    execute if score exx BossMoves matches 220 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.749154
+    execute if score exx BossMoves matches 225 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.749154
+    execute if score exx BossMoves matches 230 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.749154
+    execute if score exx BossMoves matches 235 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 0.749154
+
+    execute if score exx BossMoves matches 240 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 1.0
+    execute if score exx BossMoves matches 245 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 1.0
+    execute if score exx BossMoves matches 250 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 1.0
+    execute if score exx BossMoves matches 255 as @a[distance=..80] at @s run playsound minecraft:block.note_block.bell voice @s ~ ~ ~ 0.6 1.0
+
+# 爆発
+    execute if score exx BossMoves matches 260 as @a[distance=..80] at @s run playsound minecraft:entity.generic.explode voice @s ~ ~ ~ 0.6 0.8
+    execute if score exx BossMoves matches 260 as @a[distance=..80] at @s run playsound minecraft:entity.generic.explode voice @s ~ ~ ~ 0.6 1.0
+    execute if score exx BossMoves matches 260 as @a[distance=..80] at @s run playsound minecraft:entity.generic.explode voice @s ~ ~ ~ 0.6 1.5
+
+    execute if score exx BossMoves matches 260 at @e[type=minecraft:item, tag=gimmick.tnt.exx] run particle minecraft:dust{color: 12460370, scale: 2.4} ~ ~ ~ 0.7 0.7 0.7 0.01 120
+    execute if score exx BossMoves matches 260 at @e[type=minecraft:item, tag=gimmick.tnt.exx] run particle minecraft:dust{color: 15357190, scale: 2.4} ~ ~ ~ 0.7 0.7 0.7 0.01 120
+    execute if score exx BossMoves matches 260 at @e[type=minecraft:item, tag=gimmick.tnt.exx] run particle minecraft:explosion ~ ~ ~ 0.7 0.7 0.7 0.1 20
+
+    execute if score exx BossMoves matches 260 at @e[type=minecraft:item, tag=gimmick.tnt.exx] run effect give @a[distance=..5] minecraft:wind_charged 1 40
 
 # reset
-execute if score ex5 BossMoves matches 261.. run scoreboard players set ex5 BossMoves 60
+    execute if score exx BossMoves matches 260.. run kill @e[type=minecraft:item, tag=gimmick.tnt.exx]
+    execute if score exx BossMoves matches 260.. run scoreboard players set exx BossMoves 100

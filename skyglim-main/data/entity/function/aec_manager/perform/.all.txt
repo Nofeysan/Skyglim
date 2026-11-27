@@ -52,6 +52,11 @@ function entity:aec_manager/summon/.cyl {r: 10, t: 40, dmg: 16, str: 18, id: 21}
 [o] 275: ex7.5 - after rate damage
 [o] 279: ex7.10 - after rate damage
 [o] 2711: ex7.12 - after rate damage + AEC
+[x] 290: exx boss - init 1; AoE to AEC
+[x] 291: exx boss - init 2; break to AEC
+[x] 292: exx boss - normal AoE
+[x] 293: exx boss - AoE to AEC
+[x] 294: exx boss - sword AoE
 
 # フィールド行動
 [o] 10700: s7 紙魚

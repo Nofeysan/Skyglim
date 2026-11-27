@@ -23,3 +23,4 @@ execute if entity @s[tag=s16] at @s run function stage:teleport/importants/16/ac
 execute if entity @s[tag=ex2] at @s run function stage:boss/ex2/death
 execute if entity @s[tag=ex3] at @s run function stage:boss/ex3/death
 execute if entity @s[tag=ex5] at @s run function stage:boss/ex5/death
+execute if entity @s[tag=exx] at @s run function stage:boss/exx/death

@@ -76,6 +76,8 @@ scoreboard objectives add ex5.froze.timer dummy
 scoreboard objectives add ex5.froze.count dummy
 scoreboard objectives add ex5.froze.count.all dummy
 scoreboard objectives add ex5.campfire dummy
+scoreboard objectives add exx.updown dummy
+scoreboard objectives add exx.gimmick dummy
 
 # ついでに街の初期設定
 forceload add 60 168 138 202

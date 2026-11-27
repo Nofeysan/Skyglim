@@ -10,9 +10,10 @@ setblock ~ ~ ~ minecraft:gray_stained_glass
 
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/exx/boss
-scoreboard players set exx BossMoves 120
+scoreboard players set exx BossMoves 140
 scoreboard players set $exx.boss.half _ 0
 scoreboard players set $exx.boss.half.moved _ 0
+scoreboard players set $exx.boss.init _ 0
 
 execute positioned ~ ~3 ~ run function aj:skyglim/cecile/summon {args: {}}
 

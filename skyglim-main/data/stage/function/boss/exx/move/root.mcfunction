@@ -5,18 +5,31 @@
 # 
 
 # random
-execute store result score ex5-type BossMoves run random value 1..4
+    execute unless score $exx.boss.half _ matches 1 store result score exx-type BossMoves run random value 1..6
+    execute if score $exx.boss.half _ matches 1 store result score exx-type BossMoves run random value 11..15
 
-execute unless score $ex5.init _ matches 1 run scoreboard players set ex5-type BossMoves 9
+# init, half
+    execute unless score $exx.boss.init _ matches 1 run scoreboard players set exx-type BossMoves 90
+    execute if score $exx.boss.half _ matches 1 unless score $exx.boss.half.moved _ matches 1 run scoreboard players set exx-type BossMoves 99
+    execute if score $exx.boss.half _ matches 1 unless score $exx.boss.half.moved _ matches 1 run scoreboard players set $exx.boss.half.moved _ 1
 
-# 1: 上下移動
-#execute if score s6-type BossMoves matches 1 run function stage:boss/4/move/1/root
+#* 1~6; 通常行動
+    # 1: プレイヤー位置に爆弾 [tick]
+    # 2: 6方向射撃 + AoE [tick]
+    # 3: ポーション蝙蝠召喚
+        execute if score exx-type BossMoves matches 3 run function stage:boss/exx/move/3/root
 
-# 2: 貫通弾
-#execute if score s6-type BossMoves matches 2 run function stage:boss/4/move/2/root
+    # 4: 眷属召喚
+        execute if score exx-type BossMoves matches 4 run function stage:boss/exx/move/4/root
+    
+    # 5: 剣召喚 [tick]
+    # 6: 転移
+        execute if score exx-type BossMoves matches 6 run function stage:boss/exx/move/6/root
 
-# 3: AoE
-#execute if score ex5-type BossMoves matches 3 run function stage:boss/ex5/move/3/root
-
-# 4: 眷属召喚
-execute if score ex5-type BossMoves matches 4 run function stage:boss/ex5/move/4/root
+#* 11~15; ラストスパート
+    # 11: 360度射撃 + AoE [tick]
+    # 12: アイテム降らせ [tick]
+    # 13: アステリカ避け [tick]
+    # 14: 剣召喚++ [tick]
+    # 15: 眷属召喚 + ポーション蝙蝠召喚
+        execute if score exx-type BossMoves matches 15 run function stage:boss/exx/move/4/root

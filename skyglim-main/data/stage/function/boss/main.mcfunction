@@ -24,3 +24,4 @@ execute if entity @n[tag=boss, tag=s16] run function stage:boss/16/tick
 execute if entity @n[tag=boss, tag=ex2] run function stage:boss/ex2/tick
 execute if entity @n[tag=boss, tag=ex3] run function stage:boss/ex3/tick
 execute if entity @n[tag=boss, tag=ex5] run function stage:boss/ex5/tick
+execute if entity @n[tag=boss, tag=exx] run function stage:boss/exx/tick
