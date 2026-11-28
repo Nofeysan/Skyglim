@@ -11,7 +11,7 @@
     execute if score _ _ matches 0..89 run return fail
 
 #+ act
-    execute at @a[distance=..20] run function entity:aec_manager/summon/.cyl {r: 13, t: 60, dmg: 140, str: 131, id: 20801}
+    execute at @a[distance=..20] run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 140, str: 131, id: 20801}
     playsound minecraft:item.trident.return voice @a ~ ~ ~ 0.6 1.5
 
 # reset

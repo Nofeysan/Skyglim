@@ -10,7 +10,7 @@
 scoreboard players remove $count _ 1
 
 # particle
-particle minecraft:dust{color: 14718167, scale: 1.2} ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
+particle minecraft:dust{color: 14718167, scale: 1.8} ~ ~ ~ 0.0 0.0 0.0 0 1 force @a
 
 # return
 execute if score $count _ matches 0.. positioned ^ ^ ^1 run function stage:boss/exx/move/2/particle-line_4

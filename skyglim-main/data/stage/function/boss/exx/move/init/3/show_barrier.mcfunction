@@ -14,7 +14,7 @@
             rotated as @e[tag=exx_axis, limit=2] positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^1 \
             rotated as @e[tag=exx_axis, limit=2] positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^1 \
             rotated as @e[tag=exx_axis, limit=2] positioned ^ ^ ^1 facing entity @s feet positioned as @s positioned ^ ^ ^5 \
-            run particle minecraft:end_rod ~ ~0.5 ~ 0 3 0 0 100 force
+            run particle minecraft:end_rod ~ ~0.5 ~ 0 3 0 0 6 force
     
     kill @e[tag=exx, type=minecraft:marker]
 

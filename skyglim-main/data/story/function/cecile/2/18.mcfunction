@@ -25,7 +25,7 @@ scoreboard players set $chromalier_all _ 0
 
 function stage:teleport/importants/sp-gate/init
 
-scoreboard players set $has_talks_cecile CanTalkWithMe 0
+scoreboard players set $has_talks_cecile story.progress 0
 
 # clone
 clone 9259 97 -441 9331 116 -369 9259 141 -441

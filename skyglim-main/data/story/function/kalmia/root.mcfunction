@@ -8,8 +8,8 @@
     scoreboard players add $kalmia_last _ 1
 
 # 0~ ; 転移
-    execute if score $kalmia_last _ matches 0 run execute positioned 79 95 -195 rotated -162 18 run function aj:skyglim/kalmia/summon {args: {animation: 'hover', start_animation: true}}
-    execute if score $kalmia_last _ matches 20 run tp @a 90.0 54 235 0 0
+    execute if score $kalmia_last _ matches 20 run tp @a 78 96 -191 0 0
+    execute if score $kalmia_last _ matches 30 positioned 74 99 -182 rotated -162 18 run function aj:skyglim/kalmia/summon {args: {animation: 'hover', start_animation: true}}
 
 # 80~ ; 会話スタート
     execute if score $kalmia_last _ matches 80 run function story:kalmia/talk_kalmia {id: 1}

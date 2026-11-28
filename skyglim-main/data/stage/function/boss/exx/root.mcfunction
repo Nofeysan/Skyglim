@@ -9,4 +9,4 @@
     setblock ~ ~ ~ minecraft:gray_stained_glass
 
 # 2回目以降
-    execute if score $exx.boss.first _ matches 1 run function story:cecile/1/restart
+    execute if score $exx.boss.first _ matches 1 run function story:cecile/3/restart

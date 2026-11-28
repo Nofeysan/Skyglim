@@ -5,14 +5,14 @@
 # 
 
 # effect
-execute if score exx BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness 12 50
+execute if score exx BossMoves matches 200..420 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness 1 50
 
 # sound
     scoreboard players operation _ _ = exx BossMoves
     scoreboard players operation _ _ %= #5 num
 
-    execute if score exx BossMoves matches 200..880 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 2
-    execute if score exx BossMoves matches 240..920 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.wither.shoot voice @s ~ ~ ~ 0.3 2
+    execute if score exx BossMoves matches 200..380 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 2
+    execute if score exx BossMoves matches 240..420 if score _ _ matches 0 as @a[distance=..50] at @s run playsound minecraft:entity.wither.shoot voice @s ~ ~ ~ 0.3 2
 
 # 召喚
     # 0 +10n
@@ -173,13 +173,19 @@ execute if score exx BossMoves matches 200 run effect give @n[predicate=entity:e
 execute if score exx BossMoves matches 240..420 as @e[type=item, tag=gimmick.magma, distance=..50] at @s run function stage:boss/exx/move/init/2/round/damage
 
 # AoE
-execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
-execute if score exx BossMoves matches 260 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
-execute if score exx BossMoves matches 320 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
-execute if score exx BossMoves matches 380 at @a[distance=..50] positioned ~ 240 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
+execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
+execute if score exx BossMoves matches 220 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 50, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 240 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 70, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 260 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 293}
+execute if score exx BossMoves matches 280 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 40, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 300 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 90, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 320 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 70, dmg: 16, str: 18, id: 293}
+execute if score exx BossMoves matches 340 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 50, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 360 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 60, dmg: 16, str: 18, id: 292}
+execute if score exx BossMoves matches 380 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 9, t: 80, dmg: 16, str: 18, id: 293}
 
 # kill
 execute if score exx BossMoves matches 440 as @e[type=item, tag=gimmick.magma, distance=..50] at @s run function stage:boss/exx/move/init/2/round/reset
 
 # score
-execute if score exx BossMoves matches 460.. run scoreboard players set exx BossMoves 40
+execute if score exx BossMoves matches 460.. run scoreboard players set exx BossMoves 80

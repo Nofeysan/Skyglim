@@ -10,8 +10,8 @@ summon minecraft:spawner_minecart 10277 29 -93 \
     \
     MinSpawnDelay: 50,\
     MaxSpawnDelay: 50,\
-    SpawnCount: 75,\
-    SpawnRange: 23,\
+    SpawnCount: 90,\
+    SpawnRange: 27,\
     \
     MaxNearbyEntities: 800,\
     RequiredPlayerRange: 130,\

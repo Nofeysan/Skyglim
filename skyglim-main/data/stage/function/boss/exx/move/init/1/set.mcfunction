@@ -12,4 +12,4 @@
     execute positioned 9295 153 -405 as @a[distance=..50] at @s run playsound minecraft:block.anvil.use voice @s ~ ~ ~ 0.2 1.6
 
 # filed
-    clone 9258 36 -442 9332 57 -368 9259 147 -441
+    clone 9258 36 -442 9332 57 -368 9258 140 -442

@@ -46,7 +46,7 @@ execute if score $7 exx.updown matches 1 run data modify storage stage: exx.updo
 execute if score $7 exx.updown matches 2 run data modify storage stage: exx.updown append value "↓"
 
 # title
-title @a[distance=..30] times 0 60 10
+title @a[distance=..30] times 0 120 10
 title @a[distance=..30] title {text: "[!]", color: "#d94262"}
 title @a[distance=..30] subtitle \
 [\
@@ -63,6 +63,5 @@ title @a[distance=..30] subtitle \
 execute as @a[distance=..80] at @s run playsound minecraft:entity.wither.ambient voice @s ~ ~ ~ 0.7 1
 
 # boss
-tp @n[predicate=entity:entity_enemy, tag=boss, tag=exx] 9062 12 -166
 effect give @n[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness 14 99
 particle minecraft:end_rod 9882 -28 -138 0.5 0.8 0.5 0.1 120

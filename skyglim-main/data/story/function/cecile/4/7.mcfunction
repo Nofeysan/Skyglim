@@ -11,7 +11,7 @@ tellraw @a [{translate: "story.cecile"}, {translate: "story.cecile.ex3-7"}]
 function aj:skyglim/cecile/remove/all
 
 # 自動進行
-scoreboard players set $last_talk _ -1
+scoreboard players set $kalmia_last _ -1
 
 # playsound
 execute at @n[tag=aj.skyglim.cecile.root] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5

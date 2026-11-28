@@ -44,6 +44,6 @@ summon minecraft:piglin_brute ~ ~ ~ \
                                 {id: "minecraft:hero_of_the_village", duration: 2, amplifier: 1, show_icon: false, show_particles: false}\
                             ],\
                             Team: "enemy",\
-                            Tags: ["gimmick", "gimmick.enemy.ex3", 'leave.potion', 'leave.potion.ex3.b']\
+                            Tags: ["gimmick", "gimmick.enemy.ex3", 'leave.potion', 'leave.potion.ex3.b'], IsImmuneToZombification: true\
                         }
 

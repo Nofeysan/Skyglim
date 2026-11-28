@@ -104,7 +104,7 @@ summon minecraft:spawner_minecart ~ ~ ~ \
                                             \
                                             "dmg": 86,\
                                             "str": 81,\
-                                            "def": 2048,\
+                                            "def": 77,\
                                             \
                                             "xp": 243,\
                                             \

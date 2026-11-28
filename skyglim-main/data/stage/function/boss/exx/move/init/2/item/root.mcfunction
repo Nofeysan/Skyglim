@@ -14,7 +14,7 @@
     execute if score exx BossMoves matches 820 as @a[distance=..100] at @s run playsound minecraft:entity.item.pickup voice @s ~ ~ ~ 0.6 1
 
 # onGround のやつにダメージ発生させる
-    execute if score exx BossMoves matches 700..920 as @e[type=minecraft:item, distance=..80, tag=gimmick.item.exx, nbt={OnGround: true}] at @s run function stage:boss/exx/move/init/2/item/break
+    execute if score exx BossMoves matches 700..1000 as @e[type=minecraft:item, distance=..80, tag=gimmick.item.exx, nbt={OnGround: true}] at @s run function stage:boss/exx/move/init/2/item/break
 
 # reset
     execute if score exx BossMoves matches 930 run kill @e[type=minecraft:spawner_minecart, tag=gimmick.spawner.exx]

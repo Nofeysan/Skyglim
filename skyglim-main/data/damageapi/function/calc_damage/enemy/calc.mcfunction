@@ -132,6 +132,10 @@ execute if entity @s[tag=crit.only] unless score c_did Temp matches 1 run data m
 ##* true-damage 処理（防御貫通）
 execute if predicate entity:is_wind_charged run function damageapi:calc_damage/true-damage/enemy
 
+# ダメージだめだよ
+execute if entity @s[tag=boss, tag=exx] if score $cant_damage _ matches 1 run data modify storage km_solver: outputs[0] set value 0.1f
+
+
 #! debug
 #-tellraw @a [{text:"\ue010 与ダメージ(軽減後) float: ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "outputs[0]"}]
 #-tellraw @a [{text:"\ue010 vars : ",color: "#92f3a4"},{"storage": "km_solver:","nbt": "vars"}]

@@ -13,7 +13,7 @@
     effect give @a[distance=..1.5] minecraft:wind_charged 1 10
 
 # AoE
-    function entity:aec_manager/summon/.cyl {r: 4, t: 60, dmg: 16, str: 18, id: 291}
+    function entity:aec_manager/summon/.cyl {r: 5, t: 60, dmg: 16, str: 18, id: 291}
 
 # kill
     kill @s

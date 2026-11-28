@@ -12,4 +12,4 @@
     effect give @a[distance=..3] minecraft:blindness 1 0
 
 # reset
-    scoreboard players set exx BossMoves 120
+    scoreboard players set exx BossMoves 140

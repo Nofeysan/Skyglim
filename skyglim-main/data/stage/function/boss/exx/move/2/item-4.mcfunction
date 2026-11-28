@@ -17,7 +17,7 @@ $summon minecraft:item ^ ^ ^1 \
         }, Tags: ["gimmick", "gimmick.magma", "$(id)"], NoGravity: true, Glowing: true, Age: 5920\
     }
 
-team join bomb.3 @e[distance=..30, tag=gimmick.magma]
+team join bomb.4 @e[distance=..30, tag=gimmick.magma, team=!bomb.3]
 
 # 予測線 particle
 scoreboard players set $count _ 32

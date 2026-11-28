@@ -46,8 +46,8 @@ scoreboard players add ex3 BossMoves 1
 execute if score ex3 BossMoves matches 200 at @n[tag=boss, tag=ex3] run function stage:boss/ex3/move/root
 execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 1 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/1/root
 execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 2 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/2/root
-execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/no_half/root
-execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/half/root
+execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 unless score $ex3.boss.half _ matches 1 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/no_half/root
+execute if score ex3 BossMoves matches 200.. if score ex3-type BossMoves matches 3 if score $ex3.boss.half _ matches 1 as @n[tag=boss, tag=ex3] at @s run function stage:boss/ex3/move/3/half/root
 
 # dealt
     execute if score $ex3.boss.half _ matches 1 unless entity @e[type=minecraft:armor_stand, tag=gimmick.ex3.line.x] run function stage:boss/ex3/move/10/summon_x

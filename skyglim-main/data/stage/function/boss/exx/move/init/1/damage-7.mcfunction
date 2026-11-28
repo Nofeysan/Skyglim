@@ -6,4 +6,4 @@
 
 # damage
 scoreboard players operation _ _ = $7 exx.updown
-function stage:boss/13/move/6/damage-updown
+function stage:boss/exx/move/init/1/damage-updown

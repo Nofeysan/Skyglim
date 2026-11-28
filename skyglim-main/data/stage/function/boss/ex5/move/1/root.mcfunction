@@ -14,4 +14,4 @@ execute if score ex5 BossMoves matches 260 as @e[distance=..80, tag=gimmick.beam
 execute if score ex5 BossMoves matches 261 run function stage:boss/ex5/move/1/kill
 
 # reset
-execute if score ex5 BossMoves matches 261.. run scoreboard players set ex5 BossMoves 60
+execute if score ex5 BossMoves matches 261.. run scoreboard players set ex5 BossMoves 100

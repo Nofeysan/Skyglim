@@ -19,26 +19,37 @@
 
 # 80~: ダメージ 1
     execute if score @s exx.gimmick matches 80 run function entity:aec_manager/summon/.cyl {r: 21, t: 60, dmg: 48, str: 56, id: 112}
-    execute if score @s exx.gimmick matches 80 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 0.5
+    execute if score @s exx.gimmick matches 80 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 0.5
     execute if score @s exx.gimmick matches 80 run function stage:boss/exx/move/14/particle {color: 3301326}
 
     execute if score @s exx.gimmick matches 100 run function stage:boss/exx/move/14/particle {color: 16766760}
-    execute if score @s exx.gimmick matches 100 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 1.0
+    execute if score @s exx.gimmick matches 100 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 1.0
 
     execute if score @s exx.gimmick matches 120 run function stage:boss/exx/move/14/particle {color: 12652105}
-    execute if score @s exx.gimmick matches 120 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 2.0
+    execute if score @s exx.gimmick matches 120 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 2.0
 
-# 180~: ダメージ 1
+# 180~: ダメージ 2
     execute if score @s exx.gimmick matches 180 run function entity:aec_manager/summon/.cyl {r: 21, t: 60, dmg: 48, str: 56, id: 112}
-    execute if score @s exx.gimmick matches 180 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 0.5
+    execute if score @s exx.gimmick matches 180 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 0.5
     execute if score @s exx.gimmick matches 180 run function stage:boss/exx/move/14/particle {color: 3301326}
 
     execute if score @s exx.gimmick matches 200 run function stage:boss/exx/move/14/particle {color: 16766760}
-    execute if score @s exx.gimmick matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 1.0
+    execute if score @s exx.gimmick matches 200 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 1.0
 
     execute if score @s exx.gimmick matches 220 run function stage:boss/exx/move/14/particle {color: 12652105}
-    execute if score @s exx.gimmick matches 220 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 0.4 2.0
+    execute if score @s exx.gimmick matches 220 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 2.0
 
-# 240: kill
-    execute if score @s exx.gimmick matches 240 run kill @n[type=minecraft:item_display, tag=gimmick]
-    execute if score @s exx.gimmick matches 240 run kill @s
+# 280~: ダメージ 3
+    execute if score @s exx.gimmick matches 280 run function entity:aec_manager/summon/.cyl {r: 21, t: 60, dmg: 48, str: 56, id: 112}
+    execute if score @s exx.gimmick matches 280 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 0.5
+    execute if score @s exx.gimmick matches 280 run function stage:boss/exx/move/14/particle {color: 3301326}
+
+    execute if score @s exx.gimmick matches 300 run function stage:boss/exx/move/14/particle {color: 16766760}
+    execute if score @s exx.gimmick matches 300 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 1.0
+
+    execute if score @s exx.gimmick matches 320 run function stage:boss/exx/move/14/particle {color: 12652105}
+    execute if score @s exx.gimmick matches 320 run playsound minecraft:block.note_block.pling voice @a ~ ~ ~ 2 2.0
+
+# 340: kill
+    execute if score @s exx.gimmick matches 340 run kill @n[type=minecraft:item_display, tag=gimmick]
+    execute if score @s exx.gimmick matches 340 run kill @s

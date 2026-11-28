@@ -5,8 +5,8 @@
 # 
 
 # effect
-    particle minecraft:end_rod ~ ~1 ~ 2 2 2 0.1 40
-    particle minecraft:dust{color: 4513268, scale: 2.0} ~ ~1 ~ 2 2 2 0.1 300
+    particle minecraft:end_rod ~ ~1 ~ 0.3 0.3 0.3 0.1 40
+    particle minecraft:dust{color: 4513268, scale: 2.0} ~ ~1 ~ 0.3 0.3 0.3 0.1 180
     playsound minecraft:entity.firework_rocket.blast voice @a ~ ~ ~ 0.4 1
     playsound minecraft:entity.wither.hurt voice @a ~ ~ ~ 0.15 1
     item modify entity @a[distance=..2.5, tag=!ex5.damaged] weapon.offhand {function: "minecraft:set_count", count: -8, add: true}

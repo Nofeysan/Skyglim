@@ -13,9 +13,6 @@ schedule function story:villager/talk/vanitas/1/14 100t
 # playsound
 execute at @n[type=minecraft:villager, tag=vanitas] run playsound minecraft:entity.villager.ambient voice @a ~ ~ ~ 0.7 1.5
 
-# score
-scoreboard players set $has_talks_vanitas CanTalkWithMe 2
-
 # item
 loot spawn 10014 14.5 -388 loot stage:importants/9/fire_stick
 execute positioned 10014 14.5 -388 run data modify entity @n[type=minecraft:item] PickupDelay set value 60

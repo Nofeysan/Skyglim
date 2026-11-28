@@ -20,7 +20,7 @@
     scoreboard players add $chromalier_all _ 1
 
 # tell
-    tellraw @a [{text: '\n\ue010 水色のクロマリアを納品した！\n', color: '#44ddf4'}]
+    tellraw @a [{text: '\n\ue010 水色のクロマリアを納品した！\n', color: '#66a5b8'}]
 
 # kill
     kill @n[type=minecraft:item]

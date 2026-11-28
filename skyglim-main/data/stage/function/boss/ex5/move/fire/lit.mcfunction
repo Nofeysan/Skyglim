@@ -10,3 +10,6 @@
 # perform
     playsound minecraft:item.firecharge.use voice @a ~ ~ ~ 0.4 1
     particle minecraft:dust{color: 14238306, scale: 2.4} ~ ~ ~ 0.7 0.7 0.7 0.06 120
+
+# summon
+    summon minecraft:armor_stand ~ ~ ~ {Invisible: true, Invulnerable: true, Tags: ['ex5.campfire', 'ex5.campfire.boss']}

@@ -10,9 +10,11 @@
 
 # effect
     execute if score $ex3.boss.half _ matches 0 run effect give @a[distance=..1.5] minecraft:wind_charged 1 15
+    execute if score $ex3.boss.half _ matches 1 run effect give @a[distance=..1.5] minecraft:wind_charged 1 15
 
 # AoE
     execute if score $ex3.boss.half _ matches 0 run function entity:aec_manager/summon/.cyl {r: 6, t: 60, dmg: 90, str: 73, id: 233}
+    execute if score $ex3.boss.half _ matches 1 run function entity:aec_manager/summon/.cyl {r: 8, t: 60, dmg: 90, str: 73, id: 233}
 
 # kill
     kill @s

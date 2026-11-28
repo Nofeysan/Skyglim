@@ -5,5 +5,4 @@
 # 
 
 # story 開始！
-function stage:teleport/importants/16/act/init
-function stage:teleport/importants/16/act/tick
+function story:cecile/4/0

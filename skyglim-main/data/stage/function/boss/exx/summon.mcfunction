@@ -10,12 +10,20 @@ setblock ~ ~ ~ minecraft:gray_stained_glass
 
 # summon
 execute positioned ~ ~3 ~ run function stage:boss/exx/boss
-scoreboard players set exx BossMoves 140
+scoreboard players set exx BossMoves 180
 scoreboard players set $exx.boss.half _ 0
 scoreboard players set $exx.boss.half.moved _ 0
 scoreboard players set $exx.boss.init _ 0
 
+function aj:skyglim/cecile/remove/all
 execute positioned ~ ~3 ~ run function aj:skyglim/cecile/summon {args: {}}
+
+# 入場扱いにする
+scoreboard players set _ stage.ex.x 1
+
+fill 9294 147 -422 9296 147 -422 minecraft:polished_andesite
+fill 9294 148 -422 9296 148 -422 minecraft:smooth_stone_slab[type=bottom]
+fill 9294 151 -422 9296 149 -422 minecraft:barrier
 
 # title
 title @a[distance=..100] times 10 40 20

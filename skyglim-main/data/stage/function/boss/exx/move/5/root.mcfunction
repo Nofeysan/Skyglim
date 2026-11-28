@@ -6,7 +6,7 @@
 
 # AoE + sword
     execute if score exx BossMoves matches 200 as @a[distance=..50] at @s run playsound minecraft:entity.experience_orb.pickup voice @s ~ ~ ~ 0.4 2
-    execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 60, dmg: 48, str: 56, id: 111}
+    execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 19, t: 60, dmg: 48, str: 56, id: 294}
     execute if score exx BossMoves matches 200 at @a[distance=..50] positioned ~ ~5 ~ run function stage:boss/exx/move/5/summon_sword
 
 # 落下とかは全部剣側で別で動きます

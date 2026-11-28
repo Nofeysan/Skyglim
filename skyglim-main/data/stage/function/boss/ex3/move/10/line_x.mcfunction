@@ -5,10 +5,10 @@
 # 
 
 #\ +0.5 blocks
-    particle minecraft:dust{color: 4513268, scale: 1.2} ~ ~0.75 ~ 0.0 0.0 0.0 0 1 force @a
+    particle minecraft:dust{color: 4513268, scale: 1.2} ~ ~0.6 ~ 0.0 0.0 0.0 0 1 force @a
 
 # damage
-    effect give @a[distance=..1] minecraft:wind_charged 1 7
+    effect give @a[distance=..0.8] minecraft:wind_charged 1 7
 
 # steps
     scoreboard players remove $steps _ 1

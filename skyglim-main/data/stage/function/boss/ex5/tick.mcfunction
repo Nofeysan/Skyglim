@@ -4,6 +4,9 @@
 # 
 # 
 
+# clear
+    effect clear @n[tag=boss, tag=ex5] minecraft:slowness
+
 # data get
     data modify storage boss: stage.ex5 set from entity @n[tag=boss, tag=ex5] data
 

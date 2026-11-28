@@ -20,7 +20,7 @@ tellraw @a [{text: "[!] ", color: "#e9b530"}, {translate: "entity.stage.ex5.boss
 execute as @a at @s run playsound minecraft:entity.player.levelup voice @s ~ ~ ~ 0.7 0.5
 
 # 出口開放
-fill 9961 103 -574 9963 101 -574 minecraft:air destroy
+fill 10278 26 -70 10276 24 -70 minecraft:air destroy
 
 # 次の道
 #forceload add 10050 -19 10076 -33

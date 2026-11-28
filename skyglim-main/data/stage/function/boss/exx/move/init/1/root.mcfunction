@@ -2,7 +2,7 @@
 # 
 # 上下移動する
 # 
-# 
+#
 
 # 200: 足場召喚
     execute if score exx BossMoves matches 200 run function stage:boss/exx/move/init/1/set
@@ -46,13 +46,13 @@
     execute if score exx BossMoves matches 660 as @a[distance=..80] run function stage:boss/exx/move/init/1/damage-7
 
 # AoE to AEC
-    execute if score exx BossMoves matches 260 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 320 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 380 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 440 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 500 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 560 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
-    execute if score exx BossMoves matches 620 run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 260 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 320 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 380 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 440 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 500 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 560 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
+    execute if score exx BossMoves matches 620 at @a run function entity:aec_manager/summon/.cyl {r: 7, t: 60, dmg: 16, str: 18, id: 290}
 
 # 足場 reset
     execute if score exx BossMoves matches 680 run function stage:boss/exx/move/init/1/remove

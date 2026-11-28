@@ -8,6 +8,7 @@
     execute as @n[tag=aj.skyglim.cecile.root] at @s positioned as @n[predicate=entity:entity_enemy, tag=boss, tag=exx] run tp @s ~ ~ ~ ~ 0
     execute as @n[tag=aj.skyglim.cecile.root] at @s facing entity @p eyes run rotate @s ~ 0
     effect clear @e[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness
+    time set 23000
 
 # data get
     data modify storage boss: stage.exx set from entity @n[tag=boss, tag=exx] data
@@ -49,7 +50,7 @@ execute store result bossbar minecraft:stageexx.boss value run data get storage 
 # 行動
     # tick
         scoreboard players add exx BossMoves 1
-        execute if score exx BossMoves matches 200 at @n[tag=boss, tag=exx] run function stage:boss/exx/move/root
+        execute if score exx BossMoves matches 200 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/root
 
     # bat
         scoreboard players add @e[type=minecraft:bat, tag=gimmick.bat.exx] exx.gimmick 1
@@ -61,8 +62,8 @@ execute store result bossbar minecraft:stageexx.boss value run data get storage 
 
     #* 通常行動
         # 1~6: 通常 / 11~15: 50% 未満
-        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 1 at @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/1/root
-        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 2 at @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/2/root
+        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 1 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/1/root
+        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 2 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/2/root
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 5 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/5/root
 
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 11 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/11/root
@@ -71,5 +72,5 @@ execute store result bossbar minecraft:stageexx.boss value run data get storage 
         execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 14 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/14/root
 
     #+ init, half
-        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 90 at @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/init/root
-        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 99 at @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/half/root
+        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 90 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/init/root
+        execute if score exx BossMoves matches 200.. if score exx-type BossMoves matches 99 as @n[tag=boss, tag=exx] at @s run function stage:boss/exx/move/half/root

@@ -7,8 +7,6 @@
 # random
 execute store result score ex5-type BossMoves run random value 1..4
 
-execute unless score $ex5.init _ matches 1 run scoreboard players set ex5-type BossMoves 9
-
 # 1: 上下移動
 #execute if score s6-type BossMoves matches 1 run function stage:boss/4/move/1/root
 

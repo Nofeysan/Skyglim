@@ -18,4 +18,4 @@ execute if score $players _ matches 4.. positioned 9287 147 -397 run function st
 execute if score $players _ matches 4.. positioned 9303 147 -413 run function stage:boss/exx/move/4/random_spawn
 
 # score
-scoreboard players set exx BossMoves 0
+scoreboard players set exx BossMoves 40

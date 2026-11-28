@@ -12,7 +12,8 @@ summon minecraft:skeleton ~ ~ ~ \
                                 {id: "minecraft:max_absorption", base: 1024},\
                                 {id: "minecraft:knockback_resistance", base: 1024},\
                                 \
-                                {id: "minecraft:movement_speed", base:0.24}\
+                                {id: "minecraft:movement_speed", base: 0.24},\
+                                {id: "minecraft:follow_range", base: 256}\
                             ],\
                             Health: 1024,\
                             AbsorptionAmount: 1024,\
@@ -21,8 +22,7 @@ summon minecraft:skeleton ~ ~ ~ \
                                 chest: {id: "minecraft:leather_chestplate", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 11332252, "minecraft:enchantment_glint_override": true}},\
                                 legs: {id: "minecraft:iron_leggings", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 9290623, "minecraft:enchantment_glint_override": true}},\
                                 feet: {id: "minecraft:leather_boots", components: {"minecraft:unbreakable": {}, "minecraft:dyed_color": 6928214, "minecraft:enchantment_glint_override": true}},\
-                                mainhand: {id: "minecraft:green_concrete_powder", components: {"minecraft:enchantment_glint_override": true}},\
-                                offhand: {id: "minecraft:white_concrete_powder", components: {"minecraft:enchantment_glint_override": true}},\
+                                mainhand: {id: "minecraft:green_concrete_powder", components: {"minecraft:enchantment_glint_override": true, "minecraft:enchantments": {"entity:remove_torch": 1}}}\
                             },\
                             drop_chances: {\
                                 head: 0.0f, chest: 0.0f, legs: 0.0f, feet: 0.0f, mainhand: 0.0f, offhand: 0.0f\

@@ -12,4 +12,4 @@
     execute positioned 9300 154 -405 run function stage:boss/exx/move/3/summon_bat_normal
 
 # reset
-    scoreboard players set exx BossMoves 100
+    scoreboard players set exx BossMoves 120

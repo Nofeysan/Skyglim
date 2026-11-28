@@ -56,18 +56,24 @@
     execute if score $last_talk _ matches 1320 run function story:avelian/14/talk_avelian {id: 19}
 
     execute if score $last_talk _ matches 1380 as @n[tag=aj.skyglim.avelian.root] at @s run rotate @s 180 0
+    execute if score $last_talk _ matches 1380 as @n[tag=aj.skyglim.cecile.root] at @s run rotate @s 180 0
+    execute if score $last_talk _ matches 1380 as @n[tag=aj.skyglim.avelian.root] at @s run function aj:skyglim/avelian/animations/stand/play
+    execute if score $last_talk _ matches 1380 as @n[tag=aj.skyglim.cecile.root] at @s run function aj:skyglim/avelian/animations/stand/play
     execute if score $last_talk _ matches 1380 run function story:avelian/14/talk_avelian {id: 20}
     execute if score $last_talk _ matches 1460 run function story:avelian/14/talk_avelian {id: 21}
     execute if score $last_talk _ matches 1560 run function story:avelian/14/talk_avelian {id: 22}
     execute if score $last_talk _ matches 1640 run function story:avelian/14/talk_avelian {id: 23}
     execute if score $last_talk _ matches 1700 run function story:avelian/14/talk_avelian {id: 24}
+    execute if score $last_talk _ matches 1800 as @n[tag=aj.skyglim.avelian.root] at @s run function aj:skyglim/avelian/animations/endroll/play
     execute if score $last_talk _ matches 1800 run function story:avelian/14/talk_avelian {id: 25}
 
     execute if score $last_talk _ matches 1860 as @n[tag=aj.skyglim.cecile.root] at @s run function aj:skyglim/cecile/animations/hang/play
+    execute if score $last_talk _ matches 1860 as @n[tag=aj.skyglim.cecile.root] at @s run rotate @s -90 0
     execute if score $last_talk _ matches 1860 run function story:avelian/14/talk_cecile {id: 26}
 
     execute if score $last_talk _ matches 1900 as @n[tag=aj.skyglim.avelian.root] at @s run function aj:skyglim/avelian/animations/hang/play
     execute if score $last_talk _ matches 1900 as @n[tag=aj.skyglim.cecile.root] at @s run function aj:skyglim/avelian/animations/dai/play
+    execute if score $last_talk _ matches 1900 as @n[tag=aj.skyglim.avelian.root] at @s run rotate @s 90 0
     execute if score $last_talk _ matches 1900 run function story:avelian/14/talk_avelian {id: 27}
 
     execute if score $last_talk _ matches 1920..1980 as @a at @s run particle minecraft:firework 0.7 1.4 0.7 ~ ~ ~ 0.1 4

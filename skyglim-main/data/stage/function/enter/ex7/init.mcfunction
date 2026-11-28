@@ -9,7 +9,7 @@ forceload add 8111 -129 8032 -224
 forceload add 8032 -544 8239 -305
 
 # スポナー設置
-function entity:spawner/set {id: 'stage/ex7/11', xyz: '9208 71 -336', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/ex7/11', xyz: '8208 71 -336', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/ex7/11', xyz: '8210 72 -323', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/ex7/11', xyz: '8227 73 -331', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/ex7/11', xyz: '8231 73 -326', block: 'iron_block'}
@@ -25,7 +25,7 @@ function entity:spawner/set {id: 'stage/ex7/16', xyz: '8208 78 -491', block: 'be
 
 function entity:spawner/set {id: 'stage/ex7/17', xyz: '8165 72 -382', block: 'iron_block'}
 function entity:spawner/set {id: 'stage/ex7/18', xyz: '8163 72 -393', block: 'iron_block'}
-function entity:spawner/set {id: 'stage/ex7/17', xyz: '9150 72 -388', block: 'iron_block'}
+function entity:spawner/set {id: 'stage/ex7/17', xyz: '8150 72 -388', block: 'iron_block'}
 
 function entity:spawner/set {id: 'stage/ex7/19', xyz: '8150 74 -441', block: 'beacon'}
 function entity:spawner/set {id: 'stage/ex7/110', xyz: '8170 74 -459', block: 'obsidian'}
@@ -38,8 +38,8 @@ function entity:spawner/set {id: 'stage/ex7/111', xyz: '8158 106 -529', block: '
 function entity:spawner/set {id: 'stage/ex7/112', xyz: '8158 113 -531', block: 'iron_block'}
 
 # チェスト配置
-data modify block 9236 79 -340 LootTable set value "entity:mob_drop/ex7/chest"
-data modify block 8055 74 -378 LootTable set value "entity:mob_drop/ex7/chest"
+data modify block 8236 79 -340 LootTable set value "entity:mob_drop/ex7/chest"
+data modify block 8155 74 -378 LootTable set value "entity:mob_drop/ex7/chest"
 data modify block 8158 105 -529 LootTable set value "entity:mob_drop/ex7/chest"
 
 # ボス召喚設置

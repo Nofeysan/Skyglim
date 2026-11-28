@@ -62,7 +62,7 @@ summon minecraft:bat ~ ~ ~ \
                                     SpawnRange: 12,\
                                     \
                                     MaxNearbyEntities: 20,\
-                                    RequiredPlayerRange: 12, \
+                                    RequiredPlayerRange: 80, \
                                     SpawnPotentials: [\
                                         {\
                                             data: { entity: {\
@@ -72,7 +72,8 @@ summon minecraft:bat ~ ~ ~ \
                                                         components: {\
                                                             "minecraft:potion_contents": {\
                                                                 custom_effects: [\
-                                                                    {id: "minecraft:slowness", amplifier: 2, duration: 100}\
+                                                                    {id: "minecraft:slowness", amplifier: 2, duration: 100},\
+                                                                    {id: "minecraft:blindness", amplifier: 2, duration: 60}\
                                                                 ]\
                                                             }, "minecraft:enchantment_glint_override": true\
                                                         }\

@@ -6,6 +6,12 @@
 # エリアは広めにしようかしらね (r=8?)
 # 
 
+# ダメージだめだよ
+    execute if score exx BossMoves matches 200 run scoreboard players set $cant_damage _ 1
+
+# tp
+    execute if score exx BossMoves matches 200..1940 run tp @n[tag=boss, tag=exx] 9295 148 -405
+
 #+ 上下移動
 # 200: 足場召喚
     execute if score exx BossMoves matches 200 run function stage:boss/exx/move/init/1/set
@@ -31,14 +37,17 @@
         execute as @e[predicate=stage:is_barrier_item] at @s run function stage:boss/exx/move/half/set_barrier
     
     # particle
-        execute if score _ _ matches 0 as @e[tag=gimmick.barrier.set, type=minecraft:marker] at @s run function stage:boss/exx/move/half/show_barrier
+        scoreboard players operation _ _ = exx BossMoves
+        scoreboard players operation _ _ %= #20 num
+
+        execute if score _ _ matches 0 as @e[tag=gimmick.barrier.set, type=minecraft:marker] at @s positioned ~ 154 ~ run function stage:boss/exx/move/half/show_barrier
 
 # 200: tp
     execute if score exx BossMoves matches 200..600 run tp @n[tag=boss, tag=exx] 9295 147 -405
 
 # 1
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 240 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 240 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 240 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 260 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 285 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -58,7 +67,7 @@
 
 # 2
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 480 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 480 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 480 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 500 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 525 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -78,7 +87,7 @@
 
 # 3
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 720 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 720 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 720 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 740 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 765 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -98,7 +107,7 @@
 
 # 4
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 960 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 960 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 960 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 980 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 1005 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -118,7 +127,7 @@
 
 # 5
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 1200 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 1200 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 1200 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 1220 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 1245 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -138,7 +147,7 @@
 
 # 6
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 1440 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 1440 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 1440 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 1460 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 1485 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -158,7 +167,7 @@
 
 # 7
     #  AoE + barrier 素召喚, カウント
-        execute if score exx BossMoves matches 1680 positioned ~ 285 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
+        execute if score exx BossMoves matches 1680 positioned ~ 147 ~ run function entity:aec_manager/summon/.cyl {r: 37, t: 240, dmg: 16, str: 18, id: 113}
         execute if score exx BossMoves matches 1680 run function stage:boss/exx/move/half/barrier
         execute if score exx BossMoves matches 1700 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.5
         execute if score exx BossMoves matches 1725 as @a[distance=..50] at @s run playsound minecraft:block.note_block.chime voice @s ~ ~ ~ 0.6 0.561231
@@ -176,5 +185,8 @@
         execute if score exx BossMoves matches 1901 run kill @e[tag=gimmick.barrier.exx]
         execute if score exx BossMoves matches 1902 run kill @e[tag=gimmick.barrier.set]
 
+# ダメージいいよ
+    execute if score exx BossMoves matches 1940 run scoreboard players set $cant_damage _ 0
+
 # reset
-    execute if score exx BossMoves matches 1940.. run scoreboard players set exx BossMoves 0
+    execute if score exx BossMoves matches 1940.. run scoreboard players set exx BossMoves 100

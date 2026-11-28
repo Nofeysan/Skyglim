@@ -11,4 +11,4 @@
     execute positioned 9295 153 -405 as @a[distance=..50] at @s run playsound minecraft:entity.generic.explode voice @s ~ ~ ~ 0.4 1.2
 
 # field
-    clone 9258 60 -442 9332 81 -368 9259 147 -441
+    clone 9258 60 -442 9332 81 -368 9258 140 -442

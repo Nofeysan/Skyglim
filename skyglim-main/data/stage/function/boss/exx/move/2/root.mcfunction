@@ -5,7 +5,7 @@
 # 
 
 # effect
-execute if score exx BossMoves matches 200 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness 5 50
+execute if score exx BossMoves matches 200..300 run effect give @n[predicate=entity:entity_enemy, tag=boss, tag=exx] minecraft:slowness 1 50
 
 # 召喚
 execute if score exx BossMoves matches 200 rotated 0 0 positioned ~ ~1 ~ run function stage:boss/exx/move/2/item-1 {id: 1}
@@ -55,4 +55,4 @@ execute if score exx BossMoves matches 240..320 as @e[type=item, tag=gimmick.mag
 execute if score exx BossMoves matches 320 as @e[type=item, tag=gimmick.magma] at @s run function stage:boss/exx/move/2/reset
 
 # reset
-execute if score exx BossMoves matches 320.. run scoreboard players set exx BossMoves 60
+execute if score exx BossMoves matches 320.. run scoreboard players set exx BossMoves 100

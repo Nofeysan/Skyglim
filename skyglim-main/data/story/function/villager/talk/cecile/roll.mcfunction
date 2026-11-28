@@ -5,7 +5,7 @@
 # 
 
 # 何か会話がある？
-execute if score $has_talks_cecile CanTalkWithMe matches 1.. run return run function story:villager/talk/cecile/talks
+execute if score $has_talks_cecile story.progress matches 1.. run return run function story:villager/talk/cecile/talks
 
 # reset
 data modify storage temp: talk set value {id: 1, name: "cecile"}

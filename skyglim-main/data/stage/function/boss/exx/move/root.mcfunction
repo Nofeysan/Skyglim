@@ -10,6 +10,7 @@
 
 # init, half
     execute unless score $exx.boss.init _ matches 1 run scoreboard players set exx-type BossMoves 90
+    execute unless score $exx.boss.init _ matches 1 run scoreboard players set $exx.boss.init _ 1
     execute if score $exx.boss.half _ matches 1 unless score $exx.boss.half.moved _ matches 1 run scoreboard players set exx-type BossMoves 99
     execute if score $exx.boss.half _ matches 1 unless score $exx.boss.half.moved _ matches 1 run scoreboard players set $exx.boss.half.moved _ 1
 
